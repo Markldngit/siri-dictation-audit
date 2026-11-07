@@ -1,0 +1,98 @@
+{
+ "what": "Where per-app settings sit. Apple's text places them in three different parts of Settings; a user may need all three to control one app.",
+ "places": [
+  {
+   "id": "apps_app",
+   "pattern": "Settings > Apps > [app] > …",
+   "marker": "Settings > Apps >",
+   "claude_note": "Settings grouped under each app."
+  },
+  {
+   "id": "siri_apps_app",
+   "pattern": "Settings > Siri > Apps > [app]",
+   "marker": "Apps",
+   "claude_note": "Siri's own list of apps."
+  },
+  {
+   "id": "search_app",
+   "pattern": "Settings > Search > [app]",
+   "marker": "Search",
+   "claude_note": "Search's own list of apps."
+  }
+ ],
+ "entries": [
+  {
+   "place": "apps_app",
+   "app": "Books",
+   "switch": "books.siri.show_in_app",
+   "basis": "apple_route",
+   "route": 0
+  },
+  {
+   "place": "apps_app",
+   "app": "News",
+   "switch": "news.siri.show_in_app",
+   "basis": "apple_route",
+   "route": 0
+  },
+  {
+   "place": "apps_app",
+   "app": "Health",
+   "switch": "health.siri_access",
+   "basis": "apple_route",
+   "route": 0
+  },
+  {
+   "place": "apps_app",
+   "app": "Safari",
+   "switch": "safari.search_engine_suggestions",
+   "basis": "observed",
+   "observation": "O001"
+  },
+  {
+   "place": "siri_apps_app",
+   "app": "each app",
+   "switch": "siri.apps.learn_from_this_app",
+   "basis": "apple_route",
+   "route": 0
+  },
+  {
+   "place": "siri_apps_app",
+   "app": "each app",
+   "switch": "siri.apps.learn_from_this_app",
+   "basis": "apple_route",
+   "route": 1
+  },
+  {
+   "place": "siri_apps_app",
+   "app": "each app",
+   "switch": "siri.apps.use_with_siri_requests",
+   "basis": "apple_route",
+   "route": 0
+  },
+  {
+   "place": "siri_apps_app",
+   "app": "each app",
+   "switch": "guide.apps_per_app",
+   "basis": "apple_route",
+   "route": 0
+  },
+  {
+   "place": "search_app",
+   "app": "each app",
+   "switch": "guide.search_per_app",
+   "basis": "apple_route",
+   "route": 0
+  }
+ ],
+ "not_stated_by_apple": [
+  "Whether a setting under Settings > Apps > [app] and one under Settings > Siri > Apps > [app] are the same switch reached two ways, or different switches.",
+  "Which apps have which Siri or Search settings, beyond the apps Apple's pages name.",
+  "Where Preload Top Hit, Improve Health & Activity and Personal Requests on HomePod are."
+ ],
+ "to_check_on_phone": [
+  "For each app under Settings > Apps: which Siri, Search or suggestion settings appear, and their names.",
+  "Whether Settings > Apps > [app] > Siri shows the same switches as Settings > Siri > Apps > [app].",
+  "Where Preload Top Hit is (search Settings for 'Preload')."
+ ]
+}

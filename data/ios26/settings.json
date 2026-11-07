@@ -1,0 +1,2609 @@
+{
+ "switches": [
+  {
+   "id": "siri.talk_to_siri",
+   "name": "Talk to Siri",
+   "settings_path": "go to Settings > Siri > Talk to Siri and tap Off",
+   "source": "ask-siri-dictation",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E01",
+    "E95"
+   ],
+   "apple_explicit_claims": 0,
+   "apple_summary_claude_note": "Only E01 (how-to) and E95 ('Prevent Siri from responding to the voice request') exist. Functional description only; no Apple text states any data effect.",
+   "apple_name": {
+    "page": "ask-siri-dictation",
+    "start": 6531,
+    "end": 6543,
+    "text": "Talk to Siri"
+   },
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "ask-siri-dictation",
+       "start": 6453,
+       "end": 6501,
+       "text": "go to Settings > Siri > Talk to Siri and tap Off"
+      }
+     ],
+     "taps_claude_count": 3
+    },
+    {
+     "steps": [
+      {
+       "page": "ios26-guide-change-siri-settings",
+       "start": 1381,
+       "end": 1419,
+       "text": "Go to the Settings app on your iPhone."
+      },
+      {
+       "page": "ios26-guide-change-siri-settings",
+       "start": 1420,
+       "end": 1490,
+       "text": "Tap Siri (or Apple Intelligence & Siri), then do any of the following:"
+      },
+      {
+       "page": "ios26-guide-change-siri-settings",
+       "start": 1563,
+       "end": 1619,
+       "text": "Tap Talk to Siri (or Talk & Type to Siri), then tap Off."
+      }
+     ],
+     "taps_claude_count": 3
+    }
+   ]
+  },
+  {
+   "id": "siri.press_side_button",
+   "name": "Press Side Button for Siri",
+   "settings_path": "go to Settings > Siri > Talk to Siri and tap to turn off “Press Home for Siri” or “Press Side Button for Siri”",
+   "source": "ask-siri-dictation",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E01",
+    "E96"
+   ],
+   "wording_issue": "ask-siri-dictation places it under Talk to Siri; improve-siri-dictation places it under Settings > Siri.",
+   "apple_explicit_claims": 0,
+   "apple_summary_claude_note": "Only E01 (how-to) and E96 (activation instruction). No data effect stated.",
+   "apple_name": {
+    "page": "ios26-guide-activate-siri",
+    "start": 1073,
+    "end": 1099,
+    "text": "Press Side Button for Siri"
+   },
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "ask-siri-dictation",
+       "start": 6507,
+       "end": 6617,
+       "text": "go to Settings > Siri > Talk to Siri and tap to turn off “Press Home for Siri” or “Press Side Button for Siri”"
+      }
+     ],
+     "taps_claude_count": 3
+    },
+    {
+     "steps": [
+      {
+       "page": "ios26-guide-activate-siri",
+       "start": 489,
+       "end": 527,
+       "text": "Go to the Settings app on your iPhone."
+      },
+      {
+       "page": "ios26-guide-activate-siri",
+       "start": 528,
+       "end": 591,
+       "text": "Tap Siri (or Apple Intelligence & Siri), then tap Talk to Siri."
+      },
+      {
+       "page": "ios26-guide-activate-siri",
+       "start": 1026,
+       "end": 1100,
+       "text": "To activate Siri with the side button, turn on Press Side Button for Siri."
+      }
+     ],
+     "taps_claude_count": 3
+    }
+   ]
+  },
+  {
+   "id": "combo.siri_off",
+   "name": "Siri off (Apple's definition)",
+   "settings_path": "go to Settings > Siri > Talk to Siri and tap Off / go to Settings > Siri > Talk to Siri and tap to turn off “Press Home for Siri” or “Press Side Button for Siri”",
+   "source": "ask-siri-dictation",
+   "kind": "combination",
+   "scope": "in_scope",
+   "evidence": [
+    "E01",
+    "E97"
+   ],
+   "components": [
+    "siri.talk_to_siri",
+    "siri.press_side_button"
+   ],
+   "apple_explicit_claims": 0,
+   "apple_summary_claude_note": "Apple calls this 'turn off Siri' (E01, E97) but only as instructions. No sentence states what data stops or continues. E03's deletion needs Dictation off too, so it belongs to combo.siri_and_dictation_off. Type to Siri is not addressed.",
+   "apple_name": {
+    "page": "ask-siri-dictation",
+    "start": 6435,
+    "end": 6451,
+    "text": "To turn off Siri"
+   },
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "ask-siri-dictation",
+       "start": 6453,
+       "end": 6501,
+       "text": "go to Settings > Siri > Talk to Siri and tap Off"
+      },
+      {
+       "page": "ask-siri-dictation",
+       "start": 6507,
+       "end": 6617,
+       "text": "go to Settings > Siri > Talk to Siri and tap to turn off “Press Home for Siri” or “Press Side Button for Siri”"
+      }
+     ],
+     "taps_claude_count": 4
+    },
+    {
+     "steps": [
+      {
+       "page": "ios26-guide-activate-siri",
+       "start": 4309,
+       "end": 4347,
+       "text": "Go to the Settings app on your iPhone."
+      },
+      {
+       "page": "ios26-guide-activate-siri",
+       "start": 4348,
+       "end": 4436,
+       "text": "Tap Siri (or Apple Intelligence & Siri), then tap Talk to Siri (or Talk & Type to Siri)."
+      },
+      {
+       "page": "ios26-guide-activate-siri",
+       "start": 4437,
+       "end": 4487,
+       "text": "Tap Off, then turn off Press Side Button for Siri."
+      }
+     ],
+     "taps_claude_count": 4
+    }
+   ],
+   "route_claude_note": "Two settings on one screen. Apple's privacy page writes it as two separate trips; the guide as one."
+  },
+  {
+   "id": "keyboard.enable_dictation",
+   "name": "Enable Dictation",
+   "settings_path": "go to Settings > General > Keyboard, then tap to turn off Enable Dictation",
+   "source": "ask-siri-dictation",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E02",
+    "E98"
+   ],
+   "apple_explicit_claims": 0,
+   "apple_summary_claude_note": "Only E02 and the user-guide how-to (E98). The guide's statements (E100 on-device processing, E101 search-box text to search provider) are not tied to this switch. E03 needs Siri also off.",
+   "apple_name": {
+    "page": "ask-siri-dictation",
+    "start": 6700,
+    "end": 6716,
+    "text": "Enable Dictation"
+   },
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "ask-siri-dictation",
+       "start": 6642,
+       "end": 6716,
+       "text": "go to Settings > General > Keyboard, then tap to turn off Enable Dictation"
+      }
+     ],
+     "taps_claude_count": 3
+    },
+    {
+     "steps": [
+      {
+       "page": "ios26-guide-dictate-text",
+       "start": 2467,
+       "end": 2505,
+       "text": "Go to the Settings app on your iPhone."
+      },
+      {
+       "page": "ios26-guide-dictate-text",
+       "start": 2506,
+       "end": 2537,
+       "text": "Tap General, then tap Keyboard."
+      },
+      {
+       "page": "ios26-guide-dictate-text",
+       "start": 2538,
+       "end": 2564,
+       "text": "Turn off Enable Dictation."
+      }
+     ],
+     "taps_claude_count": 3
+    }
+   ]
+  },
+  {
+   "id": "combo.siri_and_dictation_off",
+   "name": "Siri and Dictation both off",
+   "settings_path": null,
+   "source": "ask-siri-dictation",
+   "kind": "combination",
+   "scope": "in_scope",
+   "evidence": [
+    "E01",
+    "E02",
+    "E03"
+   ],
+   "components": [
+    "combo.siri_off",
+    "keyboard.enable_dictation"
+   ],
+   "apple_explicit_claims": 2,
+   "apple_summary_claude_note": "Two claims: existing on-device transcripts deleted (E03; same statement on improve-siri-dictation page). Server copies not addressed. All other v1 'stops' cells removed as inferences from how-to text.",
+   "apple_name": {
+    "page": "ask-siri-dictation",
+    "start": 6725,
+    "end": 6757,
+    "text": "turn off both Siri and Dictation"
+   },
+   "apple_routes": [],
+   "taps_claude_count_total": 7,
+   "route_claude_note": "No single route: Apple's two routes, in two different places in Settings (4 + 3 taps)."
+  },
+  {
+   "id": "siri.history.delete",
+   "name": "Delete Siri & Dictation History",
+   "settings_path": "going to Settings > Siri > Siri & Dictation History and tapping Delete Siri & Dictation History",
+   "source": "ask-siri-dictation",
+   "kind": "action",
+   "scope": "in_scope",
+   "evidence": [
+    "E04"
+   ],
+   "apple_explicit_claims": 2,
+   "apple_summary_claude_note": "Two claims: on-device transcripts deleted (E04; same sentence on improve-siri-dictation page). Server-side transcripts not addressed. Borderline: the sentence is how-to phrased but names the data affected.",
+   "apple_name": {
+    "page": "ask-siri-dictation",
+    "start": 7064,
+    "end": 7095,
+    "text": "Delete Siri & Dictation History"
+   },
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "ask-siri-dictation",
+       "start": 7000,
+       "end": 7095,
+       "text": "going to Settings > Siri > Siri & Dictation History and tapping Delete Siri & Dictation History"
+      }
+     ],
+     "taps_claude_count": 3
+    }
+   ]
+  },
+  {
+   "id": "siri.apps.use_with_siri_requests",
+   "name": "Use with Siri Requests (per app)",
+   "settings_path": "going to Settings > Siri > Apps > [app name] > Use with Siri Requests",
+   "source": "ask-siri-dictation",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E05",
+    "E07"
+   ],
+   "wording_issue": "Same paragraph also calls it 'Allow Siri Requests'.",
+   "apple_explicit_claims": 0,
+   "apple_summary_claude_note": "E07 is an instruction. E05 describes only the allowed state ('apps you allow to integrate'). Apple never states what stops when an app is switched off, so both v1 cells were removed. This one is a close call; see v1_dispositions.",
+   "apple_name": {
+    "page": "ask-siri-dictation",
+    "start": 7225,
+    "end": 7247,
+    "text": "Use with Siri Requests"
+   },
+   "apple_name_variants": [
+    {
+     "page": "ask-siri-dictation",
+     "start": 7143,
+     "end": 7162,
+     "text": "Allow Siri Requests"
+    }
+   ],
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "ask-siri-dictation",
+       "start": 7178,
+       "end": 7247,
+       "text": "going to Settings > Siri > Apps > [app name] > Use with Siri Requests"
+      }
+     ],
+     "taps_claude_count": 4
+    }
+   ],
+   "route_claude_note": "Per app: repeat for each app. Apple calls it 'Allow Siri Requests' and 'Use with Siri Requests' in the same sentence."
+  },
+  {
+   "id": "siri.apps.learn_from_this_app",
+   "name": "Learn from this App (per app)",
+   "settings_path": "go to Settings > Siri > Apps > [app name], then tap to turn off Learn from this App",
+   "source": "ask-siri-dictation",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E08"
+   ],
+   "wording_issue": "Apple does not say whether it affects Dictation; findings F1 and F2 show Dictation still using contact entries with it off for Contacts.",
+   "apple_explicit_claims": 1,
+   "apple_summary_claude_note": "E08: stops the app 'contributing information to personalize Siri'. Recorded as used_on_device, stops, for app_donated_data x siri_suggestions. Apple does not say whether Dictation is affected (see findings F1/F2).",
+   "apple_name": {
+    "page": "ask-siri-dictation",
+    "start": 7784,
+    "end": 7803,
+    "text": "Learn from this App"
+   },
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "ask-siri-dictation",
+       "start": 7720,
+       "end": 7803,
+       "text": "go to Settings > Siri > Apps > [app name], then tap to turn off Learn from this App"
+      }
+     ],
+     "taps_claude_count": 4
+    },
+    {
+     "steps": [
+      {
+       "page": "ios26-guide-siri-suggestions",
+       "start": 513,
+       "end": 551,
+       "text": "Go to the Settings app on your iPhone."
+      },
+      {
+       "page": "ios26-guide-siri-suggestions",
+       "start": 552,
+       "end": 607,
+       "text": "Tap Siri (or Apple Intelligence & Siri), then tap Apps."
+      },
+      {
+       "page": "ios26-guide-siri-suggestions",
+       "start": 608,
+       "end": 649,
+       "text": "Tap an app, then turn settings on or off."
+      }
+     ],
+     "taps_claude_count": 4
+    }
+   ],
+   "route_claude_note": "Per app: repeat for each app. The guide's route does not name the switch."
+  },
+  {
+   "id": "siri.app_clips.learn",
+   "name": "Learn from App Clips",
+   "settings_path": "go to Settings > Siri > App Clips and tap to turn off Learn from App Clips",
+   "source": "ask-siri-dictation",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E09"
+   ],
+   "apple_explicit_claims": 1,
+   "apple_summary_claude_note": "E09, same wording as E08, for app clips.",
+   "apple_name": {
+    "page": "ask-siri-dictation",
+    "start": 7928,
+    "end": 7948,
+    "text": "Learn from App Clips"
+   },
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "ask-siri-dictation",
+       "start": 7874,
+       "end": 7948,
+       "text": "go to Settings > Siri > App Clips and tap to turn off Learn from App Clips"
+      }
+     ],
+     "taps_claude_count": 3
+    }
+   ]
+  },
+  {
+   "id": "siri.show_in_app_library",
+   "name": "Show in App Library",
+   "settings_path": "going to Settings > Siri and tapping to turn off / “Show in App Library”",
+   "source": "ask-siri-dictation",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E10"
+   ],
+   "wording_issue": "Privacy page (2026-09-14) names differ from the iOS 26 user guide; check names on the device.",
+   "apple_explicit_claims": 0,
+   "apple_summary_claude_note": "E10 says turning this off 'disable[s] Siri Suggestions' in that place, meaning suggestions stop being shown. Apple states no effect on any data or action (learning, sending, storing). Apple also does not map each of the four switches to one of the places it lists ('in apps, or when sharing, searching, or listening'). No claim.",
+   "apple_name": {
+    "page": "ask-siri-dictation",
+    "start": 7422,
+    "end": 7441,
+    "text": "Show in App Library"
+   },
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "ask-siri-dictation",
+       "start": 7372,
+       "end": 7420,
+       "text": "going to Settings > Siri and tapping to turn off"
+      },
+      {
+       "page": "ask-siri-dictation",
+       "start": 7421,
+       "end": 7442,
+       "text": "“Show in App Library”"
+      }
+     ],
+     "taps_claude_count": 2
+    }
+   ]
+  },
+  {
+   "id": "siri.show_in_spotlight",
+   "name": "Show in Spotlight",
+   "settings_path": "going to Settings > Siri and tapping to turn off / “Show in Spotlight”",
+   "source": "ask-siri-dictation",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E10"
+   ],
+   "wording_issue": "Privacy page (2026-09-14) names differ from the iOS 26 user guide; check names on the device.",
+   "apple_explicit_claims": 0,
+   "apple_summary_claude_note": "E10 says turning this off 'disable[s] Siri Suggestions' in that place, meaning suggestions stop being shown. Apple states no effect on any data or action (learning, sending, storing). Apple also does not map each of the four switches to one of the places it lists ('in apps, or when sharing, searching, or listening'). No claim.",
+   "apple_name": {
+    "page": "ask-siri-dictation",
+    "start": 7445,
+    "end": 7462,
+    "text": "Show in Spotlight"
+   },
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "ask-siri-dictation",
+       "start": 7372,
+       "end": 7420,
+       "text": "going to Settings > Siri and tapping to turn off"
+      },
+      {
+       "page": "ask-siri-dictation",
+       "start": 7444,
+       "end": 7463,
+       "text": "“Show in Spotlight”"
+      }
+     ],
+     "taps_claude_count": 2
+    }
+   ]
+  },
+  {
+   "id": "siri.show_when_sharing",
+   "name": "Show When Sharing",
+   "settings_path": "going to Settings > Siri and tapping to turn off / “Show When Sharing”",
+   "source": "ask-siri-dictation",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E10"
+   ],
+   "wording_issue": "Privacy page (2026-09-14) names differ from the iOS 26 user guide; check names on the device.",
+   "apple_explicit_claims": 0,
+   "apple_summary_claude_note": "E10 says turning this off 'disable[s] Siri Suggestions' in that place, meaning suggestions stop being shown. Apple states no effect on any data or action (learning, sending, storing). Apple also does not map each of the four switches to one of the places it lists ('in apps, or when sharing, searching, or listening'). No claim.",
+   "apple_name": {
+    "page": "ask-siri-dictation",
+    "start": 7466,
+    "end": 7483,
+    "text": "Show When Sharing"
+   },
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "ask-siri-dictation",
+       "start": 7372,
+       "end": 7420,
+       "text": "going to Settings > Siri and tapping to turn off"
+      },
+      {
+       "page": "ask-siri-dictation",
+       "start": 7465,
+       "end": 7484,
+       "text": "“Show When Sharing”"
+      }
+     ],
+     "taps_claude_count": 2
+    }
+   ]
+  },
+  {
+   "id": "siri.show_when_listening",
+   "name": "Show When Listening",
+   "settings_path": "going to Settings > Siri and tapping to turn off / “Show When Listening”",
+   "source": "ask-siri-dictation",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E10"
+   ],
+   "wording_issue": "Privacy page (2026-09-14) names differ from the iOS 26 user guide; check names on the device.",
+   "apple_explicit_claims": 0,
+   "apple_summary_claude_note": "E10 says turning this off 'disable[s] Siri Suggestions' in that place, meaning suggestions stop being shown. Apple states no effect on any data or action (learning, sending, storing). Apple also does not map each of the four switches to one of the places it lists ('in apps, or when sharing, searching, or listening'). No claim.",
+   "apple_name": {
+    "page": "ask-siri-dictation",
+    "start": 7490,
+    "end": 7509,
+    "text": "Show When Listening"
+   },
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "ask-siri-dictation",
+       "start": 7372,
+       "end": 7420,
+       "text": "going to Settings > Siri and tapping to turn off"
+      },
+      {
+       "page": "ask-siri-dictation",
+       "start": 7489,
+       "end": 7510,
+       "text": "“Show When Listening”"
+      }
+     ],
+     "taps_claude_count": 2
+    }
+   ]
+  },
+  {
+   "id": "icloud.siri",
+   "name": "Siri in iCloud",
+   "settings_path": "going to Settings > [your name] > iCloud > Saved to iCloud > See All and tapping to turn off Siri",
+   "source": "ask-siri-dictation",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E13",
+    "E14",
+    "E82"
+   ],
+   "wording_issue": "Apple calls this 'disable Siri'; it controls sync only. Whether voice-setup audio sync (E15) also stops is not stated.",
+   "controls_destination": "icloud_sync",
+   "apple_explicit_claims": 1,
+   "apple_summary_claude_note": "E13 and two guide pages: turning it off stops 'Siri personalization' syncing across devices. Recorded as synced_across_devices, stops, for siri_settings_sync (siri_suggestions, and less certainly siri_requests). The settings part of that touchpoint, voice-setup audio (E15) and existing iCloud data are not stated. [2026-09-26 how-to rule: the Siri-requests claim was removed; Apple says 'Siri personalization'.]",
+   "apple_name": {
+    "page": "ask-siri-dictation",
+    "start": 8528,
+    "end": 8532,
+    "text": "Siri"
+   },
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "ask-siri-dictation",
+       "start": 8435,
+       "end": 8532,
+       "text": "going to Settings > [your name] > iCloud > Saved to iCloud > See All and tapping to turn off Siri"
+      }
+     ],
+     "taps_claude_count": 5
+    },
+    {
+     "steps": [
+      {
+       "page": "ios26-guide-tell-siri-about-yourself",
+       "start": 1258,
+       "end": 1296,
+       "text": "Go to the Settings app on your iPhone."
+      },
+      {
+       "page": "ios26-guide-tell-siri-about-yourself",
+       "start": 1297,
+       "end": 1328,
+       "text": "Tap your name, then tap iCloud."
+      },
+      {
+       "page": "ios26-guide-tell-siri-about-yourself",
+       "start": 1329,
+       "end": 1361,
+       "text": "Tap See All, then turn off Siri."
+      }
+     ],
+     "taps_claude_count": 4
+    }
+   ],
+   "route_claude_note": "The privacy page's route includes 'Saved to iCloud'; the guide's route does not."
+  },
+  {
+   "id": "location.siri",
+   "name": "Location Services for Siri",
+   "settings_path": "going to Settings > Privacy & Security > Location Services > Siri and tapping Never",
+   "source": "ask-siri-dictation",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E16",
+    "E17"
+   ],
+   "wording_issue": "IP-based approximation (E18) is described with no switch.",
+   "apple_explicit_claims": 0,
+   "apple_summary_claude_note": "There is no explicit off-state statement. E16 is how-to text. E17 (location sent) and E30 (approximate location stored with request data) are phrased only as 'if you have turned on Location Services for Siri'. A reader would likely infer that Never stops both, but Apple does not say so.",
+   "apple_name": {
+    "page": "ask-siri-dictation",
+    "start": 8006,
+    "end": 8032,
+    "text": "Location Services for Siri"
+   },
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "ask-siri-dictation",
+       "start": 8036,
+       "end": 8119,
+       "text": "going to Settings > Privacy & Security > Location Services > Siri and tapping Never"
+      }
+     ],
+     "taps_claude_count": 4
+    }
+   ]
+  },
+  {
+   "id": "location.system.suggestions_search",
+   "name": "Suggestions & Search (System Services)",
+   "settings_path": "going to Settings > Privacy & Security > Location Services > System Services and tapping to turn off Suggestions & Search",
+   "source": "location-services",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E19",
+    "E34",
+    "E40",
+    "E41"
+   ],
+   "wording_issue": "One switch, three names: Location Services for Siri Suggestions (E19), Location Services for Search (E34), Suggestions & Search. Opt-out narrowed to 'precise' location (E40).",
+   "apple_explicit_claims": 2,
+   "apple_summary_claude_note": "E40: precise location not sent to Apple, for search and siri_suggestions. Apple uses three names for this one switch (E19, E34, and the Suggestions & Search label). E41 IP approximation is described without reference to the switch.",
+   "apple_name": {
+    "page": "ask-siri-dictation",
+    "start": 8320,
+    "end": 8340,
+    "text": "Suggestions & Search"
+   },
+   "apple_name_variants": [
+    {
+     "page": "ask-siri-dictation",
+     "start": 8177,
+     "end": 8215,
+     "text": "Location Services for Siri Suggestions"
+    },
+    {
+     "page": "siri-suggestions-search",
+     "start": 3827,
+     "end": 3855,
+     "text": "Location Services for Search"
+    },
+    {
+     "page": "location-services",
+     "start": 3329,
+     "end": 3377,
+     "text": "Location Services for location-based suggestions"
+    }
+   ],
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "ask-siri-dictation",
+       "start": 8219,
+       "end": 8340,
+       "text": "going to Settings > Privacy & Security > Location Services > System Services and tapping to turn off Suggestions & Search"
+      }
+     ],
+     "taps_claude_count": 5
+    }
+   ],
+   "route_claude_note": "One switch; Apple calls it by three different names across its pages."
+  },
+  {
+   "id": "location.global",
+   "name": "Location Services (global)",
+   "settings_path": "go to Settings > Privacy & Security > Location Services, and either tap to turn off global Location Services",
+   "source": "location-services",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E35",
+    "E42"
+   ],
+   "wording_issue": "Search page says location 'will not be sent'; other pages describe IP approximation.",
+   "apple_explicit_claims": 1,
+   "apple_summary_claude_note": "E35: location not sent to Apple, recorded for search only. E42 ('regardless of the state of the Location Services switch') is explicit but concerns apps/websites approximating via IP, not Apple or any audited feature. The Location Services page also says emergency-call location may be used 'regardless of whether you enable Location Services', which is outside the audited features, so no claim is made.",
+   "apple_name": {
+    "page": "siri-suggestions-search",
+    "start": 3998,
+    "end": 4015,
+    "text": "Location Services"
+   },
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "location-services",
+       "start": 6529,
+       "end": 6637,
+       "text": "go to Settings > Privacy & Security > Location Services, and either tap to turn off global Location Services"
+      }
+     ],
+     "taps_claude_count": 3
+    }
+   ]
+  },
+  {
+   "id": "analytics.improve_siri_dictation",
+   "name": "Improve Siri and Dictation",
+   "settings_path": "You can change your setting for Improve Siri and Dictation at any time. / To do so, go to Settings > Privacy & Security > Analytics & Improvements.",
+   "source": "improve-siri-dictation",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E22",
+    "E23",
+    "E52",
+    "E53"
+   ],
+   "wording_issue": "Named 'Improve Siri and Dictation' and 'Improve Siri & Dictation'; also governs Translate (E54).",
+   "apple_explicit_claims": 7,
+   "apple_summary_claude_note": "Only E22 and E23/E118 state the off state directly (not stored). Everything on the default-behaviour page (ask-siri-dictation) is recorded as continuing. Not claimed: human review of audio stops (the improve page says the opt-in 'allows Apple to store and review' audio, but no sentence says audio is not reviewed when off); contacts/installed-app names seen by reviewers (E53 sits on the opt-in page but review also happens by default per E24, so no stops); Siri's responses and Translate (opt-in page only describes the on state). E134 (opt-in choice carries to new devices) is about the on state and not a data effect.",
+   "apple_name": {
+    "page": "ask-siri-dictation",
+    "start": 937,
+    "end": 963,
+    "text": "Improve Siri and Dictation"
+   },
+   "apple_name_variants": [
+    {
+     "page": "siri-suggestions-search",
+     "start": 3432,
+     "end": 3456,
+     "text": "Improve Siri & Dictation"
+    }
+   ],
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "improve-siri-dictation",
+       "start": 2766,
+       "end": 2837,
+       "text": "You can change your setting for Improve Siri and Dictation at any time."
+      },
+      {
+       "page": "improve-siri-dictation",
+       "start": 2838,
+       "end": 2911,
+       "text": "To do so, go to Settings > Privacy & Security > Analytics & Improvements."
+      }
+     ],
+     "taps_claude_count": 3
+    }
+   ],
+   "route_claude_note": "Apple's route stops at the Analytics & Improvements screen; the switch on that screen is not named in the route sentence."
+  },
+  {
+   "id": "search.help_improve_search",
+   "name": "Help Apple Improve Search",
+   "settings_path": "going to Settings > Search and tapping to turn off Help Apple Improve Search",
+   "source": "siri-suggestions-search",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E31",
+    "E32",
+    "E56"
+   ],
+   "wording_issue": "Same sentence calls it 'Improve Search' and 'Help Apple Improve Search'.",
+   "apple_explicit_claims": 2,
+   "apple_summary_claude_note": "E31: queries not stored by Apple for Search. E32: Siri searches still stored if Improve Siri & Dictation is on. Sending, model fine-tuning, and sampling to search tools are described with no switch condition. None is stated to continue 'regardless', so they are not claimed.",
+   "apple_name": {
+    "page": "siri-suggestions-search",
+    "start": 3308,
+    "end": 3333,
+    "text": "Help Apple Improve Search"
+   },
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "siri-suggestions-search",
+       "start": 3257,
+       "end": 3333,
+       "text": "going to Settings > Search and tapping to turn off Help Apple Improve Search"
+      }
+     ],
+     "taps_claude_count": 2
+    }
+   ]
+  },
+  {
+   "id": "search.show_recent_searches",
+   "name": "Show Recent Searches",
+   "settings_path": "going to Settings > Search and tapping to turn off those features",
+   "source": "siri-suggestions-search",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E33"
+   ],
+   "wording_issue": "Description does not match the switch name.",
+   "apple_explicit_claims": 0,
+   "apple_summary_claude_note": "E33 says only that turning it off removes 'web-based content and search results'. That is about displayed content, not a data action. It is also a shared sentence with Show Related Content and does not match the switch name.",
+   "apple_name": {
+    "page": "siri-suggestions-search",
+    "start": 3692,
+    "end": 3712,
+    "text": "Show Recent Searches"
+   },
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "siri-suggestions-search",
+       "start": 3744,
+       "end": 3809,
+       "text": "going to Settings > Search and tapping to turn off those features"
+      }
+     ],
+     "taps_claude_count": 2
+    }
+   ]
+  },
+  {
+   "id": "search.show_related_content",
+   "name": "Show Related Content",
+   "settings_path": "going to Settings > Search and tapping to turn off those features",
+   "source": "siri-suggestions-search",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E33"
+   ],
+   "apple_explicit_claims": 0,
+   "apple_summary_claude_note": "Same as Show Recent Searches: E33 describes content shown, not what data is sent or stored.",
+   "apple_name": {
+    "page": "siri-suggestions-search",
+    "start": 3719,
+    "end": 3739,
+    "text": "Show Related Content"
+   },
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "siri-suggestions-search",
+       "start": 3744,
+       "end": 3809,
+       "text": "going to Settings > Search and tapping to turn off those features"
+      }
+     ],
+     "taps_claude_count": 2
+    }
+   ]
+  },
+  {
+   "id": "safari.search_engine_suggestions",
+   "name": "Search Engine Suggestions",
+   "settings_path": null,
+   "source": "siri-suggestions-search",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E38"
+   ],
+   "wording_issue": "No Settings path given.",
+   "apple_explicit_claims": 0,
+   "apple_summary_claude_note": "E38/E114 describe only the on-state: Safari asks the selected search engine based on what you've typed (safari_typed_text shared with a third party). The off-state is never stated.",
+   "apple_name": {
+    "page": "siri-suggestions-search",
+    "start": 2724,
+    "end": 2749,
+    "text": "Search Engine Suggestions"
+   },
+   "apple_routes": [],
+   "route_claude_note": "Searched all 128 saved Apple pages for this setting's name; none gives a Settings route to it. See records/no_route_search.json. Observed on the user's phone: see observed_routes O001.",
+   "observed_routes": [
+    {
+     "id": "O001",
+     "by": {
+      "kind": "person",
+      "id": "the user",
+      "date": "2026-09-26"
+     },
+     "device": "iPhone 14 Plus",
+     "ios": "26.7 (as stated by the user; not shown in the screenshot)",
+     "method": "Typed 'Search engine' into the search field in the Settings app",
+     "shown_on_screen": "Search Engine Suggestions — Apps → Safari",
+     "screenshot": "screenshots/O001.png",
+     "screenshot_time_on_screen": "18:42",
+     "also_shown": [
+      "Search Engine — Apps → Safari",
+      "Private Search Engine — Apps → Safari"
+     ],
+     "user_note": "The route is through Apps because those choices are under each individual app.",
+     "status": "found",
+     "original_sha256": "7c7fbef78ac6df68e0f02e6f9e39c27f543cd4681af61b0403c7ba89d2030dc1",
+     "published_sha256": "81813d0a75285bd69c5fabd0b5007abe9a83188df211f61fae93cd093a0d3c68"
+    }
+   ]
+  },
+  {
+   "id": "safari.preload_top_hit",
+   "name": "Preload Top Hit",
+   "settings_path": null,
+   "source": "siri-suggestions-search",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E39"
+   ],
+   "wording_issue": "No Settings path given.",
+   "apple_explicit_claims": 0,
+   "apple_summary_claude_note": "Apple does state the off-state ('If you disable this option, the page will load normally'), but that is about page loading. It does not say whether bookmarks or history stop being used on device to determine the Top Hit, or whether a background request to the site stops. There is no data-action claim.",
+   "apple_name": {
+    "page": "siri-suggestions-search",
+    "start": 2882,
+    "end": 2897,
+    "text": "Preload Top Hit"
+   },
+   "apple_routes": [],
+   "route_claude_note": "Searched all 128 saved Apple pages for this setting's name; none gives a Settings route to it. See records/no_route_search.json."
+  },
+  {
+   "id": "screen_time.siri_dictation",
+   "name": "Screen Time: Siri & Dictation",
+   "settings_path": "going to Settings > Screen Time > Content & Privacy Restrictions > Allowed Apps & Features and tapping Siri & Dictation",
+   "source": "ask-siri-dictation",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E20"
+   ],
+   "apple_explicit_claims": 0,
+   "apple_summary_claude_note": "E20 restricts 'the ability to use Siri and Dictation altogether'; it states no data effect. All 29 v1 cells removed.",
+   "apple_name": {
+    "page": "ask-siri-dictation",
+    "start": 8711,
+    "end": 8727,
+    "text": "Siri & Dictation"
+   },
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "ask-siri-dictation",
+       "start": 8608,
+       "end": 8727,
+       "text": "going to Settings > Screen Time > Content & Privacy Restrictions > Allowed Apps & Features and tapping Siri & Dictation"
+      }
+     ],
+     "taps_claude_count": 4
+    }
+   ]
+  },
+  {
+   "id": "privacy.speech_recognition",
+   "name": "Speech Recognition (per app)",
+   "settings_path": "going to Settings > Privacy & Security > Speech Recognition",
+   "source": "ask-siri-dictation",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E21"
+   ],
+   "wording_issue": "Described as controlling which apps 'use Siri' for transcription.",
+   "apple_explicit_claims": 0,
+   "apple_summary_claude_note": "E57 says 'if you choose to allow apps to use Speech Recognition for transcription, the audio data to be transcribed may be sent to Apple'. That states only the allowed state; Apple never says the audio is not sent when an app is not allowed. E21/E59 are how-to instructions. A stops claim for audio x app_speech_recognition x sent_to_apple would be an inference, so none is made.",
+   "apple_name": {
+    "page": "ask-siri-dictation",
+    "start": 8827,
+    "end": 8845,
+    "text": "Speech Recognition"
+   },
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "ask-siri-dictation",
+       "start": 8786,
+       "end": 8845,
+       "text": "going to Settings > Privacy & Security > Speech Recognition"
+      }
+     ],
+     "taps_claude_count": 2
+    }
+   ],
+   "route_claude_note": "Apple's route reaches the screen; the per-app switches on it are not named."
+  },
+  {
+   "id": "health.siri_access",
+   "name": "Siri access to Health data",
+   "settings_path": "going to Settings > Apps > Health > Data Access & Devices > Siri, then tapping to turn off Access Health Data",
+   "source": "health-app",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E43"
+   ],
+   "wording_issue": "Health information in unrecognised requests is still sent to Apple (E44).",
+   "apple_explicit_claims": 0,
+   "apple_summary_claude_note": "E43/E122 are how-to only. E123 (recognised Health requests: Health data not stored or made accessible to Apple) and E44/E112 (health info in unrecognised requests is sent to Apple) are not tied to this switch in Apple's text. v1 stops cell removed.",
+   "apple_name": {
+    "page": "health-app",
+    "start": 14517,
+    "end": 14535,
+    "text": "Access Health Data"
+   },
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "health-app",
+       "start": 14426,
+       "end": 14535,
+       "text": "going to Settings > Apps > Health > Data Access & Devices > Siri, then tapping to turn off Access Health Data"
+      }
+     ],
+     "taps_claude_count": 5
+    }
+   ]
+  },
+  {
+   "id": "analytics.share_icloud_analytics",
+   "name": "Share iCloud Analytics",
+   "settings_path": "go to Settings > Privacy & Security > Analytics & Improvements and tap to turn off Share iCloud Analytics",
+   "source": "icloud-analytics",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E45",
+    "E46"
+   ],
+   "apple_explicit_claims": 0,
+   "apple_summary_claude_note": "E45/E108 describe what enabling allows (analytics of Apple Account usage and data, to improve Siri); E109 describes privacy techniques; E46 is how-to. Nothing states what stops when off.",
+   "apple_name": {
+    "page": "icloud-analytics",
+    "start": 756,
+    "end": 778,
+    "text": "Share iCloud Analytics"
+   },
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "icloud-analytics",
+       "start": 673,
+       "end": 778,
+       "text": "go to Settings > Privacy & Security > Analytics & Improvements and tap to turn off Share iCloud Analytics"
+      }
+     ],
+     "taps_claude_count": 3
+    }
+   ]
+  },
+  {
+   "id": "analytics.improve_assistive_voice",
+   "name": "Improve Assistive Voice Features",
+   "settings_path": "go to Settings > Privacy & Security > Analytics & Improvements, and tap to turn off Improve Assistive Voice Features",
+   "source": "improve-assistive-voice-features",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E47",
+    "E48"
+   ],
+   "apple_explicit_claims": 0,
+   "apple_summary_claude_note": "E110: 'If you opt in ..., Apple will collect the audio and transcripts' of Vocal Shortcuts and Voice Control, used also to improve Siri (E111). Only the opted-in state is described; no sentence says collection does not happen without the opt-in. E48 is how-to.",
+   "apple_name": {
+    "page": "improve-assistive-voice-features",
+    "start": 1710,
+    "end": 1742,
+    "text": "Improve Assistive Voice Features"
+   },
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "improve-assistive-voice-features",
+       "start": 1626,
+       "end": 1742,
+       "text": "go to Settings > Privacy & Security > Analytics & Improvements, and tap to turn off Improve Assistive Voice Features"
+      }
+     ],
+     "taps_claude_count": 3
+    }
+   ]
+  },
+  {
+   "id": "analytics.improve_health_activity",
+   "name": "Improve Health & Activity",
+   "settings_path": null,
+   "source": "improve-health-activity",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E49"
+   ],
+   "wording_issue": "No Settings path given.",
+   "apple_explicit_claims": 0,
+   "apple_summary_claude_note": "E49 is a list item of what may be collected (Siri use with Health). The page describes only the enabled state and gives no off-state statement or Settings path.",
+   "apple_name": {
+    "page": "improve-health-activity",
+    "start": 10496,
+    "end": 10521,
+    "text": "Improve Health & Activity"
+   },
+   "apple_routes": [],
+   "route_claude_note": "Searched all 128 saved Apple pages for this setting's name; none gives a Settings route to it. See records/no_route_search.json."
+  },
+  {
+   "id": "books.siri.show_in_app",
+   "name": "Books: Show in App",
+   "settings_path": "going to Settings > Apps > Books > Siri, and tapping to turn off Show in App",
+   "source": "apple-books",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E50"
+   ],
+   "apple_explicit_claims": 0,
+   "apple_summary_claude_note": "apple-books: 'Siri suggests content you might like based on on-device processing ... This information is not sent to Apple. You can disable this ...'. The not-sent statement holds whether the switch is on or off, so it is neither a 'stops' nor a 'continues' for this switch. What 'this' disables is the suggesting. Apple states no data effect of the switch.",
+   "apple_name": {
+    "page": "apple-books",
+    "start": 6206,
+    "end": 6217,
+    "text": "Show in App"
+   },
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "apple-books",
+       "start": 6141,
+       "end": 6217,
+       "text": "going to Settings > Apps > Books > Siri, and tapping to turn off Show in App"
+      }
+     ],
+     "taps_claude_count": 4
+    }
+   ]
+  },
+  {
+   "id": "news.siri.show_in_app",
+   "name": "News: Show in App",
+   "settings_path": "going to Settings > Apps > News > Siri & Search, and tapping to turn off Show in App",
+   "source": "apple-news",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E51"
+   ],
+   "wording_issue": "Path names the menu 'Siri & Search'.",
+   "apple_explicit_claims": 0,
+   "apple_summary_claude_note": "apple-news has the same pattern as Books ('Siri suggests stories, channels, and topics you may like ... not sent to Apple ... disable this'). The not-sent statement holds regardless of the switch. Apple states no off-state data effect.",
+   "apple_name": {
+    "page": "apple-news",
+    "start": 5121,
+    "end": 5132,
+    "text": "Show in App"
+   },
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "apple-news",
+       "start": 5048,
+       "end": 5132,
+       "text": "going to Settings > Apps > News > Siri & Search, and tapping to turn off Show in App"
+      }
+     ],
+     "taps_claude_count": 4
+    }
+   ],
+   "route_claude_note": "Books' route ends 'Siri'; News' route ends 'Siri & Search'."
+  },
+  {
+   "id": "guide.allow_siri_when_locked",
+   "name": "Allow Siri When Locked",
+   "settings_path": "Go to the Settings app on your iPhone. / Tap Siri (or Apple Intelligence & Siri), then do any of the following: / Turn off Allow Siri When Locked.",
+   "source": "ios26-guide-change-siri-settings",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E68"
+   ],
+   "wording_issue": "From the iOS 26 user guide (en-gb edition), captured verbatim 2026-09-26.",
+   "apple_explicit_claims": 0,
+   "apple_summary_claude_note": "E68 is functional ('Prevent access to Siri when iPhone is locked'). No data effect stated.",
+   "apple_name": {
+    "page": "ios26-guide-change-siri-settings",
+    "start": 1675,
+    "end": 1697,
+    "text": "Allow Siri When Locked"
+   },
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "ios26-guide-change-siri-settings",
+       "start": 1381,
+       "end": 1419,
+       "text": "Go to the Settings app on your iPhone."
+      },
+      {
+       "page": "ios26-guide-change-siri-settings",
+       "start": 1420,
+       "end": 1490,
+       "text": "Tap Siri (or Apple Intelligence & Siri), then do any of the following:"
+      },
+      {
+       "page": "ios26-guide-change-siri-settings",
+       "start": 1666,
+       "end": 1698,
+       "text": "Turn off Allow Siri When Locked."
+      }
+     ],
+     "taps_claude_count": 2
+    }
+   ]
+  },
+  {
+   "id": "guide.siri_responses",
+   "name": "Siri Responses",
+   "settings_path": "Go to the Settings app on your iPhone. / Tap Siri (or Apple Intelligence & Siri), then do any of the following: / Tap Siri Responses, then choose an option below Spoken Responses.",
+   "source": "ios26-guide-change-siri-settings",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E69"
+   ],
+   "wording_issue": "From the iOS 26 user guide (en-gb edition), captured verbatim 2026-09-26.",
+   "apple_explicit_claims": 0,
+   "apple_summary_claude_note": "E69 is how-to about spoken responses. No data effect stated.",
+   "apple_name": {
+    "page": "ios26-guide-change-siri-settings",
+    "start": 891,
+    "end": 905,
+    "text": "Siri Responses"
+   },
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "ios26-guide-change-siri-settings",
+       "start": 540,
+       "end": 578,
+       "text": "Go to the Settings app on your iPhone."
+      },
+      {
+       "page": "ios26-guide-change-siri-settings",
+       "start": 579,
+       "end": 649,
+       "text": "Tap Siri (or Apple Intelligence & Siri), then do any of the following:"
+      },
+      {
+       "page": "ios26-guide-change-siri-settings",
+       "start": 887,
+       "end": 952,
+       "text": "Tap Siri Responses, then choose an option below Spoken Responses."
+      }
+     ],
+     "taps_claude_count": 3
+    }
+   ]
+  },
+  {
+   "id": "guide.call_hang_up",
+   "name": "Call Hang Up",
+   "settings_path": "Go to the Settings app on your iPhone. / Tap Siri (or Apple Intelligence & Siri), then do any of the following: / Tap Call Hang Up, then turn on Call Hang Up.",
+   "source": "ios26-guide-siri-accessibility",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E74",
+    "E91"
+   ],
+   "wording_issue": "From the iOS 26 user guide (en-gb edition), captured verbatim 2026-09-26.",
+   "apple_explicit_claims": 0,
+   "apple_summary_claude_note": "E74/E91 how-to. The guide says 'Requires download of speech models' and 'Participants on the call will hear you', neither a statement about data sent to or stored by Apple.",
+   "apple_name": {
+    "page": "ios26-guide-change-siri-settings",
+    "start": 2429,
+    "end": 2441,
+    "text": "Call Hang Up"
+   },
+   "apple_name_variants": [
+    {
+     "page": "ios26-guide-siri-accessibility",
+     "start": 2572,
+     "end": 2583,
+     "text": "Call Hangup"
+    }
+   ],
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "ios26-guide-change-siri-settings",
+       "start": 2254,
+       "end": 2292,
+       "text": "Go to the Settings app on your iPhone."
+      },
+      {
+       "page": "ios26-guide-change-siri-settings",
+       "start": 2293,
+       "end": 2363,
+       "text": "Tap Siri (or Apple Intelligence & Siri), then do any of the following:"
+      },
+      {
+       "page": "ios26-guide-change-siri-settings",
+       "start": 2398,
+       "end": 2442,
+       "text": "Tap Call Hang Up, then turn on Call Hang Up."
+      }
+     ],
+     "taps_claude_count": 3
+    },
+    {
+     "steps": [
+      {
+       "page": "ios26-guide-siri-accessibility",
+       "start": 2503,
+       "end": 2584,
+       "text": "Go to Settings > Accessibility > Siri, tap Call Hangup, then turn on Call Hangup."
+      }
+     ],
+     "taps_claude_count": 4
+    }
+   ],
+   "route_claude_note": "Two routes on two guide pages, spelled 'Call Hang Up' and 'Call Hangup'."
+  },
+  {
+   "id": "guide.auto_send_messages",
+   "name": "Automatically Send Messages",
+   "settings_path": "Go to the Settings app on your iPhone. / Tap Siri (or Apple Intelligence & Siri), then do any of the following: / Tap Messaging with Siri, then turn on Automatically Send Messages.",
+   "source": "ios26-guide-change-siri-settings",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E75"
+   ],
+   "wording_issue": "From the iOS 26 user guide (en-gb edition), captured verbatim 2026-09-26.",
+   "apple_explicit_claims": 0,
+   "apple_summary_claude_note": "E75 how-to (skip confirmation). No data effect stated.",
+   "apple_name": {
+    "page": "ios26-guide-change-siri-settings",
+    "start": 2564,
+    "end": 2591,
+    "text": "Automatically Send Messages"
+   },
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "ios26-guide-change-siri-settings",
+       "start": 2254,
+       "end": 2292,
+       "text": "Go to the Settings app on your iPhone."
+      },
+      {
+       "page": "ios26-guide-change-siri-settings",
+       "start": 2293,
+       "end": 2363,
+       "text": "Tap Siri (or Apple Intelligence & Siri), then do any of the following:"
+      },
+      {
+       "page": "ios26-guide-change-siri-settings",
+       "start": 2526,
+       "end": 2592,
+       "text": "Tap Messaging with Siri, then turn on Automatically Send Messages."
+      }
+     ],
+     "taps_claude_count": 3
+    }
+   ]
+  },
+  {
+   "id": "guide.show_in_app",
+   "name": "Show in App",
+   "settings_path": "Go to the Settings app on your iPhone. / Tap Siri (or Apple Intelligence & Siri), then turn on or off any of the following: / Show in App",
+   "source": "ios26-guide-siri-suggestions",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E78"
+   ],
+   "wording_issue": "From the iOS 26 user guide (en-gb edition), captured verbatim 2026-09-26.",
+   "apple_explicit_claims": 0,
+   "apple_summary_claude_note": "The iOS 26 guide only lists the switch name (E78) in how-to steps. It says nothing about data.",
+   "apple_name": {
+    "page": "ios26-guide-siri-suggestions",
+    "start": 805,
+    "end": 816,
+    "text": "Show in App"
+   },
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "ios26-guide-siri-suggestions",
+       "start": 683,
+       "end": 721,
+       "text": "Go to the Settings app on your iPhone."
+      },
+      {
+       "page": "ios26-guide-siri-suggestions",
+       "start": 722,
+       "end": 804,
+       "text": "Tap Siri (or Apple Intelligence & Siri), then turn on or off any of the following:"
+      },
+      {
+       "page": "ios26-guide-siri-suggestions",
+       "start": 805,
+       "end": 816,
+       "text": "Show in App"
+      }
+     ],
+     "taps_claude_count": 2
+    }
+   ]
+  },
+  {
+   "id": "guide.show_on_home_screen",
+   "name": "Show on Home Screen",
+   "settings_path": "Go to the Settings app on your iPhone. / Tap Siri (or Apple Intelligence & Siri), then turn on or off any of the following: / Show on Home Screen",
+   "source": "ios26-guide-siri-suggestions",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E79"
+   ],
+   "wording_issue": "From the iOS 26 user guide (en-gb edition), captured verbatim 2026-09-26.",
+   "apple_explicit_claims": 0,
+   "apple_summary_claude_note": "Name only (E79), in how-to steps.",
+   "apple_name": {
+    "page": "ios26-guide-siri-suggestions",
+    "start": 817,
+    "end": 836,
+    "text": "Show on Home Screen"
+   },
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "ios26-guide-siri-suggestions",
+       "start": 683,
+       "end": 721,
+       "text": "Go to the Settings app on your iPhone."
+      },
+      {
+       "page": "ios26-guide-siri-suggestions",
+       "start": 722,
+       "end": 804,
+       "text": "Tap Siri (or Apple Intelligence & Siri), then turn on or off any of the following:"
+      },
+      {
+       "page": "ios26-guide-siri-suggestions",
+       "start": 817,
+       "end": 836,
+       "text": "Show on Home Screen"
+      }
+     ],
+     "taps_claude_count": 2
+    }
+   ]
+  },
+  {
+   "id": "guide.suggest_app",
+   "name": "Suggest App",
+   "settings_path": "Go to the Settings app on your iPhone. / Tap Siri (or Apple Intelligence & Siri), then turn on or off any of the following: / Suggest App",
+   "source": "ios26-guide-siri-suggestions",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E80"
+   ],
+   "wording_issue": "From the iOS 26 user guide (en-gb edition), captured verbatim 2026-09-26.",
+   "apple_explicit_claims": 0,
+   "apple_summary_claude_note": "Name only (E80), in how-to steps.",
+   "apple_name": {
+    "page": "ios26-guide-siri-suggestions",
+    "start": 837,
+    "end": 848,
+    "text": "Suggest App"
+   },
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "ios26-guide-siri-suggestions",
+       "start": 683,
+       "end": 721,
+       "text": "Go to the Settings app on your iPhone."
+      },
+      {
+       "page": "ios26-guide-siri-suggestions",
+       "start": 722,
+       "end": 804,
+       "text": "Tap Siri (or Apple Intelligence & Siri), then turn on or off any of the following:"
+      },
+      {
+       "page": "ios26-guide-siri-suggestions",
+       "start": 837,
+       "end": 848,
+       "text": "Suggest App"
+      }
+     ],
+     "taps_claude_count": 2
+    }
+   ]
+  },
+  {
+   "id": "guide.suggestion_notifications",
+   "name": "Suggestion Notifications",
+   "settings_path": "Go to the Settings app on your iPhone. / Tap Siri (or Apple Intelligence & Siri), then turn on or off any of the following: / Suggestion Notifications",
+   "source": "ios26-guide-siri-suggestions",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E81"
+   ],
+   "wording_issue": "From the iOS 26 user guide (en-gb edition), captured verbatim 2026-09-26.",
+   "apple_explicit_claims": 0,
+   "apple_summary_claude_note": "Name only (E81), in how-to steps.",
+   "apple_name": {
+    "page": "ios26-guide-siri-suggestions",
+    "start": 849,
+    "end": 873,
+    "text": "Suggestion Notifications"
+   },
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "ios26-guide-siri-suggestions",
+       "start": 683,
+       "end": 721,
+       "text": "Go to the Settings app on your iPhone."
+      },
+      {
+       "page": "ios26-guide-siri-suggestions",
+       "start": 722,
+       "end": 804,
+       "text": "Tap Siri (or Apple Intelligence & Siri), then turn on or off any of the following:"
+      },
+      {
+       "page": "ios26-guide-siri-suggestions",
+       "start": 849,
+       "end": 873,
+       "text": "Suggestion Notifications"
+      }
+     ],
+     "taps_claude_count": 2
+    }
+   ]
+  },
+  {
+   "id": "guide.search_per_app",
+   "name": "Search: per-app settings",
+   "settings_path": "Go to the Settings app on your iPhone. / Tap Search, then scroll down and select an app. / Turn settings on or off.",
+   "source": "ios26-guide-change-siri-settings",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E76"
+   ],
+   "wording_issue": "From the iOS 26 user guide (en-gb edition), captured verbatim 2026-09-26.",
+   "apple_explicit_claims": 0,
+   "apple_summary_claude_note": "E76 is a how-to step ('Tap Search, then scroll down and select an app'). The guide says only that it changes 'which apps appear when you search with Siri'. Nothing is said about data.",
+   "apple_name": {
+    "page": "ios26-guide-change-siri-settings",
+    "start": 2867,
+    "end": 2880,
+    "text": "select an app"
+   },
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "ios26-guide-change-siri-settings",
+       "start": 2795,
+       "end": 2833,
+       "text": "Go to the Settings app on your iPhone."
+      },
+      {
+       "page": "ios26-guide-change-siri-settings",
+       "start": 2834,
+       "end": 2881,
+       "text": "Tap Search, then scroll down and select an app."
+      },
+      {
+       "page": "ios26-guide-change-siri-settings",
+       "start": 2882,
+       "end": 2906,
+       "text": "Turn settings on or off."
+      }
+     ],
+     "taps_claude_count": 3
+    }
+   ],
+   "route_claude_note": "Per app. Apple names no switch."
+  },
+  {
+   "id": "guide.type_to_siri",
+   "name": "Type to Siri",
+   "settings_path": "Go to Settings > Accessibility > Siri, then turn on Type to Siri.",
+   "source": "ios26-guide-siri-accessibility",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E88"
+   ],
+   "wording_issue": "From the iOS 26 user guide (en-gb edition), captured verbatim 2026-09-26.",
+   "apple_explicit_claims": 0,
+   "apple_summary_claude_note": "E88 how-to. No data effect stated; Apple's privacy pages do not mention Type to Siri.",
+   "apple_name": {
+    "page": "ios26-guide-siri-accessibility",
+    "start": 1264,
+    "end": 1276,
+    "text": "Type to Siri"
+   },
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "ios26-guide-siri-accessibility",
+       "start": 1212,
+       "end": 1277,
+       "text": "Go to Settings > Accessibility > Siri, then turn on Type to Siri."
+      }
+     ],
+     "taps_claude_count": 3
+    },
+    {
+     "steps": [
+      {
+       "page": "ios26-guide-activate-siri",
+       "start": 4027,
+       "end": 4065,
+       "text": "Go to the Settings app on your iPhone."
+      },
+      {
+       "page": "ios26-guide-activate-siri",
+       "start": 4066,
+       "end": 4121,
+       "text": "Tap Accessibility, tap Siri, then turn on Type to Siri."
+      }
+     ],
+     "taps_claude_count": 3
+    }
+   ],
+   "route_claude_note": "Apple: 'If Apple Intelligence* is turned on, this option may not be shown.'"
+  },
+  {
+   "id": "guide.always_listen",
+   "name": "Always Listen for “Hey Siri”",
+   "settings_path": "Go to Settings > Accessibility > Siri. / To change this, turn on Always Listen for “Hey Siri.”",
+   "source": "ios26-guide-siri-accessibility",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E86"
+   ],
+   "wording_issue": "From the iOS 26 user guide (en-gb edition), captured verbatim 2026-09-26.",
+   "apple_explicit_claims": 0,
+   "apple_summary_claude_note": "E86 how-to (listen when face down). No data effect stated.",
+   "apple_name": {
+    "page": "ios26-guide-siri-accessibility",
+    "start": 815,
+    "end": 844,
+    "text": "Always Listen for “Hey Siri.”"
+   },
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "ios26-guide-siri-accessibility",
+       "start": 290,
+       "end": 328,
+       "text": "Go to Settings > Accessibility > Siri."
+      },
+      {
+       "page": "ios26-guide-siri-accessibility",
+       "start": 791,
+       "end": 844,
+       "text": "To change this, turn on Always Listen for “Hey Siri.”"
+      }
+     ],
+     "taps_claude_count": 3
+    }
+   ]
+  },
+  {
+   "id": "adj.share_iphone_analytics",
+   "name": "Share iPhone Analytics",
+   "settings_path": "Settings > Privacy & Security > Analytics & Improvements > Share iPhone Analytics",
+   "source": "device-analytics",
+   "kind": "switch",
+   "scope": "adjacent",
+   "evidence": []
+  },
+  {
+   "id": "adj.iphone_analytics_location",
+   "name": "iPhone Analytics (location)",
+   "settings_path": "Settings > Privacy & Security > Location Services > System Services > iPhone Analytics",
+   "source": "device-analytics",
+   "kind": "switch",
+   "scope": "adjacent",
+   "evidence": []
+  },
+  {
+   "id": "adj.enhanced_visual_search",
+   "name": "Enhanced Visual Search",
+   "settings_path": "Settings > Apps > Photos > Enhanced Visual Search",
+   "source": "photos",
+   "kind": "switch",
+   "scope": "adjacent",
+   "evidence": []
+  },
+  {
+   "id": "adj.journaling_suggestions",
+   "name": "Journaling Suggestions (all controls)",
+   "settings_path": "Settings > Privacy & Security > Journaling Suggestions",
+   "source": "journaling-suggestions",
+   "kind": "switch",
+   "scope": "adjacent",
+   "evidence": []
+  },
+  {
+   "id": "adj.shazam_icloud",
+   "name": "Shazam Music Recognition iCloud sync",
+   "settings_path": "Settings > [your name] > iCloud > Shazam Music Recognition",
+   "source": "music-recognition",
+   "kind": "switch",
+   "scope": "adjacent",
+   "evidence": []
+  },
+  {
+   "id": "adj.news_location",
+   "name": "News location",
+   "settings_path": "Settings > Privacy & Security > Location Services > News",
+   "source": "apple-news",
+   "kind": "switch",
+   "scope": "adjacent",
+   "evidence": []
+  },
+  {
+   "id": "oos.chatgpt_use",
+   "name": "Use ChatGPT",
+   "settings_path": "Settings > Apple Intelligence & Siri > ChatGPT > Use ChatGPT",
+   "source": "chatgpt-extension",
+   "kind": "switch",
+   "scope": "out_of_scope",
+   "evidence": []
+  },
+  {
+   "id": "oos.chatgpt_confirm",
+   "name": "Confirm ChatGPT Requests",
+   "settings_path": "Settings > Apple Intelligence & Siri > ChatGPT > Confirm ChatGPT Requests",
+   "source": "chatgpt-extension",
+   "kind": "switch",
+   "scope": "out_of_scope",
+   "evidence": []
+  },
+  {
+   "id": "oos.improve_siri_ai",
+   "name": "Improve Siri & Apple Intelligence",
+   "settings_path": null,
+   "source": "chatgpt-extension",
+   "kind": "switch",
+   "scope": "out_of_scope",
+   "evidence": []
+  },
+  {
+   "id": "oos.pcc_report",
+   "name": "Apple Intelligence & PCC Report",
+   "settings_path": "Settings > Privacy & Security > Apple Intelligence & PCC Report",
+   "source": "intelligence-engine",
+   "kind": "switch",
+   "scope": "out_of_scope",
+   "evidence": []
+  },
+  {
+   "id": "oos.books_ai_show_in_app",
+   "name": "Books: Apple Intelligence & Siri > Show in App",
+   "settings_path": "Settings > Apps > Books > Apple Intelligence & Siri > Show in App",
+   "source": "apple-books",
+   "kind": "switch",
+   "scope": "out_of_scope",
+   "evidence": []
+  },
+  {
+   "id": "oos.look_to_dictate",
+   "name": "Look to Dictate (visionOS)",
+   "settings_path": "Settings > Eyes & Hands",
+   "source": "eyes-hands",
+   "kind": "switch",
+   "scope": "out_of_scope",
+   "evidence": []
+  },
+  {
+   "id": "homepod.personal_requests",
+   "name": "Personal Requests on HomePod",
+   "settings_path": null,
+   "source": "ask-siri-dictation",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E60",
+    "E61"
+   ],
+   "claude_note": "Scope decision: in_scope. The opt-in concerns HomePod, but Apple's sentence says what is shared is phone call status 'from your device', i.e. this iPhone's data, and it is the only condition Apple attaches to that part of the nearby-device flow (E29/N05). Excluding it would leave the phone-call-status part of nearby_device_status wrongly recorded as having no switch. Apple gives no Settings path and does not say whether the opt-in is made on the iPhone (for example in the Home app) or on HomePod; settings_path is null for that reason. Grid effect: stops = the phone-call-status part of nearby_device_status (on opt-out); timers, alarms, shared media and proximity are not tied to it.",
+   "apple_explicit_claims": 0,
+   "apple_summary_claude_note": "E29/E60: phone call status may be shared locally with nearby devices 'if you opted in to Personal Requests on HomePod'. This is a gate on the opted-in state; Apple does not say call status is not shared without the opt-in, and the action (local sharing with nearby devices) fits none of the six actions cleanly. No claim made; if the lead accepts gate-reading, the candidate would be nearby_device_status x siri_requests, stops on opt-out.",
+   "apple_name": {
+    "page": "ask-siri-dictation",
+    "start": 6126,
+    "end": 6154,
+    "text": "Personal Requests on HomePod"
+   },
+   "apple_routes": [],
+   "route_claude_note": "Searched all 128 saved Apple pages for this setting's name; none gives a Settings route to it. See records/no_route_search.json."
+  },
+  {
+   "id": "apple_store.siri_and_search",
+   "name": "Siri & Search (named on the Apple Store app page)",
+   "settings_path": "go to Settings > Siri & Search",
+   "source": "apple-store-app",
+   "kind": "settings_pane",
+   "scope": "in_scope",
+   "evidence": [
+    "E62",
+    "E63",
+    "E64"
+   ],
+   "claude_note": "Apple names a settings location, not a switch, so kind is 'settings_pane' (new kind; no existing kind fits). It concerns Siri Suggestions (Today at Apple session suggestions), so in_scope. 'Settings > Siri & Search' is probably the older name of the pane that ask-siri-dictation calls 'Settings > Siri', but Apple does not say so; record it as a wording issue (fifth way of naming the Siri settings root) and do not grid it, since no switch or effect is named. The ask-siri-dictation page has a parallel pane-level control ('see and control the full list of features that Siri personalizes ... by going to Settings > Siri') that is also not in switches.json; not on the checker's list, noted here only.",
+   "apple_explicit_claims": 0,
+   "apple_summary_claude_note": "E62 'To change how Siri accesses your information, go to Settings > Siri & Search' is an instruction. E63 describes on-device Today at Apple suggestions with no off-state statement.",
+   "apple_name": {
+    "page": "apple-store-app",
+    "start": 4559,
+    "end": 4572,
+    "text": "Siri & Search"
+   },
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "apple-store-app",
+       "start": 4542,
+       "end": 4572,
+       "text": "go to Settings > Siri & Search"
+      }
+     ],
+     "taps_claude_count": 1
+    }
+   ]
+  },
+  {
+   "id": "location.system.alerts_shortcuts_automations",
+   "name": "Alerts & Shortcuts Automations (System Services)",
+   "settings_path": null,
+   "source": "location-services",
+   "kind": "switch",
+   "scope": "adjacent",
+   "evidence": [
+    "E65",
+    "E66",
+    "E67"
+   ],
+   "claude_note": "Scope decision: adjacent. Apple describes 'an app or shortcut recommendation based on where you currently are', which resembles Siri Suggestions ('Siri can suggest shortcuts', E12), but this page never names Siri or Siri Suggestions, and says the iPhone 'will use' your location, not that it is sent to Apple. Tying it to siri_suggestions would be my inference, so it is not gridded as in_scope. settings_path is null because Apple gives only the generic instruction (System Services, then each service), not a path naming this service; the implied path is Settings > Privacy & Security > Location Services > System Services > Alerts & Shortcuts Automations, and the on-device name should be checked."
+  },
+  {
+   "id": "guide.voice",
+   "name": "Voice",
+   "settings_path": "Go to the Settings app on your iPhone. / Tap Siri (or Apple Intelligence & Siri), then do any of the following: / Tap Voice, then choose a different variety or voice (not available for all languages).",
+   "source": "ios26-guide-change-siri-settings",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E70"
+   ],
+   "wording_issue": "From the iOS 26 user guide (en-gb edition), captured verbatim 2026-09-26.",
+   "apple_explicit_claims": 0,
+   "apple_summary_claude_note": "E70 how-to. Not an on/off switch; no data effect stated.",
+   "apple_name": {
+    "page": "ios26-guide-change-siri-settings",
+    "start": 681,
+    "end": 686,
+    "text": "Voice"
+   },
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "ios26-guide-change-siri-settings",
+       "start": 540,
+       "end": 578,
+       "text": "Go to the Settings app on your iPhone."
+      },
+      {
+       "page": "ios26-guide-change-siri-settings",
+       "start": 579,
+       "end": 649,
+       "text": "Tap Siri (or Apple Intelligence & Siri), then do any of the following:"
+      },
+      {
+       "page": "ios26-guide-change-siri-settings",
+       "start": 677,
+       "end": 763,
+       "text": "Tap Voice, then choose a different variety or voice (not available for all languages)."
+      }
+     ],
+     "taps_claude_count": 3
+    }
+   ]
+  },
+  {
+   "id": "guide.language",
+   "name": "Language",
+   "settings_path": "Go to the Settings app on your iPhone. / Tap Siri (or Apple Intelligence & Siri), then do any of the following: / Tap Language, then select a new language.",
+   "source": "ios26-guide-change-siri-settings",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E71"
+   ],
+   "wording_issue": "From the iOS 26 user guide (en-gb edition), captured verbatim 2026-09-26.",
+   "apple_explicit_claims": 0,
+   "apple_summary_claude_note": "E71 how-to. Not an on/off switch; no data effect stated.",
+   "apple_name": {
+    "page": "ios26-guide-change-siri-settings",
+    "start": 806,
+    "end": 814,
+    "text": "Language"
+   },
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "ios26-guide-change-siri-settings",
+       "start": 540,
+       "end": 578,
+       "text": "Go to the Settings app on your iPhone."
+      },
+      {
+       "page": "ios26-guide-change-siri-settings",
+       "start": 579,
+       "end": 649,
+       "text": "Tap Siri (or Apple Intelligence & Siri), then do any of the following:"
+      },
+      {
+       "page": "ios26-guide-change-siri-settings",
+       "start": 802,
+       "end": 843,
+       "text": "Tap Language, then select a new language."
+      }
+     ],
+     "taps_claude_count": 3
+    }
+   ]
+  },
+  {
+   "id": "guide.always_show_captions",
+   "name": "Always Show Siri Captions",
+   "settings_path": "Go to the Settings app on your iPhone. / Tap Siri (or Apple Intelligence & Siri), then do any of the following: / Tap Siri Responses, then turn on Always Show Siri Captions.",
+   "source": "ios26-guide-change-siri-settings",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E72"
+   ],
+   "wording_issue": "From the iOS 26 user guide (en-gb edition), captured verbatim 2026-09-26.",
+   "apple_explicit_claims": 0,
+   "apple_summary_claude_note": "E72 how-to (display only). No data effect stated.",
+   "apple_name": {
+    "page": "ios26-guide-change-siri-settings",
+    "start": 1030,
+    "end": 1055,
+    "text": "Always Show Siri Captions"
+   },
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "ios26-guide-change-siri-settings",
+       "start": 540,
+       "end": 578,
+       "text": "Go to the Settings app on your iPhone."
+      },
+      {
+       "page": "ios26-guide-change-siri-settings",
+       "start": 579,
+       "end": 649,
+       "text": "Tap Siri (or Apple Intelligence & Siri), then do any of the following:"
+      },
+      {
+       "page": "ios26-guide-change-siri-settings",
+       "start": 997,
+       "end": 1056,
+       "text": "Tap Siri Responses, then turn on Always Show Siri Captions."
+      }
+     ],
+     "taps_claude_count": 3
+    }
+   ]
+  },
+  {
+   "id": "guide.always_show_request",
+   "name": "Always Show Request",
+   "settings_path": "Go to the Settings app on your iPhone. / Tap Siri (or Apple Intelligence & Siri), then do any of the following: / Tap Siri Responses, then turn on Always Show Request.",
+   "source": "ios26-guide-change-siri-settings",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E73"
+   ],
+   "wording_issue": "From the iOS 26 user guide (en-gb edition), captured verbatim 2026-09-26.",
+   "apple_explicit_claims": 0,
+   "apple_summary_claude_note": "E73 how-to (display only). No data effect stated.",
+   "apple_name": {
+    "page": "ios26-guide-change-siri-settings",
+    "start": 1117,
+    "end": 1136,
+    "text": "Always Show Request"
+   },
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "ios26-guide-change-siri-settings",
+       "start": 540,
+       "end": 578,
+       "text": "Go to the Settings app on your iPhone."
+      },
+      {
+       "page": "ios26-guide-change-siri-settings",
+       "start": 579,
+       "end": 649,
+       "text": "Tap Siri (or Apple Intelligence & Siri), then do any of the following:"
+      },
+      {
+       "page": "ios26-guide-change-siri-settings",
+       "start": 1084,
+       "end": 1137,
+       "text": "Tap Siri Responses, then turn on Always Show Request."
+      }
+     ],
+     "taps_claude_count": 3
+    }
+   ]
+  },
+  {
+   "id": "guide.apps_per_app",
+   "name": "Apps",
+   "settings_path": "Go to the Settings app on your iPhone. / Tap Siri (or Apple Intelligence & Siri), then tap Apps.",
+   "source": "ios26-guide-siri-suggestions",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E77"
+   ],
+   "wording_issue": "From the iOS 26 user guide (en-gb edition), captured verbatim 2026-09-26.",
+   "apple_explicit_claims": 0,
+   "apple_summary_claude_note": "E77 and 'Tap an app, then turn settings on or off' are instructions. The guide says 'You can also customize the apps Siri has access to' but states no data effect of turning an app off.",
+   "apple_name": {
+    "page": "ios26-guide-siri-suggestions",
+    "start": 602,
+    "end": 606,
+    "text": "Apps"
+   },
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "ios26-guide-siri-suggestions",
+       "start": 513,
+       "end": 551,
+       "text": "Go to the Settings app on your iPhone."
+      },
+      {
+       "page": "ios26-guide-siri-suggestions",
+       "start": 552,
+       "end": 607,
+       "text": "Tap Siri (or Apple Intelligence & Siri), then tap Apps."
+      }
+     ],
+     "taps_claude_count": 2
+    }
+   ],
+   "route_claude_note": "A screen listing apps, not a switch."
+  },
+  {
+   "id": "guide.my_information",
+   "name": "My Information",
+   "settings_path": "Go to the Settings app . / Tap Siri (or Apple Intelligence & Siri), tap My Information, then tap your name.",
+   "source": "ios26-guide-tell-siri-about-yourself",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E83"
+   ],
+   "wording_issue": "From the iOS 26 user guide (en-gb edition), captured verbatim 2026-09-26.",
+   "apple_explicit_claims": 0,
+   "apple_summary_claude_note": "E83 is an instruction. The page says the information gives 'a more personalized experience' but says nothing about data when it is not set.",
+   "apple_name": {
+    "page": "ios26-guide-tell-siri-about-yourself",
+    "start": 464,
+    "end": 478,
+    "text": "My Information"
+   },
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "ios26-guide-tell-siri-about-yourself",
+       "start": 394,
+       "end": 418,
+       "text": "Go to the Settings app ."
+      },
+      {
+       "page": "ios26-guide-tell-siri-about-yourself",
+       "start": 419,
+       "end": 499,
+       "text": "Tap Siri (or Apple Intelligence & Siri), tap My Information, then tap your name."
+      }
+     ],
+     "taps_claude_count": 3
+    }
+   ]
+  },
+  {
+   "id": "guide.siri_pause_time",
+   "name": "Siri Pause Time",
+   "settings_path": "Go to Settings > Accessibility > Siri. / Below Siri Pause Time, choose Default, Longer, or Longest.",
+   "source": "ios26-guide-siri-accessibility",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E84"
+   ],
+   "wording_issue": "From the iOS 26 user guide (en-gb edition), captured verbatim 2026-09-26.",
+   "apple_explicit_claims": 0,
+   "apple_summary_claude_note": "E84 how-to. Not an on/off switch; no data effect stated.",
+   "apple_name": {
+    "page": "ios26-guide-siri-accessibility",
+    "start": 412,
+    "end": 427,
+    "text": "Siri Pause Time"
+   },
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "ios26-guide-siri-accessibility",
+       "start": 290,
+       "end": 328,
+       "text": "Go to Settings > Accessibility > Siri."
+      },
+      {
+       "page": "ios26-guide-siri-accessibility",
+       "start": 406,
+       "end": 464,
+       "text": "Below Siri Pause Time, choose Default, Longer, or Longest."
+      }
+     ],
+     "taps_claude_count": 3
+    },
+    {
+     "steps": [
+      {
+       "page": "ios26-guide-change-siri-settings",
+       "start": 1201,
+       "end": 1302,
+       "text": "go to Settings > Accessibility > Siri, then choose Default, Longer, or Longest below Siri Pause Time."
+      }
+     ],
+     "taps_claude_count": 3
+    }
+   ]
+  },
+  {
+   "id": "guide.speaking_rate",
+   "name": "Speaking Rate",
+   "settings_path": "Go to Settings > Accessibility > Siri. / Change how fast Siri speaks: Adjust the slider below Speaking Rate.",
+   "source": "ios26-guide-siri-accessibility",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E85"
+   ],
+   "wording_issue": "From the iOS 26 user guide (en-gb edition), captured verbatim 2026-09-26.",
+   "apple_explicit_claims": 0,
+   "apple_summary_claude_note": "E85 how-to. Not an on/off switch; no data effect stated.",
+   "apple_name": {
+    "page": "ios26-guide-siri-accessibility",
+    "start": 518,
+    "end": 531,
+    "text": "Speaking Rate"
+   },
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "ios26-guide-siri-accessibility",
+       "start": 290,
+       "end": 328,
+       "text": "Go to Settings > Accessibility > Siri."
+      },
+      {
+       "page": "ios26-guide-siri-accessibility",
+       "start": 465,
+       "end": 532,
+       "text": "Change how fast Siri speaks: Adjust the slider below Speaking Rate."
+      }
+     ],
+     "taps_claude_count": 3
+    }
+   ]
+  },
+  {
+   "id": "guide.require_siri_interruptions",
+   "name": "Require “Siri” for Interruptions",
+   "settings_path": "Go to Settings > Accessibility > Siri. / Turn on Require “Siri” for Interruptions.",
+   "source": "ios26-guide-siri-accessibility",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E87"
+   ],
+   "wording_issue": "From the iOS 26 user guide (en-gb edition), captured verbatim 2026-09-26.",
+   "apple_explicit_claims": 0,
+   "apple_summary_claude_note": "E87 how-to. No data effect stated.",
+   "apple_name": {
+    "page": "ios26-guide-siri-accessibility",
+    "start": 933,
+    "end": 965,
+    "text": "Require “Siri” for Interruptions"
+   },
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "ios26-guide-siri-accessibility",
+       "start": 290,
+       "end": 328,
+       "text": "Go to Settings > Accessibility > Siri."
+      },
+      {
+       "page": "ios26-guide-siri-accessibility",
+       "start": 925,
+       "end": 966,
+       "text": "Turn on Require “Siri” for Interruptions."
+      }
+     ],
+     "taps_claude_count": 3
+    }
+   ]
+  },
+  {
+   "id": "guide.atypical_speech",
+   "name": "Listen for Atypical Speech",
+   "settings_path": "Go to Settings > Accessibility > Siri, then turn on Listen for Atypical Speech.",
+   "source": "ios26-guide-siri-accessibility",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E89"
+   ],
+   "wording_issue": "From the iOS 26 user guide (en-gb edition), captured verbatim 2026-09-26.",
+   "apple_explicit_claims": 0,
+   "apple_summary_claude_note": "E89 how-to. No data effect stated (Apple does not say whether atypical-speech audio is handled differently).",
+   "apple_name": {
+    "page": "ios26-guide-siri-accessibility",
+    "start": 1842,
+    "end": 1868,
+    "text": "Listen for Atypical Speech"
+   },
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "ios26-guide-siri-accessibility",
+       "start": 1790,
+       "end": 1869,
+       "text": "Go to Settings > Accessibility > Siri, then turn on Listen for Atypical Speech."
+      }
+     ],
+     "taps_claude_count": 3
+    }
+   ],
+   "route_claude_note": "Apple: available 'When your primary language is set to English (U.S.)'."
+  },
+  {
+   "id": "guide.announce_on_speaker",
+   "name": "Announce Notifications on Speaker",
+   "settings_path": "Go to Settings > Accessibility > Siri, then turn on Announce Notifications on Speaker.",
+   "source": "ios26-guide-siri-accessibility",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E90"
+   ],
+   "wording_issue": "From the iOS 26 user guide (en-gb edition), captured verbatim 2026-09-26.",
+   "apple_explicit_claims": 0,
+   "apple_summary_claude_note": "E90 is an instruction. The page describes only what Siri announces, not data.",
+   "apple_name": {
+    "page": "ios26-guide-siri-accessibility",
+    "start": 2270,
+    "end": 2303,
+    "text": "Announce Notifications on Speaker"
+   },
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "ios26-guide-siri-accessibility",
+       "start": 2218,
+       "end": 2304,
+       "text": "Go to Settings > Accessibility > Siri, then turn on Announce Notifications on Speaker."
+      }
+     ],
+     "taps_claude_count": 3
+    }
+   ]
+  },
+  {
+   "id": "guide.announce_calls",
+   "name": "Announce Calls",
+   "settings_path": "Go to the Settings app on your iPhone. / Tap Siri (or Apple Intelligence & Siri). / Tap Announce Calls, then choose an option.",
+   "source": "ios26-guide-announce",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E92"
+   ],
+   "wording_issue": "From the iOS 26 user guide (en-gb edition), captured verbatim 2026-09-26.",
+   "apple_explicit_claims": 0,
+   "apple_summary_claude_note": "E92 is an instruction. 'Siri identifies the caller' describes the enabled behaviour only. No off-state data effect is stated.",
+   "apple_name": {
+    "page": "ios26-guide-announce",
+    "start": 567,
+    "end": 581,
+    "text": "Announce Calls"
+   },
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "ios26-guide-announce",
+       "start": 483,
+       "end": 521,
+       "text": "Go to the Settings app on your iPhone."
+      },
+      {
+       "page": "ios26-guide-announce",
+       "start": 522,
+       "end": 562,
+       "text": "Tap Siri (or Apple Intelligence & Siri)."
+      },
+      {
+       "page": "ios26-guide-announce",
+       "start": 563,
+       "end": 605,
+       "text": "Tap Announce Calls, then choose an option."
+      }
+     ],
+     "taps_claude_count": 3
+    }
+   ]
+  },
+  {
+   "id": "guide.announce_notifications",
+   "name": "Announce Notifications",
+   "settings_path": "Go to the Settings app on your iPhone. / Tap Siri (or Apple Intelligence & Siri). / Tap Announce Notifications, then turn on Announce Notifications.",
+   "source": "ios26-guide-announce",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E93"
+   ],
+   "wording_issue": "From the iOS 26 user guide (en-gb edition), captured verbatim 2026-09-26.",
+   "apple_explicit_claims": 0,
+   "apple_summary_claude_note": "E93 is an instruction. E102 says it works with third-party apps, but no data effect is stated.",
+   "apple_name": {
+    "page": "ios26-guide-announce",
+    "start": 1205,
+    "end": 1227,
+    "text": "Announce Notifications"
+   },
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "ios26-guide-announce",
+       "start": 1084,
+       "end": 1122,
+       "text": "Go to the Settings app on your iPhone."
+      },
+      {
+       "page": "ios26-guide-announce",
+       "start": 1123,
+       "end": 1163,
+       "text": "Tap Siri (or Apple Intelligence & Siri)."
+      },
+      {
+       "page": "ios26-guide-announce",
+       "start": 1164,
+       "end": 1228,
+       "text": "Tap Announce Notifications, then turn on Announce Notifications."
+      }
+     ],
+     "taps_claude_count": 3
+    }
+   ]
+  },
+  {
+   "id": "guide.reply_without_confirmation",
+   "name": "Reply Without Confirmation",
+   "settings_path": "Go to the Settings app on your iPhone. / Tap Siri (or Apple Intelligence & Siri). / Tap Announce Notifications, then turn on Announce Notifications. / To send replies without waiting for confirmation, turn on Reply Without Confirmation.",
+   "source": "ios26-guide-announce",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E94"
+   ],
+   "wording_issue": "From the iOS 26 user guide (en-gb edition), captured verbatim 2026-09-26.",
+   "apple_explicit_claims": 0,
+   "apple_summary_claude_note": "E94 is an instruction. It concerns whether Siri asks for confirmation, not data.",
+   "apple_name": {
+    "page": "ios26-guide-announce",
+    "start": 1626,
+    "end": 1652,
+    "text": "Reply Without Confirmation"
+   },
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "ios26-guide-announce",
+       "start": 1084,
+       "end": 1122,
+       "text": "Go to the Settings app on your iPhone."
+      },
+      {
+       "page": "ios26-guide-announce",
+       "start": 1123,
+       "end": 1163,
+       "text": "Tap Siri (or Apple Intelligence & Siri)."
+      },
+      {
+       "page": "ios26-guide-announce",
+       "start": 1164,
+       "end": 1228,
+       "text": "Tap Announce Notifications, then turn on Announce Notifications."
+      },
+      {
+       "page": "ios26-guide-announce",
+       "start": 1568,
+       "end": 1653,
+       "text": "To send replies without waiting for confirmation, turn on Reply Without Confirmation."
+      }
+     ],
+     "taps_claude_count": null
+    }
+   ],
+   "route_claude_note": "Apple does not say which screen the switch is on, so taps are not counted."
+  },
+  {
+   "id": "guide.auto_punctuation",
+   "name": "Auto-Punctuation",
+   "settings_path": "go to Settings > General > Keyboard, then turn off Auto-Punctuation",
+   "source": "ios26-guide-dictate-text",
+   "kind": "switch",
+   "scope": "in_scope",
+   "evidence": [
+    "E99"
+   ],
+   "wording_issue": "From the iOS 26 user guide (en-gb edition), captured verbatim 2026-09-26.",
+   "apple_explicit_claims": 0,
+   "apple_summary_claude_note": "E99 how-to. No data effect stated.",
+   "apple_name": {
+    "page": "ios26-guide-dictate-text",
+    "start": 1769,
+    "end": 1785,
+    "text": "Auto-Punctuation"
+   },
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "ios26-guide-dictate-text",
+       "start": 1718,
+       "end": 1785,
+       "text": "go to Settings > General > Keyboard, then turn off Auto-Punctuation"
+      }
+     ],
+     "taps_claude_count": 3
+    }
+   ]
+  },
+  {
+   "id": "siri.personalization_list",
+   "name": "Siri personalisation list (Settings > Siri)",
+   "settings_path": "going to Settings > Siri",
+   "source": "ask-siri-dictation",
+   "kind": "settings_pane",
+   "scope": "in_scope",
+   "evidence": [
+    "E103"
+   ],
+   "claude_note": "Apple names a place to see and control what Siri personalises, without naming individual switches.",
+   "apple_explicit_claims": 0,
+   "apple_summary_claude_note": "E103 is an instruction ('see and control ... by going to Settings > Siri'). No data effect is stated.",
+   "apple_name": {
+    "page": "ask-siri-dictation",
+    "start": 7536,
+    "end": 7584,
+    "text": "the full list of features that Siri personalizes"
+   },
+   "apple_routes": [
+    {
+     "steps": [
+      {
+       "page": "ask-siri-dictation",
+       "start": 7630,
+       "end": 7654,
+       "text": "going to Settings > Siri"
+      }
+     ],
+     "taps_claude_count": 1
+    }
+   ]
+  }
+ ],
+ "wording_issues_global": [
+  "Siri settings root written five ways across pages: Settings > Siri; Settings > Siri & Search; Apps > News > Siri & Search; Apps > Books > Siri; Apple Intelligence & Siri.",
+  "iCloud path written three ways: iCloud > Saved to iCloud > See All; iCloud > See All; [your name] > iCloud.",
+  "Deletion wording covers transcripts 'stored on your device' only; server-side copies retained up to two years are not addressed (E03, E04, E26)."
+ ]
+}

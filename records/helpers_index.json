@@ -1,0 +1,186 @@
+{
+ "what": "Every helper used, with the fingerprint of its exact task and report (kept privately). Independent checks are published in full (personal details replaced).",
+ "note": "task_sha256/report_sha256 are fingerprints of the originals (kept privately). Where *_redacted is true, the published copy has personal details replaced, so its fingerprint (*_published_sha256) differs.",
+ "helpers": [
+  {
+   "label": "pass1-pages-001-020",
+   "description": "Pass 1 screening, entries 1-20",
+   "first_event_utc": "2026-09-26T14:06:10.700Z",
+   "last_event_utc": "2026-09-26T14:09:16.167Z",
+   "task_sha256": "f118f21c2e12fe72011ac9df8e854d8b5f11d3066ec1afaeecd04afbd97ad23d",
+   "report_sha256": "d727707b59c929060e392b5a94004f6d1b9e948251bc9c3f22108c10b45d90af"
+  },
+  {
+   "label": "pass1-pages-021-040",
+   "description": "Pass 1 screening, entries 21-40",
+   "first_event_utc": "2026-09-26T14:06:16.636Z",
+   "last_event_utc": "2026-09-26T14:09:34.000Z",
+   "task_sha256": "10bedd88419cf215e970922a31dd19c51c6ffedc3790b2c6515f76e043800c47",
+   "report_sha256": "29a1e7bacf965e2dd3c2c5904dd3d5d7e0bba3f6c872283689a507274263a1b6"
+  },
+  {
+   "label": "pass1-pages-041-060",
+   "description": "Pass 1 screening, entries 41-60",
+   "first_event_utc": "2026-09-26T14:06:22.446Z",
+   "last_event_utc": "2026-09-26T14:08:51.431Z",
+   "task_sha256": "4c26be673a69363fbf5726afd3679fcd1ca08d3ba0c6e23a87d26e96a2901d5d",
+   "report_sha256": "460161a4a93b8ce002080f83b23584c46170140fea36ed3c623bd55f5a807af9"
+  },
+  {
+   "label": "pass1-pages-061-080",
+   "description": "Pass 1 screening, entries 61-80",
+   "first_event_utc": "2026-09-26T14:06:28.634Z",
+   "last_event_utc": "2026-09-26T14:09:44.737Z",
+   "task_sha256": "0205c76f93f4b1afed53160c44e5ae86760f6ddf8488a47f5e74bbc1e364a6ac",
+   "report_sha256": "6d4a947d6378a7716698be3ef5d088694b87c61735d8999f8927fadc37bbb455"
+  },
+  {
+   "label": "pass1-pages-081-100",
+   "description": "Pass 1 screening, entries 81-100",
+   "first_event_utc": "2026-09-26T14:06:34.548Z",
+   "last_event_utc": "2026-09-26T14:09:17.191Z",
+   "task_sha256": "fc2592c8fcd1d9fb81f24f6d0e17e1a05b961e6eebcce0cde47765c0b4c0728f",
+   "report_sha256": "8a90beb5e59644a4e0b46ded436304595416cf489dc18a0b37e4fba574bc565d"
+  },
+  {
+   "label": "pass1-pages-101-121",
+   "description": "Pass 1 screening, entries 101-121",
+   "first_event_utc": "2026-09-26T14:06:40.581Z",
+   "last_event_utc": "2026-09-26T14:09:45.478Z",
+   "task_sha256": "7cd57b1b2ca8f1784675601a52e58f822251044aa5322e0a3e06e53f6f7f85d3",
+   "report_sha256": "ca051e9a39621baca3226a8a9a11ab6a4b824f6ab8bbd0c7adcdda25291d5646"
+  },
+  {
+   "label": "independent-second-pass",
+   "description": "Independent pass, 21 pages, without the strand list",
+   "first_event_utc": "2026-09-26T14:27:12.939Z",
+   "last_event_utc": "2026-09-26T14:30:16.514Z",
+   "task_sha256": "b7aa753afe00672fb76a2c89bd1241455438546159c34e620b98127cb738b6f0",
+   "report_sha256": "0708146a2c1042365696127bb1abb9700227cdd768027990e454adf44fea4304"
+  },
+  {
+   "label": "independent-file-check",
+   "description": "Independent check of the audit files",
+   "first_event_utc": "2026-09-26T14:49:19.108Z",
+   "last_event_utc": "2026-09-26T14:54:30.454Z",
+   "task_sha256": "78d02ba245de7d6d1cf4c7b1fe9ce14ed58db982ef432dc56a14e738b98dfb4d",
+   "report_sha256": "f759ac1c53298bc67e2d93794b4e5c4d6db5653516fd32e0b6a10111ed735893",
+   "task_published_sha256": "78d02ba245de7d6d1cf4c7b1fe9ce14ed58db982ef432dc56a14e738b98dfb4d",
+   "report_published_sha256": "f759ac1c53298bc67e2d93794b4e5c4d6db5653516fd32e0b6a10111ed735893",
+   "task_redacted": false,
+   "report_redacted": false
+  },
+  {
+   "label": "additions",
+   "description": "Drafted missing switches, touchpoints, features and flows from snapshots (proposals/additions.json)",
+   "first_event_utc": "2026-09-26T15:38:07.919Z",
+   "last_event_utc": "2026-09-26T15:41:27.864Z",
+   "task_sha256": "a581a3e2d2784d3b5caffb181bccd2a09e16c0fb39e9f94e9d4a76329cc42d19",
+   "report_sha256": "a0e33b579774e600e2f404d802d44d65972466ebb6296a368263dabafe8b7b53"
+  },
+  {
+   "label": "apple-layer-A",
+   "description": "Apple layer, group A: activation and dictation (proposals/apple_A.json)",
+   "first_event_utc": "2026-09-26T15:50:36.822Z",
+   "last_event_utc": "2026-09-26T15:52:12.019Z",
+   "task_sha256": "e3cfb5be31daecc0d6300a780a24b42adee416e1c41278edc6c2c5c8064ddc7c",
+   "report_sha256": "5cafc8a770ff5d0f8994c1a586172930edfbcd3f3254a1d421d1b89674bdc47e"
+  },
+  {
+   "label": "apple-layer-B",
+   "description": "Apple layer, group B: apps, suggestions, sync (proposals/apple_B.json)",
+   "first_event_utc": "2026-09-26T15:50:39.472Z",
+   "last_event_utc": "2026-09-26T15:52:32.525Z",
+   "task_sha256": "a6794fe7e7069232410d5919aa1e2819337d93d3d4b430bdb5564e662e4edea7",
+   "report_sha256": "012655d5aa3e7970f49944cf27ff8af3f35a026af280542af24a51dd8d848c1f"
+  },
+  {
+   "label": "apple-layer-C",
+   "description": "Apple layer, group C: location, search, Safari (proposals/apple_C.json)",
+   "first_event_utc": "2026-09-26T15:50:41.177Z",
+   "last_event_utc": "2026-09-26T15:52:27.817Z",
+   "task_sha256": "f62588b9854caf303c83e50df45fe681a3212eda1462bf19085eca5d5892e8ab",
+   "report_sha256": "ec3544e4afbe7ee507aaaa45e70f56c7cc93b6f3e5fa0756a1bdaeaf358dd164"
+  },
+  {
+   "label": "apple-layer-D",
+   "description": "Apple layer, group D: analytics, health, speech (proposals/apple_D.json)",
+   "first_event_utc": "2026-09-26T15:50:42.739Z",
+   "last_event_utc": "2026-09-26T15:52:51.314Z",
+   "task_sha256": "a8a48842906481e05c1f2efd1aac6364ebd7d69110c63abcb0b8d4a7f9354e8a",
+   "report_sha256": "8d7cbde718a80fb06ac52f4e2b49c38260439f6531e120200e979096cceb76bb"
+  },
+  {
+   "label": "reasonable-reader",
+   "description": "Reasonable-reader layer (proposals/reader.json)",
+   "first_event_utc": "2026-09-26T15:53:56.798Z",
+   "last_event_utc": "2026-09-26T15:58:51.933Z",
+   "task_sha256": "92f5a6bfb776602b15c84d95d44447b29ede805fd89df36723f79c877ac713d5",
+   "report_sha256": "0f7e448c72ad09c31f86e5eb883d108096775a0ba822f3a3a4da7d6dac989fa4"
+  },
+  {
+   "label": "ios27-inventory",
+   "description": "iOS 27 settings inventory (ios27/proposals/switches_27.json)",
+   "first_event_utc": "2026-11-03T15:17:01.231Z",
+   "last_event_utc": "2026-11-03T15:27:32.141Z",
+   "task_sha256": "39d0acee024be6c87ccbd9cd0f2b5bba34b2501ad85afe62a80d6a8af376e3c3",
+   "report_sha256": "70c15c9b8174e94564e7d6108822c4195d0a340d83aef205701c694a88693641"
+  },
+  {
+   "label": "ios27-apple-A",
+   "description": "iOS 27 Apple layer, group A (ios27/proposals/apple27_A.json)",
+   "first_event_utc": "2026-11-03T15:27:53.645Z",
+   "last_event_utc": "2026-11-03T15:31:16.193Z",
+   "task_sha256": "5ea7b1a19b78525afd98f892b672c90c76fe397fb2609b06e4a450ca6e4897fa",
+   "report_sha256": "75ee40b59f9c0b372f84726d3a6c34c5079c408d8fa8bde316d5a38a2cdf84e7"
+  },
+  {
+   "label": "ios27-apple-B",
+   "description": "iOS 27 Apple layer, group B (ios27/proposals/apple27_B.json)",
+   "first_event_utc": "2026-11-03T15:27:54.643Z",
+   "last_event_utc": "2026-11-03T15:33:25.557Z",
+   "task_sha256": "ced58e33279b930f1573d0279b61d2c60e701070a0ebd0080e4a8916ad1693eb",
+   "report_sha256": "0da1ae1848ec2684e8a6e4ebf20d879f0fc4e2ae5db50f0911ad2984112067d8"
+  },
+  {
+   "label": "ios27-apple-C",
+   "description": "iOS 27 Apple layer, group C (ios27/proposals/apple27_C.json)",
+   "first_event_utc": "2026-11-03T15:27:55.500Z",
+   "last_event_utc": "2026-11-03T15:31:47.543Z",
+   "task_sha256": "1b703d871aa3626e21d003cbfe9485d69f85962823f85b949da879a884d67ead",
+   "report_sha256": "bdfdc52e45288d707073b8ee959399d8bf53c1f7f86788ce8d4f6ae3473a6fd3"
+  },
+  {
+   "label": "ios27-reader",
+   "description": "iOS 27 reasonable-reader layer (ios27/proposals/reader27.json)",
+   "first_event_utc": "2026-11-03T15:34:04.537Z",
+   "last_event_utc": "2026-11-03T15:40:34.358Z",
+   "task_sha256": "de9e64bd0e830d30acd8ed2d5da9c7dcf3bb77935d58a1aa67b3412bf1fbca4f",
+   "report_sha256": "90670bc9343c577a70f1cdf4a186b02bf38d3b3683dcc6f758db1f8a7166e0ab"
+  },
+  {
+   "label": "ios27-independent-check",
+   "description": "Independent check of the iOS 27 record",
+   "first_event_utc": "2026-11-03T15:41:37.312Z",
+   "last_event_utc": "2026-11-03T15:46:17.233Z",
+   "task_sha256": "45e09f0ba4dc12a28059c20d050a335c7e16b430c1665a1236c9c31523b6d6e7",
+   "report_sha256": "f0eca1f64a05a5b4bf71013dbcb12b1f2e91f35e6b6136b418fb784f0954a20b",
+   "task_published_sha256": "45e09f0ba4dc12a28059c20d050a335c7e16b430c1665a1236c9c31523b6d6e7",
+   "report_published_sha256": "1bc9dff4750de07ff53362f1c0655e44e61d1338a65a86bc03057a8a16f6c8b2",
+   "task_redacted": false,
+   "report_redacted": true
+  },
+  {
+   "label": "article-fact-check",
+   "description": "Independent fact-check of the article draft (article/draft_2026-11-03.md)",
+   "first_event_utc": "2026-11-03T15:54:33.093Z",
+   "last_event_utc": "2026-11-03T15:58:01.681Z",
+   "task_sha256": "85c9fc57611b0a9099cbcf7fcc38e19fa4dadd3ecdf7c48bc463f142e5c7eb0b",
+   "report_sha256": "dba52cc9af3a4313b0e268155c4a2f1907d33d40154a572a2c652422a792d2a0",
+   "task_published_sha256": "85c9fc57611b0a9099cbcf7fcc38e19fa4dadd3ecdf7c48bc463f142e5c7eb0b",
+   "report_published_sha256": "718ca8e8f4af68e88bcb55589d938f849e6fe5fab1ef44d184837c1cec604f86",
+   "task_redacted": false,
+   "report_redacted": true
+  }
+ ]
+}

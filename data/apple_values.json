@@ -1,0 +1,103 @@
+{
+ "what": "Apple's own statements of privacy values, captured 2026-11-03 from the user's Mac browser. Exact text with offsets. For setting Apple's stated values beside the audit's evidence; not evidence of intent.",
+ "pages": {
+  "privacy": {
+   "url": "https://www.apple.com/privacy/",
+   "captured_utc": "2026-11-03T15:35:41.257Z",
+   "server_date": "Tue, 03 Nov 2026 15:35:41 GMT",
+   "text_sha256": "897ccd4405f59bec4afc140ea402618edfeceb7e25554e2991ee712c3a24f570",
+   "html_sha256": "381c1dfef85d654e6d836bc561b9c5f0741fa59716533c501a17ad11d10e8e45",
+   "html_file": null
+  },
+  "features": {
+   "url": "https://www.apple.com/privacy/features/",
+   "captured_utc": "2026-11-03T15:35:41.781Z",
+   "server_date": "Tue, 03 Nov 2026 15:35:41 GMT",
+   "text_sha256": "459e74c23e976acb0596779a52973e9b9130b4a36d767be1af8d0c61c919dc98",
+   "html_sha256": "2b7ec80c4bfc6ac62fc736543244b914dffeebd47468eee69558ad7a413e7300",
+   "html_file": null
+  },
+  "control": {
+   "url": "https://www.apple.com/privacy/control/",
+   "captured_utc": "2026-11-03T15:35:42.578Z",
+   "server_date": "Tue, 03 Nov 2026 15:35:42 GMT",
+   "text_sha256": "e6b5e80258fd78d04b60c94c02b34f91e1eac8018222bdf3330fbb4c2994a8e0",
+   "html_sha256": "b1b5022a0badb5df35d3a46a9c562996da5466962a37359442c5ce0426b40106",
+   "html_file": "values/html/control.html"
+  },
+  "labels": {
+   "url": "https://www.apple.com/privacy/labels/",
+   "captured_utc": "2026-11-03T15:35:43.315Z",
+   "server_date": "Tue, 03 Nov 2026 15:35:43 GMT",
+   "text_sha256": "d833596e9ee600ccb73de12eb754e3f2d2ea360207deab922b8fd352e30ab0be",
+   "html_sha256": "515a8745a82c22d9b3bc5e8011446ef5d4d8f1c12b56c94afdcbe0cf4bd4f3ed",
+   "html_file": "values/html/labels.html"
+  },
+  "policy": {
+   "url": "https://www.apple.com/legal/privacy/en-ww/",
+   "captured_utc": "2026-11-03T15:35:44.037Z",
+   "server_date": "Tue, 03 Nov 2026 15:35:44 GMT",
+   "text_sha256": "898f325d373c640d6f23ca6574019937f214bb635fd4346d70506ca3011bd7af",
+   "html_sha256": "82a9cbb7c58a2d57cb639ca3b9b8c8eb8913e9a10517b78de6150b80d483ae2c",
+   "html_file": "values/html/policy.html"
+  }
+ },
+ "statements": [
+  {
+   "page": "privacy",
+   "quote": "Privacy is a fundamental human right.",
+   "position_in_page_text": [
+    45,
+    82
+   ]
+  },
+  {
+   "page": "privacy",
+   "quote": "It’s also one of our core values.",
+   "position_in_page_text": [
+    83,
+    116
+   ]
+  },
+  {
+   "page": "control",
+   "quote": "Settings have been carefully designed to put you in control of your data.",
+   "position_in_page_text": [
+    256,
+    329
+   ]
+  },
+  {
+   "page": "features",
+   "quote": "When Apple does collect personal data, we’re clear and transparent about it.",
+   "position_in_page_text": [
+    52130,
+    52206
+   ]
+  },
+  {
+   "page": "features",
+   "quote": "To help Siri and Dictation recognize your pronunciation and provide better responses, certain information such as names of your contacts or music, books, and podcasts you enjoy is sent to Apple servers using encrypted protocols.",
+   "position_in_page_text": [
+    17804,
+    18032
+   ]
+  },
+  {
+   "page": "features",
+   "quote": "You can reset that identifier at any time by turning Siri and Dictation off and back on, effectively restarting your relationship with them.",
+   "position_in_page_text": [
+    18166,
+    18306
+   ]
+  },
+  {
+   "page": "policy",
+   "quote": "When there is a material change to this Privacy Policy, we’ll post a notice on this website at least a week in advance of doing so and contact you directly about the change if we have your data on file.",
+   "position_in_page_text": [
+    27543,
+    27745
+   ]
+  }
+ ]
+}

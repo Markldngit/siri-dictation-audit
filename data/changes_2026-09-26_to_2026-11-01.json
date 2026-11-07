@@ -1,0 +1,1292 @@
+{
+ "what": "For each Apple sentence quoted in the iOS 26 record: is it still on Apple's page word for word on 1 November 2026, and if not, the most similar sentence on the page that day (a script's suggestion, not a claim that it replaces the old one).",
+ "pages_changed": [
+  "apple-podcasts",
+  "ask-siri-dictation",
+  "health-app",
+  "improve-health-activity",
+  "improve-siri-dictation",
+  "siri-suggestions-search",
+  "translation"
+ ],
+ "page_dates_printed": {
+  "apple-podcasts": "2026-10-30",
+  "ask-siri-dictation": "2026-10-30",
+  "health-app": "2026-10-30",
+  "improve-health-activity": "2026-10-30",
+  "improve-siri-dictation": "2026-10-30",
+  "siri-suggestions-search": "2026-10-30",
+  "translation": "2026-10-30"
+ },
+ "new_page_fingerprints": {
+  "apple-podcasts": {
+   "text_sha256": "892ddfd164053464d250e6fe8004066667ec65667f90016ca5e8b568b7a471c2",
+   "html_sha256": "58bc2cb3f2f22792d7c365441856e38305fde04ac2deec1ffa92da46f5b953e6",
+   "captured_utc": "2026-11-01T08:16:46.365Z"
+  },
+  "ask-siri-dictation": {
+   "text_sha256": "f03a08690a2e08fd0baaf522388bca431c8232c34a631f16add376a144380e27",
+   "html_sha256": "8dfec782ae2f2c884b2aee4e6d88f87e768e8ff7cd036f4a122bfa49feb7ff30",
+   "captured_utc": "2026-11-01T08:16:43.264Z"
+  },
+  "health-app": {
+   "text_sha256": "509860c127a044fb74bf04a21ffb5491cca3e30525af821e0d4023ec5044a268",
+   "html_sha256": "f4badd3c0ea138d17b7a74688981773c13a59e4f4473a81d8cdd607bb0a1ce0d",
+   "captured_utc": "2026-11-01T08:16:45.063Z"
+  },
+  "improve-health-activity": {
+   "text_sha256": "383d5565376c91f9a1917eb61b0dfd5a98c38fe2ac118803207e974c82d58932",
+   "html_sha256": "0190c918c52dd07aa99649cafcccb4a0cb14298f0e3c16ff4c958c207bbfe244",
+   "captured_utc": "2026-11-01T08:16:45.721Z"
+  },
+  "improve-siri-dictation": {
+   "text_sha256": "4836759b1abb5005ac2741447f47f96f7eaee3b8f256ef4b4ab3473706ea1cc6",
+   "html_sha256": "1196acefc48cf8f17b29fa18f623ab253503453e75920e7c91572c34da7d4625",
+   "captured_utc": "2026-11-01T08:16:43.841Z"
+  },
+  "siri-suggestions-search": {
+   "text_sha256": "4315ae0cae7c618054bfd56a3f297759a84f5550246c651fc4c63aede19eabbc",
+   "html_sha256": "44788e53a6db7800f0206ade493cbceac52c124eba9afea688ea3a05d25cb750",
+   "captured_utc": "2026-11-01T08:16:44.453Z"
+  },
+  "translation": {
+   "text_sha256": "c12c1c77ede122287a8ea47fabcbff67edb7c0d8fda8b3cffa92dfc318edd171",
+   "html_sha256": "1b2d8747e5d22c6d625dd5cedd640900a8a3b9914ad45bc09a98f9b7b70c415a",
+   "captured_utc": "2026-11-01T08:16:47.282Z"
+  }
+ },
+ "sentence_counts": {
+  "apple-podcasts": {
+   "added": 2,
+   "gone": 2
+  },
+  "ask-siri-dictation": {
+   "added": 57,
+   "gone": 25
+  },
+  "health-app": {
+   "added": 28,
+   "gone": 5
+  },
+  "improve-health-activity": {
+   "added": 4,
+   "gone": 2
+  },
+  "improve-siri-dictation": {
+   "added": 14,
+   "gone": 11
+  },
+  "siri-suggestions-search": {
+   "added": 20,
+   "gone": 8
+  },
+  "translation": {
+   "added": 5,
+   "gone": 6
+  }
+ },
+ "quotes": {
+  "E01": {
+   "source": "ask-siri-dictation",
+   "verbatim_today": false,
+   "page_changed": true,
+   "september": "To turn off Siri, go to Settings > Siri > Talk to Siri and tap Off, and go to Settings > Siri > Talk to Siri and tap to turn off “Press Home for Siri” or “Press Side Button for Siri”.",
+   "closest_today": {
+    "start": 11216,
+    "end": 11296,
+    "text": "To turn off Siri, go to Settings > Siri > Turn Off Siri, then tap Turn Off Siri.",
+    "ratio": 0.49
+   }
+  },
+  "E02": {
+   "source": "ask-siri-dictation",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 11297,
+    "end": 11395
+   }
+  },
+  "E03": {
+   "source": "ask-siri-dictation",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 11396,
+    "end": 11576
+   }
+  },
+  "E04": {
+   "source": "ask-siri-dictation",
+   "verbatim_today": false,
+   "page_changed": true,
+   "september": "You can delete the transcripts of your Siri and Dictation requests that are stored on your device by going to Settings > Siri > Siri & Dictation History and tapping Delete Siri & Dictation History.",
+   "closest_today": {
+    "start": 11577,
+    "end": 11729,
+    "text": "You can delete the transcripts of your Siri and Dictation requests that are stored on your device by going to Settings > Siri and tapping Turn Off Siri.",
+    "ratio": 0.83
+   }
+  },
+  "E05": {
+   "source": "ask-siri-dictation",
+   "verbatim_today": false,
+   "page_changed": true,
+   "september": "When you use Siri and Dictation, your device may send other contextual data to Apple, including from third-party apps you allow to integrate with Use with Siri Requests, such as:",
+   "closest_today": {
+    "start": 3461,
+    "end": 3588,
+    "text": "A history of your Siri and Dictation interactions is stored on your device and may be used to personalize your Siri experience.",
+    "ratio": 0.43
+   }
+  },
+  "E06": {
+   "source": "ask-siri-dictation",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 5040,
+    "end": 5144
+   }
+  },
+  "E07": {
+   "source": "ask-siri-dictation",
+   "verbatim_today": false,
+   "page_changed": true,
+   "september": "You can control which apps can integrate with Allow Siri Requests at any time by going to Settings > Siri > Apps > [app name] > Use with Siri Requests.",
+   "closest_today": {
+    "start": 11730,
+    "end": 11909,
+    "text": "For apps built for older versions of Siri, you can control their integration with Use with Siri at any time by going to Settings > Siri > Suggestions > [app name] > Use with Siri.",
+    "ratio": 0.67
+   }
+  },
+  "E08": {
+   "source": "ask-siri-dictation",
+   "verbatim_today": false,
+   "page_changed": true,
+   "september": "To stop apps from contributing information to personalize Siri, go to Settings > Siri > Apps > [app name], then tap to turn off Learn from this App.",
+   "closest_today": {
+    "start": 12886,
+    "end": 13030,
+    "text": "To stop app clips from contributing information to personalize Siri, go to Settings > Siri > App Clips and tap to turn off Learn from App Clips.",
+    "ratio": 0.87
+   }
+  },
+  "E09": {
+   "source": "ask-siri-dictation",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 12886,
+    "end": 13030
+   }
+  },
+  "E10": {
+   "source": "ask-siri-dictation",
+   "verbatim_today": false,
+   "page_changed": true,
+   "september": "If you do not want Siri Suggestions in apps, or when sharing, searching, or listening, you can disable Siri Suggestions by going to Settings > Siri and tapping to turn off “Show in App Library”, “Show in Spotlight”, “Show When Sharing”, or “Show When Listening”.",
+   "closest_today": {
+    "start": 12186,
+    "end": 12443,
+    "text": "If you do not want Siri Suggestions when sharing, searching, or listening, you can disable Siri Suggestions by going to Settings > Siri > Suggestions, or by going to Settings > Siri > Suggestions > [app name] and tapping to change your selection for an app.",
+    "ratio": 0.59
+   }
+  },
+  "E100": {
+   "source": "ios26-guide-dictate-text",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E101": {
+   "source": "ios26-guide-dictate-text",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E102": {
+   "source": "ios26-guide-announce",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E103": {
+   "source": "ask-siri-dictation",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 12444,
+    "end": 12587
+   }
+  },
+  "E104": {
+   "source": "ask-siri-dictation",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 437,
+    "end": 553
+   }
+  },
+  "E105": {
+   "source": "ask-siri-dictation",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 9833,
+    "end": 9971
+   }
+  },
+  "E106": {
+   "source": "improve-siri-dictation",
+   "verbatim_today": false,
+   "page_changed": true,
+   "september": "… Audio data, transcripts including your request and Siri’s response, and related  …",
+   "closest_today": {
+    "start": 4459,
+    "end": 4633,
+    "text": "Your Translate requests may be retained for up to two years to help Apple develop and improve Siri, Dictation, Translate, and limited other language processing functionality.",
+    "ratio": 0.43
+   }
+  },
+  "E107": {
+   "source": "improve-siri-dictation",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 2140,
+    "end": 2434
+   }
+  },
+  "E108": {
+   "source": "icloud-analytics",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E109": {
+   "source": "icloud-analytics",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E11": {
+   "source": "ask-siri-dictation",
+   "verbatim_today": false,
+   "page_changed": true,
+   "september": "Siri Suggestions uses local, on-device processing to learn how you use your devices and apps in order to personalize your experience.",
+   "closest_today": {
+    "start": 8537,
+    "end": 8703,
+    "text": "Siri Suggestions in Spotlight, Siri, and Apps To personalize your experience, Suggestions uses local, on-device processing to learn how you use your devices and apps.",
+    "ratio": 0.62
+   }
+  },
+  "E110": {
+   "source": "improve-assistive-voice-features",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E111": {
+   "source": "improve-assistive-voice-features",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E112": {
+   "source": "health-app",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 17413,
+    "end": 17555
+   }
+  },
+  "E113": {
+   "source": "health-app",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 17413,
+    "end": 17555
+   }
+  },
+  "E114": {
+   "source": "siri-suggestions-search",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 3449,
+    "end": 3580
+   }
+  },
+  "E115": {
+   "source": "siri-suggestions-search",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 3607,
+    "end": 3778
+   }
+  },
+  "E116": {
+   "source": "location-services",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E117": {
+   "source": "ask-siri-dictation",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 13202,
+    "end": 13422
+   }
+  },
+  "E118": {
+   "source": "ask-siri-dictation",
+   "verbatim_today": false,
+   "page_changed": true,
+   "september": "Otherwise, the things you dictate are sent to and processed on the server, but will not be stored unless you opt in to Improve Siri and Dictation.",
+   "closest_today": {
+    "start": 3764,
+    "end": 3829,
+    "text": "Otherwise, the things you say are sent to and processed by Apple.",
+    "ratio": 0.55
+   }
+  },
+  "E119": {
+   "source": "ask-siri-dictation",
+   "verbatim_today": false,
+   "page_changed": true,
+   "september": "Otherwise, the things you dictate are sent to and processed on the server, but will not be stored unless you opt in to Improve Siri and Dictation.",
+   "closest_today": {
+    "start": 3764,
+    "end": 3829,
+    "text": "Otherwise, the things you say are sent to and processed by Apple.",
+    "ratio": 0.55
+   }
+  },
+  "E12": {
+   "source": "ask-siri-dictation",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 8704,
+    "end": 9044
+   }
+  },
+  "E120": {
+   "source": "improve-siri-dictation",
+   "verbatim_today": false,
+   "page_changed": true,
+   "september": "Your request history, which includes your audio data, transcripts, and related request data, is associated with a random, device-generated identifier that rotates multiple times per hour and is not tied to your Apple Account or email address.",
+   "closest_today": {
+    "start": 1513,
+    "end": 1727,
+    "text": "Your Siri audio data, transcripts, and any related request data are associated with a random, device-generated identifier that rotates multiple times per hour and is not tied to your Apple Account or email address.",
+    "ratio": 0.7
+   }
+  },
+  "E121": {
+   "source": "siri-suggestions-search",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 1111,
+    "end": 1391
+   }
+  },
+  "E122": {
+   "source": "health-app",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 17556,
+    "end": 17736
+   }
+  },
+  "E123": {
+   "source": "health-app",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 17270,
+    "end": 17412
+   }
+  },
+  "E124": {
+   "source": "siri-suggestions-search",
+   "verbatim_today": false,
+   "page_changed": true,
+   "september": "When you use Look Up or Visual Look Up, when you type in Search, Safari search, #images search in Messages, or when you invoke Spotlight, limited information will be sent to Apple to provide up-to-date suggestions.",
+   "closest_today": {
+    "start": 2125,
+    "end": 2282,
+    "text": "When you open Safari, Apple also collects information about whether or not you use Safari search, and your device specifications, in order to improve Safari.",
+    "ratio": 0.41
+   }
+  },
+  "E125": {
+   "source": "siri-suggestions-search",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 1111,
+    "end": 1391
+   }
+  },
+  "E126": {
+   "source": "siri-suggestions-search",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 2125,
+    "end": 2282
+   }
+  },
+  "E127": {
+   "source": "siri-suggestions-search",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 2283,
+    "end": 2475
+   }
+  },
+  "E128": {
+   "source": "siri-suggestions-search",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 2842,
+    "end": 3010
+   }
+  },
+  "E129": {
+   "source": "siri-suggestions-search",
+   "verbatim_today": false,
+   "page_changed": true,
+   "september": "Information sent to Apple related to your searches is used to process your request and to develop and improve search results, such as by using your search queries to fine-tune Search models.",
+   "closest_today": {
+    "start": 2476,
+    "end": 2703,
+    "text": "Information sent to Apple related to your searches, including searches made using Siri, is used to process your request and to develop and improve search results, such as by using your search queries to fine-tune Search models.",
+    "ratio": 0.91
+   }
+  },
+  "E13": {
+   "source": "ask-siri-dictation",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 13423,
+    "end": 13614
+   }
+  },
+  "E130": {
+   "source": "siri-suggestions-search",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 2761,
+    "end": 2841
+   }
+  },
+  "E131": {
+   "source": "ask-siri-dictation",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 9176,
+    "end": 9304
+   }
+  },
+  "E132": {
+   "source": "ask-siri-dictation",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 9972,
+    "end": 10137
+   }
+  },
+  "E133": {
+   "source": "ask-siri-dictation",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 10138,
+    "end": 10231
+   }
+  },
+  "E134": {
+   "source": "improve-siri-dictation",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 5296,
+    "end": 5497
+   }
+  },
+  "E135": {
+   "source": "improve-siri-dictation",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 5296,
+    "end": 5497
+   }
+  },
+  "E136": {
+   "source": "improve-siri-dictation",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 5498,
+    "end": 5556
+   }
+  },
+  "E137": {
+   "source": "ask-siri-dictation",
+   "verbatim_today": false,
+   "page_changed": true,
+   "september": "… Apple will also store related request data, such as the category of request you  …",
+   "closest_today": {
+    "start": 3955,
+    "end": 4338,
+    "text": "… When you use Siri, Dictation, or Translate, Apple will also store data related t …",
+    "ratio": 0.88
+   }
+  },
+  "E138": {
+   "source": "ask-siri-dictation",
+   "verbatim_today": false,
+   "page_changed": true,
+   "september": "… Apple will also store related request data, such as the category of request you  …",
+   "closest_today": {
+    "start": 3955,
+    "end": 4338,
+    "text": "… When you use Siri, Dictation, or Translate, Apple will also store data related t …",
+    "ratio": 0.88
+   }
+  },
+  "E139": {
+   "source": "ask-siri-dictation",
+   "verbatim_today": false,
+   "page_changed": true,
+   "september": "… The status of your nearby timers, alarms, shared media, and, if you opted in to  …",
+   "closest_today": {
+    "start": 10519,
+    "end": 10839,
+    "text": "… The status of your nearby timers, alarms, shared media, and, if you opted in to  …",
+    "ratio": 0.99
+   }
+  },
+  "E14": {
+   "source": "ask-siri-dictation",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 9833,
+    "end": 9971
+   }
+  },
+  "E140": {
+   "source": "siri-suggestions-search",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 5660,
+    "end": 5830
+   }
+  },
+  "E141": {
+   "source": "location-services",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E142": {
+   "source": "siri-suggestions-search",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 1484,
+    "end": 1620
+   }
+  },
+  "E143": {
+   "source": "improve-siri-dictation",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 3936,
+    "end": 4109
+   }
+  },
+  "E144": {
+   "source": "improve-siri-dictation",
+   "verbatim_today": false,
+   "page_changed": true,
+   "september": "You can delete the transcripts of your Siri and Dictation requests that are stored on your device by going to Settings > Siri > Siri & Dictation History and tapping Delete Siri & Dictation History.",
+   "closest_today": {
+    "start": 3545,
+    "end": 3697,
+    "text": "You can delete the transcripts of your Siri and Dictation requests that are stored on your device by going to Settings > Siri and tapping Turn Off Siri.",
+    "ratio": 0.83
+   }
+  },
+  "E145": {
+   "source": "ios26-guide-siri-suggestions",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E146": {
+   "source": "ios26-guide-tell-siri-about-yourself",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E147": {
+   "source": "ask-siri-dictation",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 640,
+    "end": 719
+   }
+  },
+  "E148": {
+   "source": "ask-siri-dictation",
+   "verbatim_today": false,
+   "page_changed": true,
+   "september": "Apple may also review a subset of the transcripts of your interactions with Siri, and this small subset of interactions that has been reviewed may be kept beyond two years for the ongoing improvement of these products and services.",
+   "closest_today": {
+    "start": 4554,
+    "end": 4740,
+    "text": "Apple may retain and use this data for up to two years to develop and improve Siri, Dictation, Search, and limited other language processing functionality in Apple products and services.",
+    "ratio": 0.42
+   }
+  },
+  "E15": {
+   "source": "ask-siri-dictation",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 9972,
+    "end": 10137
+   }
+  },
+  "E16": {
+   "source": "ask-siri-dictation",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 13031,
+    "end": 13201
+   }
+  },
+  "E17": {
+   "source": "ask-siri-dictation",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 9433,
+    "end": 9645
+   }
+  },
+  "E18": {
+   "source": "ask-siri-dictation",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 9646,
+    "end": 9817
+   }
+  },
+  "E19": {
+   "source": "ask-siri-dictation",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 13202,
+    "end": 13422
+   }
+  },
+  "E20": {
+   "source": "ask-siri-dictation",
+   "verbatim_today": false,
+   "page_changed": true,
+   "september": "You can also restrict the ability to use Siri and Dictation altogether by going to Settings > Screen Time > Content & Privacy Restrictions > Allowed Apps & Features and tapping Siri & Dictation.",
+   "closest_today": {
+    "start": 12079,
+    "end": 12185,
+    "text": "For Dictation, go to Settings > Screen Time > Content & Privacy Restrictions > Other Features > Dictation.",
+    "ratio": 0.66
+   }
+  },
+  "E21": {
+   "source": "ask-siri-dictation",
+   "verbatim_today": false,
+   "page_changed": true,
+   "september": "You can control which apps use Siri for transcription by going to Settings > Privacy & Security > Speech Recognition.",
+   "closest_today": {
+    "start": 13615,
+    "end": 13746,
+    "text": "You can control which apps use Speech Recognition for transcription by going to Settings > Privacy & Security > Speech Recognition.",
+    "ratio": 0.94
+   }
+  },
+  "E22": {
+   "source": "ask-siri-dictation",
+   "verbatim_today": false,
+   "page_changed": true,
+   "september": "Unless you opt in to Improve Siri and Dictation, your audio data is not stored by Apple.",
+   "closest_today": {
+    "start": 3830,
+    "end": 3954,
+    "text": "Your audio data is not stored by Apple unless you opt in to Improve Siri and Dictation or Improve Siri & Apple Intelligence.",
+    "ratio": 0.56
+   }
+  },
+  "E23": {
+   "source": "ask-siri-dictation",
+   "verbatim_today": false,
+   "page_changed": true,
+   "september": "Otherwise, the things you dictate are sent to and processed on the server, but will not be stored unless you opt in to Improve Siri and Dictation.",
+   "closest_today": {
+    "start": 3764,
+    "end": 3829,
+    "text": "Otherwise, the things you say are sent to and processed by Apple.",
+    "ratio": 0.55
+   }
+  },
+  "E24": {
+   "source": "ask-siri-dictation",
+   "verbatim_today": false,
+   "page_changed": true,
+   "september": "Apple stores transcripts of your interactions with Siri and may review a subset of these transcripts.",
+   "closest_today": {
+    "start": 11577,
+    "end": 11729,
+    "text": "You can delete the transcripts of your Siri and Dictation requests that are stored on your device by going to Settings > Siri and tapping Turn Off Siri.",
+    "ratio": 0.45
+   }
+  },
+  "E25": {
+   "source": "ask-siri-dictation",
+   "verbatim_today": false,
+   "page_changed": true,
+   "september": "Your request history, which includes transcripts and any related request data, is associated with a random, device-generated identifier that rotates multiple times per hour and is not tied to your Apple Account or email address.",
+   "closest_today": {
+    "start": 1005,
+    "end": 1169,
+    "text": "Your data will be associated with a random, device-generated identifier that rotates multiple times per hour and is not tied to your Apple Account or email address.",
+    "ratio": 0.81
+   }
+  },
+  "E26": {
+   "source": "ask-siri-dictation",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 4554,
+    "end": 4740
+   }
+  },
+  "E27": {
+   "source": "ask-siri-dictation",
+   "verbatim_today": false,
+   "page_changed": true,
+   "september": "A history of your Siri and Dictation interactions is stored on your device, and may be used to personalize your Siri experience.",
+   "closest_today": {
+    "start": 3461,
+    "end": 3588,
+    "text": "A history of your Siri and Dictation interactions is stored on your device and may be used to personalize your Siri experience.",
+    "ratio": 1.0
+   }
+  },
+  "E28": {
+   "source": "ask-siri-dictation",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 10232,
+    "end": 10432
+   }
+  },
+  "E29": {
+   "source": "ask-siri-dictation",
+   "verbatim_today": false,
+   "page_changed": true,
+   "september": "… The status of your nearby timers, alarms, shared media, and, if you opted in to  …",
+   "closest_today": {
+    "start": 10519,
+    "end": 10839,
+    "text": "… The status of your nearby timers, alarms, shared media, and, if you opted in to  …",
+    "ratio": 0.99
+   }
+  },
+  "E30": {
+   "source": "ask-siri-dictation",
+   "verbatim_today": false,
+   "page_changed": true,
+   "september": "… Apple will also store related request data, such as the category of request you  …",
+   "closest_today": {
+    "start": 3955,
+    "end": 4338,
+    "text": "… When you use Siri, Dictation, or Translate, Apple will also store data related t …",
+    "ratio": 0.88
+   }
+  },
+  "E31": {
+   "source": "siri-suggestions-search",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 4872,
+    "end": 5072
+   }
+  },
+  "E32": {
+   "source": "siri-suggestions-search",
+   "verbatim_today": false,
+   "page_changed": true,
+   "september": "Searches you make through Siri will still be stored and used to improve Siri if you have enabled Improve Siri & Dictation.",
+   "closest_today": {
+    "start": 5073,
+    "end": 5232,
+    "text": "Searches you make through Siri will still be stored and used to improve Siri if you have enabled Improve Siri & Dictation or Improve Siri & Apple Intelligence.",
+    "ratio": 0.87
+   }
+  },
+  "E33": {
+   "source": "siri-suggestions-search",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 5467,
+    "end": 5659
+   }
+  },
+  "E34": {
+   "source": "siri-suggestions-search",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 5660,
+    "end": 5830
+   }
+  },
+  "E35": {
+   "source": "siri-suggestions-search",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 5831,
+    "end": 5921
+   }
+  },
+  "E36": {
+   "source": "siri-suggestions-search",
+   "verbatim_today": false,
+   "page_changed": true,
+   "september": "When you use Look Up or Visual Look Up, when you type in Search, Safari search, #images search in Messages, or when you invoke Spotlight, limited information will be sent to Apple to provide up-to-date suggestions.",
+   "closest_today": {
+    "start": 2125,
+    "end": 2282,
+    "text": "When you open Safari, Apple also collects information about whether or not you use Safari search, and your device specifications, in order to improve Safari.",
+    "ratio": 0.41
+   }
+  },
+  "E37": {
+   "source": "siri-suggestions-search",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 1111,
+    "end": 1391
+   }
+  },
+  "E38": {
+   "source": "siri-suggestions-search",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 3449,
+    "end": 3580
+   }
+  },
+  "E39": {
+   "source": "siri-suggestions-search",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 3607,
+    "end": 3778
+   }
+  },
+  "E40": {
+   "source": "location-services",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E41": {
+   "source": "location-services",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E42": {
+   "source": "location-services",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E43": {
+   "source": "health-app",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 17556,
+    "end": 17736
+   }
+  },
+  "E44": {
+   "source": "health-app",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 17413,
+    "end": 17555
+   }
+  },
+  "E45": {
+   "source": "icloud-analytics",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E46": {
+   "source": "icloud-analytics",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E47": {
+   "source": "improve-assistive-voice-features",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E48": {
+   "source": "improve-assistive-voice-features",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E49": {
+   "source": "improve-health-activity",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 7735,
+    "end": 7971
+   }
+  },
+  "E50": {
+   "source": "apple-books",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E51": {
+   "source": "apple-news",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E52": {
+   "source": "improve-siri-dictation",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 2886,
+    "end": 2959
+   }
+  },
+  "E53": {
+   "source": "improve-siri-dictation",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 2435,
+    "end": 2681
+   }
+  },
+  "E54": {
+   "source": "translation",
+   "verbatim_today": false,
+   "page_changed": true,
+   "september": "You can help to improve Translate’s voice translation by allowing Apple to store and review your audio interactions by opting in to Improve Siri & Dictation.",
+   "closest_today": {
+    "start": 1039,
+    "end": 1343,
+    "text": "… You can help to improve Translate and other language processing functionality in …",
+    "ratio": 0.59
+   }
+  },
+  "E55": {
+   "source": "ask-siri-dictation",
+   "verbatim_today": false,
+   "page_changed": true,
+   "september": "Otherwise, your audio is sent to and processed on Apple servers.",
+   "closest_today": {
+    "start": 3764,
+    "end": 3829,
+    "text": "Otherwise, the things you say are sent to and processed by Apple.",
+    "ratio": 0.71
+   }
+  },
+  "E56": {
+   "source": "siri-suggestions-search",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 4872,
+    "end": 5072
+   }
+  },
+  "E57": {
+   "source": "ask-siri-dictation",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 7588,
+    "end": 7728
+   }
+  },
+  "E58": {
+   "source": "ask-siri-dictation",
+   "verbatim_today": true,
+   "page_changed": true,
+   "today": {
+    "start": 7588,
+    "end": 7728
+   }
+  },
+  "E59": {
+   "source": "ask-siri-dictation",
+   "verbatim_today": false,
+   "page_changed": true,
+   "september": "You can control which apps use Siri for transcription by going to Settings > Privacy & Security > Speech Recognition.",
+   "closest_today": {
+    "start": 13615,
+    "end": 13746,
+    "text": "You can control which apps use Speech Recognition for transcription by going to Settings > Privacy & Security > Speech Recognition.",
+    "ratio": 0.94
+   }
+  },
+  "E60": {
+   "source": "ask-siri-dictation",
+   "verbatim_today": false,
+   "page_changed": true,
+   "september": "… The status of your nearby timers, alarms, shared media, and, if you opted in to  …",
+   "closest_today": {
+    "start": 10519,
+    "end": 10839,
+    "text": "… The status of your nearby timers, alarms, shared media, and, if you opted in to  …",
+    "ratio": 0.99
+   }
+  },
+  "E61": {
+   "source": "ask-siri-dictation",
+   "verbatim_today": false,
+   "page_changed": true,
+   "september": "… The status of your nearby timers, alarms, shared media, and, if you opted in to  …",
+   "closest_today": {
+    "start": 10519,
+    "end": 10839,
+    "text": "… The status of your nearby timers, alarms, shared media, and, if you opted in to  …",
+    "ratio": 0.99
+   }
+  },
+  "E62": {
+   "source": "apple-store-app",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E63": {
+   "source": "apple-store-app",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E64": {
+   "source": "apple-store-app",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E65": {
+   "source": "location-services",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E66": {
+   "source": "location-services",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E67": {
+   "source": "location-services",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E68": {
+   "source": "ios26-guide-change-siri-settings",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E69": {
+   "source": "ios26-guide-change-siri-settings",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E70": {
+   "source": "ios26-guide-change-siri-settings",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E71": {
+   "source": "ios26-guide-change-siri-settings",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E72": {
+   "source": "ios26-guide-change-siri-settings",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E73": {
+   "source": "ios26-guide-change-siri-settings",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E74": {
+   "source": "ios26-guide-change-siri-settings",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E75": {
+   "source": "ios26-guide-change-siri-settings",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E76": {
+   "source": "ios26-guide-change-siri-settings",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E77": {
+   "source": "ios26-guide-siri-suggestions",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E78": {
+   "source": "ios26-guide-siri-suggestions",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E79": {
+   "source": "ios26-guide-siri-suggestions",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E80": {
+   "source": "ios26-guide-siri-suggestions",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E81": {
+   "source": "ios26-guide-siri-suggestions",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E82": {
+   "source": "ios26-guide-tell-siri-about-yourself",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E83": {
+   "source": "ios26-guide-tell-siri-about-yourself",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E84": {
+   "source": "ios26-guide-siri-accessibility",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E85": {
+   "source": "ios26-guide-siri-accessibility",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E86": {
+   "source": "ios26-guide-siri-accessibility",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E87": {
+   "source": "ios26-guide-siri-accessibility",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E88": {
+   "source": "ios26-guide-siri-accessibility",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E89": {
+   "source": "ios26-guide-siri-accessibility",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E90": {
+   "source": "ios26-guide-siri-accessibility",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E91": {
+   "source": "ios26-guide-siri-accessibility",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E92": {
+   "source": "ios26-guide-announce",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E93": {
+   "source": "ios26-guide-announce",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E94": {
+   "source": "ios26-guide-announce",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E95": {
+   "source": "ios26-guide-change-siri-settings",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E96": {
+   "source": "ios26-guide-activate-siri",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E97": {
+   "source": "ios26-guide-activate-siri",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E98": {
+   "source": "ios26-guide-dictate-text",
+   "verbatim_today": true,
+   "page_changed": false
+  },
+  "E99": {
+   "source": "ios26-guide-dictate-text",
+   "verbatim_today": true,
+   "page_changed": false
+  }
+ }
+}

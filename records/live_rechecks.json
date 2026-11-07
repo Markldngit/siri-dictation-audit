@@ -1,0 +1,843 @@
+{
+ "first_check": {
+  "checked_at_utc": "2026-09-26T15:41:31.826Z",
+  "marker": "LIVE_RECHECK",
+  "pages": [
+   {
+    "html_sha256": "7d592e8e3e4eee398a6feb1d4c99eaea44fe92cdc864e601f558de26fb0af8ad",
+    "id": "ask-siri-dictation",
+    "server_date_header": "Sat, 26 Sep 2026 15:41:32 GMT",
+    "status": 200,
+    "snapshot_html_sha256": "7d592e8e3e4eee398a6feb1d4c99eaea44fe92cdc864e601f558de26fb0af8ad",
+    "unchanged": true
+   },
+   {
+    "html_sha256": "63d5bc7fde673aefb4cb94745b2fb26a1ca34151e6d15be6c7b82e9ce85503fa",
+    "id": "improve-siri-dictation",
+    "server_date_header": "Sat, 26 Sep 2026 15:41:32 GMT",
+    "status": 200,
+    "snapshot_html_sha256": "63d5bc7fde673aefb4cb94745b2fb26a1ca34151e6d15be6c7b82e9ce85503fa",
+    "unchanged": true
+   },
+   {
+    "html_sha256": "f53ab9d0510f6e2903492e3ee261260a1daf08ae9dbae05eb37c78edf7a9c74c",
+    "id": "siri-suggestions-search",
+    "server_date_header": "Sat, 26 Sep 2026 15:41:33 GMT",
+    "status": 200,
+    "snapshot_html_sha256": "f53ab9d0510f6e2903492e3ee261260a1daf08ae9dbae05eb37c78edf7a9c74c",
+    "unchanged": true
+   },
+   {
+    "html_sha256": "c29e4c283c81769ed9996f7706eb28aea84809f0aebcda5dd010149c17d57e86",
+    "id": "location-services",
+    "server_date_header": "Sat, 26 Sep 2026 15:41:33 GMT",
+    "status": 200,
+    "snapshot_html_sha256": "c29e4c283c81769ed9996f7706eb28aea84809f0aebcda5dd010149c17d57e86",
+    "unchanged": true
+   },
+   {
+    "html_sha256": "becd11bd6718d3967d6bdcf7d9e630d841289d37eb3c2549b7d4240d30491274",
+    "id": "health-app",
+    "server_date_header": "Sat, 26 Sep 2026 15:41:34 GMT",
+    "status": 200,
+    "snapshot_html_sha256": "becd11bd6718d3967d6bdcf7d9e630d841289d37eb3c2549b7d4240d30491274",
+    "unchanged": true
+   },
+   {
+    "html_sha256": "a8c7e27529dd8ad7050db038796d7f92702fc2e3e0d7d8a0e3eac3cc1f9b8225",
+    "id": "improve-health-activity",
+    "server_date_header": "Sat, 26 Sep 2026 15:41:34 GMT",
+    "status": 200,
+    "snapshot_html_sha256": "a8c7e27529dd8ad7050db038796d7f92702fc2e3e0d7d8a0e3eac3cc1f9b8225",
+    "unchanged": true
+   },
+   {
+    "html_sha256": "26e94d6a44cca21591356deeb270c37c4efb2c8bec425b1d0c1a184a5a878565",
+    "id": "icloud-analytics",
+    "server_date_header": "Sat, 26 Sep 2026 15:41:35 GMT",
+    "status": 200,
+    "snapshot_html_sha256": "26e94d6a44cca21591356deeb270c37c4efb2c8bec425b1d0c1a184a5a878565",
+    "unchanged": true
+   },
+   {
+    "html_sha256": "dce195f4536a612d173a43059a757d704e84be5a232ec245676823a4721ff2a5",
+    "id": "improve-assistive-voice-features",
+    "server_date_header": "Sat, 26 Sep 2026 15:41:35 GMT",
+    "status": 200,
+    "snapshot_html_sha256": "dce195f4536a612d173a43059a757d704e84be5a232ec245676823a4721ff2a5",
+    "unchanged": true
+   },
+   {
+    "html_sha256": "59e844c200edf441d96f86a1e674d8e7abc9f3431e211b7a42ec8ee78204e329",
+    "id": "apple-books",
+    "server_date_header": "Sat, 26 Sep 2026 15:41:35 GMT",
+    "status": 200,
+    "snapshot_html_sha256": "59e844c200edf441d96f86a1e674d8e7abc9f3431e211b7a42ec8ee78204e329",
+    "unchanged": true
+   },
+   {
+    "html_sha256": "6894928a3c3349041db97c34ed77fffec03d7b31c8302985cee47f2df91dbf50",
+    "id": "apple-news",
+    "server_date_header": "Sat, 26 Sep 2026 15:41:36 GMT",
+    "status": 200,
+    "snapshot_html_sha256": "25b51c3aec70c051555573054e2580da68026c8516b668e875f28fc14379d3c6",
+    "unchanged": false,
+    "followup": {
+     "refetched_at_utc": "2026-09-26T15:41:54Z",
+     "text_blocks_identical_to_snapshot": true,
+     "html_difference": "Only the query timestamp on the structured-data logo URL (knowledge_graph_logo.png?...) differs by one second; it varies by serving node."
+    }
+   },
+   {
+    "html_sha256": "51165d332341e0a4ebb7452b419c5b40430d10cd58b7254c063bde539a4a347e",
+    "id": "apple-podcasts",
+    "server_date_header": "Sat, 26 Sep 2026 15:41:36 GMT",
+    "status": 200,
+    "snapshot_html_sha256": "51165d332341e0a4ebb7452b419c5b40430d10cd58b7254c063bde539a4a347e",
+    "unchanged": true
+   },
+   {
+    "html_sha256": "68a49373b0a2981d04fe034d1335cb941cd7554e54e663b7f2f5710d08bd67c4",
+    "id": "apple-store-app",
+    "server_date_header": "Sat, 26 Sep 2026 15:41:36 GMT",
+    "status": 200,
+    "snapshot_html_sha256": "68a49373b0a2981d04fe034d1335cb941cd7554e54e663b7f2f5710d08bd67c4",
+    "unchanged": true
+   },
+   {
+    "html_sha256": "dccd4de64accb698d9db1c44a33d91545f8737edf16d900eb16464c5eaa2f728",
+    "id": "apple-cash-apple-payments-inc",
+    "server_date_header": "Sat, 26 Sep 2026 15:41:37 GMT",
+    "status": 200,
+    "snapshot_html_sha256": "dccd4de64accb698d9db1c44a33d91545f8737edf16d900eb16464c5eaa2f728",
+    "unchanged": true
+   },
+   {
+    "html_sha256": "2e3a7cd1c97a51b3361a7214820e178e29ff6eca72cf78808dc232e8010d17b4",
+    "id": "chatgpt-extension",
+    "server_date_header": "Sat, 26 Sep 2026 15:41:37 GMT",
+    "status": 200,
+    "snapshot_html_sha256": "2e3a7cd1c97a51b3361a7214820e178e29ff6eca72cf78808dc232e8010d17b4",
+    "unchanged": true
+   },
+   {
+    "html_sha256": "714a71e716e40b5f5064b69bbbdb9a4c64bec052f9db19e0b55d8dbe9e5728eb",
+    "id": "intelligence-engine",
+    "server_date_header": "Sat, 26 Sep 2026 15:41:37 GMT",
+    "status": 200,
+    "snapshot_html_sha256": "714a71e716e40b5f5064b69bbbdb9a4c64bec052f9db19e0b55d8dbe9e5728eb",
+    "unchanged": true
+   },
+   {
+    "html_sha256": "28d1b3f1a663b78f65f9703a3c37bfec53ba1482c19979728d05183278629a5f",
+    "id": "eyes-hands",
+    "server_date_header": "Sat, 26 Sep 2026 15:41:37 GMT",
+    "status": 200,
+    "snapshot_html_sha256": "bcc1cbb0d653ca785731c0ef115555aa1522c89952f2bfe164be292b28d8b801",
+    "unchanged": false,
+    "followup": {
+     "refetched_at_utc": "2026-09-26T15:41:54Z",
+     "text_blocks_identical_to_snapshot": true,
+     "html_difference": "Only the query timestamp on the structured-data logo URL (knowledge_graph_logo.png?...) differs by one second; it varies by serving node."
+    }
+   },
+   {
+    "html_sha256": "5077b120c8abf59a9d245214064fd35102bf5e75b5d48c0104d275cec9ab6ab3",
+    "id": "music-recognition",
+    "server_date_header": "Sat, 26 Sep 2026 15:41:38 GMT",
+    "status": 200,
+    "snapshot_html_sha256": "5077b120c8abf59a9d245214064fd35102bf5e75b5d48c0104d275cec9ab6ab3",
+    "unchanged": true
+   },
+   {
+    "html_sha256": "eeec8f9c880ff12e34cdbdd876779a8864281b1e465b8f9831c51ad4a14aaf3a",
+    "id": "translation",
+    "server_date_header": "Sat, 26 Sep 2026 15:41:38 GMT",
+    "status": 200,
+    "snapshot_html_sha256": "eeec8f9c880ff12e34cdbdd876779a8864281b1e465b8f9831c51ad4a14aaf3a",
+    "unchanged": true
+   },
+   {
+    "html_sha256": "41f1ebc010ddb76e88d49677c46934fca371910332832aa73c57e99891e5697d",
+    "id": "journaling-suggestions",
+    "server_date_header": "Sat, 26 Sep 2026 15:41:38 GMT",
+    "status": 200,
+    "snapshot_html_sha256": "41f1ebc010ddb76e88d49677c46934fca371910332832aa73c57e99891e5697d",
+    "unchanged": true
+   },
+   {
+    "html_sha256": "c0ae9903453c52389ffaa2a2c73d007c0e9279307402a96c46f0d61c71e80f9b",
+    "id": "photos",
+    "server_date_header": "Sat, 26 Sep 2026 15:41:39 GMT",
+    "status": 200,
+    "snapshot_html_sha256": "c0ae9903453c52389ffaa2a2c73d007c0e9279307402a96c46f0d61c71e80f9b",
+    "unchanged": true
+   },
+   {
+    "html_sha256": "1f4df978586438542a26b082b93594679b8c78c236be02925e07303dbd3a3be7",
+    "id": "device-analytics",
+    "server_date_header": "Sat, 26 Sep 2026 15:41:39 GMT",
+    "status": 200,
+    "snapshot_html_sha256": "1f4df978586438542a26b082b93594679b8c78c236be02925e07303dbd3a3be7",
+    "unchanged": true
+   }
+  ],
+  "method": "Browser on the user Mac re-fetched each evidence page and compared the SHA-256 of the HTML with the snapshot.",
+  "conclusion": "Apple wording unchanged on all 21 evidence pages. Whole-HTML fingerprints can differ without any wording change, so page-change detection compares text blocks, not the whole HTML."
+ },
+ "second_check_text": {
+  "method": "Browser on the user's Mac re-fetched each of the 28 evidence pages and computed the SHA-256 of the extracted text with the same extraction as the capture; compared with the snapshot's text_sha256. Results extracted by script from the tool output.",
+  "privacy_pages": {
+   "checked_at_utc": "2026-09-26T16:07:05.511Z",
+   "marker": "LIVE_RECHECK_TEXT",
+   "method": "text of <main>, same extraction as capture",
+   "pages": [
+    {
+     "html_sha256": "7d592e8e3e4eee398a6feb1d4c99eaea44fe92cdc864e601f558de26fb0af8ad",
+     "id": "ask-siri-dictation",
+     "server_date_header": "Sat, 26 Sep 2026 16:07:05 GMT",
+     "status": 200,
+     "text_chars": 9439,
+     "text_sha256": "237973d576b068132ce60cb0bbf4e13d4acb60f32c4a75992a58bef57435179b",
+     "snapshot_text_sha256": "237973d576b068132ce60cb0bbf4e13d4acb60f32c4a75992a58bef57435179b",
+     "text_unchanged": true
+    },
+    {
+     "html_sha256": "63d5bc7fde673aefb4cb94745b2fb26a1ca34151e6d15be6c7b82e9ce85503fa",
+     "id": "improve-siri-dictation",
+     "server_date_header": "Sat, 26 Sep 2026 16:07:05 GMT",
+     "status": 200,
+     "text_chars": 5648,
+     "text_sha256": "15997e011380cb43555bddeb8e7dbe940ca96c0f90b4bb7a4c59e0aad6663a87",
+     "snapshot_text_sha256": "15997e011380cb43555bddeb8e7dbe940ca96c0f90b4bb7a4c59e0aad6663a87",
+     "text_unchanged": true
+    },
+    {
+     "html_sha256": "f53ab9d0510f6e2903492e3ee261260a1daf08ae9dbae05eb37c78edf7a9c74c",
+     "id": "siri-suggestions-search",
+     "server_date_header": "Sat, 26 Sep 2026 16:07:06 GMT",
+     "status": 200,
+     "text_chars": 4506,
+     "text_sha256": "987bbf75cc1bac7b035a663d03ace26c426c4b0a9f3e945aa31a43292fd8093a",
+     "snapshot_text_sha256": "987bbf75cc1bac7b035a663d03ace26c426c4b0a9f3e945aa31a43292fd8093a",
+     "text_unchanged": true
+    },
+    {
+     "html_sha256": "c29e4c283c81769ed9996f7706eb28aea84809f0aebcda5dd010149c17d57e86",
+     "id": "location-services",
+     "server_date_header": "Sat, 26 Sep 2026 16:07:06 GMT",
+     "status": 200,
+     "text_chars": 7793,
+     "text_sha256": "fe23d98e80c9d18128268d3d7ccab48c6d496068e3658c60eee851123b68a0ea",
+     "snapshot_text_sha256": "fe23d98e80c9d18128268d3d7ccab48c6d496068e3658c60eee851123b68a0ea",
+     "text_unchanged": true
+    },
+    {
+     "html_sha256": "becd11bd6718d3967d6bdcf7d9e630d841289d37eb3c2549b7d4240d30491274",
+     "id": "health-app",
+     "server_date_header": "Sat, 26 Sep 2026 16:07:06 GMT",
+     "status": 200,
+     "text_chars": 16539,
+     "text_sha256": "6c7923e9b6df132a9c83f577c564eb73d45f4edb9bdad9c831f6df01c3f90a96",
+     "snapshot_text_sha256": "6c7923e9b6df132a9c83f577c564eb73d45f4edb9bdad9c831f6df01c3f90a96",
+     "text_unchanged": true
+    },
+    {
+     "html_sha256": "a8c7e27529dd8ad7050db038796d7f92702fc2e3e0d7d8a0e3eac3cc1f9b8225",
+     "id": "improve-health-activity",
+     "server_date_header": "Sat, 26 Sep 2026 16:07:07 GMT",
+     "status": 200,
+     "text_chars": 10937,
+     "text_sha256": "088bae7f3fc0ecf023cf6f76f225dfd7303e9f225023b3bf12281d316e1ced3e",
+     "snapshot_text_sha256": "088bae7f3fc0ecf023cf6f76f225dfd7303e9f225023b3bf12281d316e1ced3e",
+     "text_unchanged": true
+    },
+    {
+     "html_sha256": "26e94d6a44cca21591356deeb270c37c4efb2c8bec425b1d0c1a184a5a878565",
+     "id": "icloud-analytics",
+     "server_date_header": "Sat, 26 Sep 2026 16:07:07 GMT",
+     "status": 200,
+     "text_chars": 938,
+     "text_sha256": "2c06661828d2b975598840c4269bbe1b49ed491c04909474edd50eeef79ced4e",
+     "snapshot_text_sha256": "2c06661828d2b975598840c4269bbe1b49ed491c04909474edd50eeef79ced4e",
+     "text_unchanged": true
+    },
+    {
+     "html_sha256": "dce195f4536a612d173a43059a757d704e84be5a232ec245676823a4721ff2a5",
+     "id": "improve-assistive-voice-features",
+     "server_date_header": "Sat, 26 Sep 2026 16:07:08 GMT",
+     "status": 200,
+     "text_chars": 1889,
+     "text_sha256": "31de7f20a3953f67769f5bfc33aede6459ddfcd8fd1753a60b1658e0cfcae925",
+     "snapshot_text_sha256": "31de7f20a3953f67769f5bfc33aede6459ddfcd8fd1753a60b1658e0cfcae925",
+     "text_unchanged": true
+    },
+    {
+     "html_sha256": "59e844c200edf441d96f86a1e674d8e7abc9f3431e211b7a42ec8ee78204e329",
+     "id": "apple-books",
+     "server_date_header": "Sat, 26 Sep 2026 16:07:08 GMT",
+     "status": 200,
+     "text_chars": 13174,
+     "text_sha256": "73565d4de19ebc7ec206e99ab74ec66269a9014c61fed31cf3cbb021f91980e2",
+     "snapshot_text_sha256": "73565d4de19ebc7ec206e99ab74ec66269a9014c61fed31cf3cbb021f91980e2",
+     "text_unchanged": true
+    },
+    {
+     "html_sha256": "6894928a3c3349041db97c34ed77fffec03d7b31c8302985cee47f2df91dbf50",
+     "id": "apple-news",
+     "server_date_header": "Sat, 26 Sep 2026 16:07:09 GMT",
+     "status": 200,
+     "text_chars": 16987,
+     "text_sha256": "2a7c8dc9c362b7b3ee98cb985886531313ce083060429324239f3ae51b6e6ddb",
+     "snapshot_text_sha256": "2a7c8dc9c362b7b3ee98cb985886531313ce083060429324239f3ae51b6e6ddb",
+     "text_unchanged": true
+    },
+    {
+     "html_sha256": "fb22c2e5d6f89a642114d72a7ab83eeeffc0d504f8bb28256baa0f64839e2b35",
+     "id": "apple-podcasts",
+     "server_date_header": "Sat, 26 Sep 2026 16:07:10 GMT",
+     "status": 200,
+     "text_chars": 10167,
+     "text_sha256": "5f19ff963d9a603dc0d97dd7ef1b645ea8eec3f80ffdbdb74c04f53094c733c5",
+     "snapshot_text_sha256": "5f19ff963d9a603dc0d97dd7ef1b645ea8eec3f80ffdbdb74c04f53094c733c5",
+     "text_unchanged": true
+    },
+    {
+     "html_sha256": "68a49373b0a2981d04fe034d1335cb941cd7554e54e663b7f2f5710d08bd67c4",
+     "id": "apple-store-app",
+     "server_date_header": "Sat, 26 Sep 2026 16:07:10 GMT",
+     "status": 200,
+     "text_chars": 12023,
+     "text_sha256": "771b87c1c921e334b99a228e72febeb98336ecdb668e42db4f73ccbbef53ffa2",
+     "snapshot_text_sha256": "771b87c1c921e334b99a228e72febeb98336ecdb668e42db4f73ccbbef53ffa2",
+     "text_unchanged": true
+    },
+    {
+     "html_sha256": "dccd4de64accb698d9db1c44a33d91545f8737edf16d900eb16464c5eaa2f728",
+     "id": "apple-cash-apple-payments-inc",
+     "server_date_header": "Sat, 26 Sep 2026 16:07:11 GMT",
+     "status": 200,
+     "text_chars": 13646,
+     "text_sha256": "a3897c6ba37d80a3ba75f3da8dd66260dd5b8fc9affd334f5d8d3f8996a8bafc",
+     "snapshot_text_sha256": "a3897c6ba37d80a3ba75f3da8dd66260dd5b8fc9affd334f5d8d3f8996a8bafc",
+     "text_unchanged": true
+    },
+    {
+     "html_sha256": "2e3a7cd1c97a51b3361a7214820e178e29ff6eca72cf78808dc232e8010d17b4",
+     "id": "chatgpt-extension",
+     "server_date_header": "Sat, 26 Sep 2026 16:07:11 GMT",
+     "status": 200,
+     "text_chars": 5555,
+     "text_sha256": "19f16fd8902e156e12da81e07489cb4727797b46a3960b787caf4867f30a10f6",
+     "snapshot_text_sha256": "19f16fd8902e156e12da81e07489cb4727797b46a3960b787caf4867f30a10f6",
+     "text_unchanged": true
+    },
+    {
+     "html_sha256": "714a71e716e40b5f5064b69bbbdb9a4c64bec052f9db19e0b55d8dbe9e5728eb",
+     "id": "intelligence-engine",
+     "server_date_header": "Sat, 26 Sep 2026 16:07:11 GMT",
+     "status": 200,
+     "text_chars": 5324,
+     "text_sha256": "850caf86745b7421273fecd4950beeffb2c0f3c4db0fb3c549ef34fd9798265e",
+     "snapshot_text_sha256": "850caf86745b7421273fecd4950beeffb2c0f3c4db0fb3c549ef34fd9798265e",
+     "text_unchanged": true
+    },
+    {
+     "html_sha256": "28d1b3f1a663b78f65f9703a3c37bfec53ba1482c19979728d05183278629a5f",
+     "id": "eyes-hands",
+     "server_date_header": "Sat, 26 Sep 2026 16:07:12 GMT",
+     "status": 200,
+     "text_chars": 1968,
+     "text_sha256": "c36112a277b37905c8afbf296013e228e365c8b2f96acb8876088293594e2429",
+     "snapshot_text_sha256": "c36112a277b37905c8afbf296013e228e365c8b2f96acb8876088293594e2429",
+     "text_unchanged": true
+    },
+    {
+     "html_sha256": "5077b120c8abf59a9d245214064fd35102bf5e75b5d48c0104d275cec9ab6ab3",
+     "id": "music-recognition",
+     "server_date_header": "Sat, 26 Sep 2026 16:07:12 GMT",
+     "status": 200,
+     "text_chars": 6793,
+     "text_sha256": "f12e5baf68c0726bf00583b0a36d23bd6ed0a0425af724740e92928645d8698e",
+     "snapshot_text_sha256": "f12e5baf68c0726bf00583b0a36d23bd6ed0a0425af724740e92928645d8698e",
+     "text_unchanged": true
+    },
+    {
+     "html_sha256": "eeec8f9c880ff12e34cdbdd876779a8864281b1e465b8f9831c51ad4a14aaf3a",
+     "id": "translation",
+     "server_date_header": "Sat, 26 Sep 2026 16:07:13 GMT",
+     "status": 200,
+     "text_chars": 1479,
+     "text_sha256": "be59e7017a60cb3ed1efc2b3f0072adcab5520d59e910ee1d9a5b0613236646f",
+     "snapshot_text_sha256": "be59e7017a60cb3ed1efc2b3f0072adcab5520d59e910ee1d9a5b0613236646f",
+     "text_unchanged": true
+    },
+    {
+     "html_sha256": "41f1ebc010ddb76e88d49677c46934fca371910332832aa73c57e99891e5697d",
+     "id": "journaling-suggestions",
+     "server_date_header": "Sat, 26 Sep 2026 16:07:13 GMT",
+     "status": 200,
+     "text_chars": 6620,
+     "text_sha256": "95cc619dc7831770482dee15952faff6438521ac419b48d027963804de8f21aa",
+     "snapshot_text_sha256": "95cc619dc7831770482dee15952faff6438521ac419b48d027963804de8f21aa",
+     "text_unchanged": true
+    },
+    {
+     "html_sha256": "e0d8a4d4c0ffd94076c07df7c96d58febd7660a8c2eab1821b9877d13921f044",
+     "id": "photos",
+     "server_date_header": "Sat, 26 Sep 2026 16:07:14 GMT",
+     "status": 200,
+     "text_chars": 3844,
+     "text_sha256": "add887a98a4599bb7ba4d30fdd9aa1f5acb14a575bc32a66ad8480483c359846",
+     "snapshot_text_sha256": "add887a98a4599bb7ba4d30fdd9aa1f5acb14a575bc32a66ad8480483c359846",
+     "text_unchanged": true
+    },
+    {
+     "html_sha256": "1f4df978586438542a26b082b93594679b8c78c236be02925e07303dbd3a3be7",
+     "id": "device-analytics",
+     "server_date_header": "Sat, 26 Sep 2026 16:07:14 GMT",
+     "status": 200,
+     "text_chars": 2353,
+     "text_sha256": "a173910327e89435e04fc5c1608bb400e960184000a4a5a4217c86cb25f45484",
+     "snapshot_text_sha256": "a173910327e89435e04fc5c1608bb400e960184000a4a5a4217c86cb25f45484",
+     "text_unchanged": true
+    }
+   ]
+  },
+  "guide_pages": {
+   "checked_at_utc": "2026-09-26T16:06:47.464Z",
+   "marker": "LIVE_RECHECK_GUIDE",
+   "method": "text of .book-content, same extraction as capture",
+   "pages": [
+    {
+     "article_html_sha256": "05fafdd1e82259dae514f814c46ce6f0ff3449b9317b17117df99a4f7675b4d5",
+     "final_url": "https://support.apple.com/en-gb/guide/iphone/iph83aad8922/26/ios/26",
+     "path": "turn-on-and-activate-siri-iph83aad8922",
+     "server_date_header": "Sat, 26 Sep 2026 16:06:48 GMT",
+     "status": 200,
+     "text_chars": 4695,
+     "text_sha256": "6bdeeb5057a888552bb5815845b9b5efab97fc99ea06be1080962e095a3f8aa7",
+     "id": "ios26-guide-activate-siri",
+     "snapshot_text_sha256": "6bdeeb5057a888552bb5815845b9b5efab97fc99ea06be1080962e095a3f8aa7",
+     "text_unchanged": true
+    },
+    {
+     "article_html_sha256": "9df1cc8d7f7d13e1806a553db4fff37166f3c31d7699f61e561154016036ce6a",
+     "final_url": "https://support.apple.com/en-gb/guide/iphone/iph838fd6fd4/26/ios/26",
+     "path": "have-siri-announce-calls-and-notifications-iph838fd6fd4",
+     "server_date_header": "Sat, 26 Sep 2026 16:06:49 GMT",
+     "status": 200,
+     "text_chars": 2088,
+     "text_sha256": "2a4d9f4f5496434df8d69004e3c2f48fbd8622902b607577b97fff428a5409fe",
+     "id": "ios26-guide-announce",
+     "snapshot_text_sha256": "2a4d9f4f5496434df8d69004e3c2f48fbd8622902b607577b97fff428a5409fe",
+     "text_unchanged": true
+    },
+    {
+     "article_html_sha256": "b5a6ad62dd93dac3c899213322bdf4ed9c010e23d015f94d4b643066421bed03",
+     "final_url": "https://support.apple.com/en-gb/guide/iphone/iphc28624b81abc/26/ios/26",
+     "path": "change-siri-settings-iphc28624b81abc",
+     "server_date_header": "Sat, 26 Sep 2026 16:06:50 GMT",
+     "status": 200,
+     "text_chars": 3154,
+     "text_sha256": "6f22e7bf7ad6fd3ef73298271f0a07941860ce618a4c36bf183dc1c92d2a46cf",
+     "id": "ios26-guide-change-siri-settings",
+     "snapshot_text_sha256": "6f22e7bf7ad6fd3ef73298271f0a07941860ce618a4c36bf183dc1c92d2a46cf",
+     "text_unchanged": true
+    },
+    {
+     "article_html_sha256": "0236f48ed49f7880d0516c03102c1b5c7ecfa6bc2cedc56d4960750d4dd99f30",
+     "final_url": "https://support.apple.com/en-gb/guide/iphone/iph2c0651d2/26/ios/26",
+     "path": "dictate-text-iph2c0651d2",
+     "server_date_header": "Sat, 26 Sep 2026 16:06:51 GMT",
+     "status": 200,
+     "text_chars": 2711,
+     "text_sha256": "59f5c0fbca5873e4f599572ef23104684403c1fb5b81eac49ec7b58e3d86bfa7",
+     "id": "ios26-guide-dictate-text",
+     "snapshot_text_sha256": "59f5c0fbca5873e4f599572ef23104684403c1fb5b81eac49ec7b58e3d86bfa7",
+     "text_unchanged": true
+    },
+    {
+     "article_html_sha256": "a1c12ef3809f3ee9d3d870ed60222835ced094989bd8a27a252a3a2a073c6800",
+     "final_url": "https://support.apple.com/en-gb/guide/iphone/iphaff1d606/26/ios/26",
+     "path": "change-siri-accessibility-settings-iphaff1d606",
+     "server_date_header": "Sat, 26 Sep 2026 16:06:53 GMT",
+     "status": 200,
+     "text_chars": 3026,
+     "text_sha256": "5f0d4b1d479af56bcb527ef8760c6f4d5f9d5a96ec301734f43c3d73d20e5def",
+     "id": "ios26-guide-siri-accessibility",
+     "snapshot_text_sha256": "5f0d4b1d479af56bcb527ef8760c6f4d5f9d5a96ec301734f43c3d73d20e5def",
+     "text_unchanged": true
+    },
+    {
+     "article_html_sha256": "5fd5c0f7d2905c3d6b9aa29665f6c9430b49336e65f528cfbfc64eb20710476f",
+     "final_url": "https://support.apple.com/en-gb/guide/iphone/iph6f94af287/26/ios/26",
+     "path": "turn-siri-suggestions-on-or-off-iph6f94af287",
+     "server_date_header": "Sat, 26 Sep 2026 16:06:55 GMT",
+     "status": 200,
+     "text_chars": 1464,
+     "text_sha256": "b41f4ba8748b6a8e88b8cf26671d59e15985e641ee66663b0b76720d44cc3c2a",
+     "id": "ios26-guide-siri-suggestions",
+     "snapshot_text_sha256": "b41f4ba8748b6a8e88b8cf26671d59e15985e641ee66663b0b76720d44cc3c2a",
+     "text_unchanged": true
+    },
+    {
+     "article_html_sha256": "a896c052d61f7be1b15601a1d9cc1445866e756f69e99c69801c6324f6ef116f",
+     "final_url": "https://support.apple.com/en-gb/guide/iphone/iphfaf30bdbd/26/ios/26",
+     "path": "tell-siri-about-yourself-iphfaf30bdbd",
+     "server_date_header": "Sat, 26 Sep 2026 16:06:56 GMT",
+     "status": 200,
+     "text_chars": 1842,
+     "text_sha256": "9fff80a0b40e8cc2126a9522419b364a53f07f68e39ea32715cfa1fbda293f2b",
+     "id": "ios26-guide-tell-siri-about-yourself",
+     "snapshot_text_sha256": "9fff80a0b40e8cc2126a9522419b364a53f07f68e39ea32715cfa1fbda293f2b",
+     "text_unchanged": true
+    }
+   ]
+  },
+  "conclusion": "Text unchanged on all 28 evidence pages."
+ },
+ "third_check_2026_11_01": {
+  "checked_at_utc": "2026-11-01T08:16:04.166Z",
+  "marker": "LIVE_RECHECK_3",
+  "method": "text of <main>, same extraction as capture",
+  "pages": [
+   {
+    "final_url": "https://www.apple.com/legal/privacy/data/en/ask-siri-dictation/",
+    "html_sha256": "8dfec782ae2f2c884b2aee4e6d88f87e768e8ff7cd036f4a122bfa49feb7ff30",
+    "id": "ask-siri-dictation",
+    "server_date_header": "Sun, 01 Nov 2026 08:16:04 GMT",
+    "status": 200,
+    "text_chars": 14339,
+    "text_sha256": "f03a08690a2e08fd0baaf522388bca431c8232c34a631f16add376a144380e27",
+    "snapshot_text_sha256": "237973d576b068132ce60cb0bbf4e13d4acb60f32c4a75992a58bef57435179b",
+    "snapshot_text_chars": 9439,
+    "text_unchanged": false
+   },
+   {
+    "final_url": "https://www.apple.com/legal/privacy/data/en/improve-siri-dictation/",
+    "html_sha256": "1196acefc48cf8f17b29fa18f623ab253503453e75920e7c91572c34da7d4625",
+    "id": "improve-siri-dictation",
+    "server_date_header": "Sun, 01 Nov 2026 08:16:04 GMT",
+    "status": 200,
+    "text_chars": 6200,
+    "text_sha256": "4836759b1abb5005ac2741447f47f96f7eaee3b8f256ef4b4ab3473706ea1cc6",
+    "snapshot_text_sha256": "15997e011380cb43555bddeb8e7dbe940ca96c0f90b4bb7a4c59e0aad6663a87",
+    "snapshot_text_chars": 5648,
+    "text_unchanged": false
+   },
+   {
+    "final_url": "https://www.apple.com/legal/privacy/data/en/siri-suggestions-search/",
+    "html_sha256": "44788e53a6db7800f0206ade493cbceac52c124eba9afea688ea3a05d25cb750",
+    "id": "siri-suggestions-search",
+    "server_date_header": "Sun, 01 Nov 2026 08:16:04 GMT",
+    "status": 200,
+    "text_chars": 6529,
+    "text_sha256": "4315ae0cae7c618054bfd56a3f297759a84f5550246c651fc4c63aede19eabbc",
+    "snapshot_text_sha256": "987bbf75cc1bac7b035a663d03ace26c426c4b0a9f3e945aa31a43292fd8093a",
+    "snapshot_text_chars": 4506,
+    "text_unchanged": false
+   },
+   {
+    "final_url": "https://www.apple.com/legal/privacy/data/en/location-services/",
+    "html_sha256": "8a38a6148bc41c275bb9deca317ca0f1f443e5e41f988ae8131dbb7a21239cae",
+    "id": "location-services",
+    "server_date_header": "Sun, 01 Nov 2026 08:16:05 GMT",
+    "status": 200,
+    "text_chars": 7793,
+    "text_sha256": "fe23d98e80c9d18128268d3d7ccab48c6d496068e3658c60eee851123b68a0ea",
+    "snapshot_text_sha256": "fe23d98e80c9d18128268d3d7ccab48c6d496068e3658c60eee851123b68a0ea",
+    "snapshot_text_chars": 7793,
+    "text_unchanged": true
+   },
+   {
+    "final_url": "https://www.apple.com/legal/privacy/data/en/health-app/",
+    "html_sha256": "f4badd3c0ea138d17b7a74688981773c13a59e4f4473a81d8cdd607bb0a1ce0d",
+    "id": "health-app",
+    "server_date_header": "Sun, 01 Nov 2026 08:16:05 GMT",
+    "status": 200,
+    "text_chars": 19746,
+    "text_sha256": "509860c127a044fb74bf04a21ffb5491cca3e30525af821e0d4023ec5044a268",
+    "snapshot_text_sha256": "6c7923e9b6df132a9c83f577c564eb73d45f4edb9bdad9c831f6df01c3f90a96",
+    "snapshot_text_chars": 16539,
+    "text_unchanged": false
+   },
+   {
+    "final_url": "https://www.apple.com/legal/privacy/data/en/improve-health-activity/",
+    "html_sha256": "0190c918c52dd07aa99649cafcccb4a0cb14298f0e3c16ff4c958c207bbfe244",
+    "id": "improve-health-activity",
+    "server_date_header": "Sun, 01 Nov 2026 08:16:05 GMT",
+    "status": 200,
+    "text_chars": 12640,
+    "text_sha256": "383d5565376c91f9a1917eb61b0dfd5a98c38fe2ac118803207e974c82d58932",
+    "snapshot_text_sha256": "088bae7f3fc0ecf023cf6f76f225dfd7303e9f225023b3bf12281d316e1ced3e",
+    "snapshot_text_chars": 10937,
+    "text_unchanged": false
+   },
+   {
+    "final_url": "https://www.apple.com/legal/privacy/data/en/icloud-analytics/",
+    "html_sha256": "a55724b332220571f382bf9dda8a7ca924e4a46f226fb66746c36b8f6abee1b4",
+    "id": "icloud-analytics",
+    "server_date_header": "Sun, 01 Nov 2026 08:16:05 GMT",
+    "status": 200,
+    "text_chars": 938,
+    "text_sha256": "2c06661828d2b975598840c4269bbe1b49ed491c04909474edd50eeef79ced4e",
+    "snapshot_text_sha256": "2c06661828d2b975598840c4269bbe1b49ed491c04909474edd50eeef79ced4e",
+    "snapshot_text_chars": 938,
+    "text_unchanged": true
+   },
+   {
+    "final_url": "https://www.apple.com/legal/privacy/data/en/improve-assistive-voice-features/",
+    "html_sha256": "9029b0dcb771104f2fae9dfa09877137c67471681ca606b6958507479ac45e09",
+    "id": "improve-assistive-voice-features",
+    "server_date_header": "Sun, 01 Nov 2026 08:16:06 GMT",
+    "status": 200,
+    "text_chars": 1889,
+    "text_sha256": "31de7f20a3953f67769f5bfc33aede6459ddfcd8fd1753a60b1658e0cfcae925",
+    "snapshot_text_sha256": "31de7f20a3953f67769f5bfc33aede6459ddfcd8fd1753a60b1658e0cfcae925",
+    "snapshot_text_chars": 1889,
+    "text_unchanged": true
+   },
+   {
+    "final_url": "https://www.apple.com/legal/privacy/data/en/apple-books/",
+    "html_sha256": "233af7522ef763d2795437d5bab3f7409fbfce3877d21bf9dc4889fb5ea5ac67",
+    "id": "apple-books",
+    "server_date_header": "Sun, 01 Nov 2026 08:16:06 GMT",
+    "status": 200,
+    "text_chars": 13174,
+    "text_sha256": "73565d4de19ebc7ec206e99ab74ec66269a9014c61fed31cf3cbb021f91980e2",
+    "snapshot_text_sha256": "73565d4de19ebc7ec206e99ab74ec66269a9014c61fed31cf3cbb021f91980e2",
+    "snapshot_text_chars": 13174,
+    "text_unchanged": true
+   },
+   {
+    "final_url": "https://www.apple.com/legal/privacy/data/en/apple-news/",
+    "html_sha256": "4d2f6c7fef782628bdd8a489680f43d76d63228d83ecb9723ed45366dbbe8d0c",
+    "id": "apple-news",
+    "server_date_header": "Sun, 01 Nov 2026 08:16:06 GMT",
+    "status": 200,
+    "text_chars": 16987,
+    "text_sha256": "2a7c8dc9c362b7b3ee98cb985886531313ce083060429324239f3ae51b6e6ddb",
+    "snapshot_text_sha256": "2a7c8dc9c362b7b3ee98cb985886531313ce083060429324239f3ae51b6e6ddb",
+    "snapshot_text_chars": 16987,
+    "text_unchanged": true
+   },
+   {
+    "final_url": "https://www.apple.com/legal/privacy/data/en/apple-podcasts/",
+    "html_sha256": "58bc2cb3f2f22792d7c365441856e38305fde04ac2deec1ffa92da46f5b953e6",
+    "id": "apple-podcasts",
+    "server_date_header": "Sun, 01 Nov 2026 08:16:07 GMT",
+    "status": 200,
+    "text_chars": 10173,
+    "text_sha256": "892ddfd164053464d250e6fe8004066667ec65667f90016ca5e8b568b7a471c2",
+    "snapshot_text_sha256": "5f19ff963d9a603dc0d97dd7ef1b645ea8eec3f80ffdbdb74c04f53094c733c5",
+    "snapshot_text_chars": 10167,
+    "text_unchanged": false
+   },
+   {
+    "final_url": "https://www.apple.com/legal/privacy/data/en/apple-store-app/",
+    "html_sha256": "6bb23678f321d3b6da8fbf0e168f63bcc4cf94fe1be852e98e6cb34d13a65384",
+    "id": "apple-store-app",
+    "server_date_header": "Sun, 01 Nov 2026 08:16:07 GMT",
+    "status": 200,
+    "text_chars": 12023,
+    "text_sha256": "771b87c1c921e334b99a228e72febeb98336ecdb668e42db4f73ccbbef53ffa2",
+    "snapshot_text_sha256": "771b87c1c921e334b99a228e72febeb98336ecdb668e42db4f73ccbbef53ffa2",
+    "snapshot_text_chars": 12023,
+    "text_unchanged": true
+   },
+   {
+    "final_url": "https://www.apple.com/legal/privacy/data/en/apple-cash-apple-payments-inc/",
+    "html_sha256": "440a682e80984d7020cd28f88ab84881a813908e19bff14a1225d73f34e4ea21",
+    "id": "apple-cash-apple-payments-inc",
+    "server_date_header": "Sun, 01 Nov 2026 08:16:08 GMT",
+    "status": 200,
+    "text_chars": 13646,
+    "text_sha256": "a3897c6ba37d80a3ba75f3da8dd66260dd5b8fc9affd334f5d8d3f8996a8bafc",
+    "snapshot_text_sha256": "a3897c6ba37d80a3ba75f3da8dd66260dd5b8fc9affd334f5d8d3f8996a8bafc",
+    "snapshot_text_chars": 13646,
+    "text_unchanged": true
+   },
+   {
+    "final_url": "https://www.apple.com/legal/privacy/data/en/chatgpt-extension/",
+    "html_sha256": "080688811d6d47c1de85a17b2fd24c00cdc7f2f9fc6e8c1c8f2fe58062b5c82e",
+    "id": "chatgpt-extension",
+    "server_date_header": "Sun, 01 Nov 2026 08:16:08 GMT",
+    "status": 200,
+    "text_chars": 5555,
+    "text_sha256": "19f16fd8902e156e12da81e07489cb4727797b46a3960b787caf4867f30a10f6",
+    "snapshot_text_sha256": "19f16fd8902e156e12da81e07489cb4727797b46a3960b787caf4867f30a10f6",
+    "snapshot_text_chars": 5555,
+    "text_unchanged": true
+   },
+   {
+    "final_url": "https://www.apple.com/legal/privacy/data/en/intelligence-engine/",
+    "html_sha256": "1e43621c56bae4a4c809e337ff7494321979b3a9873cd964a8d3dcb19bc01596",
+    "id": "intelligence-engine",
+    "server_date_header": "Sun, 01 Nov 2026 08:16:08 GMT",
+    "status": 200,
+    "text_chars": 5324,
+    "text_sha256": "850caf86745b7421273fecd4950beeffb2c0f3c4db0fb3c549ef34fd9798265e",
+    "snapshot_text_sha256": "850caf86745b7421273fecd4950beeffb2c0f3c4db0fb3c549ef34fd9798265e",
+    "snapshot_text_chars": 5324,
+    "text_unchanged": true
+   },
+   {
+    "final_url": "https://www.apple.com/legal/privacy/data/en/eyes-hands/",
+    "html_sha256": "a2f7696ae2a99de9da7e5b047c8df8ebc4cb8ae2c5701be2913755aac0a79819",
+    "id": "eyes-hands",
+    "server_date_header": "Sun, 01 Nov 2026 08:16:08 GMT",
+    "status": 200,
+    "text_chars": 1968,
+    "text_sha256": "c36112a277b37905c8afbf296013e228e365c8b2f96acb8876088293594e2429",
+    "snapshot_text_sha256": "c36112a277b37905c8afbf296013e228e365c8b2f96acb8876088293594e2429",
+    "snapshot_text_chars": 1968,
+    "text_unchanged": true
+   },
+   {
+    "final_url": "https://www.apple.com/legal/privacy/data/en/music-recognition/",
+    "html_sha256": "1fdd4cdbd253a9d180ba0eadf53da9e2c4d5844fda487d2792a7111240e16f9f",
+    "id": "music-recognition",
+    "server_date_header": "Sun, 01 Nov 2026 08:16:08 GMT",
+    "status": 200,
+    "text_chars": 6793,
+    "text_sha256": "f12e5baf68c0726bf00583b0a36d23bd6ed0a0425af724740e92928645d8698e",
+    "snapshot_text_sha256": "f12e5baf68c0726bf00583b0a36d23bd6ed0a0425af724740e92928645d8698e",
+    "snapshot_text_chars": 6793,
+    "text_unchanged": true
+   },
+   {
+    "final_url": "https://www.apple.com/legal/privacy/data/en/translation/",
+    "html_sha256": "1b2d8747e5d22c6d625dd5cedd640900a8a3b9914ad45bc09a98f9b7b70c415a",
+    "id": "translation",
+    "server_date_header": "Sun, 01 Nov 2026 08:16:09 GMT",
+    "status": 200,
+    "text_chars": 1509,
+    "text_sha256": "c12c1c77ede122287a8ea47fabcbff67edb7c0d8fda8b3cffa92dfc318edd171",
+    "snapshot_text_sha256": "be59e7017a60cb3ed1efc2b3f0072adcab5520d59e910ee1d9a5b0613236646f",
+    "snapshot_text_chars": 1479,
+    "text_unchanged": false
+   },
+   {
+    "final_url": "https://www.apple.com/legal/privacy/data/en/journaling-suggestions/",
+    "html_sha256": "c2916eeea49b744107b2d9f139dc34d5317b1724ccd69156af0049921867b265",
+    "id": "journaling-suggestions",
+    "server_date_header": "Sun, 01 Nov 2026 08:16:09 GMT",
+    "status": 200,
+    "text_chars": 6620,
+    "text_sha256": "95cc619dc7831770482dee15952faff6438521ac419b48d027963804de8f21aa",
+    "snapshot_text_sha256": "95cc619dc7831770482dee15952faff6438521ac419b48d027963804de8f21aa",
+    "snapshot_text_chars": 6620,
+    "text_unchanged": true
+   },
+   {
+    "final_url": "https://www.apple.com/legal/privacy/data/en/photos/",
+    "html_sha256": "477ed4014baac828fe493fa99f3f4e63f1c3e2bf9d41871ca11272ade440fbb6",
+    "id": "photos",
+    "server_date_header": "Sun, 01 Nov 2026 08:16:10 GMT",
+    "status": 200,
+    "text_chars": 3844,
+    "text_sha256": "add887a98a4599bb7ba4d30fdd9aa1f5acb14a575bc32a66ad8480483c359846",
+    "snapshot_text_sha256": "add887a98a4599bb7ba4d30fdd9aa1f5acb14a575bc32a66ad8480483c359846",
+    "snapshot_text_chars": 3844,
+    "text_unchanged": true
+   },
+   {
+    "final_url": "https://www.apple.com/legal/privacy/data/en/device-analytics/",
+    "html_sha256": "8585b6f472911da69ae14587fdbc7dca7f3b3f16e1ffbb389d7583ecfb329664",
+    "id": "device-analytics",
+    "server_date_header": "Sun, 01 Nov 2026 08:16:10 GMT",
+    "status": 200,
+    "text_chars": 2353,
+    "text_sha256": "a173910327e89435e04fc5c1608bb400e960184000a4a5a4217c86cb25f45484",
+    "snapshot_text_sha256": "a173910327e89435e04fc5c1608bb400e960184000a4a5a4217c86cb25f45484",
+    "snapshot_text_chars": 2353,
+    "text_unchanged": true
+   }
+  ],
+  "extracted_from": "session log, mechanically"
+ },
+ "third_check_2026_11_01_guide": {
+  "checked_at_utc": "2026-11-01T08:17:46.427Z",
+  "latest_version_links": [
+   "welcome/27/ios/27",
+   "welcome/26/ios/26",
+   "welcome/18.0/ios/18.0",
+   "welcome/17.0/ios/17.0"
+  ],
+  "marker": "GUIDE_RECHECK_3",
+  "pages": [
+   {
+    "code": "iph83aad8922",
+    "final_url": "https://support.apple.com/en-gb/guide/iphone/iph83aad8922/26/ios/26",
+    "server_date_header": "Sun, 01 Nov 2026 08:17:46 GMT",
+    "status": 200,
+    "text_chars": 4695,
+    "text_sha256": "6bdeeb5057a888552bb5815845b9b5efab97fc99ea06be1080962e095a3f8aa7",
+    "id": "ios26-guide-activate-siri",
+    "text_unchanged": true
+   },
+   {
+    "code": "iph838fd6fd4",
+    "final_url": "https://support.apple.com/en-gb/guide/iphone/iph838fd6fd4/26/ios/26",
+    "server_date_header": "Sun, 01 Nov 2026 08:17:47 GMT",
+    "status": 200,
+    "text_chars": 2088,
+    "text_sha256": "2a4d9f4f5496434df8d69004e3c2f48fbd8622902b607577b97fff428a5409fe",
+    "id": "ios26-guide-announce",
+    "text_unchanged": true
+   },
+   {
+    "code": "iphc28624b81abc",
+    "final_url": "https://support.apple.com/en-gb/guide/iphone/iphc28624b81abc/26/ios/26",
+    "server_date_header": "Sun, 01 Nov 2026 08:17:47 GMT",
+    "status": 200,
+    "text_chars": 3154,
+    "text_sha256": "6f22e7bf7ad6fd3ef73298271f0a07941860ce618a4c36bf183dc1c92d2a46cf",
+    "id": "ios26-guide-change-siri-settings",
+    "text_unchanged": true
+   },
+   {
+    "code": "iph2c0651d2",
+    "final_url": "https://support.apple.com/en-gb/guide/iphone/iph2c0651d2/26/ios/26",
+    "server_date_header": "Sun, 01 Nov 2026 08:17:48 GMT",
+    "status": 200,
+    "text_chars": 2711,
+    "text_sha256": "59f5c0fbca5873e4f599572ef23104684403c1fb5b81eac49ec7b58e3d86bfa7",
+    "id": "ios26-guide-dictate-text",
+    "text_unchanged": true
+   },
+   {
+    "code": "iphaff1d606",
+    "final_url": "https://support.apple.com/en-gb/guide/iphone/iphaff1d606/26/ios/26",
+    "server_date_header": "Sun, 01 Nov 2026 08:17:49 GMT",
+    "status": 200,
+    "text_chars": 3026,
+    "text_sha256": "5f0d4b1d479af56bcb527ef8760c6f4d5f9d5a96ec301734f43c3d73d20e5def",
+    "id": "ios26-guide-siri-accessibility",
+    "text_unchanged": true
+   },
+   {
+    "code": "iph6f94af287",
+    "final_url": "https://support.apple.com/en-gb/guide/iphone/iph6f94af287/26/ios/26",
+    "server_date_header": "Sun, 01 Nov 2026 08:17:50 GMT",
+    "status": 200,
+    "text_chars": 1464,
+    "text_sha256": "b41f4ba8748b6a8e88b8cf26671d59e15985e641ee66663b0b76720d44cc3c2a",
+    "id": "ios26-guide-siri-suggestions",
+    "text_unchanged": true
+   },
+   {
+    "code": "iphfaf30bdbd",
+    "final_url": "https://support.apple.com/en-gb/guide/iphone/iphfaf30bdbd/26/ios/26",
+    "server_date_header": "Sun, 01 Nov 2026 08:17:51 GMT",
+    "status": 200,
+    "text_chars": 1842,
+    "text_sha256": "9fff80a0b40e8cc2126a9522419b364a53f07f68e39ea32715cfa1fbda293f2b",
+    "id": "ios26-guide-tell-siri-about-yourself",
+    "text_unchanged": true
+   }
+  ],
+  "welcome_final_url": "https://support.apple.com/en-gb/guide/iphone/welcome/ios"
+ }
+}

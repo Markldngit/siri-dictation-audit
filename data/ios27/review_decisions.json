@@ -1,0 +1,130 @@
+{
+ "what": "Claude's review decisions on helper proposals for the iOS 27 record. Each removes or changes one proposed claim, with the reason.",
+ "decisions": [
+  {
+   "id": "R27-001",
+   "date": "2026-11-03",
+   "group": "B",
+   "switch": "s27.help_improve_search",
+   "touchpoint": "search_queries",
+   "feature": "siri_requests",
+   "action": "stored_by_apple",
+   "proposed_status": "stops",
+   "decision": "removed",
+   "reason": "Rests on joining two Apple sentences (Search requests made using Siri are stored; the opt-in exception). Apple never states the off effect for Siri searches in one sentence. The helper flagged it for review. The conditional 'continues' claim for the same cell is kept, as in the iOS 26 record.",
+   "judged_by": {
+    "kind": "claude",
+    "id": "coordinator",
+    "date": "2026-11-03"
+   }
+  },
+  {
+   "id": "R27-002",
+   "date": "2026-11-03",
+   "group": "B",
+   "switch": "s27.use_siri_classic",
+   "touchpoint": "search_queries",
+   "feature": "siri_requests",
+   "action": "sent_to_apple",
+   "proposed_status": "continues",
+   "decision": "removed",
+   "reason": "Apple's sentence names no 'Use Siri Classic' switch; it describes requests when Siri AI is not enabled ('may be sent to Apple'). Not a statement about this setting. Kept as a note.",
+   "judged_by": {
+    "kind": "claude",
+    "id": "coordinator, after independent check",
+    "date": "2026-11-03"
+   }
+  },
+  {
+   "id": "R27-003",
+   "date": "2026-11-03",
+   "group": "C",
+   "switch": "s27.apps.show_in_app",
+   "touchpoint": "email",
+   "feature": "siri_suggestions",
+   "action": "used_on_device",
+   "proposed_status": "stops",
+   "decision": "removed",
+   "reason": "Apple describes what turning it ON does; the off effect is the inferred reverse. Same treatment as on-state-only sentences in the iOS 26 record.",
+   "judged_by": {
+    "kind": "claude",
+    "id": "coordinator, after independent check",
+    "date": "2026-11-03"
+   }
+  },
+  {
+   "id": "R27-004",
+   "date": "2026-11-03",
+   "group": "C",
+   "switch": "s27.apps.show_in_app",
+   "touchpoint": "messages",
+   "feature": "siri_suggestions",
+   "action": "used_on_device",
+   "proposed_status": "stops",
+   "decision": "removed",
+   "reason": "As R27-003.",
+   "judged_by": {
+    "kind": "claude",
+    "id": "coordinator, after independent check",
+    "date": "2026-11-03"
+   }
+  },
+  {
+   "id": "R27-005",
+   "date": "2026-11-03",
+   "group": "C",
+   "switch": "s27.apps.search_row",
+   "touchpoint": "email",
+   "feature": "search",
+   "action": "used_on_device",
+   "proposed_status": "stops",
+   "decision": "removed",
+   "reason": "Apple's sentence describes the setting ('Allow content from Mail to appear in Search'); the off effect is the inferred reverse.",
+   "judged_by": {
+    "kind": "claude",
+    "id": "coordinator, after independent check",
+    "date": "2026-11-03"
+   }
+  }
+ ],
+ "note_edits": [
+  {
+   "id": "N27-001",
+   "field": "apple_states.claude_note (deletion-only claims)",
+   "rule": "Where a deletion-only claim was changed to not_stated, the helper's wording about 'stops' is replaced.",
+   "judged_by": {
+    "kind": "claude",
+    "id": "coordinator, after independent check",
+    "date": "2026-11-03"
+   }
+  },
+  {
+   "id": "N27-002",
+   "field": "reasonable_reader.note",
+   "replace": [
+    [
+     "'found in Safari'",
+     "'found in Mail, Messages, and Safari'"
+    ],
+    [
+     "'Stored on your device'",
+     "'stored on your device'"
+    ],
+    [
+     "'Altogether'",
+     "'altogether'"
+    ],
+    [
+     "'The way you use Mail'",
+     "'the way you use Mail'"
+    ]
+   ],
+   "reason": "Quote marks must hold Apple's exact wording.",
+   "judged_by": {
+    "kind": "claude",
+    "id": "coordinator, after independent check",
+    "date": "2026-11-03"
+   }
+  }
+ ]
+}

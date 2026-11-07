@@ -1,0 +1,136 @@
+{
+ "what": "Tamper tests of check.py (v2). Each test changed one thing in a scratch copy of the folder and ran check.py. The real files were not changed.",
+ "date": "2026-09-26",
+ "run_by": {
+  "kind": "claude",
+  "id": "coordinator"
+ },
+ "tests": [
+  {
+   "change": "Edited one word in a snapshot's text",
+   "expected": "hash mismatch reported",
+   "result": "detected"
+  },
+  {
+   "change": "Edited the saved HTML of a snapshot",
+   "expected": "HTML hash mismatch reported",
+   "result": "detected"
+  },
+  {
+   "change": "Edited a helper report",
+   "expected": "helper record fingerprint mismatch",
+   "result": "detected"
+  },
+  {
+   "change": "Duplicate evidence key in sources.json",
+   "expected": "duplicate key reported",
+   "result": "detected"
+  },
+  {
+   "change": "Deleted one cell from pairings_v2.json",
+   "expected": "missing cell reported",
+   "result": "detected"
+  },
+  {
+   "change": "Cited an evidence id that does not exist",
+   "expected": "unknown evidence reported",
+   "result": "detected"
+  },
+  {
+   "change": "Changed the observed result for siri.apps.learn_from_this_app x contacts_company x dictation",
+   "expected": "does not match finding F2",
+   "result": "detected"
+  },
+  {
+   "change": "Added an Apple claim for guide.voice x health x search (Apple does not say Search uses health)",
+   "expected": "claim outside used_by reported",
+   "result": "detected"
+  },
+  {
+   "change": "Removed 'Saved to iCloud > ' from icloud.siri's first route step",
+   "expected": "route step not Apple's text; settings_path mismatch",
+   "result": "detected",
+   "date": "2026-11-01"
+  },
+  {
+   "change": "Changed guide.voice name to lowercase 'voice'",
+   "expected": "name is not Apple's label",
+   "result": "detected",
+   "date": "2026-11-01"
+  },
+  {
+   "change": "Shifted guide.language apple_name offset by 1",
+   "expected": "name not Apple's text at offset",
+   "result": "detected",
+   "date": "2026-11-01"
+  },
+  {
+   "change": "Moved per_app Books entry to the Search place",
+   "expected": "route does not go through that place",
+   "result": "detected",
+   "date": "2026-11-01"
+  },
+  {
+   "change": "Pointed Safari per_app entry at a non-existent observation",
+   "expected": "no such observation",
+   "result": "detected",
+   "date": "2026-11-01"
+  },
+  {
+   "change": "Appended a byte to the O001 screenshot",
+   "expected": "observation screenshot has changed",
+   "result": "detected",
+   "date": "2026-11-01"
+  },
+  {
+   "change": "iOS 27: edited one word in an Apple evidence sentence",
+   "expected": "exact text not at offsets",
+   "result": "detected",
+   "date": "2026-11-03",
+   "checker": "ios27/check_27.py"
+  },
+  {
+   "change": "iOS 27: edited a saved Apple page",
+   "expected": "source fingerprint mismatch",
+   "result": "detected",
+   "date": "2026-11-03",
+   "checker": "ios27/check_27.py"
+  },
+  {
+   "change": "iOS 27: deleted a grid cell",
+   "expected": "cell missing",
+   "result": "detected",
+   "date": "2026-11-03",
+   "checker": "ios27/check_27.py"
+  },
+  {
+   "change": "iOS 27: changed the observed result for Excluded Apps x contacts_company x dictation",
+   "expected": "does not match finding F4",
+   "result": "detected",
+   "date": "2026-11-03",
+   "checker": "ios27/check_27.py"
+  },
+  {
+   "change": "iOS 27: added an Apple claim for a pair Apple does not say the feature uses",
+   "expected": "claim outside used_by_27",
+   "result": "detected",
+   "date": "2026-11-03",
+   "checker": "ios27/check_27.py"
+  },
+  {
+   "change": "iOS 27: wrong claim count on a setting",
+   "expected": "claim count mismatch",
+   "result": "detected",
+   "date": "2026-11-03",
+   "checker": "ios27/check_27.py"
+  },
+  {
+   "change": "iOS 27: duplicate evidence key",
+   "expected": "duplicate JSON keys",
+   "result": "detected",
+   "date": "2026-11-03",
+   "checker": "ios27/check_27.py"
+  }
+ ],
+ "note": "Test list written from the coordinator's session record; the scratch copies were not kept."
+}

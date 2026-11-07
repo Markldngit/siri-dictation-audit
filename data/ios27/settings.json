@@ -1,0 +1,3323 @@
+{
+ "what": "iOS 27 switch inventory (proposal). Apple names/routes are exact substrings of ios27/source_index.json texts; seen_on_phone refers to records/observations/ios27_screens.json.",
+ "built": "2026-11-03",
+ "switches": [
+  {
+   "id": "s27.siri_settings",
+   "name": "Siri (Settings > Siri)",
+   "apple_name": {
+    "source": "P:ask-siri-dictation",
+    "locator": "the full list of features that Siri personalizes and apps that Siri suggests shortcuts for"
+   },
+   "apple_routes": [
+    {
+     "source": "P:ask-siri-dictation",
+     "locator": "apps that Siri suggests shortcuts for by going to Settings > Siri"
+    },
+    {
+     "source": "P:siri-suggestions-search",
+     "locator": "You can learn more about how Siri handles your data by going to Settings > Siri."
+    }
+   ],
+   "seen_on_phone": [
+    "O101",
+    "O102",
+    "O103"
+   ],
+   "kind": "settings_screen",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "siri.personalization_list",
+   "counterpart_basis": "same route",
+   "scope": "in_scope",
+   "claude_note": "Apple names the screen as a place to see and control what Siri personalises; it names no individual switch in that sentence.",
+   "apple_name_evidence": "X001",
+   "apple_route_evidence": [
+    "X002",
+    "X003"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Apple: you can see and control the features Siri personalizes here; no effect of any change stated."
+  },
+  {
+   "id": "s27.requests",
+   "name": "Requests",
+   "apple_name": {
+    "source": "G27:iphc28624b81abc",
+    "locator": "Tap Requests, then do any of the following:"
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iphc28624b81abc",
+     "locator": "Tap Requests, then do any of the following:"
+    }
+   ],
+   "seen_on_phone": [
+    "O101",
+    "O103",
+    "O105"
+   ],
+   "kind": "settings_screen",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": null,
+   "counterpart_basis": "claude judgement: O105 shows the iOS 26 'Talk to Siri' options under this row; the screen itself has no separate iOS 26 record",
+   "scope": "in_scope",
+   "claude_note": "Container screen. The choice inside it is s27.siri_or_hey_siri; the switch is s27.press_side_button.",
+   "apple_name_evidence": "X004",
+   "apple_route_evidence": [
+    "X004"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Container screen; effects recorded on s27.siri_or_hey_siri."
+  },
+  {
+   "id": "s27.siri_or_hey_siri",
+   "name": "“Siri” or “Hey Siri” / “Hey Siri” / Off",
+   "apple_name": {
+    "source": "G27:iphc28624b81abc",
+    "locator": "Turn off “Siri” or “Hey Siri”: Tap Off."
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iphc28624b81abc",
+     "locator": "Tap Requests, then do any of the following:"
+    },
+    {
+     "source": "G27:iphc28624b81abc",
+     "locator": "Turn off “Siri” or “Hey Siri”: Tap Off."
+    }
+   ],
+   "seen_on_phone": [
+    "O105"
+   ],
+   "kind": "choice",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "siri.talk_to_siri",
+   "counterpart_basis": "claude judgement: same options and Off choice; iOS 26 route was Settings > Siri > Talk to Siri, iOS 27 guide route is Settings > Siri > Requests",
+   "scope": "in_scope",
+   "claude_note": "O105 shows Off selected. Apple's sentence after the step says what Off does to listening only.",
+   "apple_name_evidence": "X005",
+   "apple_route_evidence": [
+    "X004",
+    "X005"
+   ],
+   "apple_explicit_claims": 1,
+   "helper_reported_claims": 1,
+   "apple_summary_claude_note": "Off: iPhone doesn't listen for the phrase. Retraining-voice sentence states no off effect on the voice profile."
+  },
+  {
+   "id": "s27.press_side_button",
+   "name": "Press Side Button for Siri",
+   "apple_name": {
+    "source": "G27:iphc28624b81abc",
+    "locator": "Activate Siri using the side button on your iPhone: Turn on Press Side Button for Siri."
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iphc28624b81abc",
+     "locator": "Tap Requests, then do any of the following:"
+    },
+    {
+     "source": "G27:iphc28624b81abc",
+     "locator": "Activate Siri using the side button on your iPhone: Turn on Press Side Button for Siri."
+    },
+    {
+     "source": "P:improve-siri-dictation",
+     "locator": "tap to turn off “Press Side Button for Siri” and “Type to Siri”"
+    }
+   ],
+   "seen_on_phone": [
+    "O105"
+   ],
+   "kind": "switch",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "siri.press_side_button",
+   "counterpart_basis": "same Apple name",
+   "scope": "in_scope",
+   "claude_note": "Privacy page places it under Settings > Siri (after Turn Off Siri); guide places it under Settings > Siri > Requests; O105 shows it on Requests, off.",
+   "apple_name_evidence": "X006",
+   "apple_route_evidence": [
+    "X004",
+    "X006",
+    "X007"
+   ],
+   "apple_explicit_claims": 2,
+   "helper_reported_claims": 2,
+   "apple_summary_claude_note": "Only as a step of disabling Siri and Dictation (P:improve-siri-dictation); on-device transcripts deleted. No standalone effect stated."
+  },
+  {
+   "id": "s27.type_to_siri_requests",
+   "name": "Type to Siri (Settings > Siri > Requests)",
+   "apple_name": {
+    "source": "G27:iphc28624b81abc",
+    "locator": "Type to Siri (Apple Intelligence supported devices): Turn on Type to Siri."
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iphc28624b81abc",
+     "locator": "Tap Requests, then do any of the following:"
+    },
+    {
+     "source": "G27:iphc28624b81abc",
+     "locator": "Type to Siri (Apple Intelligence supported devices): Turn on Type to Siri."
+    },
+    {
+     "source": "P:improve-siri-dictation",
+     "locator": "Then go to Settings > Siri and tap Turn Off Siri, and tap to turn off"
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "switch",
+   "applies_to_this_phone": false,
+   "ios26_counterpart": "guide.type_to_siri",
+   "counterpart_basis": "claude judgement: same Apple name, but iOS 26 record held the Accessibility > Siri location (see s27.accessibility.type_to_siri)",
+   "scope": "in_scope",
+   "claude_note": "Guide labels this location Apple Intelligence supported devices only; not shown on O105. The privacy page's Siri-and-Dictation-off instruction names a Type to Siri under Settings > Siri without device qualification.",
+   "apple_name_evidence": "X008",
+   "apple_route_evidence": [
+    "X004",
+    "X008",
+    "X009"
+   ],
+   "apple_explicit_claims": 2,
+   "helper_reported_claims": 2,
+   "apple_summary_claude_note": "Same combined-disable statement as Press Side Button. applies_to_this_phone false (guide: Apple Intelligence devices)."
+  },
+  {
+   "id": "s27.language",
+   "name": "Language",
+   "apple_name": {
+    "source": "G27:iphc28624b81abc",
+    "locator": "Tap Language, then select a language from the list."
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iphc28624b81abc",
+     "locator": "Tap Language, then select a language from the list."
+    },
+    {
+     "source": "G27:iphd3c85c193",
+     "locator": "Language: Tap Language, then tap a language to select it as your primary Siri language."
+    }
+   ],
+   "seen_on_phone": [
+    "O101",
+    "O103"
+   ],
+   "kind": "choice",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "guide.language",
+   "counterpart_basis": "same Apple name",
+   "scope": "in_scope",
+   "claude_note": "",
+   "apple_name_evidence": "X010",
+   "apple_route_evidence": [
+    "X010",
+    "X011"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Guide states only which features use the chosen language."
+  },
+  {
+   "id": "s27.voice",
+   "name": "Voice (Variations / Voices)",
+   "apple_name": {
+    "source": "G27:iphd3c85c193",
+    "locator": "Voice: Tap Voice, then tap to hear the different options."
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iphd3c85c193",
+     "locator": "Voice: Tap Voice, then tap to hear the different options."
+    },
+    {
+     "source": "G27:iphc28624b81abc",
+     "locator": "Change the variation: Select an option below Variations."
+    },
+    {
+     "source": "G27:iphc28624b81abc",
+     "locator": "Change the voice: Select an option below Voices."
+    }
+   ],
+   "seen_on_phone": [
+    "O101",
+    "O102",
+    "O103"
+   ],
+   "kind": "choice",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "guide.voice",
+   "counterpart_basis": "same Apple name",
+   "scope": "in_scope",
+   "claude_note": "O101 shows Voice — British (Voice 2).",
+   "apple_name_evidence": "X012",
+   "apple_route_evidence": [
+    "X012",
+    "X013",
+    "X014"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "No data effect stated."
+  },
+  {
+   "id": "s27.expressive_voices",
+   "name": "Siri Expressive Voices (Voice, Pace, Expressivity)",
+   "apple_name": {
+    "source": "G27:iphc28624b81abc",
+    "locator": "Use Siri Expressive Voices** (Siri AI only): Adjust Voice, Pace, and Expressivity settings until they sound just right to you."
+   },
+   "apple_routes": [],
+   "seen_on_phone": [],
+   "kind": "choice",
+   "applies_to_this_phone": false,
+   "ios26_counterpart": "new",
+   "counterpart_basis": "claude judgement: not in iOS 26 record",
+   "scope": "in_scope",
+   "claude_note": "Apple: Siri AI only, and only on iPhone 17 Pro and later models listed. Locator over 25 words? see check.",
+   "apple_name_evidence": "X015",
+   "apple_route_evidence": [],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Siri AI only; no data effect stated."
+  },
+  {
+   "id": "s27.responses",
+   "name": "Responses",
+   "apple_name": {
+    "source": "G27:iphc28624b81abc",
+    "locator": "Tap Responses, then do any of the following:"
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iphc28624b81abc",
+     "locator": "Tap Responses, then do any of the following:"
+    }
+   ],
+   "seen_on_phone": [
+    "O101",
+    "O102",
+    "O103"
+   ],
+   "kind": "settings_screen",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": null,
+   "counterpart_basis": "claude judgement: iOS 26 guide row 'Siri Responses' is recorded as the spoken-response choice (s27.responses.spoken_silent); this is the screen",
+   "scope": "in_scope",
+   "claude_note": "Container screen.",
+   "apple_name_evidence": "X016",
+   "apple_route_evidence": [
+    "X016"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Container screen; no data effect stated."
+  },
+  {
+   "id": "s27.responses.spoken_silent",
+   "name": "Prefer Spoken Responses / Speak Back for Voice Input / Prefer Silent Responses / Always Silent",
+   "apple_name": {
+    "source": "G27:iphc28624b81abc",
+    "locator": "Have Siri respond silently: Choose Prefer Silent Responses or Always Silent."
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iphc28624b81abc",
+     "locator": "Tap Responses, then do any of the following:"
+    },
+    {
+     "source": "G27:iphc28624b81abc",
+     "locator": "Have Siri respond aloud: Choose Prefer Spoken Responses or Speak Back for Voice Input"
+    },
+    {
+     "source": "G27:iphc28624b81abc",
+     "locator": "Have Siri respond silently: Choose Prefer Silent Responses or Always Silent."
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "choice",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "guide.siri_responses",
+   "counterpart_basis": "claude judgement: same choice; iOS 26 guide route was Siri Responses > Spoken Responses",
+   "scope": "in_scope",
+   "claude_note": "Option labels from the guide; O101/O102 show the Responses row only.",
+   "apple_name_evidence": "X017",
+   "apple_route_evidence": [
+    "X016",
+    "X018",
+    "X017"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Output behaviour only."
+  },
+  {
+   "id": "s27.responses.siri_ai",
+   "name": "Spoken Response / Silent Response (Siri AI)",
+   "apple_name": {
+    "source": "G27:iphc28624b81abc",
+    "locator": "If Siri AI is turned on, choose Silent Response."
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iphc28624b81abc",
+     "locator": "Tap Responses, then do any of the following:"
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "choice",
+   "applies_to_this_phone": false,
+   "ios26_counterpart": "new",
+   "counterpart_basis": "claude judgement: Siri AI option set, not in iOS 26 record",
+   "scope": "in_scope",
+   "claude_note": "",
+   "apple_name_evidence": "X019",
+   "apple_route_evidence": [
+    "X016"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Siri AI only; output behaviour only."
+  },
+  {
+   "id": "s27.always_show_captions",
+   "name": "Always Show Siri Captions",
+   "apple_name": {
+    "source": "G27:iphc28624b81abc",
+    "locator": "See what Siri says onscreen: Turn on Always Show Siri Captions."
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iphc28624b81abc",
+     "locator": "Tap Responses, then do any of the following:"
+    },
+    {
+     "source": "G27:iphc28624b81abc",
+     "locator": "See what Siri says onscreen: Turn on Always Show Siri Captions."
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "switch",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "guide.always_show_captions",
+   "counterpart_basis": "same Apple name",
+   "scope": "in_scope",
+   "claude_note": "",
+   "apple_name_evidence": "X020",
+   "apple_route_evidence": [
+    "X016",
+    "X020"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Display only."
+  },
+  {
+   "id": "s27.always_show_request",
+   "name": "Always Show Request",
+   "apple_name": {
+    "source": "G27:iphc28624b81abc",
+    "locator": "See your request onscreen: Turn on Always Show Request."
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iphc28624b81abc",
+     "locator": "Tap Responses, then do any of the following:"
+    },
+    {
+     "source": "G27:iphc28624b81abc",
+     "locator": "See your request onscreen: Turn on Always Show Request."
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "switch",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "guide.always_show_request",
+   "counterpart_basis": "same Apple name",
+   "scope": "in_scope",
+   "claude_note": "",
+   "apple_name_evidence": "X021",
+   "apple_route_evidence": [
+    "X016",
+    "X021"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Display only."
+  },
+  {
+   "id": "s27.auto_send_messages",
+   "name": "Automatically Send Messages",
+   "apple_name": {
+    "source": "G27:iphc28624b81abc",
+    "locator": "Have Siri send messages without confirming: Turn on Automatically Send Messages."
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iphc28624b81abc",
+     "locator": "Tap Responses, then do any of the following:"
+    },
+    {
+     "source": "G27:iphc28624b81abc",
+     "locator": "Have Siri send messages without confirming: Turn on Automatically Send Messages."
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "switch",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "guide.auto_send_messages",
+   "counterpart_basis": "same Apple name",
+   "scope": "in_scope",
+   "claude_note": "iOS 26 route was Siri > Messaging with Siri; iOS 27 guide puts it under Responses.",
+   "apple_name_evidence": "X022",
+   "apple_route_evidence": [
+    "X016",
+    "X022"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Confirmation behaviour only; no data effect stated."
+  },
+  {
+   "id": "s27.read_messages_language",
+   "name": "Read Messages: Add Language",
+   "apple_name": {
+    "source": "G27:iphc28624b81abc",
+    "locator": "Have Siri read messages in a different language: Tap Add Language, then select a language from the list."
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iphc28624b81abc",
+     "locator": "Tap Responses, then do any of the following:"
+    },
+    {
+     "source": "G27:iphc28624b81abc",
+     "locator": "Tap the language below Read Messages, then select from the options below Variety and Voice."
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "list",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "new",
+   "counterpart_basis": "claude judgement: not in iOS 26 record",
+   "scope": "in_scope",
+   "claude_note": "",
+   "apple_name_evidence": "X023",
+   "apple_route_evidence": [
+    "X016",
+    "X024"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "No data effect stated."
+  },
+  {
+   "id": "s27.your_information",
+   "name": "Your Information",
+   "apple_name": {
+    "source": "G27:iphc28624b81abc",
+    "locator": "Tap Your Information, then tap your name."
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iphc28624b81abc",
+     "locator": "Tap Your Information, then tap your name."
+    }
+   ],
+   "seen_on_phone": [
+    "O102"
+   ],
+   "kind": "settings_screen",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "guide.my_information",
+   "counterpart_basis": "claude judgement: iOS 26 'My Information' row, same purpose; label now 'Your Information'",
+   "scope": "in_scope",
+   "claude_note": "O102 shows the user's name in this row (privacy: redact).",
+   "apple_name_evidence": "X025",
+   "apple_route_evidence": [
+    "X025"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Guide says Siri uses My Card and that personalization syncs across devices; the off route it names is Siri in iCloud settings (s27.icloud.siri, group B), not this row."
+  },
+  {
+   "id": "s27.highlight_to_search",
+   "name": "Highlight to Search",
+   "apple_name": {
+    "source": "G27:iphc28624b81abc",
+    "locator": "Turn on Highlight to Search (Siri AI only): This setting automatically searches the web when you highlight using Siri mode in Camera or screenshots."
+   },
+   "apple_routes": [],
+   "seen_on_phone": [],
+   "kind": "switch",
+   "applies_to_this_phone": false,
+   "ios26_counterpart": "new",
+   "counterpart_basis": "claude judgement: not in iOS 26 record",
+   "scope": "in_scope",
+   "claude_note": "Apple: Siri AI only.",
+   "apple_name_evidence": "X026",
+   "apple_route_evidence": [],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Guide describes the on state only; off effect not stated. Siri AI only. See unsure."
+  },
+  {
+   "id": "s27.automatic_visual_look_up",
+   "name": "Automatic Visual Look Up",
+   "apple_name": {
+    "source": "G27:iphc28624b81abc",
+    "locator": "Turn on Automatic Visual Look Up: This setting automatically identifies objects and places that appear in screenshots."
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iph2d2500abc",
+     "locator": "Turn on Automatic Visual Look Up."
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "switch",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "new",
+   "counterpart_basis": "claude judgement: not in iOS 26 record",
+   "scope": "in_scope",
+   "claude_note": "Guide lists it in Siri settings and under General > Screen Capture ('On supported models and some languages'). Not marked Siri AI only; whether it appears on this phone is not shown on O101-O103.",
+   "apple_name_evidence": "X027",
+   "apple_route_evidence": [
+    "X028"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Guide describes the on state only (identifies objects and places in screenshots); no data recipient or off effect stated."
+  },
+  {
+   "id": "s27.excluded_apps",
+   "name": "Excluded Apps",
+   "apple_name": {
+    "source": "P:ask-siri-dictation",
+    "locator": "go to Settings > Siri > Excluded Apps, then add an app to the Excluded Apps list"
+   },
+   "apple_routes": [
+    {
+     "source": "P:ask-siri-dictation",
+     "locator": "go to Settings > Siri > Excluded Apps, then add an app to the Excluded Apps list"
+    },
+    {
+     "source": "G27:iphc28624b81abc",
+     "locator": "If you don’t want Siri to access an app or its data, you can add the app to Excluded Apps."
+    }
+   ],
+   "seen_on_phone": [
+    "O102",
+    "O106",
+    "O107"
+   ],
+   "kind": "list",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "siri.apps.learn_from_this_app",
+   "counterpart_basis": "claude judgement: Apple's iOS 27 'To stop Siri from using information donated or contributed by other installed apps' purpose now routes here instead of to per-app Learn from this App",
+   "scope": "in_scope",
+   "claude_note": "Guide: excluded apps aren't available to Siri, Search, or suggestions. O106/O107 list includes Contacts, Health, ChatGPT and others.",
+   "apple_name_evidence": "X029",
+   "apple_route_evidence": [
+    "X029",
+    "X030"
+   ],
+   "apple_explicit_claims": 1,
+   "helper_reported_claims": 1,
+   "apple_summary_claude_note": "Privacy purpose sentence supports app_donated_data x siri_suggestions. Guide sentence covers Siri, Search, or suggestions; not Dictation. Siri/Search parts in unsure."
+  },
+  {
+   "id": "s27.excluded_apps.add",
+   "name": "Add Apps (Excluded Apps)",
+   "apple_name": {
+    "source": "G27:iphc28624b81abc",
+    "locator": "Restrict Siri’s access to apps: Tap Add Apps, select apps from the list, then tap ."
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iphc28624b81abc",
+     "locator": "Restrict Siri’s access to apps: Tap Add Apps, select apps from the list, then tap ."
+    }
+   ],
+   "seen_on_phone": [
+    "O107"
+   ],
+   "kind": "action",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "new",
+   "counterpart_basis": "claude judgement: no Excluded Apps list in iOS 26",
+   "scope": "in_scope",
+   "claude_note": "",
+   "apple_name_evidence": "X031",
+   "apple_route_evidence": [
+    "X031"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "The adding action is the route for s27.excluded_apps; claim recorded there to avoid a duplicate."
+  },
+  {
+   "id": "s27.excluded_apps.remove",
+   "name": "Edit / Delete (Excluded Apps)",
+   "apple_name": {
+    "source": "G27:iphc28624b81abc",
+    "locator": "Remove restrictions to apps: Tap Edit, tap , then tap Delete to give Siri access to the app."
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iphc28624b81abc",
+     "locator": "Remove restrictions to apps: Tap Edit, tap , then tap Delete to give Siri access to the app."
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "action",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "new",
+   "counterpart_basis": "claude judgement: no Excluded Apps list in iOS 26",
+   "scope": "in_scope",
+   "claude_note": "Edit control not visible on O106/O107 transcriptions.",
+   "apple_name_evidence": "X032",
+   "apple_route_evidence": [
+    "X032"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Guide: Delete gives Siri access to the app; names no data type or action."
+  },
+  {
+   "id": "s27.suggestions",
+   "name": "Suggestions",
+   "apple_name": {
+    "source": "P:ask-siri-dictation",
+    "locator": "you can disable Siri Suggestions by going to Settings > Siri > Suggestions"
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iphc28624b81abc",
+     "locator": "Tap Suggestions, then do any of the following:"
+    },
+    {
+     "source": "P:ask-siri-dictation",
+     "locator": "you can disable Siri Suggestions by going to Settings > Siri > Suggestions"
+    }
+   ],
+   "seen_on_phone": [
+    "O102",
+    "O108",
+    "O109",
+    "O110",
+    "O111"
+   ],
+   "kind": "settings_screen",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": null,
+   "counterpart_basis": "claude judgement: in iOS 26 these switches sat directly on Settings > Siri; no separate screen record",
+   "scope": "in_scope",
+   "claude_note": "Container screen holding the four switches, Reset Hidden Suggestions and the per-app list.",
+   "apple_name_evidence": "X033",
+   "apple_route_evidence": [
+    "X034",
+    "X033"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Privacy page purpose sentence names Siri Suggestions when sharing, searching, or listening, but no data type or action. See unsure."
+  },
+  {
+   "id": "s27.suggestions.allow_notifications",
+   "name": "Allow Notifications",
+   "apple_name": {
+    "source": "G27:iphc28624b81abc",
+    "locator": "Allow or disallow suggestions to appear in notifications: Turn Allow Notifications on or off."
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iphc28624b81abc",
+     "locator": "Tap Suggestions, then do any of the following:"
+    },
+    {
+     "source": "G27:iphc28624b81abc",
+     "locator": "Allow or disallow suggestions to appear in notifications: Turn Allow Notifications on or off."
+    }
+   ],
+   "seen_on_phone": [
+    "O108"
+   ],
+   "kind": "switch",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "guide.suggestion_notifications",
+   "counterpart_basis": "claude judgement: iOS 26 guide called it 'Suggestion Notifications'; phone label was already 'Allow Notifications'",
+   "scope": "in_scope",
+   "claude_note": "O108: off.",
+   "apple_name_evidence": "X035",
+   "apple_route_evidence": [
+    "X034",
+    "X035"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Display only (suggestions appearing in notifications)."
+  },
+  {
+   "id": "s27.suggestions.show_in_app_library",
+   "name": "Show in App Library",
+   "apple_name": {
+    "source": "G27:iphc28624b81abc",
+    "locator": "Allow or disallow suggested apps to appear in App Library: Turn Show in App Library on or off."
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iphc28624b81abc",
+     "locator": "Tap Suggestions, then do any of the following:"
+    },
+    {
+     "source": "G27:iphc28624b81abc",
+     "locator": "Allow or disallow suggested apps to appear in App Library: Turn Show in App Library on or off."
+    }
+   ],
+   "seen_on_phone": [
+    "O108"
+   ],
+   "kind": "switch",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "siri.show_in_app_library",
+   "counterpart_basis": "same Apple name",
+   "scope": "in_scope",
+   "claude_note": "O108: off.",
+   "apple_name_evidence": "X036",
+   "apple_route_evidence": [
+    "X034",
+    "X036"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Display only."
+  },
+  {
+   "id": "s27.suggestions.show_when_sharing",
+   "name": "Show When Sharing",
+   "apple_name": {
+    "source": "G27:iphc28624b81abc",
+    "locator": "Allow or disallow suggested contacts to appear when sharing: Turn Show When Sharing on or off."
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iphc28624b81abc",
+     "locator": "Tap Suggestions, then do any of the following:"
+    },
+    {
+     "source": "G27:iphc28624b81abc",
+     "locator": "Allow or disallow suggested contacts to appear when sharing: Turn Show When Sharing on or off."
+    }
+   ],
+   "seen_on_phone": [
+    "O108"
+   ],
+   "kind": "switch",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "siri.show_when_sharing",
+   "counterpart_basis": "same Apple name",
+   "scope": "in_scope",
+   "claude_note": "O108: off.",
+   "apple_name_evidence": "X037",
+   "apple_route_evidence": [
+    "X034",
+    "X037"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Guide: whether suggested contacts appear when sharing; does not say on-device use of contacts stops."
+  },
+  {
+   "id": "s27.suggestions.show_listening",
+   "name": "Show Listening Suggestions",
+   "apple_name": {
+    "source": "G27:iphc28624b81abc",
+    "locator": "Turn Show Listening Suggestions on or off."
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iphc28624b81abc",
+     "locator": "Tap Suggestions, then do any of the following:"
+    },
+    {
+     "source": "G27:iphc28624b81abc",
+     "locator": "Turn Show Listening Suggestions on or off."
+    }
+   ],
+   "seen_on_phone": [
+    "O108"
+   ],
+   "kind": "switch",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "siri.show_when_listening",
+   "counterpart_basis": "claude judgement: Apple's iOS 26 privacy name 'Show When Listening'; phone label already 'Show Listening Suggestions'",
+   "scope": "in_scope",
+   "claude_note": "O108: off.",
+   "apple_name_evidence": "X038",
+   "apple_route_evidence": [
+    "X034",
+    "X038"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Display only."
+  },
+  {
+   "id": "s27.suggestions.reset_hidden",
+   "name": "Reset Hidden Suggestions",
+   "apple_name": null,
+   "apple_routes": [],
+   "seen_on_phone": [
+    "O108"
+   ],
+   "kind": "action",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": null,
+   "counterpart_basis": "claude judgement: seen on iOS 26 phone (ios26_screens) but not in switches.json",
+   "scope": "in_scope",
+   "claude_note": "Phone only; no Apple text found for this label in any ios27 source.",
+   "apple_route_evidence": [],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "No Apple text names it."
+  },
+  {
+   "id": "s27.suggestions.per_app",
+   "name": "Suggestions > [app] (per-app list)",
+   "apple_name": {
+    "source": "G27:iphc28624b81abc",
+    "locator": "Customize where suggestions appear for specific apps: Tap an app in the list, then turn settings on or off."
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iphc28624b81abc",
+     "locator": "Tap Suggestions, then do any of the following:"
+    },
+    {
+     "source": "P:ask-siri-dictation",
+     "locator": "by going to Settings > Siri > Suggestions > [app name] and tapping to change your selection for an app"
+    }
+   ],
+   "seen_on_phone": [
+    "O108",
+    "O109",
+    "O110",
+    "O111"
+   ],
+   "kind": "per_app",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "guide.apps_per_app",
+   "counterpart_basis": "claude judgement: iOS 26 Settings > Siri > Apps list; O108 note says the per-app list moved under Suggestions",
+   "scope": "in_scope",
+   "claude_note": "Guide: the settings you see depend on the app you choose.",
+   "apple_name_evidence": "X039",
+   "apple_route_evidence": [
+    "X034",
+    "X040"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Apple states the purpose only as not wanting Siri Suggestions when sharing, searching or listening (display of suggestions); no data touchpoint effect. See unsure."
+  },
+  {
+   "id": "s27.suggestions.per_app.show_in_app",
+   "name": "Show in App (Suggestions > [app])",
+   "apple_name": {
+    "source": "G27:iphc28624b81abc",
+    "locator": "For example, tap Messages, then turn off Show in App to prevent suggestions from appearing in the Messages app."
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iphc28624b81abc",
+     "locator": "Tap Suggestions, then do any of the following:"
+    },
+    {
+     "source": "G27:iphc28624b81abc",
+     "locator": "For example, tap Messages, then turn off Show in App to prevent suggestions from appearing in the Messages app."
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "per_app",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "guide.show_in_app",
+   "counterpart_basis": "same Apple name",
+   "scope": "in_scope",
+   "claude_note": "Per-app screens not opened on O108-O111.",
+   "apple_name_evidence": "X041",
+   "apple_route_evidence": [
+    "X034",
+    "X041"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Guide: turn off Show in App to prevent suggestions from appearing in the app. Display effect only; no touchpoint fits. See unsure."
+  },
+  {
+   "id": "s27.suggestions.per_app.use_with_siri",
+   "name": "Use with Siri (Suggestions > [app])",
+   "apple_name": {
+    "source": "P:ask-siri-dictation",
+    "locator": "you can control their integration with Use with Siri at any time"
+   },
+   "apple_routes": [
+    {
+     "source": "P:ask-siri-dictation",
+     "locator": "by going to Settings > Siri > Suggestions > [app name] > Use with Siri"
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "per_app",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "siri.apps.use_with_siri_requests",
+   "counterpart_basis": "claude judgement: iOS 26 name 'Use with Siri Requests' under Siri > Apps; iOS 27 name 'Use with Siri' under Siri > Suggestions > [app]",
+   "scope": "in_scope",
+   "claude_note": "Apple limits this to apps built for older versions of Siri.",
+   "apple_name_evidence": "X042",
+   "apple_route_evidence": [
+    "X043"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Apple says contextual data may be sent including from third-party apps you allow to integrate with Use with Siri. That describes the allowed (on) state only; Apple does not state the off effect. See unsure."
+  },
+  {
+   "id": "s27.app_clips.learn",
+   "name": "Learn from App Clips",
+   "apple_name": {
+    "source": "P:ask-siri-dictation",
+    "locator": "go to Settings > Siri > App Clips and tap to turn off Learn from App Clips"
+   },
+   "apple_routes": [
+    {
+     "source": "P:ask-siri-dictation",
+     "locator": "go to Settings > Siri > App Clips and tap to turn off Learn from App Clips"
+    }
+   ],
+   "seen_on_phone": [
+    "O108"
+   ],
+   "kind": "switch",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "siri.app_clips.learn",
+   "counterpart_basis": "same Apple name",
+   "scope": "in_scope",
+   "claude_note": "O108 shows 'App Clips' as the first entry of the Suggestions app list, not directly under Settings > Siri as Apple's route says; the switch itself was not opened.",
+   "apple_name_evidence": "X044",
+   "apple_route_evidence": [
+    "X044"
+   ],
+   "apple_explicit_claims": 1,
+   "helper_reported_claims": 1,
+   "apple_summary_claude_note": "One purpose_of_instruction claim (app clips contributing information to personalize Siri)."
+  },
+  {
+   "id": "s27.turn_off_siri",
+   "name": "Turn Off Siri",
+   "apple_name": {
+    "source": "P:ask-siri-dictation",
+    "locator": "To turn off Siri, go to Settings > Siri > Turn Off Siri, then tap Turn Off Siri."
+   },
+   "apple_routes": [
+    {
+     "source": "P:ask-siri-dictation",
+     "locator": "To turn off Siri, go to Settings > Siri > Turn Off Siri, then tap Turn Off Siri."
+    },
+    {
+     "source": "G27:iph83aad8922",
+     "locator": "Tap Turn Off Siri at the bottom, then tap Turn Off Siri."
+    },
+    {
+     "source": "P:ask-siri-dictation",
+     "locator": "stored on your device by going to Settings > Siri and tapping Turn Off Siri"
+    }
+   ],
+   "seen_on_phone": [
+    "O102"
+   ],
+   "kind": "action",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "combo.siri_off",
+   "counterpart_basis": "claude judgement: Apple's 'To turn off Siri' instruction now names this button instead of Talk to Siri Off + Press Side Button off",
+   "scope": "in_scope",
+   "claude_note": "O102 shows it in red at the bottom of Settings > Siri. Apple also routes on-device transcript deletion through this button (iOS 26: Delete Siri & Dictation History).",
+   "apple_name_evidence": "X045",
+   "apple_route_evidence": [
+    "X045",
+    "X046",
+    "X047"
+   ],
+   "apple_explicit_claims": 2,
+   "helper_reported_claims": 2,
+   "apple_summary_claude_note": "Apple routes deletion of on-device Siri and Dictation transcripts through this button. Apple states no other effect of turning Siri off (the sentence on information collected when you enable Siri describes the on state only)."
+  },
+  {
+   "id": "s27.turn_on_siri",
+   "name": "Turn On Siri",
+   "apple_name": {
+    "source": "G27:iph83aad8922",
+    "locator": "Tap Turn On Siri, then follow the onscreen instructions."
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iph83aad8922",
+     "locator": "Tap Turn On Siri, then follow the onscreen instructions."
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "action",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "new",
+   "counterpart_basis": "claude judgement: not in iOS 26 record",
+   "scope": "in_scope",
+   "claude_note": "Shown when Siri is off; not on O101-O103 because Siri is on.",
+   "apple_name_evidence": "X048",
+   "apple_route_evidence": [
+    "X048"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "How-to only; no effect stated."
+  },
+  {
+   "id": "s27.try_siri_ai",
+   "name": "Try Siri AI (Beta)",
+   "apple_name": {
+    "source": "G27:iph83aad8922",
+    "locator": "Tap Try Siri AI (Beta)* to get Siri AI, the new version of Siri powered by Apple Intelligence on iOS 27 or later."
+   },
+   "apple_routes": [],
+   "seen_on_phone": [],
+   "kind": "action",
+   "applies_to_this_phone": false,
+   "ios26_counterpart": "new",
+   "counterpart_basis": "claude judgement: not in iOS 26 record",
+   "scope": "in_scope",
+   "claude_note": "",
+   "apple_name_evidence": "X049",
+   "apple_route_evidence": [],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Apple says with Siri AI requests may be processed on device or sent to Private Cloud Compute, whose data is not stored or made accessible to Apple. No touchpoint or action fits Private Cloud Compute. See unsure. applies_to_this_phone false."
+  },
+  {
+   "id": "s27.use_siri_classic",
+   "name": "Use Siri Classic",
+   "apple_name": {
+    "source": "G27:iph83aad8922",
+    "locator": "If you have Siri AI but want to use the previous version of Siri, tap Turn On Siri, then tap Use Siri Classic."
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iph3fed3f2c3",
+     "locator": "To use Siri Classic instead of Siri AI, follow the steps above to turn off Siri."
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "action",
+   "applies_to_this_phone": false,
+   "ios26_counterpart": "new",
+   "counterpart_basis": "claude judgement: not in iOS 26 record",
+   "scope": "in_scope",
+   "claude_note": "Locator length checked by script.",
+   "apple_name_evidence": "X050",
+   "apple_route_evidence": [
+    "X051"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 1,
+   "apple_summary_claude_note": "One claim from Apple's paragraph for Siri AI not enabled or not available (which is also this phone's state). The Private Cloud Compute statement is in unsure."
+  },
+  {
+   "id": "s27.siri_ai_turn_off",
+   "name": "Siri AI (Beta) off",
+   "apple_name": {
+    "source": "G27:iph3fed3f2c3",
+    "locator": "Siri AI (Beta) Tap Siri, scroll down, then tap Turn Off Siri."
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iph3fed3f2c3",
+     "locator": "Siri AI (Beta) Tap Siri, scroll down, then tap Turn Off Siri."
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "action",
+   "applies_to_this_phone": false,
+   "ios26_counterpart": "new",
+   "counterpart_basis": "claude judgement: not in iOS 26 record",
+   "scope": "in_scope",
+   "claude_note": "Same Turn Off Siri button as s27.turn_off_siri, listed by Apple as the way to turn off Siri AI.",
+   "apple_name_evidence": "X052",
+   "apple_route_evidence": [
+    "X052"
+   ],
+   "apple_explicit_claims": 2,
+   "helper_reported_claims": 2,
+   "apple_summary_claude_note": "Same Turn Off Siri button as s27.turn_off_siri; the deletion claims are repeated for it. Apple does not say what turning off Siri AI does to the Siri app conversation history or its iCloud sync. applies_to_this_phone false."
+  },
+  {
+   "id": "s27.accessibility_settings_link",
+   "name": "Accessibility Settings (link in Settings > Siri)",
+   "apple_name": {
+    "source": "G27:iphc28624b81abc",
+    "locator": "To change Siri accessibility settings, see Change Siri accessibility settings."
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iphaff1d606",
+     "locator": "Tap Accessibility, tap Siri, then do any of the following:"
+    }
+   ],
+   "seen_on_phone": [
+    "O102"
+   ],
+   "kind": "settings_screen",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": null,
+   "counterpart_basis": "claude judgement: link to Accessibility > Siri; individual items have their own records",
+   "scope": "in_scope",
+   "claude_note": "O102 shows an 'Accessibility Settings' link on Settings > Siri; Apple's guide route is Settings > Accessibility > Siri.",
+   "apple_name_evidence": "X053",
+   "apple_route_evidence": [
+    "X054"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Link to a settings screen; no effect stated."
+  },
+  {
+   "id": "s27.combo.siri_and_dictation_off",
+   "name": "Siri and Dictation both off",
+   "apple_name": {
+    "source": "P:ask-siri-dictation",
+    "locator": "If you turn off both Siri and Dictation, the transcripts of your Siri and Dictation requests"
+   },
+   "apple_routes": [
+    {
+     "source": "P:improve-siri-dictation",
+     "locator": "You can disable Siri and Dictation by going to Settings > General > Keyboard and tapping to turn off Enable Dictation."
+    },
+    {
+     "source": "P:improve-siri-dictation",
+     "locator": "Then go to Settings > Siri and tap Turn Off Siri, and tap to turn off"
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "combination",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "combo.siri_and_dictation_off",
+   "counterpart_basis": "same Apple name",
+   "scope": "in_scope",
+   "claude_note": "Components: s27.enable_dictation, s27.turn_off_siri, s27.press_side_button, s27.type_to_siri_requests (privacy page wording).",
+   "apple_name_evidence": "X055",
+   "apple_route_evidence": [
+    "X056",
+    "X009"
+   ],
+   "apple_explicit_claims": 2,
+   "helper_reported_claims": 2,
+   "apple_summary_claude_note": "Apple: on-device transcripts used to personalize your experience will be deleted (both privacy pages)."
+  },
+  {
+   "id": "s27.enable_dictation",
+   "name": "Enable Dictation",
+   "apple_name": {
+    "source": "P:ask-siri-dictation",
+    "locator": "To turn off Dictation, go to Settings > General > Keyboard, then tap to turn off Enable Dictation."
+   },
+   "apple_routes": [
+    {
+     "source": "P:ask-siri-dictation",
+     "locator": "To turn off Dictation, go to Settings > General > Keyboard, then tap to turn off Enable Dictation."
+    },
+    {
+     "source": "G27:iph2c0651d2",
+     "locator": "tap General, tap Keyboard, then turn on Enable Dictation"
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "switch",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "keyboard.enable_dictation",
+   "counterpart_basis": "same Apple name",
+   "scope": "in_scope",
+   "claude_note": "Keyboard settings screen not photographed on iOS 27; O112 shows Dictation in use (so on).",
+   "apple_name_evidence": "X057",
+   "apple_route_evidence": [
+    "X057",
+    "X058"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Apple gives how-tos only (To turn off Dictation...). No effect is stated for Dictation off alone; the deletion statement needs Siri off too (combo)."
+  },
+  {
+   "id": "s27.auto_punctuation",
+   "name": "Auto-Punctuation",
+   "apple_name": {
+    "source": "G27:iph2c0651d2",
+    "locator": "To turn off automatic punctuation, go to Settings > General > Keyboard, then turn off Auto-Punctuation."
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iph2c0651d2",
+     "locator": "To turn off automatic punctuation, go to Settings > General > Keyboard, then turn off Auto-Punctuation."
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "switch",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "guide.auto_punctuation",
+   "counterpart_basis": "same Apple name",
+   "scope": "in_scope",
+   "claude_note": "",
+   "apple_name_evidence": "X059",
+   "apple_route_evidence": [
+    "X059"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Effect stated is only that Dictation stops inserting punctuation automatically; no data effect."
+  },
+  {
+   "id": "s27.dictation_shortcut",
+   "name": "Dictation shortcut (Magic Keyboard)",
+   "apple_name": {
+    "source": "G27:iph24206370d",
+    "locator": "Go to Settings > General > Keyboard, turn on Enable Dictation, then choose a dictation shortcut."
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iph24206370d",
+     "locator": "Go to Settings > General > Keyboard, turn on Enable Dictation, then choose a dictation shortcut."
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "choice",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "new",
+   "counterpart_basis": "claude judgement: not in iOS 26 record",
+   "scope": "adjacent",
+   "claude_note": "Only relevant with Magic Keyboard.",
+   "apple_name_evidence": "X060",
+   "apple_route_evidence": [
+    "X060"
+   ]
+  },
+  {
+   "id": "s27.dictation_keyboards",
+   "name": "Keyboards (Dictation languages)",
+   "apple_name": {
+    "source": "G27:iph73b71eb",
+    "locator": "You can add keyboards for writing or using Dictation in different languages on your iPhone."
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iph2c0651d2",
+     "locator": "When you use a keyboard for another language, you can use Dictation in that language as well."
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "list",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "new",
+   "counterpart_basis": "claude judgement: not in iOS 26 record",
+   "scope": "adjacent",
+   "claude_note": "",
+   "apple_name_evidence": "X061",
+   "apple_route_evidence": [
+    "X062"
+   ]
+  },
+  {
+   "id": "s27.improve_siri_dictation",
+   "name": "Improve Siri and Dictation",
+   "apple_name": {
+    "source": "P:improve-siri-dictation",
+    "locator": "You can change your setting for Improve Siri and Dictation at any time."
+   },
+   "apple_routes": [
+    {
+     "source": "P:improve-siri-dictation",
+     "locator": "To do so, go to Settings > Privacy & Security > Analytics & Improvements."
+    },
+    {
+     "source": "P:ask-siri-dictation",
+     "locator": "going to Settings > Privacy & Security > Analytics & Improvements and tapping to turn off Improve Siri & Dictation"
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "switch",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "analytics.improve_siri_dictation",
+   "counterpart_basis": "same Apple name",
+   "scope": "in_scope",
+   "claude_note": "Apple spells it both 'Improve Siri and Dictation' and 'Improve Siri & Dictation'.",
+   "apple_name_evidence": "X063",
+   "apple_route_evidence": [
+    "X064",
+    "X065"
+   ],
+   "apple_explicit_claims": 7,
+   "helper_reported_claims": 7,
+   "apple_summary_claude_note": "Audio not stored unless opted in (stops); audio sent and request data stored continue on the default page. The current default page no longer states that Siri transcripts or dictated text are stored by Apple by default, and states no off effect for review by people or for Siri responses, so no claims for those."
+  },
+  {
+   "id": "s27.improve_siri_ai",
+   "name": "Improve Siri & Apple Intelligence",
+   "apple_name": {
+    "source": "P:siri-suggestions-search",
+    "locator": "used to improve Siri if you have enabled Improve Siri & Dictation or Improve Siri & Apple Intelligence"
+   },
+   "apple_routes": [
+    {
+     "source": "P:siri-suggestions-search",
+     "locator": "Analytics & Improvements and tapping to turn off Improve Siri & Dictation or Improve Siri & Apple Intelligence"
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "switch",
+   "applies_to_this_phone": false,
+   "ios26_counterpart": "oos.improve_siri_ai",
+   "counterpart_basis": "same Apple name",
+   "scope": "in_scope",
+   "claude_note": "Apple does not state the device requirement for this switch in these pages; marked false by Claude because the name ties it to Apple Intelligence, which Apple says needs iPhone 15 Pro or later. See unsure.",
+   "apple_name_evidence": "X066",
+   "apple_route_evidence": [
+    "X067"
+   ],
+   "apple_explicit_claims": 7,
+   "helper_reported_claims": 7,
+   "apple_summary_claude_note": "Same sentences as Improve Siri and Dictation (Apple names both opt-ins together). applies_to_this_phone false; Apple does not state the device requirement for this switch."
+  },
+  {
+   "id": "s27.help_improve_search",
+   "name": "Help Apple Improve Search",
+   "apple_name": {
+    "source": "P:ask-siri-dictation",
+    "locator": "You can turn off Help Apple Improve Search in Settings."
+   },
+   "apple_routes": [
+    {
+     "source": "P:ask-siri-dictation",
+     "locator": "you can disable Improve Search by going to Settings > Search and tapping to turn off Help Apple Improve Search"
+    },
+    {
+     "source": "P:siri-suggestions-search",
+     "locator": "you can disable Improve Search by going to Settings > Search and tapping to turn off Help Apple Improve Search"
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "switch",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "search.help_improve_search",
+   "counterpart_basis": "same Apple name",
+   "scope": "in_scope",
+   "claude_note": "",
+   "apple_name_evidence": "X068",
+   "apple_route_evidence": [
+    "X069",
+    "X070"
+   ],
+   "apple_explicit_claims": 2,
+   "helper_reported_claims": 3,
+   "apple_summary_claude_note": "Search queries stored_by_apple stops for search; for Siri searches Apple says they are still stored if either opt-in is on."
+  },
+  {
+   "id": "s27.share_icloud_analytics",
+   "name": "Share iCloud Analytics",
+   "apple_name": {
+    "source": "P:icloud-analytics",
+    "locator": "go to Settings > Privacy & Security > Analytics & Improvements and tap to turn off Share iCloud Analytics"
+   },
+   "apple_routes": [
+    {
+     "source": "P:icloud-analytics",
+     "locator": "go to Settings > Privacy & Security > Analytics & Improvements and tap to turn off Share iCloud Analytics"
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "switch",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "analytics.share_icloud_analytics",
+   "counterpart_basis": "same Apple name",
+   "scope": "adjacent",
+   "claude_note": "Page not Siri-specific; kept because iOS 26 record held it.",
+   "apple_name_evidence": "X071",
+   "apple_route_evidence": [
+    "X071"
+   ]
+  },
+  {
+   "id": "s27.improve_assistive_voice",
+   "name": "Improve Assistive Voice Features",
+   "apple_name": {
+    "source": "P:improve-assistive-voice-features",
+    "locator": "go to Settings > Privacy & Security > Analytics & Improvements, and tap to turn off Improve Assistive Voice Features"
+   },
+   "apple_routes": [
+    {
+     "source": "P:improve-assistive-voice-features",
+     "locator": "go to Settings > Privacy & Security > Analytics & Improvements, and tap to turn off Improve Assistive Voice Features"
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "switch",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "analytics.improve_assistive_voice",
+   "counterpart_basis": "same Apple name",
+   "scope": "adjacent",
+   "claude_note": "Covers Vocal Shortcuts and Voice Control audio, not Siri or Dictation.",
+   "apple_name_evidence": "X072",
+   "apple_route_evidence": [
+    "X072"
+   ]
+  },
+  {
+   "id": "s27.improve_health_activity",
+   "name": "Improve Health & Activity",
+   "apple_name": {
+    "source": "P:improve-health-activity",
+    "locator": "Improve Health & Activity & Privacy Improve Health & Activity is designed to protect your information"
+   },
+   "apple_routes": [],
+   "seen_on_phone": [],
+   "kind": "switch",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "analytics.improve_health_activity",
+   "counterpart_basis": "same Apple name",
+   "scope": "adjacent",
+   "claude_note": "No Settings route in the ios27 source text.",
+   "apple_name_evidence": "X073",
+   "apple_route_evidence": []
+  },
+  {
+   "id": "s27.share_iphone_analytics",
+   "name": "Share iPhone Analytics",
+   "apple_name": {
+    "source": "P:device-analytics",
+    "locator": "go to Settings > Privacy & Security > Analytics & Improvements, and turn off Share iPhone Analytics"
+   },
+   "apple_routes": [
+    {
+     "source": "P:device-analytics",
+     "locator": "go to Settings > Privacy & Security > Analytics & Improvements, and turn off Share iPhone Analytics"
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "switch",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "adj.share_iphone_analytics",
+   "counterpart_basis": "same Apple name",
+   "scope": "adjacent",
+   "claude_note": "",
+   "apple_name_evidence": "X074",
+   "apple_route_evidence": [
+    "X074"
+   ]
+  },
+  {
+   "id": "s27.search_settings",
+   "name": "Search (Settings > Search)",
+   "apple_name": {
+    "source": "G27:iph079e1fe9d",
+    "locator": "Search Spotlight search suggestions and which apps appear in search results"
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iph3c511548",
+     "locator": "Tap Search, scroll down, then tap an app."
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "settings_screen",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": null,
+   "counterpart_basis": "claude judgement: container; switches recorded separately",
+   "scope": "in_scope",
+   "claude_note": "Not photographed on iOS 27.",
+   "apple_name_evidence": "X075",
+   "apple_route_evidence": [
+    "X076"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Settings screen container; no effect stated."
+  },
+  {
+   "id": "s27.search.show_recent_searches",
+   "name": "Show Recent Searches (Settings > Search)",
+   "apple_name": {
+    "source": "P:siri-suggestions-search",
+    "locator": "you can disable “Show Recent Searches” and “Show Related Content” by going to Settings > Search"
+   },
+   "apple_routes": [
+    {
+     "source": "P:siri-suggestions-search",
+     "locator": "you can disable “Show Recent Searches” and “Show Related Content” by going to Settings > Search"
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "switch",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "search.show_recent_searches",
+   "counterpart_basis": "same Apple name",
+   "scope": "in_scope",
+   "claude_note": "",
+   "apple_name_evidence": "X077",
+   "apple_route_evidence": [
+    "X077"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Apple's purpose is not wanting web-based content and search results (with Show Related Content). Content received, not data sent; no touchpoint fits. See unsure."
+  },
+  {
+   "id": "s27.search.show_related_content",
+   "name": "Show Related Content",
+   "apple_name": {
+    "source": "P:siri-suggestions-search",
+    "locator": "you can disable “Show Recent Searches” and “Show Related Content” by going to Settings > Search"
+   },
+   "apple_routes": [
+    {
+     "source": "P:siri-suggestions-search",
+     "locator": "by going to Settings > Search and tapping to turn off those features"
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "switch",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "search.show_related_content",
+   "counterpart_basis": "same Apple name",
+   "scope": "in_scope",
+   "claude_note": "",
+   "apple_name_evidence": "X077",
+   "apple_route_evidence": [
+    "X078"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Same sentence as Show Recent Searches; no touchpoint fits. See unsure."
+  },
+  {
+   "id": "s27.search.show_app_in_search",
+   "name": "Show App in Search (per app)",
+   "apple_name": {
+    "source": "G27:iph3c511548",
+    "locator": "Turn Show App in Search on or off."
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iph3c511548",
+     "locator": "Tap Search, scroll down, then tap an app."
+    },
+    {
+     "source": "G27:iph3c511548",
+     "locator": "Turn Show App in Search on or off."
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "per_app",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "guide.search_per_app",
+   "counterpart_basis": "same route",
+   "scope": "in_scope",
+   "claude_note": "",
+   "apple_name_evidence": "X079",
+   "apple_route_evidence": [
+    "X076",
+    "X079"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Guide: choose which apps to include in Search. No data effect stated."
+  },
+  {
+   "id": "s27.search.search_engine",
+   "name": "Search Engine",
+   "apple_name": {
+    "source": "G27:iphb719b43de",
+    "locator": "Tap Search, then tap Search Engine."
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iphb719b43de",
+     "locator": "Tap Search, then tap Search Engine."
+    },
+    {
+     "source": "G27:iph6297b394b",
+     "locator": "Tap Search Engine, then choose a search engine."
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "choice",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "new",
+   "counterpart_basis": "claude judgement: not in iOS 26 switches.json (O001 photographed it on iOS 26)",
+   "scope": "adjacent",
+   "claude_note": "Guide gives two routes: Settings > Search > Search Engine and Settings > Apps > Safari > Search Engine.",
+   "apple_name_evidence": "X080",
+   "apple_route_evidence": [
+    "X080",
+    "X081"
+   ]
+  },
+  {
+   "id": "s27.search.home_screen_button",
+   "name": "Show on Home Screen (Search button)",
+   "apple_name": {
+    "source": "G27:iph3c511548",
+    "locator": "tap Home Screen & App Library, then turn off Show on Home Screen"
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iph3c511548",
+     "locator": "tap Home Screen & App Library, then turn off Show on Home Screen"
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "switch",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "new",
+   "counterpart_basis": "claude judgement: not the iOS 26 Siri Suggestions 'Show on Home Screen' (guide.show_on_home_screen)",
+   "scope": "adjacent",
+   "claude_note": "Removes the Search button from the Home Screen.",
+   "apple_name_evidence": "X082",
+   "apple_route_evidence": [
+    "X082"
+   ]
+  },
+  {
+   "id": "s27.search.location_based_suggestions",
+   "name": "Suggestions & Search (Location Services > System Services)",
+   "apple_name": {
+    "source": "P:ask-siri-dictation",
+    "locator": "Location Services > System Services and tapping to turn off Suggestions & Search"
+   },
+   "apple_routes": [
+    {
+     "source": "P:ask-siri-dictation",
+     "locator": "you can turn off Location Services for Siri Suggestions by going to Settings > Privacy & Security"
+    },
+    {
+     "source": "P:siri-suggestions-search",
+     "locator": "You can disable Location Services for Search by going to Settings > Privacy & Security"
+    },
+    {
+     "source": "G27:iph3c511548",
+     "locator": "Tap System Services, then turn off Suggestions & Search."
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "switch",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "location.system.suggestions_search",
+   "counterpart_basis": "same Apple name",
+   "scope": "in_scope",
+   "claude_note": "Guide heading calls it 'Location-Based Suggestions'.",
+   "apple_name_evidence": "X083",
+   "apple_route_evidence": [
+    "X084",
+    "X085",
+    "X086"
+   ],
+   "apple_explicit_claims": 2,
+   "helper_reported_claims": 2,
+   "apple_summary_claude_note": "Precise location not sent to Apple (Location Services page). The ask-siri and search pages and the guide give how-tos only."
+  },
+  {
+   "id": "s27.safari.show_recent_searches",
+   "name": "Show Recent Searches (Safari)",
+   "apple_name": {
+    "source": "G27:iph9c79f9786",
+    "locator": "Below Search, turn off Show Recent Searches."
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iph9c79f9786",
+     "locator": "Below Search, turn off Show Recent Searches."
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "switch",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "new",
+   "counterpart_basis": "claude judgement: Safari switch of the same name; not in iOS 26 record",
+   "scope": "in_scope",
+   "claude_note": "Separate from Settings > Search > Show Recent Searches.",
+   "apple_name_evidence": "X087",
+   "apple_route_evidence": [
+    "X087"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Guide: hides recent searches shown when the Safari search field is empty. Display only; no data effect."
+  },
+  {
+   "id": "s27.safari.search_engine_suggestions",
+   "name": "Search Engine Suggestions",
+   "apple_name": {
+    "source": "P:siri-suggestions-search",
+    "locator": "When Search Engine Suggestions are enabled, Safari will ask your selected search engine for suggestions"
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iph6297b394b",
+     "locator": "If you don’t want to see suggested search terms, go to Settings > Apps > Safari, then turn off Search Engine Suggestions."
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "switch",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "safari.search_engine_suggestions",
+   "counterpart_basis": "same Apple name",
+   "scope": "in_scope",
+   "claude_note": "",
+   "apple_name_evidence": "X088",
+   "apple_route_evidence": [
+    "X089"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Apple describes only the enabled state (Safari asks your selected search engine for suggestions). The guide purpose is not seeing suggested search terms (display). Off effect on typed text not stated. See unsure."
+  },
+  {
+   "id": "s27.safari.preload_top_hit",
+   "name": "Preload Top Hit",
+   "apple_name": {
+    "source": "P:siri-suggestions-search",
+    "locator": "With Preload Top Hit enabled, as soon as Safari determines a Top Hit"
+   },
+   "apple_routes": [],
+   "seen_on_phone": [],
+   "kind": "switch",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "safari.preload_top_hit",
+   "counterpart_basis": "same Apple name",
+   "scope": "in_scope",
+   "claude_note": "No route in any ios27 source.",
+   "apple_name_evidence": "X090",
+   "apple_route_evidence": [],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Apple: if you disable this option, the page will load normally. Says nothing about bookmark or history use stopping. See unsure."
+  },
+  {
+   "id": "s27.location.siri",
+   "name": "Location Services for Siri",
+   "apple_name": {
+    "source": "P:ask-siri-dictation",
+    "locator": "you can turn off Location Services for Siri by going to Settings > Privacy & Security > Location Services > Siri and tapping Never"
+   },
+   "apple_routes": [
+    {
+     "source": "P:ask-siri-dictation",
+     "locator": "you can turn off Location Services for Siri by going to Settings > Privacy & Security > Location Services > Siri and tapping Never"
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "choice",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "location.siri",
+   "counterpart_basis": "same Apple name",
+   "scope": "in_scope",
+   "claude_note": "",
+   "apple_name_evidence": "X091",
+   "apple_route_evidence": [
+    "X091"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Apple describes only the on state (If you have Location Services turned on for Siri, location will be sent; request data includes approximate location if turned on). No explicit off statement, consistent with the September decision (C161/C162). See unsure."
+  },
+  {
+   "id": "s27.location.global",
+   "name": "Location Services (global)",
+   "apple_name": {
+    "source": "P:location-services",
+    "locator": "either tap to turn off global Location Services"
+   },
+   "apple_routes": [
+    {
+     "source": "P:location-services",
+     "locator": "go to Settings > Privacy & Security > Location Services, and either tap to turn off global Location Services"
+    },
+    {
+     "source": "G27:iph3dd5f9be",
+     "locator": "go to Settings > Privacy & Security > Location Services, then turn on Location Services"
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "switch",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "location.global",
+   "counterpart_basis": "same Apple name",
+   "scope": "in_scope",
+   "claude_note": "",
+   "apple_name_evidence": "X092",
+   "apple_route_evidence": [
+    "X093",
+    "X094"
+   ],
+   "apple_explicit_claims": 1,
+   "helper_reported_claims": 1,
+   "apple_summary_claude_note": "One direct statement on the Search page: location not sent to Apple if Location Services is off."
+  },
+  {
+   "id": "s27.location.alerts_shortcuts",
+   "name": "Alerts & Shortcuts Automations (System Services)",
+   "apple_name": {
+    "source": "P:location-services",
+    "locator": "Alerts & Shortcuts Automations: Your iPhone and Apple Watch will use your location"
+   },
+   "apple_routes": [
+    {
+     "source": "P:location-services",
+     "locator": "You can also disable location-based System Services by tapping System Services"
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "switch",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "location.system.alerts_shortcuts_automations",
+   "counterpart_basis": "same Apple name",
+   "scope": "adjacent",
+   "claude_note": "",
+   "apple_name_evidence": "X095",
+   "apple_route_evidence": [
+    "X096"
+   ]
+  },
+  {
+   "id": "s27.location.iphone_analytics",
+   "name": "iPhone Analytics (System Services)",
+   "apple_name": {
+    "source": "P:device-analytics",
+    "locator": "go to Settings > Privacy & Security > Location Services > System Services and tap to turn off iPhone Analytics"
+   },
+   "apple_routes": [
+    {
+     "source": "P:device-analytics",
+     "locator": "go to Settings > Privacy & Security > Location Services > System Services and tap to turn off iPhone Analytics"
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "switch",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "adj.iphone_analytics_location",
+   "counterpart_basis": "same Apple name",
+   "scope": "adjacent",
+   "claude_note": "",
+   "apple_name_evidence": "X097",
+   "apple_route_evidence": [
+    "X097"
+   ]
+  },
+  {
+   "id": "s27.location.news",
+   "name": "Location Services: News",
+   "apple_name": {
+    "source": "P:apple-news",
+    "locator": "going to Settings > Privacy & Security > Location Services, tapping News, then selecting Never"
+   },
+   "apple_routes": [
+    {
+     "source": "P:apple-news",
+     "locator": "going to Settings > Privacy & Security > Location Services, tapping News, then selecting Never"
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "choice",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "adj.news_location",
+   "counterpart_basis": "same route",
+   "scope": "adjacent",
+   "claude_note": "",
+   "apple_name_evidence": "X098",
+   "apple_route_evidence": [
+    "X098"
+   ]
+  },
+  {
+   "id": "s27.icloud.siri",
+   "name": "Siri (iCloud > Saved to iCloud)",
+   "apple_name": {
+    "source": "P:ask-siri-dictation",
+    "locator": "going to Settings > [your name] > iCloud > Saved to iCloud > See All and tapping to turn off Siri"
+   },
+   "apple_routes": [
+    {
+     "source": "P:ask-siri-dictation",
+     "locator": "going to Settings > [your name] > iCloud > Saved to iCloud > See All and tapping to turn off Siri"
+    },
+    {
+     "source": "G27:iphc28624b81abc",
+     "locator": "If you don’t want Siri personalization to update across your devices, you can turn off Siri in iCloud settings."
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "switch",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "icloud.siri",
+   "counterpart_basis": "same route",
+   "scope": "in_scope",
+   "claude_note": "",
+   "apple_name_evidence": "X099",
+   "apple_route_evidence": [
+    "X099",
+    "X100"
+   ],
+   "apple_explicit_claims": 2,
+   "helper_reported_claims": 2,
+   "apple_summary_claude_note": "Purpose stated twice (privacy page and guide): Siri personalization stops syncing."
+  },
+  {
+   "id": "s27.speech_recognition",
+   "name": "Speech Recognition (per app)",
+   "apple_name": {
+    "source": "P:ask-siri-dictation",
+    "locator": "You can control which apps use Speech Recognition for transcription by going to Settings > Privacy & Security > Speech Recognition."
+   },
+   "apple_routes": [
+    {
+     "source": "P:ask-siri-dictation",
+     "locator": "You can control which apps use Speech Recognition for transcription by going to Settings > Privacy & Security > Speech Recognition."
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "per_app",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "privacy.speech_recognition",
+   "counterpart_basis": "same Apple name",
+   "scope": "in_scope",
+   "claude_note": "",
+   "apple_name_evidence": "X101",
+   "apple_route_evidence": [
+    "X101"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Apple states only the allowed state (audio to be transcribed may be sent to Apple) and that you can control which apps use Speech Recognition. The off-state effect is not stated. See unsure."
+  },
+  {
+   "id": "s27.screen_time.siri",
+   "name": "Siri (Screen Time > Content & Privacy Restrictions)",
+   "apple_name": {
+    "source": "P:ask-siri-dictation",
+    "locator": "For Siri, go to Settings > Screen Time > Content & Privacy Restrictions > Other Features > Siri."
+   },
+   "apple_routes": [
+    {
+     "source": "P:ask-siri-dictation",
+     "locator": "For Siri, go to Settings > Screen Time > Content & Privacy Restrictions > Other Features > Siri."
+    },
+    {
+     "source": "G27:iph3ff83f3b1",
+     "locator": "Tap Screen Time, tap Content & Privacy Restrictions, tap Siri, then do any of the following:"
+    },
+    {
+     "source": "G27:iph3ff83f3b1",
+     "locator": "Block Siri: Tap Don’t Allow Siri."
+    },
+    {
+     "source": "G27:iph3ff83f3b1",
+     "locator": "Allow use of Siri without AI capabilities: Tap Siri (Classic Version)."
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "choice",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "screen_time.siri_dictation",
+   "counterpart_basis": "claude judgement: iOS 26 single 'Siri & Dictation' item under Allowed Apps & Features; iOS 27 splits Siri and Dictation",
+   "scope": "in_scope",
+   "claude_note": "Routes differ: privacy page says Other Features > Siri; guide says Content & Privacy Restrictions > Siri. See unsure.",
+   "apple_name_evidence": "X102",
+   "apple_route_evidence": [
+    "X102",
+    "X103",
+    "X104",
+    "X105"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Apple says this restricts the ability to use Siri ('Block Siri: Tap Don’t Allow Siri.'); no effect on any touchpoint is stated."
+  },
+  {
+   "id": "s27.screen_time.siri_ai",
+   "name": "Siri AI (Beta) and Siri AI capabilities (Screen Time)",
+   "apple_name": {
+    "source": "G27:iph3ff83f3b1",
+    "locator": "Select Allow or Block under any of the Siri AI capabilities, such as Image Creation, Sensitive Topics, or Explicit Language."
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iph3ff83f3b1",
+     "locator": "Allow use of Siri with AI capabilities: Tap Siri AI (Beta)"
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "choice",
+   "applies_to_this_phone": false,
+   "ios26_counterpart": "new",
+   "counterpart_basis": "claude judgement: not in iOS 26 record",
+   "scope": "in_scope",
+   "claude_note": "",
+   "apple_name_evidence": "X106",
+   "apple_route_evidence": [
+    "X107"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Allow/Block choices for Siri AI capabilities; no data effect stated. applies_to_this_phone false."
+  },
+  {
+   "id": "s27.screen_time.dictation",
+   "name": "Dictation (Screen Time > Other Features)",
+   "apple_name": {
+    "source": "P:ask-siri-dictation",
+    "locator": "For Dictation, go to Settings > Screen Time > Content & Privacy Restrictions > Other Features > Dictation."
+   },
+   "apple_routes": [
+    {
+     "source": "P:ask-siri-dictation",
+     "locator": "For Dictation, go to Settings > Screen Time > Content & Privacy Restrictions > Other Features > Dictation."
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "switch",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "screen_time.siri_dictation",
+   "counterpart_basis": "claude judgement: iOS 26 single 'Siri & Dictation' item; iOS 27 privacy page lists Dictation separately",
+   "scope": "in_scope",
+   "claude_note": "The iOS 27 guide's Screen Time page names no Dictation item ('Other Features' list given only by example: AirDrop, Camera).",
+   "apple_name_evidence": "X108",
+   "apple_route_evidence": [
+    "X108"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Privacy page route only, under 'restrict the ability to use Siri and Dictation altogether'; no data effect stated."
+  },
+  {
+   "id": "s27.screen_time.chatgpt",
+   "name": "ChatGPT extension (Screen Time)",
+   "apple_name": {
+    "source": "G27:iph00fd3c8c2",
+    "locator": "You can also block access to the ChatGPT extension in Screen Time settings."
+   },
+   "apple_routes": [],
+   "seen_on_phone": [],
+   "kind": "switch",
+   "applies_to_this_phone": false,
+   "ios26_counterpart": "new",
+   "counterpart_basis": "claude judgement: not in iOS 26 record",
+   "scope": "adjacent",
+   "claude_note": "",
+   "apple_name_evidence": "X109",
+   "apple_route_evidence": []
+  },
+  {
+   "id": "s27.apps.siri_row",
+   "name": "Siri (Settings > Apps > [app])",
+   "apple_name": {
+    "source": "G27:iph92579feda",
+    "locator": "Siri: Allow Siri to make suggestions across apps based on the way you use Notes."
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iph92579feda",
+     "locator": "Siri: Allow Siri to make suggestions across apps based on the way you use Notes."
+    },
+    {
+     "source": "G27:iph80dabb18b",
+     "locator": "Siri: Allow Siri to make suggestions across apps based on the way you use Mail."
+    },
+    {
+     "source": "G27:iph3dfd91de",
+     "locator": "Siri: Allow Siri to make suggestions across apps based on the way you use the App Store."
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "per_app",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "siri.apps.learn_from_this_app",
+   "counterpart_basis": "claude judgement: same described purpose as Learn from this App; route is now Settings > Apps > [app] > Siri",
+   "scope": "in_scope",
+   "claude_note": "Notes page sends readers to 'Exclude apps from Siri, Search, and suggestions' for this.",
+   "apple_name_evidence": "X110",
+   "apple_route_evidence": [
+    "X110",
+    "X111",
+    "X112"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Notes/Mail/App Store: Siri row lets Siri make suggestions across apps based on the way you use the app. No touchpoint for usage of an app; see unsure."
+  },
+  {
+   "id": "s27.apps.learn_from_this_app",
+   "name": "Learn from this App (Settings > Apps > [app] > Siri)",
+   "apple_name": {
+    "source": "G27:iphc37be2016",
+    "locator": "Go to Settings > Apps > Calendar, tap Siri, then turn on Learn from this App."
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iphc37be2016",
+     "locator": "Go to Settings > Apps > Calendar, tap Siri, then turn on Learn from this App."
+    },
+    {
+     "source": "G27:iph3d110f84",
+     "locator": "To allow Siri to make suggestions in other apps based on how you use Calendar, turn on Learn from this App."
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "per_app",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "siri.apps.learn_from_this_app",
+   "counterpart_basis": "same Apple name",
+   "scope": "in_scope",
+   "claude_note": "Only Calendar pages name this switch in iOS 27 sources; the privacy page's purpose sentence now routes to Excluded Apps instead.",
+   "apple_name_evidence": "X113",
+   "apple_route_evidence": [
+    "X113",
+    "X114"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Calendar pages only: purpose is suggestions in other apps 'based on how you use Calendar'. No touchpoint for that; see unsure."
+  },
+  {
+   "id": "s27.apps.show_in_app",
+   "name": "Show in App (Settings > Apps > [app] > Siri)",
+   "apple_name": {
+    "source": "G27:iph3d110f84",
+    "locator": "Tap Siri, then turn on Show in App to allow Siri to suggest events found in other apps."
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iph3d110f84",
+     "locator": "Tap Siri, then turn on Show in App to allow Siri to suggest events found in other apps."
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "per_app",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "guide.show_in_app",
+   "counterpart_basis": "same Apple name",
+   "scope": "in_scope",
+   "claude_note": "Calendar example. Books and News have their own records.",
+   "apple_name_evidence": "X115",
+   "apple_route_evidence": [
+    "X115"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 2,
+   "apple_summary_claude_note": "Calendar Show in App: email and messages for event suggestions. Safari part has no clear touchpoint; see unsure."
+  },
+  {
+   "id": "s27.apps.search_row",
+   "name": "Search (Settings > Apps > [app])",
+   "apple_name": {
+    "source": "G27:iph92579feda",
+    "locator": "Search: Allow suggestions and content from Notes to appear in Search and widgets."
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iph92579feda",
+     "locator": "Search: Allow suggestions and content from Notes to appear in Search and widgets."
+    },
+    {
+     "source": "G27:iph80dabb18b",
+     "locator": "Search: Allow content from Mail to appear in Search."
+    },
+    {
+     "source": "G27:iph3dfd91de",
+     "locator": "Search: Allow content from the App Store to appear in Search."
+    },
+    {
+     "source": "G27:iphc37be2016",
+     "locator": "You can also allow suggestions and content from Calendar to appear in Search, widgets, and as notifications."
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "per_app",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "guide.search_per_app",
+   "counterpart_basis": "claude judgement: same function, iOS 26 route was Settings > Search > [app]",
+   "scope": "in_scope",
+   "claude_note": "",
+   "apple_name_evidence": "X116",
+   "apple_route_evidence": [
+    "X116",
+    "X117",
+    "X118",
+    "X119"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 1,
+   "apple_summary_claude_note": "Mail Search row only (email x search). Notes, App Store, Calendar content has no touchpoint."
+  },
+  {
+   "id": "s27.books.show_in_app",
+   "name": "Show in App (Books)",
+   "apple_name": {
+    "source": "P:apple-books",
+    "locator": "going to Settings > Apps > Books > Siri, and tapping to turn off Show in App"
+   },
+   "apple_routes": [
+    {
+     "source": "P:apple-books",
+     "locator": "going to Settings > Apps > Books > Siri, and tapping to turn off Show in App"
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "switch",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "books.siri.show_in_app",
+   "counterpart_basis": "same route",
+   "scope": "in_scope",
+   "claude_note": "",
+   "apple_name_evidence": "X120",
+   "apple_route_evidence": [
+    "X120"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Apple: disabling Show in App stops Siri suggesting Books content based on 'information derived from the apps you use'. No touchpoint for that; see unsure. Apple also says this information is not sent to Apple (true regardless of the switch)."
+  },
+  {
+   "id": "s27.books.ai_show_in_app",
+   "name": "Show in App (Books > Apple Intelligence & Siri)",
+   "apple_name": {
+    "source": "P:apple-books",
+    "locator": "go to Settings > Apps > Books > Apple Intelligence & Siri, then tap to turn off Show in App"
+   },
+   "apple_routes": [
+    {
+     "source": "P:apple-books",
+     "locator": "go to Settings > Apps > Books > Apple Intelligence & Siri, then tap to turn off Show in App"
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "switch",
+   "applies_to_this_phone": false,
+   "ios26_counterpart": "oos.books_ai_show_in_app",
+   "counterpart_basis": "same route",
+   "scope": "adjacent",
+   "claude_note": "Apple: on Apple Intelligence–capable devices.",
+   "apple_name_evidence": "X121",
+   "apple_route_evidence": [
+    "X121"
+   ]
+  },
+  {
+   "id": "s27.news.show_in_app",
+   "name": "Show in App (News)",
+   "apple_name": {
+    "source": "P:apple-news",
+    "locator": "going to Settings > Apps > News > Siri & Search, and tapping to turn off Show in App"
+   },
+   "apple_routes": [
+    {
+     "source": "P:apple-news",
+     "locator": "going to Settings > Apps > News > Siri & Search, and tapping to turn off Show in App"
+    },
+    {
+     "source": "G27:iphe81ae861c",
+     "locator": "Tap Siri, then turn off Show in App."
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "switch",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "news.siri.show_in_app",
+   "counterpart_basis": "same route",
+   "scope": "in_scope",
+   "claude_note": "Privacy page says News > Siri & Search; guide says News > Siri.",
+   "apple_name_evidence": "X122",
+   "apple_route_evidence": [
+    "X122",
+    "X123"
+   ],
+   "apple_explicit_claims": 1,
+   "helper_reported_claims": 1,
+   "apple_summary_claude_note": "Safari-derived information for News suggestions stops; 'other apps' part has no touchpoint (unsure)."
+  },
+  {
+   "id": "s27.apple_store.siri_and_search",
+   "name": "Siri & Search (Apple Store app page)",
+   "apple_name": {
+    "source": "P:apple-store-app",
+    "locator": "To change how Siri accesses your information, go to Settings > Siri & Search."
+   },
+   "apple_routes": [
+    {
+     "source": "P:apple-store-app",
+     "locator": "To change how Siri accesses your information, go to Settings > Siri & Search."
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "settings_screen",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "apple_store.siri_and_search",
+   "counterpart_basis": "same Apple name",
+   "scope": "in_scope",
+   "claude_note": "No 'Siri & Search' screen on O101-O103; phone shows Settings > Siri.",
+   "apple_name_evidence": "X124",
+   "apple_route_evidence": [
+    "X124"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Apple says only 'To change how Siri accesses your information, go to Settings > Siri & Search.' No effect named."
+  },
+  {
+   "id": "s27.health.access_health_data",
+   "name": "Access Health Data (Health > Siri)",
+   "apple_name": {
+    "source": "P:health-app",
+    "locator": "then tapping to turn off Access Health Data"
+   },
+   "apple_routes": [
+    {
+     "source": "P:health-app",
+     "locator": "going to Settings > Apps > Health > Data Access & Devices > Siri, then tapping to turn off Access Health Data"
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "switch",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "health.siri_access",
+   "counterpart_basis": "same Apple name",
+   "scope": "in_scope",
+   "claude_note": "",
+   "apple_name_evidence": "X125",
+   "apple_route_evidence": [
+    "X126"
+   ],
+   "apple_explicit_claims": 1,
+   "helper_reported_claims": 1,
+   "apple_summary_claude_note": "Siri's access to Health app data stops. Apple ties no switch to health information in unrecognised requests being sent to Apple."
+  },
+  {
+   "id": "s27.contacts.suggestions",
+   "name": "Contacts suggestions (via Excluded Apps)",
+   "apple_name": null,
+   "apple_routes": [
+    {
+     "source": "G27:iph3e0ca2db",
+     "locator": "To turn off either feature, see Exclude apps from Siri, Search, and suggestions."
+    }
+   ],
+   "seen_on_phone": [
+    "O106",
+    "O111"
+   ],
+   "kind": "per_app",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": null,
+   "counterpart_basis": "claude judgement: no iOS 26 record for Contacts specifically",
+   "scope": "in_scope",
+   "claude_note": "Apple names no switch; the two features are Siri suggesting new contacts and suggesting contact info in other apps. No 'Show Contact Suggestions' label found in any ios27 source. O106 shows Contacts excluded; O111 shows Contacts in the Suggestions app list.",
+   "apple_route_evidence": [
+    "X127"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Apple says either Contacts suggestion feature can be turned off via Excluded Apps, but the data named ('your activity in other apps', 'how you use Contacts') has no matching touchpoint; see unsure."
+  },
+  {
+   "id": "s27.phone.show_when_calling",
+   "name": "Show When Calling (Phone > Siri / Apple Intelligence & Siri)",
+   "apple_name": {
+    "source": "G27:iph3c9951d7",
+    "locator": "Turn Show When Calling on or off."
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iph3c9951d7",
+     "locator": "To turn Call Context cards on or off, do the following:"
+    },
+    {
+     "source": "G27:iph3c993cbc",
+     "locator": "To turn Call Context on or off, do the following:"
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "switch",
+   "applies_to_this_phone": false,
+   "ios26_counterpart": "new",
+   "counterpart_basis": "claude judgement: not in iOS 26 record",
+   "scope": "in_scope",
+   "claude_note": "Call Context cards; Apple Intelligence required. Two guide pages give different parent names. The next steps are 'Tap Phone, then tap Siri.' (G27:iph3c9951d7) and 'Tap Phone, then tap Apple Intelligence & Siri.' (G27:iph3c993cbc), too short for locators.",
+   "apple_name_evidence": "X128",
+   "apple_route_evidence": [
+    "X129",
+    "X130"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Call Context turns on/off; Call Context is an Apple Intelligence feature not among the five features. applies_to_this_phone false. See unsure."
+  },
+  {
+   "id": "s27.messages.suggested_actions",
+   "name": "Suggested Actions (Messages)",
+   "apple_name": {
+    "source": "G27:iph3d039b67",
+    "locator": "Tap Apps, tap Messages, tap Suggested Actions, then turn the options on or off."
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iph3d039b67",
+     "locator": "Tap Apps, tap Messages, tap Suggested Actions, then turn the options on or off."
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "switch",
+   "applies_to_this_phone": false,
+   "ios26_counterpart": "new",
+   "counterpart_basis": "claude judgement: not in iOS 26 record",
+   "scope": "adjacent",
+   "claude_note": "Apple Intelligence, iOS 27.2 or later.",
+   "apple_name_evidence": "X131",
+   "apple_route_evidence": [
+    "X131"
+   ]
+  },
+  {
+   "id": "s27.phone.suggestions_in_voicemail",
+   "name": "Suggestions in Voicemail",
+   "apple_name": {
+    "source": "G27:iph003dae603",
+    "locator": "go to Settings > Apps > Phone, then turn Suggestions in Voicemail on or off"
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iph003dae603",
+     "locator": "go to Settings > Apps > Phone, then turn Suggestions in Voicemail on or off"
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "switch",
+   "applies_to_this_phone": false,
+   "ios26_counterpart": "new",
+   "counterpart_basis": "claude judgement: not in iOS 26 record",
+   "scope": "adjacent",
+   "claude_note": "Apple calls these Siri suggested actions; Apple Intelligence required.",
+   "apple_name_evidence": "X132",
+   "apple_route_evidence": [
+    "X132"
+   ]
+  },
+  {
+   "id": "s27.notes.default_account_siri",
+   "name": "Default Account (Notes, for notes created using Siri)",
+   "apple_name": {
+    "source": "G27:iph92579feda",
+    "locator": "Default Account: Choose the default account when creating notes using Siri and the Notes widget."
+   },
+   "apple_routes": [],
+   "seen_on_phone": [],
+   "kind": "choice",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "new",
+   "counterpart_basis": "claude judgement: not in iOS 26 record",
+   "scope": "adjacent",
+   "claude_note": "",
+   "apple_name_evidence": "X133",
+   "apple_route_evidence": []
+  },
+  {
+   "id": "s27.mail.default_mail_app",
+   "name": "Default Mail App (emails created using Siri)",
+   "apple_name": {
+    "source": "G27:iph80dabb18b",
+    "locator": "Default Mail App: Choose the email app for new emails you draft outside of a specific app, such as emails you create using Siri."
+   },
+   "apple_routes": [],
+   "seen_on_phone": [],
+   "kind": "choice",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "new",
+   "counterpart_basis": "claude judgement: not in iOS 26 record",
+   "scope": "adjacent",
+   "claude_note": "",
+   "apple_name_evidence": "X134",
+   "apple_route_evidence": []
+  },
+  {
+   "id": "s27.reminders.siri_suggestions_list",
+   "name": "Siri Suggestions (Reminders Smart List)",
+   "apple_name": {
+    "source": "G27:iphe882772ed",
+    "locator": "Siri Suggestions: Suggested items detected in Mail"
+   },
+   "apple_routes": [],
+   "seen_on_phone": [],
+   "kind": "switch",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "new",
+   "counterpart_basis": "claude judgement: not in iOS 26 record",
+   "scope": "adjacent",
+   "claude_note": "",
+   "apple_name_evidence": "X135",
+   "apple_route_evidence": []
+  },
+  {
+   "id": "s27.app_lock_hide",
+   "name": "Lock an app / Hide an app",
+   "apple_name": {
+    "source": "G27:iph00f208d05",
+    "locator": "Information inside a locked app won’t appear in other locations—for example, in CarPlay, notification previews, search, Siri suggestions, or your call history."
+   },
+   "apple_routes": [],
+   "seen_on_phone": [],
+   "kind": "action",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "new",
+   "counterpart_basis": "claude judgement: not in iOS 26 record",
+   "scope": "adjacent",
+   "claude_note": "",
+   "apple_name_evidence": "X136",
+   "apple_route_evidence": []
+  },
+  {
+   "id": "s27.accessibility.siri_pause_time",
+   "name": "Siri Pause Time",
+   "apple_name": {
+    "source": "G27:iphaff1d606",
+    "locator": "Below Siri Pause Time, choose Default, Longer, or Longest."
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iphaff1d606",
+     "locator": "Tap Accessibility, tap Siri, then do any of the following:"
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "choice",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "guide.siri_pause_time",
+   "counterpart_basis": "same Apple name",
+   "scope": "in_scope",
+   "claude_note": "",
+   "apple_name_evidence": "X137",
+   "apple_route_evidence": [
+    "X054"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Response timing only; no data effect stated."
+  },
+  {
+   "id": "s27.accessibility.speaking_rate",
+   "name": "Speaking Rate",
+   "apple_name": {
+    "source": "G27:iphaff1d606",
+    "locator": "Change how fast Siri speaks: Adjust the slider below Speaking Rate."
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iphaff1d606",
+     "locator": "Tap Accessibility, tap Siri, then do any of the following:"
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "choice",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "guide.speaking_rate",
+   "counterpart_basis": "same Apple name",
+   "scope": "in_scope",
+   "claude_note": "",
+   "apple_name_evidence": "X138",
+   "apple_route_evidence": [
+    "X054"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Speech rate only; no data effect stated."
+  },
+  {
+   "id": "s27.accessibility.spoken_responses",
+   "name": "Spoken Responses (Accessibility > Siri)",
+   "apple_name": {
+    "source": "G27:iphaff1d606",
+    "locator": "Decide when Siri responds aloud or in text: Choose an option below Spoken Responses."
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iphaff1d606",
+     "locator": "Tap Accessibility, tap Siri, then do any of the following:"
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "choice",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "guide.siri_responses",
+   "counterpart_basis": "claude judgement: iOS 26 'Spoken Responses' choice; iOS 27 has it here and under Settings > Siri > Responses",
+   "scope": "in_scope",
+   "claude_note": "",
+   "apple_name_evidence": "X139",
+   "apple_route_evidence": [
+    "X054"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Spoken vs text responses; no data effect stated."
+  },
+  {
+   "id": "s27.accessibility.always_listen",
+   "name": "Always Listen for “Siri”",
+   "apple_name": {
+    "source": "G27:iphaff1d606",
+    "locator": "To change this, turn on Always Listen for “Siri.”"
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iphaff1d606",
+     "locator": "Tap Accessibility, tap Siri, then do any of the following:"
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "switch",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "guide.always_listen",
+   "counterpart_basis": "claude judgement: iOS 26 name 'Always Listen for “Hey Siri”', same route",
+   "scope": "in_scope",
+   "claude_note": "",
+   "apple_name_evidence": "X140",
+   "apple_route_evidence": [
+    "X054"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Changes whether Siri activates when iPhone is face down; no data effect stated."
+  },
+  {
+   "id": "s27.accessibility.require_siri_interruptions",
+   "name": "Require “Siri” for Interruptions",
+   "apple_name": {
+    "source": "G27:iphaff1d606",
+    "locator": "Require “Siri” or “Hey Siri” in order to interrupt Siri: Turn on Require “Siri” for Interruptions."
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iphaff1d606",
+     "locator": "Tap Accessibility, tap Siri, then do any of the following:"
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "switch",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "guide.require_siri_interruptions",
+   "counterpart_basis": "same Apple name",
+   "scope": "in_scope",
+   "claude_note": "",
+   "apple_name_evidence": "X141",
+   "apple_route_evidence": [
+    "X054"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Interruption behaviour only; no data effect stated."
+  },
+  {
+   "id": "s27.accessibility.type_to_siri",
+   "name": "Type to Siri (Accessibility > Siri)",
+   "apple_name": {
+    "source": "G27:iphaff1d606",
+    "locator": "Tap Accessibility, tap Siri, then turn on Type to Siri."
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iphaff1d606",
+     "locator": "Tap Accessibility, tap Siri, then turn on Type to Siri."
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "switch",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "guide.type_to_siri",
+   "counterpart_basis": "same route",
+   "scope": "in_scope",
+   "claude_note": "Apple: 'Depending on your iPhone model'; on Apple Intelligence models this option may not be shown.",
+   "apple_name_evidence": "X142",
+   "apple_route_evidence": [
+    "X142"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Input method only; no data effect stated."
+  },
+  {
+   "id": "s27.accessibility.atypical_speech",
+   "name": "Listen for Atypical Speech",
+   "apple_name": {
+    "source": "G27:iphaff1d606",
+    "locator": "Go to Settings > Accessibility > Siri, then turn on Listen for Atypical Speech."
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iphaff1d606",
+     "locator": "Go to Settings > Accessibility > Siri, then turn on Listen for Atypical Speech."
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "switch",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "guide.atypical_speech",
+   "counterpart_basis": "same Apple name",
+   "scope": "in_scope",
+   "claude_note": "Apple: when primary language is English (U.S.).",
+   "apple_name_evidence": "X143",
+   "apple_route_evidence": [
+    "X143"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Recognition behaviour only; no data effect stated."
+  },
+  {
+   "id": "s27.accessibility.announce_on_speaker",
+   "name": "Announce Notifications on Speaker",
+   "apple_name": {
+    "source": "G27:iphaff1d606",
+    "locator": "Go to Settings > Accessibility > Siri, then turn on Announce Notifications on Speaker."
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iphaff1d606",
+     "locator": "Go to Settings > Accessibility > Siri, then turn on Announce Notifications on Speaker."
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "switch",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "guide.announce_on_speaker",
+   "counterpart_basis": "same Apple name",
+   "scope": "in_scope",
+   "claude_note": "",
+   "apple_name_evidence": "X144",
+   "apple_route_evidence": [
+    "X144"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Siri announces notifications; no off-state data effect stated."
+  },
+  {
+   "id": "s27.accessibility.announce_notifications",
+   "name": "Announce Notifications (per app)",
+   "apple_name": {
+    "source": "G27:iphaff1d606",
+    "locator": "Tap Announce Notifications, then for each app, choose whether to announce all notifications or only time-sensitive notifications."
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iphaff1d606",
+     "locator": "Tap Announce Notifications, then for each app, choose whether to announce all notifications or only time-sensitive notifications."
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "per_app",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "guide.announce_notifications",
+   "counterpart_basis": "claude judgement: same name; iOS 26 route was Settings > Siri > Announce Notifications",
+   "scope": "in_scope",
+   "claude_note": "",
+   "apple_name_evidence": "X145",
+   "apple_route_evidence": [
+    "X145"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Per-app announce choice; no data effect stated."
+  },
+  {
+   "id": "s27.accessibility.press_and_hold_to_speak",
+   "name": "Press and Hold to Speak (Accessibility > Side Button)",
+   "apple_name": {
+    "source": "G27:iph75f461ff0",
+    "locator": "Press and Hold to Speak: Choose whether Siri responds when you press and hold the button."
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iph75f461ff0",
+     "locator": "Go to Settings > Accessibility, then tap Side Button (on an iPhone with Face ID or iPhone Duo)"
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "choice",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "new",
+   "counterpart_basis": "claude judgement: not in iOS 26 record",
+   "scope": "in_scope",
+   "claude_note": "",
+   "apple_name_evidence": "X146",
+   "apple_route_evidence": [
+    "X147"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Activation choice only; no data effect stated."
+  },
+  {
+   "id": "s27.accessibility.vocal_shortcuts_siri_request",
+   "name": "Siri Request (Vocal Shortcuts)",
+   "apple_name": null,
+   "apple_routes": [
+    {
+     "source": "G27:iph7f242ea2c",
+     "locator": "Tap Set Up, then tap Continue."
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "action",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "new",
+   "counterpart_basis": "claude judgement: not in iOS 26 record",
+   "scope": "adjacent",
+   "claude_note": "Apple: 'If you want the action to be a request to Siri, tap Siri Request' (sentence occurs twice on the page, so apple_name is null). Route: Settings > Accessibility > Vocal Shortcuts, then Set Up.",
+   "apple_route_evidence": [
+    "X148"
+   ]
+  },
+  {
+   "id": "s27.announce_messages",
+   "name": "Announce Messages > Announce Notifications",
+   "apple_name": {
+    "source": "G27:iph9c8438165",
+    "locator": "On your iPhone, go to Settings > Announce Messages, then turn on Announce Notifications."
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iph9c8438165",
+     "locator": "On your iPhone, go to Settings > Announce Messages, then turn on Announce Notifications."
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "switch",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "new",
+   "counterpart_basis": "claude judgement: route not in iOS 26 record (iOS 26 guide.announce_notifications used Settings > Siri)",
+   "scope": "in_scope",
+   "claude_note": "CarPlay page. Settings > Siri screens on O101-O102 show no Announce row.",
+   "apple_name_evidence": "X149",
+   "apple_route_evidence": [
+    "X149"
+   ],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "CarPlay page; Siri reads incoming messages; no off-state data effect stated."
+  },
+  {
+   "id": "s27.carplay.auto_send_messages",
+   "name": "Automatically Send Messages (CarPlay Settings > Siri)",
+   "apple_name": {
+    "source": "G27:iphb5d45624c",
+    "locator": "In CarPlay, go to Settings > Siri, then select Automatically Send Messages."
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iphb5d45624c",
+     "locator": "In CarPlay, go to Settings > Siri, then select Automatically Send Messages."
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "switch",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": null,
+   "counterpart_basis": "claude judgement: CarPlay setting; not in iOS 26 record",
+   "scope": "adjacent",
+   "claude_note": "",
+   "apple_name_evidence": "X150",
+   "apple_route_evidence": [
+    "X150"
+   ]
+  },
+  {
+   "id": "s27.carplay.suggestions",
+   "name": "Suggestions in CarPlay",
+   "apple_name": {
+    "source": "G27:iph6ade13329",
+    "locator": "Open Settings in CarPlay using your vehicle’s built-in controls, then turn Suggestions in CarPlay off or on."
+   },
+   "apple_routes": [],
+   "seen_on_phone": [],
+   "kind": "switch",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "new",
+   "counterpart_basis": "claude judgement: not in iOS 26 record",
+   "scope": "adjacent",
+   "claude_note": "Guide's Use Siri in your car page says Siri makes suggestions in CarPlay.",
+   "apple_name_evidence": "X151",
+   "apple_route_evidence": []
+  },
+  {
+   "id": "s27.chatgpt.use",
+   "name": "Use ChatGPT / Use Extension",
+   "apple_name": {
+    "source": "G27:iph00fd3c8c2",
+    "locator": "Tap ChatGPT, then turn off Use ChatGPT."
+   },
+   "apple_routes": [
+    {
+     "source": "P:chatgpt-extension",
+     "locator": "going to Settings > Apple Intelligence & Siri > ChatGPT, and tapping to turn off Use ChatGPT"
+    },
+    {
+     "source": "G27:iph00fd3c8c2",
+     "locator": "If you’re using Siri AI, tap Extensions, tap ChatGPT, then turn off Use Extension."
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "switch",
+   "applies_to_this_phone": false,
+   "ios26_counterpart": "oos.chatgpt_use",
+   "counterpart_basis": "same Apple name",
+   "scope": "adjacent",
+   "claude_note": "Privacy page route uses 'Apple Intelligence & Siri'; guide uses Settings > Siri.",
+   "apple_name_evidence": "X152",
+   "apple_route_evidence": [
+    "X153",
+    "X154"
+   ]
+  },
+  {
+   "id": "s27.chatgpt.confirm",
+   "name": "Confirm Requests / Confirm ChatGPT Requests",
+   "apple_name": {
+    "source": "P:chatgpt-extension",
+    "locator": "going to Settings > Apple Intelligence & Siri > ChatGPT, and tapping to turn off Confirm ChatGPT Requests"
+   },
+   "apple_routes": [
+    {
+     "source": "P:chatgpt-extension",
+     "locator": "going to Settings > Apple Intelligence & Siri > ChatGPT, and tapping to turn off Confirm ChatGPT Requests"
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "switch",
+   "applies_to_this_phone": false,
+   "ios26_counterpart": "oos.chatgpt_confirm",
+   "counterpart_basis": "same Apple name",
+   "scope": "adjacent",
+   "claude_note": "",
+   "apple_name_evidence": "X155",
+   "apple_route_evidence": [
+    "X155"
+   ]
+  },
+  {
+   "id": "s27.chatgpt.setup_prompts",
+   "name": "Setup Prompts",
+   "apple_name": {
+    "source": "G27:iph00fd3c8c2",
+    "locator": "If you want to prevent Siri from suggesting ChatGPT when you make a request, turn off ChatGPT, then turn off Setup Prompts."
+   },
+   "apple_routes": [],
+   "seen_on_phone": [],
+   "kind": "switch",
+   "applies_to_this_phone": false,
+   "ios26_counterpart": "new",
+   "counterpart_basis": "claude judgement: not in iOS 26 record",
+   "scope": "adjacent",
+   "claude_note": "",
+   "apple_name_evidence": "X156",
+   "apple_route_evidence": []
+  },
+  {
+   "id": "s27.pcc_report",
+   "name": "Apple Intelligence & PCC Report",
+   "apple_name": {
+    "source": "P:intelligence-engine",
+    "locator": "going to Settings > Privacy & Security > Apple Intelligence & PCC Report, then selecting a report duration"
+   },
+   "apple_routes": [
+    {
+     "source": "P:intelligence-engine",
+     "locator": "going to Settings > Privacy & Security > Apple Intelligence & PCC Report, then selecting a report duration"
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "choice",
+   "applies_to_this_phone": false,
+   "ios26_counterpart": "oos.pcc_report",
+   "counterpart_basis": "same Apple name",
+   "scope": "adjacent",
+   "claude_note": "",
+   "apple_name_evidence": "X157",
+   "apple_route_evidence": [
+    "X157"
+   ]
+  },
+  {
+   "id": "s27.shortcuts.broad_world_knowledge",
+   "name": "Use Broad World Knowledge (Shortcuts)",
+   "apple_name": {
+    "source": "P:intelligence-engine",
+    "locator": "go to Shortcuts > Apple Intelligence > Use Model and tap Use Broad World Knowledge"
+   },
+   "apple_routes": [
+    {
+     "source": "P:intelligence-engine",
+     "locator": "go to Shortcuts > Apple Intelligence > Use Model and tap Use Broad World Knowledge"
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "choice",
+   "applies_to_this_phone": false,
+   "ios26_counterpart": "new",
+   "counterpart_basis": "claude judgement: not in iOS 26 record",
+   "scope": "adjacent",
+   "claude_note": "Search privacy page mentions 'Web Knowledge for Shortcuts'.",
+   "apple_name_evidence": "X158",
+   "apple_route_evidence": [
+    "X158"
+   ]
+  },
+  {
+   "id": "s27.homepod.personal_requests",
+   "name": "Personal Requests on HomePod",
+   "apple_name": {
+    "source": "P:ask-siri-dictation",
+    "locator": "if you opted in to Personal Requests on HomePod, phone call status"
+   },
+   "apple_routes": [],
+   "seen_on_phone": [],
+   "kind": "switch",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "homepod.personal_requests",
+   "counterpart_basis": "same Apple name",
+   "scope": "in_scope",
+   "claude_note": "Guide names 'Make Personal Requests on HomePod' as a HomePod User Guide topic; no iPhone route.",
+   "apple_name_evidence": "X159",
+   "apple_route_evidence": [],
+   "apple_explicit_claims": 0,
+   "helper_reported_claims": 0,
+   "apple_summary_claude_note": "Apple says phone call status may be shared locally with nearby devices if you opted in; local sharing does not map to any of the six actions and the touchpoint bundles other status. See unsure."
+  },
+  {
+   "id": "s27.homepod.recognize_my_voice",
+   "name": "Recognize My Voice (HomePod)",
+   "apple_name": {
+    "source": "P:ask-siri-dictation",
+    "locator": "this is how audio from your phone can enable Recognize My Voice on your HomePod"
+   },
+   "apple_routes": [],
+   "seen_on_phone": [],
+   "kind": "switch",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "new",
+   "counterpart_basis": "claude judgement: not in iOS 26 record",
+   "scope": "adjacent",
+   "claude_note": "",
+   "apple_name_evidence": "X160",
+   "apple_route_evidence": []
+  },
+  {
+   "id": "s27.home.siri_enabled_accessory",
+   "name": "Siri on Siri-enabled Home accessories",
+   "apple_name": {
+    "source": "G27:iph1ba9f6d84",
+    "locator": "You can extend access to HomePod throughout your home by enabling Siri on compatible Apple Home accessories."
+   },
+   "apple_routes": [],
+   "seen_on_phone": [],
+   "kind": "switch",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "new",
+   "counterpart_basis": "claude judgement: not in iOS 26 record",
+   "scope": "adjacent",
+   "claude_note": "",
+   "apple_name_evidence": "X161",
+   "apple_route_evidence": []
+  },
+  {
+   "id": "s27.photos.enhanced_visual_search",
+   "name": "Enhanced Visual Search",
+   "apple_name": {
+    "source": "P:photos",
+    "locator": "You can turn off Enhanced Visual Search at any time on your iOS or iPadOS device by going to Settings > Apps > Photos."
+   },
+   "apple_routes": [
+    {
+     "source": "P:photos",
+     "locator": "You can turn off Enhanced Visual Search at any time on your iOS or iPadOS device by going to Settings > Apps > Photos."
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "switch",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "adj.enhanced_visual_search",
+   "counterpart_basis": "same Apple name",
+   "scope": "adjacent",
+   "claude_note": "",
+   "apple_name_evidence": "X162",
+   "apple_route_evidence": [
+    "X162"
+   ]
+  },
+  {
+   "id": "s27.journaling_suggestions",
+   "name": "Journaling Suggestions (all controls)",
+   "apple_name": {
+    "source": "P:journaling-suggestions",
+    "locator": "You can turn off Journaling Suggestions by going on your iPhone to Settings > Privacy & Security > Journaling Suggestions, then tapping Turn Off All."
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iphf965002cf",
+     "locator": "Tap Privacy & Security, then tap Journaling Suggestions."
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "combination",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "adj.journaling_suggestions",
+   "counterpart_basis": "same Apple name",
+   "scope": "adjacent",
+   "claude_note": "",
+   "apple_name_evidence": "X163",
+   "apple_route_evidence": [
+    "X164"
+   ]
+  },
+  {
+   "id": "s27.journal.show_suggested_moments",
+   "name": "Show Suggested Moments / Get Writing Prompts (Journal)",
+   "apple_name": {
+    "source": "G27:iphf965002cf",
+    "locator": "tap Apps, tap Journal, then turn off Show Suggested Moments or Get Writing Prompts"
+   },
+   "apple_routes": [
+    {
+     "source": "G27:iphf965002cf",
+     "locator": "tap Apps, tap Journal, then turn off Show Suggested Moments or Get Writing Prompts"
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "switch",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "new",
+   "counterpart_basis": "claude judgement: not in iOS 26 record",
+   "scope": "adjacent",
+   "claude_note": "Get Writing Prompts is listed among Apple Intelligence features on G27:iph3fed3f2c3; Show Suggested Moments is not.",
+   "apple_name_evidence": "X165",
+   "apple_route_evidence": [
+    "X165"
+   ]
+  },
+  {
+   "id": "s27.shazam.icloud",
+   "name": "Shazam Music Recognition (iCloud)",
+   "apple_name": {
+    "source": "P:music-recognition",
+    "locator": "going to Settings > [your name] > iCloud and tapping to turn off Shazam Music Recognition"
+   },
+   "apple_routes": [
+    {
+     "source": "P:music-recognition",
+     "locator": "going to Settings > [your name] > iCloud and tapping to turn off Shazam Music Recognition"
+    }
+   ],
+   "seen_on_phone": [],
+   "kind": "switch",
+   "applies_to_this_phone": true,
+   "ios26_counterpart": "adj.shazam_icloud",
+   "counterpart_basis": "same Apple name",
+   "scope": "adjacent",
+   "claude_note": "",
+   "apple_name_evidence": "X166",
+   "apple_route_evidence": [
+    "X166"
+   ]
+  }
+ ],
+ "ios26_not_found_in_ios27": [
+  {
+   "id": "siri.talk_to_siri",
+   "searched": "Searched 'Talk to Siri', 'Talk & Type': 0 hits in all ios27 sources. Options now under Requests (s27.siri_or_hey_siri, mapped by judgement)."
+  },
+  {
+   "id": "siri.history.delete",
+   "searched": "Searched 'Siri & Dictation History', 'Delete Siri': 0 hits. Apple's deletion sentence now names Turn Off Siri (s27.turn_off_siri)."
+  },
+  {
+   "id": "siri.show_in_spotlight",
+   "searched": "Searched 'Show in Spotlight': 0 hits. Settings > Siri > Suggestions lists Allow Notifications, Show in App Library, Show When Sharing, Show Listening Suggestions only (guide and O108)."
+  },
+  {
+   "id": "guide.allow_siri_when_locked",
+   "searched": "Searched 'Allow Siri When Locked', 'When Locked' near Siri: no Siri hit. Not on O101-O103."
+  },
+  {
+   "id": "guide.call_hang_up",
+   "searched": "Searched 'Call Hang Up', 'hang up': only the Siri request example 'Siri, hang up.' (G27:ipha48873ed6). No setting."
+  },
+  {
+   "id": "guide.announce_calls",
+   "searched": "Searched 'Announce Calls': 0 hits. Accessibility page says 'Announce calls and notifications for specific apps' but names only Announce Notifications on Speaker / Announce Notifications."
+  },
+  {
+   "id": "guide.reply_without_confirmation",
+   "searched": "Searched 'Reply Without Confirmation': 0 hits."
+  },
+  {
+   "id": "guide.suggest_app",
+   "searched": "Searched 'Suggest App': 0 hits ('Suggest Apps Before Searching' was on iOS 26 phone, absent from O108)."
+  },
+  {
+   "id": "guide.show_on_home_screen",
+   "searched": "Searched 'Show on Home Screen': only the Home Screen Search-button switch (s27.search.home_screen_button), which is a different setting."
+  }
+ ],
+ "unsure": [
+  {
+   "item": "s27.screen_time.siri / s27.screen_time.dictation",
+   "reason": "Privacy page routes Siri and Dictation via Content & Privacy Restrictions > Other Features; guide routes Siri via Content & Privacy Restrictions > Siri with three choices and names no Dictation item. Which matches the phone is not observed."
+  },
+  {
+   "item": "s27.improve_siri_ai",
+   "reason": "Apple names the switch but states no device requirement for it; marked applies_to_this_phone false by Claude from the 'Apple Intelligence' name. Phone's Analytics & Improvements screen not photographed."
+  },
+  {
+   "item": "s27.type_to_siri_requests vs s27.accessibility.type_to_siri",
+   "reason": "Privacy page says to turn off 'Type to Siri' under Settings > Siri for all devices; guide says the Requests location is for Apple Intelligence devices and the Accessibility location may be hidden on them. O105 shows no Type to Siri on Requests."
+  },
+  {
+   "item": "s27.automatic_visual_look_up",
+   "reason": "Listed in Siri settings next to a Siri AI only switch but not itself marked Siri AI only; whether it appears on this phone is not observed."
+  },
+  {
+   "item": "s27.app_clips.learn",
+   "reason": "Apple's route is Settings > Siri > App Clips; O108 shows App Clips inside the Suggestions app list instead. Switch not opened."
+  },
+  {
+   "item": "s27.news.show_in_app",
+   "reason": "Privacy page parent is 'Siri & Search'; guide parent is 'Siri'."
+  },
+  {
+   "item": "s27.phone.show_when_calling",
+   "reason": "One guide page says Settings > Apps > Phone > Siri, the other Settings > Apps > Phone > Apple Intelligence & Siri."
+  },
+  {
+   "item": "Show Contact Suggestions",
+   "reason": "Named in the task; searched 'Show Contact', 'Contact Suggestions' in all ios27 sources: only Find My 'Show Contact Info'. Not recorded as a setting."
+  },
+  {
+   "item": "Considered and left out",
+   "reason": "Mail Follow Up Suggestions, Calendar Location Suggestions, StandBy/CarPlay Widget Suggestions, Safari start-page Suggestions/Shared with You, Weather Home and Work in search, Look to Dictate (visionOS only): Apple's text does not connect them to Siri, Dictation or Search settings, or they are not iPhone settings."
+  },
+  {
+   "item": "s27.suggestions.reset_hidden",
+   "reason": "Phone only (O108); no Apple text names it."
+  }
+ ]
+}

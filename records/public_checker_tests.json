@@ -1,0 +1,60 @@
+{
+ "what": "Tests of this folder's check.py: one change at a time in a scratch copy; check.py must report it.",
+ "date": "2026-11-04",
+ "tests": [
+  {
+   "change": "appended one byte to screenshots/O001.png",
+   "result": "detected: screenshot O001 has changed"
+  },
+  {
+   "change": "appended one character to an independent-check report",
+   "result": "detected: independent check report has changed"
+  },
+  {
+   "change": "removed one entry from used_by_27 in data/ios27/grid.json",
+   "result": "detected: claim on data Apple does not say the feature uses"
+  },
+  {
+   "change": "duplicated the 'findings' key in data/tests.json",
+   "result": "detected: duplicate keys"
+  },
+  {
+   "change": "one letter of a short Apple quote changed in data/ios27/apple_quotes.json",
+   "result": "detected: text does not match its fingerprint"
+  },
+  {
+   "change": "one Apple 'stops' changed to 'continues' in data/ios27/grid.json",
+   "result": "detected: has changed since release (missed before MANIFEST.json was added)"
+  },
+  {
+   "change": "a new file added to the folder",
+   "result": "detected: not part of this release"
+  },
+  {
+   "change": "README.md deleted",
+   "result": "detected: missing"
+  }
+ ],
+ "verify_live_tests": {
+  "what": "Tests of verify_live.py on 2026-11-04, against all 67 Apple pages as downloaded that day through a browser on the author's computer, with one change at a time made to the downloaded text.",
+  "baseline": {
+   "ios27": "244 of 244 found",
+   "ios26": "114 of 148 found; the 34 not found are exactly the 34 listed as changed in data/changes_2026-09-26_to_2026-11-01.json",
+   "values": "7 of 7 found"
+  },
+  "tests": [
+   {
+    "change": "changed one word in a long sentence, outside the published excerpt (X075)",
+    "result": "detected"
+   },
+   {
+    "change": "changed one letter of a word in a short quote (X006)",
+    "result": "detected"
+   },
+   {
+    "change": "inserted a space before every full stop on a page (X006)",
+    "result": "still found, as intended"
+   }
+  ]
+ }
+}

@@ -1,0 +1,222 @@
+{
+ "what": "Screens seen on the user's iPhone after updating to iOS 27.2. Observations, NOT Apple's published text. Text transcribed by Claude; the screenshot is the evidence.",
+ "items": [
+  {
+   "id": "O101",
+   "file": "screenshots/O101.png",
+   "by": {
+    "kind": "person",
+    "id": "the user",
+    "date": "2026-11-03"
+   },
+   "device": "iPhone 14 Plus",
+   "ios": "27.2 (About screen, O104)",
+   "time_on_screen": "14:50",
+   "screen": "Settings > Siri (top)",
+   "shown_claude_transcription": [
+    "Header: 'Siri is an intelligent assistant that helps you find information and get things done. Learn more…'",
+    "Requests; Language — English (United Kingdom); Voice — British (Voice 2); Responses",
+    "Footer: 'Voice input is processed on iPhone, but transcripts of your requests are sent to Apple. About Siri, Dictation & Privacy…'",
+    "Next section begins: 'Your Information'"
+   ],
+   "claude_note": "Same footer sentence as iOS 26.7.1 (O003); link text changed from 'About Siri & Privacy…' to 'About Siri, Dictation & Privacy…'. 'Talk to Siri' no longer appears at this level; a 'Requests' row does.",
+   "original_sha256": "5475541730ecac624c3a6f24ab5f823cc031e8dd95745a45e9ac998ff2a7b925",
+   "published_sha256": "a639eb737e4ad413ba0a6ad081ecbdb15388021597de9cbcd5b054b92d7d52e7",
+   "redacted_areas": 0
+  },
+  {
+   "id": "O102",
+   "file": "screenshots/O102.png",
+   "by": {
+    "kind": "person",
+    "id": "the user",
+    "date": "2026-11-03"
+   },
+   "device": "iPhone 14 Plus",
+   "ios": "27.2 (About screen, O104)",
+   "time_on_screen": "14:50",
+   "screen": "Settings > Siri (bottom)",
+   "shown_claude_transcription": [
+    "Voice; Responses; footer 'Voice input is processed on iPhone, but transcripts of your requests are sent to Apple. About Siri, Dictation & Privacy…'",
+    "Your Information (user's name)",
+    "Excluded Apps",
+    "Suggestions",
+    "Accessibility Settings (link)",
+    "Turn Off Siri (red)"
+   ],
+   "claude_note": "Matches Apple's 2026-10-30 privacy page: 'Turn Off Siri', 'Excluded Apps' and 'Suggestions' all appear. None appeared on iOS 26.7.1 (O002-O004).",
+   "original_sha256": "594b45f71e05515502d0dad7aa00bc757846c43965003f585d6e53a0fe42974e",
+   "published_sha256": "d59e3c9342d0fc6f229d6815d25e505e76bf481918296c6360337bebeb9578b0",
+   "redacted_areas": 1
+  },
+  {
+   "id": "O104",
+   "file": "screenshots/O104.png",
+   "by": {
+    "kind": "person",
+    "id": "the user",
+    "date": "2026-11-03"
+   },
+   "device": "iPhone 14 Plus",
+   "ios": "27.2 (About screen, O104)",
+   "time_on_screen": "14:49",
+   "screen": "Settings > General > About",
+   "shown_claude_transcription": [
+    "iOS Version 27.2; Model Name iPhone 14 Plus"
+   ],
+   "original_sha256": "02f71ce83510166bc35e38a051c8ebe37d61fda8bc357f99f6079e5aab868413",
+   "published_sha256": "e5f3df953fdf577f6d7b24a28a305eb04e42c5d73aba1a92d0260e1a4afe7710",
+   "redacted_areas": 1
+  },
+  {
+   "id": "O105",
+   "file": "screenshots/O105.png",
+   "by": {
+    "kind": "person",
+    "id": "the user",
+    "date": "2026-11-03"
+   },
+   "device": "iPhone 14 Plus",
+   "ios": "27.2 (About screen, O104)",
+   "time_on_screen": "14:58",
+   "screen": "Settings > Siri > Requests",
+   "shown_claude_transcription": [
+    "Options: “Siri” or “Hey Siri”; “Hey Siri”; Off — selected",
+    "Footer: 'iPhone will not listen for “Siri” or “Hey Siri” at the beginning of requests.'",
+    "Press Side Button for Siri — off",
+    "Footer: 'Press and hold the side button to talk to Siri.'"
+   ],
+   "claude_note": "On iOS 26.7.1 this screen was titled 'Talk to Siri' (O007); on 27.2 the same options sit under 'Requests'. Both still off.",
+   "original_sha256": "558096d2e56c5de93757fcf7d0dc64cc96b0c040282e0b7b129a0428b8d1fae1",
+   "published_sha256": "e4a88f9a2273389d7f1f469769b23e35a9a6f1ccbaed2595e9ced551428b56ce",
+   "redacted_areas": 0
+  },
+  {
+   "id": "O106",
+   "file": "screenshots/O106.png",
+   "by": {
+    "kind": "person",
+    "id": "the user",
+    "date": "2026-11-03"
+   },
+   "device": "iPhone 14 Plus",
+   "ios": "27.2 (About screen, O104)",
+   "time_on_screen": "14:58",
+   "screen": "Settings > Siri > Excluded Apps (top)",
+   "shown_claude_transcription": [
+    "Heading 'Excluded Apps': [other apps redacted]; Contacts; [other apps redacted]"
+   ],
+   "claude_note": "Contacts is in the Excluded Apps list. Whether the update carried over the user's iOS 26 'Learn from this App' off settings into this list is not stated anywhere seen; it is Claude's inference from the overlap and is not recorded as fact.",
+   "user_statement": "Contacts was already on the list after the update; the user did not add it (2026-11-03).",
+   "original_sha256": "307edc196adb265496a19cd2c342db30e4eae39a24d2610e3c1b026dedec6c3c",
+   "published_sha256": "f4cca564daa8759a75a0f4a281267a595cb1e2d96fe1aba5e41151e20f173f20",
+   "redacted_areas": 11
+  },
+  {
+   "id": "O107",
+   "file": "screenshots/O107.png",
+   "by": {
+    "kind": "person",
+    "id": "the user",
+    "date": "2026-11-03"
+   },
+   "device": "iPhone 14 Plus",
+   "ios": "27.2 (About screen, O104)",
+   "time_on_screen": "14:58",
+   "screen": "Settings > Siri > Excluded Apps (bottom)",
+   "shown_claude_transcription": [
+    "[other apps redacted]; Kimi; [other apps redacted]",
+    "Add Apps"
+   ],
+   "claude_note": "'Kimi' is the name of an app installed on the phone and is itself excluded.",
+   "original_sha256": "e96596609842e60a9d5a59e3fc63028633e6f6eacdc86aa87f8e8ee1730be2b0",
+   "published_sha256": "bc4a1a4a9bed5edf5a3eea189acb45058a8bb506bc6201358c187ff5465d6bb0",
+   "redacted_areas": 10
+  },
+  {
+   "id": "O108",
+   "file": "screenshots/O108.png",
+   "by": {
+    "kind": "person",
+    "id": "the user",
+    "date": "2026-11-03"
+   },
+   "device": "iPhone 14 Plus",
+   "ios": "27.2 (About screen, O104)",
+   "time_on_screen": "14:58",
+   "screen": "Settings > Siri > Suggestions (top)",
+   "shown_claude_transcription": [
+    "Reset Hidden Suggestions; Allow Notifications — off; Show in App Library — off; Show When Sharing — off; Show Listening Suggestions — off",
+    "Footer: 'Apple can make suggestions in Search, on Home Screen and on Lock Screen, when sharing or when you may want to listen to media.'",
+    "Per-app list: [redacted]"
+   ],
+   "claude_note": "Same four switches and footer as iOS 26.7.1 (O003-O004), now on their own screen; the per-app list (iOS 26: Siri App Access > Apps) is under Suggestions.",
+   "original_sha256": "7faf1450b0eceecb3dd3addddbe98a85015838e5f40b8b8636a7013d6915b7f1",
+   "published_sha256": "2b8f8d615473d9302b6ae1e3625cd46743d58440e60b75db354b765965661c32",
+   "redacted_areas": 1
+  },
+  {
+   "id": "O112",
+   "file": "screenshots/O112.png",
+   "by": {
+    "kind": "person",
+    "id": "the user",
+    "date": "2026-11-03"
+   },
+   "device": "iPhone 14 Plus",
+   "ios": "27.2 (About screen, O104)",
+   "time_on_screen": "15:01",
+   "screen": "Notes, dictation in progress",
+   "shown_claude_transcription": [
+    "'I'd like to see if [former employer] still comes up the right way' with the dictation microphone active"
+   ],
+   "finding": "F4",
+   "original_sha256": "e1eb499e140159c778c6438d87d544e4bf5835d67df88ed2d30ff23d47d7d282",
+   "published_sha256": "229d9dcbc95c63e8a10f28580a7a1e3180ff85c856bc069d81cb76e34ce6e097",
+   "redacted_areas": 1
+  }
+ ],
+ "privacy": "Published copies are redacted: the user's name, the phone's serial and model numbers, the former employer's name in dictated text, and the names of other installed apps (Contacts and Kimi left visible where shown). A screenshot showing other people's contact cards is not published. original_sha256 is the fingerprint of the unredacted original, kept privately.",
+ "cross_version_observations": [
+  {
+   "id": "X1",
+   "date": "2026-11-03",
+   "what": "After the update, the two settings Apple's September text used to define 'Siri off' were still off, but iOS 27 added a separate 'Turn Off Siri' control that the user had not used.",
+   "before": "iOS 26.7.1: Talk to Siri — Off; Press Side Button for Siri — off (O002, O007). Apple's September text defines turning Siri off as exactly these two (sources.json E01).",
+   "after": "iOS 27.2: the same two settings still off, now under Requests (O105). Settings > Siri shows a row labelled 'Turn Off Siri' (O102).",
+   "apple_text": {
+    "quotes": [
+     "To turn off Siri, go to Settings > Siri > Turn Off Siri, then tap Turn Off Siri.",
+     "Tap Turn Off Siri at the bottom, then tap Turn Off Siri."
+    ],
+    "sources": [
+     "P:ask-siri-dictation",
+     "G27:iph83aad8922"
+    ],
+    "claude_note": "By Apple's iOS 27 wording, turning Siri off is done with this control, which the user had not used. Apple does not say what state the phone treats Siri as being in, or that the label shows the state. Claude's earlier reading (label shows Siri as on) was an inference and is withdrawn as a statement of fact."
+   },
+   "user_statement": "The user had Siri off before updating and did not turn it on (2026-11-03).",
+   "not_stated_by_apple": "How the update treats a user who had Siri off by the earlier definition; whether Siri counts as on or off before 'Turn Off Siri' is tapped.",
+   "revised": {
+    "date": "2026-11-03",
+    "reason": "Independent check: the original wording stated as fact what Apple's text does not say; the quoted 'Turn On Siri' sentence is about Siri AI devices.",
+    "was": {
+     "id": "X1",
+     "date": "2026-11-03",
+     "what": "Siri off before the update; Apple's new main Siri control shows Siri as on after it.",
+     "before": "iOS 26.7.1: Talk to Siri — Off; Press Side Button for Siri — off (O002, O007). Apple's September text defines turning Siri off as exactly these two (sources.json E01).",
+     "after": "iOS 27.2: the same two settings still off, now under Requests (O105); Settings > Siri shows a 'Turn Off Siri' button (O102).",
+     "apple_text": {
+      "quote": "If you have Siri AI but want to use the previous version of Siri, tap Turn On Siri, then tap Use Siri Classic.",
+      "sources": [
+       "G27:iph83aad8922"
+      ],
+      "claude_note": "Apple labels the button 'Turn On Siri' when Siri is off, so a 'Turn Off Siri' label indicates the phone treats Siri as on. Claude's reading."
+     },
+     "user_statement": "The user had Siri off before updating and did not turn it on (2026-11-03).",
+     "not_stated_by_apple": "How the update sets the new main control for a user who had Siri off before."
+    }
+   }
+  }
+ ]
+}

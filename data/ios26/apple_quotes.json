@@ -1,0 +1,2116 @@
+{
+ "what": "Apple's exact sentences relied on for the iOS 26 record, as captured on 26 September 2026. Sentences over 300 characters are shown as an excerpt (quote_is_excerpt); quote_sha256 is always the fingerprint of the full sentence. 'paraphrase_claude' and 'claude_note' are Claude's words, not Apple's.",
+ "pages": {
+  "ask-siri-dictation": {
+   "url": "https://www.apple.com/legal/privacy/data/en/ask-siri-dictation/",
+   "captured_utc": "2026-09-26T15:27:29.862Z",
+   "server_date_header": "Sat, 26 Sep 2026 15:27:29 GMT",
+   "page_date_printed": "2026-09-14",
+   "text_sha256": "237973d576b068132ce60cb0bbf4e13d4acb60f32c4a75992a58bef57435179b",
+   "html_sha256": "7d592e8e3e4eee398a6feb1d4c99eaea44fe92cdc864e601f558de26fb0af8ad"
+  },
+  "improve-siri-dictation": {
+   "url": "https://www.apple.com/legal/privacy/data/en/improve-siri-dictation/",
+   "captured_utc": "2026-09-26T15:27:30.241Z",
+   "server_date_header": "Sat, 26 Sep 2026 15:27:30 GMT",
+   "page_date_printed": "2026-09-14",
+   "text_sha256": "15997e011380cb43555bddeb8e7dbe940ca96c0f90b4bb7a4c59e0aad6663a87",
+   "html_sha256": "63d5bc7fde673aefb4cb94745b2fb26a1ca34151e6d15be6c7b82e9ce85503fa"
+  },
+  "siri-suggestions-search": {
+   "url": "https://www.apple.com/legal/privacy/data/en/siri-suggestions-search/",
+   "captured_utc": "2026-09-26T15:27:30.736Z",
+   "server_date_header": "Sat, 26 Sep 2026 15:27:30 GMT",
+   "page_date_printed": "2026-09-14",
+   "text_sha256": "987bbf75cc1bac7b035a663d03ace26c426c4b0a9f3e945aa31a43292fd8093a",
+   "html_sha256": "f53ab9d0510f6e2903492e3ee261260a1daf08ae9dbae05eb37c78edf7a9c74c"
+  },
+  "location-services": {
+   "url": "https://www.apple.com/legal/privacy/data/en/location-services/",
+   "captured_utc": "2026-09-26T15:27:31.173Z",
+   "server_date_header": "Sat, 26 Sep 2026 15:27:31 GMT",
+   "page_date_printed": "2026-02-11",
+   "text_sha256": "fe23d98e80c9d18128268d3d7ccab48c6d496068e3658c60eee851123b68a0ea",
+   "html_sha256": "c29e4c283c81769ed9996f7706eb28aea84809f0aebcda5dd010149c17d57e86"
+  },
+  "health-app": {
+   "url": "https://www.apple.com/legal/privacy/data/en/health-app/",
+   "captured_utc": "2026-09-26T15:27:31.184Z",
+   "server_date_header": "Sat, 26 Sep 2026 15:27:31 GMT",
+   "page_date_printed": "2026-09-14",
+   "text_sha256": "6c7923e9b6df132a9c83f577c564eb73d45f4edb9bdad9c831f6df01c3f90a96",
+   "html_sha256": "becd11bd6718d3967d6bdcf7d9e630d841289d37eb3c2549b7d4240d30491274"
+  },
+  "improve-health-activity": {
+   "url": "https://www.apple.com/legal/privacy/data/en/improve-health-activity/",
+   "captured_utc": "2026-09-26T15:27:31.342Z",
+   "server_date_header": "Sat, 26 Sep 2026 15:27:31 GMT",
+   "page_date_printed": "2026-09-14",
+   "text_sha256": "088bae7f3fc0ecf023cf6f76f225dfd7303e9f225023b3bf12281d316e1ced3e",
+   "html_sha256": "a8c7e27529dd8ad7050db038796d7f92702fc2e3e0d7d8a0e3eac3cc1f9b8225"
+  },
+  "icloud-analytics": {
+   "url": "https://www.apple.com/legal/privacy/data/en/icloud-analytics/",
+   "captured_utc": "2026-09-26T15:27:31.502Z",
+   "server_date_header": "Sat, 26 Sep 2026 15:27:31 GMT",
+   "page_date_printed": "2025-12-12",
+   "text_sha256": "2c06661828d2b975598840c4269bbe1b49ed491c04909474edd50eeef79ced4e",
+   "html_sha256": "26e94d6a44cca21591356deeb270c37c4efb2c8bec425b1d0c1a184a5a878565"
+  },
+  "improve-assistive-voice-features": {
+   "url": "https://www.apple.com/legal/privacy/data/en/improve-assistive-voice-features/",
+   "captured_utc": "2026-09-26T15:27:37.711Z",
+   "server_date_header": "Sat, 26 Sep 2026 15:27:37 GMT",
+   "page_date_printed": "2025-12-12",
+   "text_sha256": "31de7f20a3953f67769f5bfc33aede6459ddfcd8fd1753a60b1658e0cfcae925",
+   "html_sha256": "dce195f4536a612d173a43059a757d704e84be5a232ec245676823a4721ff2a5"
+  },
+  "apple-books": {
+   "url": "https://www.apple.com/legal/privacy/data/en/apple-books/",
+   "captured_utc": "2026-09-26T15:27:37.874Z",
+   "server_date_header": "Sat, 26 Sep 2026 15:27:37 GMT",
+   "page_date_printed": "2025-12-12",
+   "text_sha256": "73565d4de19ebc7ec206e99ab74ec66269a9014c61fed31cf3cbb021f91980e2",
+   "html_sha256": "59e844c200edf441d96f86a1e674d8e7abc9f3431e211b7a42ec8ee78204e329"
+  },
+  "apple-news": {
+   "url": "https://www.apple.com/legal/privacy/data/en/apple-news/",
+   "captured_utc": "2026-09-26T15:27:38.028Z",
+   "server_date_header": "Sat, 26 Sep 2026 15:27:38 GMT",
+   "page_date_printed": "2026-03-30",
+   "text_sha256": "2a7c8dc9c362b7b3ee98cb985886531313ce083060429324239f3ae51b6e6ddb",
+   "html_sha256": "25b51c3aec70c051555573054e2580da68026c8516b668e875f28fc14379d3c6"
+  },
+  "apple-store-app": {
+   "url": "https://www.apple.com/legal/privacy/data/en/apple-store-app/",
+   "captured_utc": "2026-09-26T15:27:38.767Z",
+   "server_date_header": "Sat, 26 Sep 2026 15:27:38 GMT",
+   "page_date_printed": "2026-07-22",
+   "text_sha256": "771b87c1c921e334b99a228e72febeb98336ecdb668e42db4f73ccbbef53ffa2",
+   "html_sha256": "68a49373b0a2981d04fe034d1335cb941cd7554e54e663b7f2f5710d08bd67c4"
+  },
+  "translation": {
+   "url": "https://www.apple.com/legal/privacy/data/en/translation/",
+   "captured_utc": "2026-09-26T15:27:43.871Z",
+   "server_date_header": "Sat, 26 Sep 2026 15:27:43 GMT",
+   "page_date_printed": "2026-09-14",
+   "text_sha256": "be59e7017a60cb3ed1efc2b3f0072adcab5520d59e910ee1d9a5b0613236646f",
+   "html_sha256": "eeec8f9c880ff12e34cdbdd876779a8864281b1e465b8f9831c51ad4a14aaf3a"
+  },
+  "ios26-guide-change-siri-settings": {
+   "url": "https://support.apple.com/en-gb/guide/iphone/iphc28624b81abc/26/ios/26",
+   "captured_utc": "2026-09-26T15:43:45.608Z",
+   "server_date_header": "Sat, 26 Sep 2026 15:43:45 GMT",
+   "page_date_printed": null,
+   "text_sha256": "6f22e7bf7ad6fd3ef73298271f0a07941860ce618a4c36bf183dc1c92d2a46cf",
+   "html_sha256": "b5a6ad62dd93dac3c899213322bdf4ed9c010e23d015f94d4b643066421bed03"
+  },
+  "ios26-guide-siri-suggestions": {
+   "url": "https://support.apple.com/en-gb/guide/iphone/iph6f94af287/26/ios/26",
+   "captured_utc": "2026-09-26T15:43:45.701Z",
+   "server_date_header": "Sat, 26 Sep 2026 15:43:45 GMT",
+   "page_date_printed": null,
+   "text_sha256": "b41f4ba8748b6a8e88b8cf26671d59e15985e641ee66663b0b76720d44cc3c2a",
+   "html_sha256": "5fd5c0f7d2905c3d6b9aa29665f6c9430b49336e65f528cfbfc64eb20710476f"
+  },
+  "ios26-guide-siri-accessibility": {
+   "url": "https://support.apple.com/en-gb/guide/iphone/iphaff1d606/26/ios/26",
+   "captured_utc": "2026-09-26T15:43:45.789Z",
+   "server_date_header": "Sat, 26 Sep 2026 15:43:45 GMT",
+   "page_date_printed": null,
+   "text_sha256": "5f0d4b1d479af56bcb527ef8760c6f4d5f9d5a96ec301734f43c3d73d20e5def",
+   "html_sha256": "a1c12ef3809f3ee9d3d870ed60222835ced094989bd8a27a252a3a2a073c6800"
+  },
+  "ios26-guide-activate-siri": {
+   "url": "https://support.apple.com/en-gb/guide/iphone/iph83aad8922/26/ios/26",
+   "captured_utc": "2026-09-26T15:43:45.881Z",
+   "server_date_header": "Sat, 26 Sep 2026 15:43:45 GMT",
+   "page_date_printed": null,
+   "text_sha256": "6bdeeb5057a888552bb5815845b9b5efab97fc99ea06be1080962e095a3f8aa7",
+   "html_sha256": "05fafdd1e82259dae514f814c46ce6f0ff3449b9317b17117df99a4f7675b4d5"
+  },
+  "ios26-guide-dictate-text": {
+   "url": "https://support.apple.com/en-gb/guide/iphone/iph2c0651d2/26/ios/26",
+   "captured_utc": "2026-09-26T15:43:47.730Z",
+   "server_date_header": "Sat, 26 Sep 2026 15:43:47 GMT",
+   "page_date_printed": null,
+   "text_sha256": "59f5c0fbca5873e4f599572ef23104684403c1fb5b81eac49ec7b58e3d86bfa7",
+   "html_sha256": "0236f48ed49f7880d0516c03102c1b5c7ecfa6bc2cedc56d4960750d4dd99f30"
+  },
+  "ios26-guide-tell-siri-about-yourself": {
+   "url": "https://support.apple.com/en-gb/guide/iphone/iphfaf30bdbd/26/ios/26",
+   "captured_utc": "2026-09-26T15:43:47.822Z",
+   "server_date_header": "Sat, 26 Sep 2026 15:43:47 GMT",
+   "page_date_printed": null,
+   "text_sha256": "9fff80a0b40e8cc2126a9522419b364a53f07f68e39ea32715cfa1fbda293f2b",
+   "html_sha256": "a896c052d61f7be1b15601a1d9cc1445866e756f69e99c69801c6324f6ef116f"
+  },
+  "ios26-guide-announce": {
+   "url": "https://support.apple.com/en-gb/guide/iphone/iph838fd6fd4/26/ios/26",
+   "captured_utc": "2026-09-26T15:43:47.911Z",
+   "server_date_header": "Sat, 26 Sep 2026 15:43:47 GMT",
+   "page_date_printed": null,
+   "text_sha256": "2a4d9f4f5496434df8d69004e3c2f48fbd8622902b607577b97fff428a5409fe",
+   "html_sha256": "9df1cc8d7f7d13e1806a553db4fff37166f3c31d7699f61e561154016036ce6a"
+  }
+ },
+ "quotes": {
+  "E01": {
+   "page": "ask-siri-dictation",
+   "quote": "To turn off Siri, go to Settings > Siri > Talk to Siri and tap Off, and go to Settings > Siri > Talk to Siri and tap to turn off “Press Home for Siri” or “Press Side Button for Siri”.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "e07aa46b212892285800bea01325ccb785e9c2eb3be49687e2716c1d64e6a65f",
+   "position_in_page_text": [
+    6435,
+    6618
+   ],
+   "locator": "To turn off Siri, go to Settings > Siri > Talk to Siri",
+   "paraphrase_claude": "Apple defines turning off Siri as Talk to Siri Off plus Press Side (or Home) Button for Siri off.",
+   "claude_note": ""
+  },
+  "E02": {
+   "page": "ask-siri-dictation",
+   "quote": "To turn off Dictation, go to Settings > General > Keyboard, then tap to turn off Enable Dictation.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "8fd43b492077b13b5e6711c42e749a74a953505367ea140534a16018f2bb2934",
+   "position_in_page_text": [
+    6619,
+    6717
+   ],
+   "locator": "To turn off Dictation, go to Settings > General > Keyboard",
+   "paraphrase_claude": "Dictation is turned off with Enable Dictation in Keyboard settings.",
+   "claude_note": ""
+  },
+  "E03": {
+   "page": "ask-siri-dictation",
+   "quote": "If you turn off both Siri and Dictation, the transcripts of your Siri and Dictation requests that are stored on your device and used to personalize your experience will be deleted.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "001c47cdf591c183ebe8ba66c3cf38b9cbe43c9056493d744b63dba0b0cccc25",
+   "position_in_page_text": [
+    6718,
+    6898
+   ],
+   "locator": "If you turn off both Siri and Dictation",
+   "paraphrase_claude": "On-device transcripts used for personalisation are deleted only when both Siri and Dictation are off.",
+   "claude_note": ""
+  },
+  "E04": {
+   "page": "ask-siri-dictation",
+   "quote": "You can delete the transcripts of your Siri and Dictation requests that are stored on your device by going to Settings > Siri > Siri & Dictation History and tapping Delete Siri & Dictation History.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "c2ba8daea7a535a6d49012697bee128912a9b9b4bb6280ff29acdcf92edcb12b",
+   "position_in_page_text": [
+    6899,
+    7096
+   ],
+   "locator": "You can delete the transcripts of your Siri and Dictation requests",
+   "paraphrase_claude": "Delete Siri & Dictation History removes transcripts stored on the device.",
+   "claude_note": ""
+  },
+  "E05": {
+   "page": "ask-siri-dictation",
+   "quote": "When you use Siri and Dictation, your device may send other contextual data to Apple, including from third-party apps you allow to integrate with Use with Siri Requests, such as:",
+   "quote_is_excerpt": false,
+   "quote_sha256": "3d40d894a6afdef62463b2ebce83ad7ad406453cccf9a4b47712a0d27f04f288",
+   "position_in_page_text": [
+    2547,
+    2725
+   ],
+   "locator": "your device may send other contextual data to Apple",
+   "paraphrase_claude": "When Siri and Dictation are used, the device may send contextual data to Apple, including from third-party apps allowed via Use with Siri Requests.",
+   "claude_note": ""
+  },
+  "E06": {
+   "page": "ask-siri-dictation",
+   "quote": "Contact names, nicknames, and relationships (for example, “my dad”), if you set them up in your contacts",
+   "quote_is_excerpt": false,
+   "quote_sha256": "ed8e488be8195145dd01080f7bf39b95ad3d9f1cad2c60436790ec8c4f381ceb",
+   "position_in_page_text": [
+    2726,
+    2830
+   ],
+   "locator": "Contact names, nicknames, and relationships",
+   "paraphrase_claude": "Contextual data list: contact names/nicknames/relationships, form of address, music and podcasts, device names, Home names, item labels (Photos people, alarms, Reminders lists), installed apps and Siri shortcuts.",
+   "claude_note": ""
+  },
+  "E07": {
+   "page": "ask-siri-dictation",
+   "quote": "You can control which apps can integrate with Allow Siri Requests at any time by going to Settings > Siri > Apps > [app name] > Use with Siri Requests.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "e400d934ea9e4c69f42937dfa83e594a26e9bec992e4b4ca6cce35f9fa78a7fc",
+   "position_in_page_text": [
+    7097,
+    7248
+   ],
+   "locator": "You can control which apps can integrate with Allow Siri Requests",
+   "paraphrase_claude": "Per-app control of which apps integrate with Siri requests (named both Allow Siri Requests and Use with Siri Requests).",
+   "claude_note": ""
+  },
+  "E08": {
+   "page": "ask-siri-dictation",
+   "quote": "To stop apps from contributing information to personalize Siri, go to Settings > Siri > Apps > [app name], then tap to turn off Learn from this App.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "f4bf2a722f71fd47fae39a9e83125a8ca852edccec4821e695b81976d5af1909",
+   "position_in_page_text": [
+    7656,
+    7804
+   ],
+   "locator": "To stop apps from contributing information to personalize Siri",
+   "paraphrase_claude": "Learn from this App, per app, stops that app contributing information to personalise Siri.",
+   "claude_note": ""
+  },
+  "E09": {
+   "page": "ask-siri-dictation",
+   "quote": "To stop app clips from contributing information to personalize Siri, go to Settings > Siri > App Clips and tap to turn off Learn from App Clips.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "fb29244e6a9afdf3e73a9e084c7bed7f7e5f39562832c2b80ebe5d710f594bec",
+   "position_in_page_text": [
+    7805,
+    7949
+   ],
+   "locator": "To stop app clips from contributing information",
+   "paraphrase_claude": "Learn from App Clips stops app clips contributing to Siri personalisation.",
+   "claude_note": ""
+  },
+  "E10": {
+   "page": "ask-siri-dictation",
+   "quote": "If you do not want Siri Suggestions in apps, or when sharing, searching, or listening, you can disable Siri Suggestions by going to Settings > Siri and tapping to turn off “Show in App Library”, “Show in Spotlight”, “Show When Sharing”, or “Show When Listening”.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "dcc908c2a7531e714ebfa1d81d6cdb9ba0698ada8f547a76b3fec8bbd0baeadf",
+   "position_in_page_text": [
+    7249,
+    7511
+   ],
+   "locator": "If you do not want Siri Suggestions in apps",
+   "paraphrase_claude": "Apple says Show in App Library / Spotlight / When Sharing / When Listening disable Siri Suggestions in those places.",
+   "claude_note": ""
+  },
+  "E11": {
+   "page": "ask-siri-dictation",
+   "quote": "Siri Suggestions uses local, on-device processing to learn how you use your devices and apps in order to personalize your experience.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "93315d07cd9513b435c2decfc1bdfba53c8eda0bc183b39dfaf57258a9c1c7e5",
+   "position_in_page_text": [
+    4097,
+    4230
+   ],
+   "locator": "Siri Suggestions uses local, on-device processing",
+   "paraphrase_claude": "Siri Suggestions learns on the device how you use devices and apps.",
+   "claude_note": ""
+  },
+  "E12": {
+   "page": "ask-siri-dictation",
+   "quote": "… such as your Safari browsing history, emails, messages, images, notifications, and contacts …",
+   "quote_is_excerpt": true,
+   "full_sentence_chars": 340,
+   "full_sentence_nospace_chars": 291,
+   "full_sentence_nospace_sha256": "4a2cada54f5b0d507dffa04c5ea12dd0c131a839cd57eba9ed2c9dd8f11f6dff",
+   "quote_sha256": "d64c3ac4c0c4aa29cf5ac0cf6a8a43a84248843fca41f61c6fe16a1d1e0264cf",
+   "position_in_page_text": [
+    4231,
+    4571
+   ],
+   "locator": "such as your Safari browsing history, emails, messages, images, notifications, and contacts",
+   "paraphrase_claude": "Siri Suggestions uses Safari history, emails, messages, images, notifications, contacts and data other apps contribute.",
+   "claude_note": ""
+  },
+  "E13": {
+   "page": "ask-siri-dictation",
+   "quote": "If you do not want Siri personalization to sync across your devices, you can disable Siri by going to Settings > [your name] > iCloud > Saved to iCloud > See All and tapping to turn off Siri.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "4f62847da848db87e371ef8e81a8f948f9d202c69ae0b727bdf1d4eb835197ba",
+   "position_in_page_text": [
+    8342,
+    8533
+   ],
+   "locator": "If you do not want Siri personalization to sync",
+   "paraphrase_claude": "Apple calls turning off Siri in iCloud 'disable Siri'; its stated purpose is stopping personalisation sync.",
+   "claude_note": ""
+  },
+  "E14": {
+   "page": "ask-siri-dictation",
+   "quote": "Your Siri settings and Siri Suggestions personalization will sync across your Apple devices using end-to-end encryption if you use iCloud.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "2e0974ec813db20e43c07050008a61f04a56afab7cfa49ea9d64868aeb91fdb6",
+   "position_in_page_text": [
+    5360,
+    5498
+   ],
+   "locator": "Your Siri settings and Siri Suggestions personalization will sync",
+   "paraphrase_claude": "Siri settings and Suggestions personalisation sync across devices via iCloud (end-to-end encrypted).",
+   "claude_note": ""
+  },
+  "E15": {
+   "page": "ask-siri-dictation",
+   "quote": "Additionally, the audio from when you set up Siri to recognize your voice syncs using end-to-end encryption to improve personalized Siri recognition on your devices.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "2bbdb733f0cbd76bb62ad2297c7987c60394b14e751ba55b2e4ce4f2950e187e",
+   "position_in_page_text": [
+    5499,
+    5664
+   ],
+   "locator": "the audio from when you set up Siri to recognize your voice",
+   "paraphrase_claude": "Voice setup audio syncs across devices to improve voice recognition.",
+   "claude_note": ""
+  },
+  "E16": {
+   "page": "ask-siri-dictation",
+   "quote": "If you have enabled Location Services, you can turn off Location Services for Siri by going to Settings > Privacy & Security > Location Services > Siri and tapping Never.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "88e27cc82451b8556c33c8da97942950171cf9a2f4423d07ce0eb0094b12a25c",
+   "position_in_page_text": [
+    7950,
+    8120
+   ],
+   "locator": "you can turn off Location Services for Siri by going to",
+   "paraphrase_claude": "Location Services > Siri > Never.",
+   "claude_note": ""
+  },
+  "E17": {
+   "page": "ask-siri-dictation",
+   "quote": "If you have Location Services turned on for Siri, the location of your device at the time you make a request will be sent to Apple to help Siri and Dictation improve the accuracy of its response to your requests.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "ae6388c85a64914e5fd760599b247b18f492770383ddb81f3f39672634cf6e05",
+   "position_in_page_text": [
+    4960,
+    5172
+   ],
+   "locator": "If you have Location Services turned on for Siri, the location",
+   "paraphrase_claude": "With Location Services for Siri on, device location is sent with requests to help Siri and Dictation.",
+   "claude_note": ""
+  },
+  "E18": {
+   "page": "ask-siri-dictation",
+   "quote": "To deliver relevant responses and suggestions, Apple may use the IP address of your internet connection to approximate your location by matching it to a geographic region.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "47a7b7337d2b7c92dca540721a7cf3f74ffd440eefd78e5d5dd9d1a27fee6dd2",
+   "position_in_page_text": [
+    5173,
+    5344
+   ],
+   "locator": "To deliver relevant responses and suggestions, Apple may use the IP address",
+   "paraphrase_claude": "Apple may approximate location from the IP address; no switch is named for this.",
+   "claude_note": ""
+  },
+  "E19": {
+   "page": "ask-siri-dictation",
+   "quote": "If you have enabled Location Services, you can turn off Location Services for Siri Suggestions by going to Settings > Privacy & Security > Location Services > System Services and tapping to turn off Suggestions & Search.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "222dcfdec53da93b1a18724f7ecb457e2b458412cb92c2a4bb06238b2d4195c2",
+   "position_in_page_text": [
+    8121,
+    8341
+   ],
+   "locator": "turn off Location Services for Siri Suggestions",
+   "paraphrase_claude": "System Services > Suggestions & Search, named here Location Services for Siri Suggestions.",
+   "claude_note": ""
+  },
+  "E20": {
+   "page": "ask-siri-dictation",
+   "quote": "You can also restrict the ability to use Siri and Dictation altogether by going to Settings > Screen Time > Content & Privacy Restrictions > Allowed Apps & Features and tapping Siri & Dictation.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "2985a3c1449c1d285d46c031481ebafdffbdb9afe94ab42f1f0620211fc62e0c",
+   "position_in_page_text": [
+    8534,
+    8728
+   ],
+   "locator": "restrict the ability to use Siri and Dictation altogether",
+   "paraphrase_claude": "Screen Time restriction blocks use of Siri and Dictation.",
+   "claude_note": ""
+  },
+  "E21": {
+   "page": "ask-siri-dictation",
+   "quote": "You can control which apps use Siri for transcription by going to Settings > Privacy & Security > Speech Recognition.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "59753b1ae991af71ffd59cc1bf63ee9166332916a060ae91bdfb6117b51e66c8",
+   "position_in_page_text": [
+    8729,
+    8846
+   ],
+   "locator": "You can control which apps use Siri for transcription",
+   "paraphrase_claude": "Privacy & Security > Speech Recognition controls which apps send audio for transcription.",
+   "claude_note": ""
+  },
+  "E22": {
+   "page": "ask-siri-dictation",
+   "quote": "Unless you opt in to Improve Siri and Dictation, your audio data is not stored by Apple.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "2bd23434122fec4096063873220ebe9051a2631503be39d2976cb73a396d6987",
+   "position_in_page_text": [
+    916,
+    1004
+   ],
+   "locator": "Unless you opt in to Improve Siri and Dictation, your audio data is not stored",
+   "paraphrase_claude": "Siri audio is not stored by Apple unless Improve Siri and Dictation is on.",
+   "claude_note": ""
+  },
+  "E23": {
+   "page": "ask-siri-dictation",
+   "quote": "Otherwise, the things you dictate are sent to and processed on the server, but will not be stored unless you opt in to Improve Siri and Dictation.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "43d058f6cb10336f0504aa85c6ee9353a2a70c0f52989731a335e4a5822cdb62",
+   "position_in_page_text": [
+    1166,
+    1312
+   ],
+   "locator": "the things you dictate are sent to and processed on the server",
+   "paraphrase_claude": "Dictation audio/transcripts go to Apple servers unless on-device, and are not stored unless opted in.",
+   "claude_note": ""
+  },
+  "E24": {
+   "page": "ask-siri-dictation",
+   "quote": "Apple stores transcripts of your interactions with Siri and may review a subset of these transcripts.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "adf01a8e2cdd9105ac8094b4bf939630a518054d4e622c97087b798eb3674553",
+   "position_in_page_text": [
+    65,
+    166
+   ],
+   "locator": "Apple stores transcripts of your interactions with Siri",
+   "paraphrase_claude": "Apple stores Siri transcripts by default and may review a subset.",
+   "claude_note": ""
+  },
+  "E25": {
+   "page": "ask-siri-dictation",
+   "quote": "Your request history, which includes transcripts and any related request data, is associated with a random, device-generated identifier that rotates multiple times per hour and is not tied to your Apple Account or email address.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "dc494cde42878a3801e6fa9fef07ab30beb98821698ab209392569530c93e322",
+   "position_in_page_text": [
+    1639,
+    1867
+   ],
+   "locator": "Your request history, which includes transcripts",
+   "paraphrase_claude": "Request history is tied to a rotating device identifier.",
+   "claude_note": ""
+  },
+  "E26": {
+   "page": "ask-siri-dictation",
+   "quote": "Apple may retain and use this data for up to two years to develop and improve Siri, Dictation, Search, and limited other language processing functionality in Apple products and services.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "bbef6c02519ec9b5215b9d7031e6ba2178ccf9fc453e8416ee8e81f1e25c09bf",
+   "position_in_page_text": [
+    1868,
+    2054
+   ],
+   "locator": "Apple may retain and use this data for up to two years",
+   "paraphrase_claude": "Default retention up to two years; reviewed subset may be kept longer.",
+   "claude_note": ""
+  },
+  "E27": {
+   "page": "ask-siri-dictation",
+   "quote": "A history of your Siri and Dictation interactions is stored on your device, and may be used to personalize your Siri experience.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "2fca26f12b61faae00dadffc532e3a3895687d2d380ad017ddd0e7ce5aaa9033",
+   "position_in_page_text": [
+    2418,
+    2546
+   ],
+   "locator": "A history of your Siri and Dictation interactions is stored on your device",
+   "paraphrase_claude": "An on-device history is kept and used to personalise Siri.",
+   "claude_note": ""
+  },
+  "E28": {
+   "page": "ask-siri-dictation",
+   "quote": "The personalized speech recognition models and your interactions with Siri and Dictation that are performed on device may leverage your on-device information to improve accuracy and model performance.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "be6a66d186130a845fbc9e1ad0d60ff4bf3c4f189022a1426ddd019074f9ad69",
+   "position_in_page_text": [
+    5759,
+    5959
+   ],
+   "locator": "may leverage your on-device information to improve accuracy",
+   "paraphrase_claude": "Personalised speech recognition uses on-device information; no switch named.",
+   "claude_note": ""
+  },
+  "E29": {
+   "page": "ask-siri-dictation",
+   "quote": "… The status of your nearby timers, alarms, shared media …",
+   "quote_is_excerpt": true,
+   "full_sentence_chars": 313,
+   "full_sentence_nospace_chars": 259,
+   "full_sentence_nospace_sha256": "f4277fab5d3713c532aea19cdf8b7b3145c16bb67a7cb71f126095696dd97736",
+   "quote_sha256": "098bcf79b0bc229b1ff09105484c335bb08447876405e741e5b593cf6c31eec7",
+   "position_in_page_text": [
+    6046,
+    6359
+   ],
+   "locator": "The status of your nearby timers, alarms, shared media",
+   "paraphrase_claude": "Correct the paraphrase: Apple names one condition, the Personal Requests on HomePod opt-in, which gates the phone-call-status part. It should not say that no switch is named.",
+   "claude_note": ""
+  },
+  "E30": {
+   "page": "ask-siri-dictation",
+   "quote": "… Apple will also store related request data …",
+   "quote_is_excerpt": true,
+   "full_sentence_chars": 325,
+   "full_sentence_nospace_chars": 276,
+   "full_sentence_nospace_sha256": "d34f3f157c6613972d4452b2ffbf47767a378e219ce1a9770d19724f79422b0b",
+   "quote_sha256": "0c8f7434c8b651b43104cc1cb6b4334d3c30d4da407b5b7dd62680d684e4d2b9",
+   "position_in_page_text": [
+    1313,
+    1638
+   ],
+   "locator": "Apple will also store related request data",
+   "paraphrase_claude": "Apple stores request category, success, device specs/configuration, performance stats, and approximate location if Location Services for Siri is on.",
+   "claude_note": ""
+  },
+  "E31": {
+   "page": "siri-suggestions-search",
+   "quote": "If you do not want your search queries to be stored by Apple and used to improve Search, you can disable Improve Search by going to Settings > Search and tapping to turn off Help Apple Improve Search.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "99c92d8a116e5fc2010ba7a2b07ce57107de03110ece35cb7fcd4275c8b95cc8",
+   "position_in_page_text": [
+    3134,
+    3334
+   ],
+   "locator": "If you do not want your search queries to be stored",
+   "paraphrase_claude": "Help Apple Improve Search off stops search queries being stored and used to improve Search.",
+   "claude_note": ""
+  },
+  "E32": {
+   "page": "siri-suggestions-search",
+   "quote": "Searches you make through Siri will still be stored and used to improve Siri if you have enabled Improve Siri & Dictation.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "3bbde6bb1a2ad37bb504de9e8cabfe64ffb822379d75221f58a50a2f899043c2",
+   "position_in_page_text": [
+    3335,
+    3457
+   ],
+   "locator": "Searches you make through Siri will still be stored",
+   "paraphrase_claude": "Explicit: Siri searches are still stored if Improve Siri & Dictation is on, even with Help Apple Improve Search off.",
+   "claude_note": ""
+  },
+  "E33": {
+   "page": "siri-suggestions-search",
+   "quote": "If you do not want web-based content and search results, you can disable “Show Recent Searches” and “Show Related Content” by going to Settings > Search and tapping to turn off those features.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "2a50b2ee5a8bc318a0af3664076223e46d28b0d968489e65fa179cc2bcd49725",
+   "position_in_page_text": [
+    3618,
+    3810
+   ],
+   "locator": "If you do not want web-based content and search results",
+   "paraphrase_claude": "Show Recent Searches and Show Related Content are described as turning off web-based content and results.",
+   "claude_note": ""
+  },
+  "E34": {
+   "page": "siri-suggestions-search",
+   "quote": "You can disable Location Services for Search by going to Settings > Privacy & Security > Location Services > System Services and tapping to turn off Suggestions & Search.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "61f7390ab72b52e70ae8906b9792c178e4113f38de34e097a36f52bcd4a8913b",
+   "position_in_page_text": [
+    3811,
+    3981
+   ],
+   "locator": "You can disable Location Services for Search",
+   "paraphrase_claude": "Same Suggestions & Search switch, named here Location Services for Search.",
+   "claude_note": ""
+  },
+  "E35": {
+   "page": "siri-suggestions-search",
+   "quote": "If you turn off Location Services on your device, your location will not be sent to Apple.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "d249c8f3c558374b929703b93f5065c6fe0b0770f27a41badd7bc61d8bb3a88f",
+   "position_in_page_text": [
+    3982,
+    4072
+   ],
+   "locator": "If you turn off Location Services on your device, your location will not be sent",
+   "paraphrase_claude": "Global Location Services off: location not sent to Apple (contrast E18, E41, E42).",
+   "claude_note": ""
+  },
+  "E36": {
+   "page": "siri-suggestions-search",
+   "quote": "When you use Look Up or Visual Look Up, when you type in Search, Safari search, #images search in Messages, or when you invoke Spotlight, limited information will be sent to Apple to provide up-to-date suggestions.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "fe43cd0b442732d613bb58126649fdcef7a9555845653701cf5e7eac9077f169",
+   "position_in_page_text": [
+    503,
+    717
+   ],
+   "locator": "When you use Look Up or Visual Look Up",
+   "paraphrase_claude": "Look Up, Search, Safari search, #images and Spotlight send limited information to Apple on a 15-minute rotating identifier.",
+   "claude_note": ""
+  },
+  "E37": {
+   "page": "siri-suggestions-search",
+   "quote": "This information may include location, topics of interest (for example, cooking or basketball), your search queries, including visual search queries, contextual information related to your search queries, suggestions you have selected, apps you use, and related device usage data.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "24e570e739d89e0d7b84f39e53352d33e1f574abfefc83102cad014809650a23",
+   "position_in_page_text": [
+    852,
+    1132
+   ],
+   "locator": "This information may include location, topics of interest",
+   "paraphrase_claude": "Search data may include location, topics of interest, queries, context, selected suggestions, apps used, device usage, subscription names.",
+   "claude_note": ""
+  },
+  "E38": {
+   "page": "siri-suggestions-search",
+   "quote": "When Search Engine Suggestions are enabled, Safari will ask your selected search engine for suggestions based on what you’ve typed.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "da71b4b788b40c0efa14f2ee8c6581801605e28db2bc1857fab2eea9068befa8",
+   "position_in_page_text": [
+    2719,
+    2850
+   ],
+   "locator": "When Search Engine Suggestions are enabled",
+   "paraphrase_claude": "Safari sends typed text to the chosen search engine when enabled; off-state not described; no Settings path given.",
+   "claude_note": ""
+  },
+  "E39": {
+   "page": "siri-suggestions-search",
+   "quote": "With Preload Top Hit enabled, as soon as Safari determines a Top Hit based on your bookmarks and browsing history, Safari will begin loading the webpage in the background.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "ce90df0b36c0e34d744512df16c73f772ac267840aeee891ec8017b55827ed58",
+   "position_in_page_text": [
+    2877,
+    3048
+   ],
+   "locator": "With Preload Top Hit enabled",
+   "paraphrase_claude": "Safari preloads the top hit when enabled; no Settings path given.",
+   "claude_note": ""
+  },
+  "E40": {
+   "page": "location-services",
+   "quote": "If you turn off Location Services for location-based suggestions, your precise location will not be sent to Apple.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "e5902c3050e27b330b7aff70caa431650a50639fa35ae0cd76a992ed8fb4f6e3",
+   "position_in_page_text": [
+    3313,
+    3427
+   ],
+   "locator": "If you turn off Location Services for location-based suggestions",
+   "paraphrase_claude": "Suggestions & Search off stops precise location being sent.",
+   "claude_note": ""
+  },
+  "E41": {
+   "page": "location-services",
+   "quote": "To deliver relevant search suggestions and news, Apple may use the IP address of your internet connection to approximate your location by matching it to a geographic region.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "22ec5ebbfe3907dcac03809ffd5090085151505d1bfb16d4401b22704557a6a3",
+   "position_in_page_text": [
+    3428,
+    3601
+   ],
+   "locator": "To deliver relevant search suggestions and news",
+   "paraphrase_claude": "Apple may approximate location from the IP address for search suggestions and news.",
+   "claude_note": ""
+  },
+  "E42": {
+   "page": "location-services",
+   "quote": "Apps or websites may still use other information, such as the IP address of your internet connection, to attempt to approximate your location, regardless of the state of the Location Services switch.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "87679187c159c839fa32d052ad66eb4830436aaae2280d5158d9fc6f1147d13d",
+   "position_in_page_text": [
+    7143,
+    7342
+   ],
+   "locator": "regardless of the state of the Location Services switch",
+   "paraphrase_claude": "Explicit: apps or websites may still approximate location from IP regardless of the Location Services switch.",
+   "claude_note": ""
+  },
+  "E43": {
+   "page": "health-app",
+   "quote": "You can turn off Siri’s access to your Health app data at any time by going to Settings > Apps > Health > Data Access & Devices > Siri, then tapping to turn off Access Health Data.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "b8e1147b67d5ddf6232de67135d9b3b6422d80de6220f3399fd9b4dcd04437b1",
+   "position_in_page_text": [
+    14356,
+    14536
+   ],
+   "locator": "You can turn off Siri’s access to your Health app data",
+   "paraphrase_claude": "Health > Data Access & Devices > Siri > Access Health Data.",
+   "claude_note": ""
+  },
+  "E44": {
+   "page": "health-app",
+   "quote": "If Siri does not recognize your request as a Health app data request, any health information you include in the request will be sent to Apple.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "d4cf6273cd530c2c016947d71343a1fbf793007c6c70601f05671a66d005c637",
+   "position_in_page_text": [
+    14213,
+    14355
+   ],
+   "locator": "If Siri does not recognize your request as a Health app data request",
+   "paraphrase_claude": "Health information in a Siri request not recognised as a Health request is sent to Apple; no switch named.",
+   "claude_note": ""
+  },
+  "E45": {
+   "page": "icloud-analytics",
+   "quote": "Help Apple to improve its products and services, including Siri and other intelligent features, by allowing analytics of usage and data from your Apple Account.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "71949fe03fac502a6bde53be82ea56e1b9d12603f05bf201f46950a6cdec6429",
+   "position_in_page_text": [
+    157,
+    317
+   ],
+   "locator": "including Siri and other intelligent features",
+   "paraphrase_claude": "Share iCloud Analytics data is used to improve Siri and other features.",
+   "claude_note": ""
+  },
+  "E46": {
+   "page": "icloud-analytics",
+   "quote": "To do so, go to Settings > Privacy & Security > Analytics & Improvements and tap to turn off Share iCloud Analytics.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "a753817f38dae8f1511fade985a83a5aecc7f6002dd5d5028345cdc822353aba",
+   "position_in_page_text": [
+    663,
+    779
+   ],
+   "locator": "tap to turn off Share iCloud Analytics",
+   "paraphrase_claude": "Analytics & Improvements > Share iCloud Analytics.",
+   "claude_note": ""
+  },
+  "E47": {
+   "page": "improve-assistive-voice-features",
+   "quote": "Apple will use the information collected to develop and improve Vocal Shortcuts, Voice Control, and similar accessibility features, as well as to improve accessibility across other Apple features, such as Siri.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "fcfdb978d12697cae9b6b468d31ce87e0810a4a45d84e73bbe755e3e379a2bef",
+   "position_in_page_text": [
+    1088,
+    1298
+   ],
+   "locator": "to improve accessibility across other Apple features, such as Siri",
+   "paraphrase_claude": "Improve Assistive Voice Features data is also used to improve Siri.",
+   "claude_note": ""
+  },
+  "E48": {
+   "page": "improve-assistive-voice-features",
+   "quote": "To do so on your iOS, iPadOS, or visionOS device, go to Settings > Privacy & Security > Analytics & Improvements, and tap to turn off Improve Assistive Voice Features.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "26ee20fb31ae0df8e6a389d5a85e7b14d59e9d2e17b17f37f5c2c14a7261de86",
+   "position_in_page_text": [
+    1576,
+    1743
+   ],
+   "locator": "tap to turn off Improve Assistive Voice Features",
+   "paraphrase_claude": "Analytics & Improvements > Improve Assistive Voice Features.",
+   "claude_note": ""
+  },
+  "E49": {
+   "page": "improve-health-activity",
+   "quote": "Your use of Siri to access your Health app data, such as the type of Health app data you queried, and the type of request you made, including whether you made a request to record information in or request information from the Health app",
+   "quote_is_excerpt": false,
+   "quote_sha256": "bfc424b41adbc8afeabd2c23759e7611e87c4adad9daa58ed2f3e366f8223d33",
+   "position_in_page_text": [
+    7425,
+    7661
+   ],
+   "locator": "Your use of Siri to access your Health app data",
+   "paraphrase_claude": "Improve Health & Activity collects how you use Siri with Health; the page gives no Settings path.",
+   "claude_note": ""
+  },
+  "E50": {
+   "page": "apple-books",
+   "quote": "You can disable this at any time on your iOS, iPadOS, or visionOS device by going to Settings > Apps > Books > Siri, and tapping to turn off Show in App.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "974b4a4bfcc7e2b56ed207f368862414eaeb3ff8eb29c7053be7c37ca0f6e1c2",
+   "position_in_page_text": [
+    6065,
+    6218
+   ],
+   "locator": "Settings > Apps > Books > Siri, and tapping to turn off Show in App",
+   "paraphrase_claude": "Books: Show in App stops Siri suggesting Books content.",
+   "claude_note": ""
+  },
+  "E51": {
+   "page": "apple-news",
+   "quote": "You can disable this at any time on your iOS or iPadOS device by going to Settings > Apps > News > Siri & Search, and tapping to turn off Show in App.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "b4a8c80b239c4dd6e21a4affd38ed1d789b97f305e254fba82e889bb8300a0e2",
+   "position_in_page_text": [
+    4983,
+    5133
+   ],
+   "locator": "Settings > Apps > News > Siri & Search, and tapping to turn off Show in App",
+   "paraphrase_claude": "News: Show in App stops Siri suggesting News content (path names the menu 'Siri & Search').",
+   "claude_note": ""
+  },
+  "E52": {
+   "page": "improve-siri-dictation",
+   "quote": "To do so, go to Settings > Privacy & Security > Analytics & Improvements.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "80470bd7fddc28e939591fd8e4a2b37186281e8fab444029d117e638afde815f",
+   "position_in_page_text": [
+    2838,
+    2911
+   ],
+   "locator": "To do so, go to Settings > Privacy & Security > Analytics & Improvements",
+   "paraphrase_claude": "Improve Siri and Dictation lives in Analytics & Improvements.",
+   "claude_note": ""
+  },
+  "E53": {
+   "page": "improve-siri-dictation",
+   "quote": "Depending on the context of your request, a reviewer may access additional contextual data directly relevant to the request, such as names of your contacts or apps installed on your devices, in order to grade the effectiveness of Siri’s response.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "8c0df6b6a93eb6673bbc705c79a3fd2842317501b5c8ff528e083731306c9c14",
+   "position_in_page_text": [
+    2387,
+    2633
+   ],
+   "locator": "a reviewer may access additional contextual data",
+   "paraphrase_claude": "For opted-in users, reviewers may see contextual data such as contact names and installed apps.",
+   "claude_note": ""
+  },
+  "E54": {
+   "page": "translation",
+   "quote": "You can help to improve Translate’s voice translation by allowing Apple to store and review your audio interactions by opting in to Improve Siri & Dictation.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "fcdffc5223b3d3b0158d510785dc967d1b4744dcc76c6f25035f5902e208cf8d",
+   "position_in_page_text": [
+    1193,
+    1350
+   ],
+   "locator": "by opting in to Improve Siri & Dictation",
+   "paraphrase_claude": "A Siri-named switch controls Translate audio review.",
+   "claude_note": ""
+  },
+  "E55": {
+   "page": "ask-siri-dictation",
+   "quote": "Otherwise, your audio is sent to and processed on Apple servers.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "1515d0b11f8043a8ccd99624f0f18f4c7fb60b327884e929e463a31164127112",
+   "position_in_page_text": [
+    851,
+    915
+   ],
+   "locator": "Otherwise, your audio is sent to and processed on Apple servers",
+   "paraphrase_claude": "Siri audio goes to Apple servers unless Siri Settings shows on-device processing.",
+   "claude_note": ""
+  },
+  "E56": {
+   "page": "siri-suggestions-search",
+   "quote": "If you do not want your search queries to be stored by Apple and used to improve Search, you can disable Improve Search by going to Settings > Search and tapping to turn off Help Apple Improve Search.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "99c92d8a116e5fc2010ba7a2b07ce57107de03110ece35cb7fcd4275c8b95cc8",
+   "position_in_page_text": [
+    3134,
+    3334
+   ],
+   "locator": "you can disable Improve Search by going to Settings > Search",
+   "paraphrase_claude": "Same sentence names the switch both 'Improve Search' and 'Help Apple Improve Search'.",
+   "claude_note": ""
+  },
+  "E57": {
+   "page": "ask-siri-dictation",
+   "quote": "In addition, if you choose to allow apps to use Speech Recognition for transcription, the audio data to be transcribed may be sent to Apple.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "90fdcbca3f92ec0d203ff27b0509829f8826615ad6ae069822e760739c9000b4",
+   "position_in_page_text": [
+    3939,
+    4079
+   ],
+   "locator": "if you choose to allow apps to use Speech Recognition for transcription,",
+   "paraphrase_claude": "Fills the structural gap: privacy.speech_recognition had no feature to act on, so all its cells were forced to not_stated. With this feature, privacy.speech_recognition x audio x app_speech_recognition can be recorded (see used_by_changes). Apple does not say this transcription is Dictation or Siri, so it gets its own feature id rather than being folded into dictation.",
+   "claude_note": ""
+  },
+  "E58": {
+   "page": "ask-siri-dictation",
+   "quote": "In addition, if you choose to allow apps to use Speech Recognition for transcription, the audio data to be transcribed may be sent to Apple.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "90fdcbca3f92ec0d203ff27b0509829f8826615ad6ae069822e760739c9000b4",
+   "position_in_page_text": [
+    3939,
+    4079
+   ],
+   "locator": "the audio data to be transcribed may be sent to Apple.",
+   "paraphrase_claude": "Fills the structural gap: privacy.speech_recognition had no feature to act on, so all its cells were forced to not_stated. With this feature, privacy.speech_recognition x audio x app_speech_recognition can be recorded (see used_by_changes). Apple does not say this transcription is Dictation or Siri, so it gets its own feature id rather than being folded into dictation.",
+   "claude_note": ""
+  },
+  "E59": {
+   "page": "ask-siri-dictation",
+   "quote": "You can control which apps use Siri for transcription by going to Settings > Privacy & Security > Speech Recognition.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "59753b1ae991af71ffd59cc1bf63ee9166332916a060ae91bdfb6117b51e66c8",
+   "position_in_page_text": [
+    8729,
+    8846
+   ],
+   "locator": "You can control which apps use Siri for transcription by going",
+   "paraphrase_claude": "Fills the structural gap: privacy.speech_recognition had no feature to act on, so all its cells were forced to not_stated. With this feature, privacy.speech_recognition x audio x app_speech_recognition can be recorded (see used_by_changes). Apple does not say this transcription is Dictation or Siri, so it gets its own feature id rather than being folded into dictation.",
+   "claude_note": ""
+  },
+  "E60": {
+   "page": "ask-siri-dictation",
+   "quote": "… and, if you opted in to Personal Requests on HomePod, phone call status, …",
+   "quote_is_excerpt": true,
+   "full_sentence_chars": 313,
+   "full_sentence_nospace_chars": 259,
+   "full_sentence_nospace_sha256": "f4277fab5d3713c532aea19cdf8b7b3145c16bb67a7cb71f126095696dd97736",
+   "quote_sha256": "098bcf79b0bc229b1ff09105484c335bb08447876405e741e5b593cf6c31eec7",
+   "position_in_page_text": [
+    6046,
+    6359
+   ],
+   "locator": "and, if you opted in to Personal Requests on HomePod, phone call status,",
+   "paraphrase_claude": "Scope decision: in_scope. The opt-in concerns HomePod, but Apple's sentence says what is shared is phone call status 'from your device', i.e. this iPhone's data, and it is the only condition Apple attaches to that part of the nearby-device flow (E29/N05). Excluding it would leave the phone-call-status part of nearby_device_status wrongly recorded as having no switch. Apple gives no Settings path and does not say whether the opt-in is made on the iPhone (for example in the Home app) or on HomePod; settings_path is null for that reason. Grid effect: stops = the phone-call-status part of nearby_device_status (on opt-out); timers, alarms, shared media and proximity are not tied to it.",
+   "claude_note": ""
+  },
+  "E61": {
+   "page": "ask-siri-dictation",
+   "quote": "… from your device and the proximity of such device may be shared locally …",
+   "quote_is_excerpt": true,
+   "full_sentence_chars": 313,
+   "full_sentence_nospace_chars": 259,
+   "full_sentence_nospace_sha256": "f4277fab5d3713c532aea19cdf8b7b3145c16bb67a7cb71f126095696dd97736",
+   "quote_sha256": "098bcf79b0bc229b1ff09105484c335bb08447876405e741e5b593cf6c31eec7",
+   "position_in_page_text": [
+    6046,
+    6359
+   ],
+   "locator": "from your device and the proximity of such device may be shared locally",
+   "paraphrase_claude": "Scope decision: in_scope. The opt-in concerns HomePod, but Apple's sentence says what is shared is phone call status 'from your device', i.e. this iPhone's data, and it is the only condition Apple attaches to that part of the nearby-device flow (E29/N05). Excluding it would leave the phone-call-status part of nearby_device_status wrongly recorded as having no switch. Apple gives no Settings path and does not say whether the opt-in is made on the iPhone (for example in the Home app) or on HomePod; settings_path is null for that reason. Grid effect: stops = the phone-call-status part of nearby_device_status (on opt-out); timers, alarms, shared media and proximity are not tied to it.",
+   "claude_note": ""
+  },
+  "E62": {
+   "page": "apple-store-app",
+   "quote": "To change how Siri accesses your information, go to Settings > Siri & Search.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "39607383b6f6b0395394aca5818c06a61397c75b1616a814eaf8ae87d138f0eb",
+   "position_in_page_text": [
+    4496,
+    4573
+   ],
+   "locator": "To change how Siri accesses your information, go to Settings > Siri & Search.",
+   "paraphrase_claude": "Apple names a settings location, not a switch, so kind is 'settings_pane' (new kind; no existing kind fits). It concerns Siri Suggestions (Today at Apple session suggestions), so in_scope. 'Settings > Siri & Search' is probably the older name of the pane that ask-siri-dictation calls 'Settings > Siri', but Apple does not say so; record it as a wording issue (fifth way of naming the Siri settings root) and do not grid it, since no switch or effect is named. The ask-siri-dictation page has a parallel pane-level control ('see and control the full list of features that Siri personalizes ... by going to Settings > Siri') that is also not in switches.json; not on the checker's list, noted here only.",
+   "claude_note": ""
+  },
+  "E63": {
+   "page": "apple-store-app",
+   "quote": "Siri also suggests Today at Apple sessions based on on-device information derived from the apps you use and the websites you visit with Safari.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "9b46e197acb6d645a923c8298ca7a9094f7a5c37a8c289bc345f48d3253fd870",
+   "position_in_page_text": [
+    4352,
+    4495
+   ],
+   "locator": "Siri also suggests Today at Apple sessions based on on-device information",
+   "paraphrase_claude": "Apple names a settings location, not a switch, so kind is 'settings_pane' (new kind; no existing kind fits). It concerns Siri Suggestions (Today at Apple session suggestions), so in_scope. 'Settings > Siri & Search' is probably the older name of the pane that ask-siri-dictation calls 'Settings > Siri', but Apple does not say so; record it as a wording issue (fifth way of naming the Siri settings root) and do not grid it, since no switch or effect is named. The ask-siri-dictation page has a parallel pane-level control ('see and control the full list of features that Siri personalizes ... by going to Settings > Siri') that is also not in switches.json; not on the checker's list, noted here only.",
+   "claude_note": ""
+  },
+  "E64": {
+   "page": "apple-store-app",
+   "quote": "Siri also suggests Today at Apple sessions based on on-device information derived from the apps you use and the websites you visit with Safari.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "9b46e197acb6d645a923c8298ca7a9094f7a5c37a8c289bc345f48d3253fd870",
+   "position_in_page_text": [
+    4352,
+    4495
+   ],
+   "locator": "derived from the apps you use and the websites you visit with Safari.",
+   "paraphrase_claude": "Apple names a settings location, not a switch, so kind is 'settings_pane' (new kind; no existing kind fits). It concerns Siri Suggestions (Today at Apple session suggestions), so in_scope. 'Settings > Siri & Search' is probably the older name of the pane that ask-siri-dictation calls 'Settings > Siri', but Apple does not say so; record it as a wording issue (fifth way of naming the Siri settings root) and do not grid it, since no switch or effect is named. The ask-siri-dictation page has a parallel pane-level control ('see and control the full list of features that Siri personalizes ... by going to Settings > Siri') that is also not in switches.json; not on the checker's list, noted here only.",
+   "claude_note": ""
+  },
+  "E65": {
+   "page": "location-services",
+   "quote": "… Alerts & Shortcuts Automations: Your iPhone and Apple Watch will use your location …",
+   "quote_is_excerpt": true,
+   "full_sentence_chars": 324,
+   "full_sentence_nospace_chars": 270,
+   "full_sentence_nospace_sha256": "665eafe108cc7f6c3fe34ee4b428b3344f17ac30b6d37139003a86b9f597b742",
+   "quote_sha256": "ff95a4f01a3e0d3c3b8a7d1ed801208e4af5e3ea3676e2be2eb469e2da7d3499",
+   "position_in_page_text": [
+    3602,
+    3926
+   ],
+   "locator": "Alerts & Shortcuts Automations: Your iPhone and Apple Watch will use your location",
+   "paraphrase_claude": "Scope decision: adjacent. Apple describes 'an app or shortcut recommendation based on where you currently are', which resembles Siri Suggestions ('Siri can suggest shortcuts', E12), but this page never names Siri or Siri Suggestions, and says the iPhone 'will use' your location, not that it is sent to Apple. Tying it to siri_suggestions would be my inference, so it is not gridded as in_scope. settings_path is null because Apple gives only the generic instruction (System Services, then each service), not a path naming this service; the implied path is Settings > Privacy & Security > Location Services > System Services > Alerts & Shortcuts Automations, and the on-device name should be checked.",
+   "claude_note": ""
+  },
+  "E66": {
+   "page": "location-services",
+   "quote": "… or an app or shortcut recommendation based on where you currently are. …",
+   "quote_is_excerpt": true,
+   "full_sentence_chars": 324,
+   "full_sentence_nospace_chars": 270,
+   "full_sentence_nospace_sha256": "665eafe108cc7f6c3fe34ee4b428b3344f17ac30b6d37139003a86b9f597b742",
+   "quote_sha256": "ff95a4f01a3e0d3c3b8a7d1ed801208e4af5e3ea3676e2be2eb469e2da7d3499",
+   "position_in_page_text": [
+    3602,
+    3926
+   ],
+   "locator": "or an app or shortcut recommendation based on where you currently are.",
+   "paraphrase_claude": "Scope decision: adjacent. Apple describes 'an app or shortcut recommendation based on where you currently are', which resembles Siri Suggestions ('Siri can suggest shortcuts', E12), but this page never names Siri or Siri Suggestions, and says the iPhone 'will use' your location, not that it is sent to Apple. Tying it to siri_suggestions would be my inference, so it is not gridded as in_scope. settings_path is null because Apple gives only the generic instruction (System Services, then each service), not a path naming this service; the implied path is Settings > Privacy & Security > Location Services > System Services > Alerts & Shortcuts Automations, and the on-device name should be checked.",
+   "claude_note": ""
+  },
+  "E67": {
+   "page": "location-services",
+   "quote": "You can also disable location-based System Services by tapping System Services, then tapping to turn off each location-based System Service.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "1f113721a69a48d00599e8a92bd942bbac7818bd00068c98c92760aa33cdd476",
+   "position_in_page_text": [
+    7002,
+    7142
+   ],
+   "locator": "tapping System Services, then tapping to turn off each location-based System Service.",
+   "paraphrase_claude": "Scope decision: adjacent. Apple describes 'an app or shortcut recommendation based on where you currently are', which resembles Siri Suggestions ('Siri can suggest shortcuts', E12), but this page never names Siri or Siri Suggestions, and says the iPhone 'will use' your location, not that it is sent to Apple. Tying it to siri_suggestions would be my inference, so it is not gridded as in_scope. settings_path is null because Apple gives only the generic instruction (System Services, then each service), not a path naming this service; the implied path is Settings > Privacy & Security > Location Services > System Services > Alerts & Shortcuts Automations, and the on-device name should be checked.",
+   "claude_note": ""
+  },
+  "E68": {
+   "page": "ios26-guide-change-siri-settings",
+   "quote": "Prevent access to Siri when iPhone is locked: Turn off Allow Siri When Locked.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "c4848279bd54b178aaa11740c915cbfa7fb2cef0cee46464badc6227231c134f",
+   "position_in_page_text": [
+    1620,
+    1698
+   ],
+   "locator": "Prevent access to Siri when iPhone is locked: Turn off Allow Siri When Locked",
+   "paraphrase_claude": "User guide text for guide.allow_siri_when_locked.",
+   "claude_note": ""
+  },
+  "E69": {
+   "page": "ios26-guide-change-siri-settings",
+   "quote": "Change when Siri provides voice responses: Tap Siri Responses, then choose an option below Spoken Responses.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "64f80a208b905b48872c307c2cbbf7f1705a7c35935f343c258982f03097a10c",
+   "position_in_page_text": [
+    844,
+    952
+   ],
+   "locator": "Change when Siri provides voice responses: Tap Siri Responses",
+   "paraphrase_claude": "User guide text for guide.siri_responses.",
+   "claude_note": ""
+  },
+  "E70": {
+   "page": "ios26-guide-change-siri-settings",
+   "quote": "Change the voice for Siri: Tap Voice, then choose a different variety or voice (not available for all languages).",
+   "quote_is_excerpt": false,
+   "quote_sha256": "74d466a88d24b9624b5dc66ff24f35578696772bcc03566a1db0903f67abdc1c",
+   "position_in_page_text": [
+    650,
+    763
+   ],
+   "locator": "Change the voice for Siri: Tap Voice",
+   "paraphrase_claude": "User guide text for guide.voice.",
+   "claude_note": ""
+  },
+  "E71": {
+   "page": "ios26-guide-change-siri-settings",
+   "quote": "Change the language Siri responds to: Tap Language, then select a new language.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "d3341f31f2fb78c90d279f28c1a223e6685f79fe5f9a56c993ed68831c84e8cc",
+   "position_in_page_text": [
+    764,
+    843
+   ],
+   "locator": "Change the language Siri responds to: Tap Language",
+   "paraphrase_claude": "User guide text for guide.language.",
+   "claude_note": ""
+  },
+  "E72": {
+   "page": "ios26-guide-change-siri-settings",
+   "quote": "Always see the response from Siri onscreen: Tap Siri Responses, then turn on Always Show Siri Captions.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "f5325b0cb0661d20f7bb8f771037d655627b3ff32f1db6bd2f1075045c5d2476",
+   "position_in_page_text": [
+    953,
+    1056
+   ],
+   "locator": "then turn on Always Show Siri Captions",
+   "paraphrase_claude": "User guide text for guide.always_show_captions.",
+   "claude_note": ""
+  },
+  "E73": {
+   "page": "ios26-guide-change-siri-settings",
+   "quote": "See your request onscreen: Tap Siri Responses, then turn on Always Show Request.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "47fa5013fdf2a8dae663f634af600cf166349e040cf130f7329739a5c74d63eb",
+   "position_in_page_text": [
+    1057,
+    1137
+   ],
+   "locator": "then turn on Always Show Request",
+   "paraphrase_claude": "User guide text for guide.always_show_request.",
+   "claude_note": ""
+  },
+  "E74": {
+   "page": "ios26-guide-change-siri-settings",
+   "quote": "Hang up Phone and FaceTime calls: Tap Call Hang Up, then turn on Call Hang Up.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "b0648b8ba37689d1eee56270f7c73524ae41f4af369ff7dc1bbda9b80efb6da1",
+   "position_in_page_text": [
+    2364,
+    2442
+   ],
+   "locator": "Tap Call Hang Up, then turn on Call Hang Up",
+   "paraphrase_claude": "User guide text for guide.call_hang_up.",
+   "claude_note": ""
+  },
+  "E75": {
+   "page": "ios26-guide-change-siri-settings",
+   "quote": "Send messages without confirmation: Tap Messaging with Siri, then turn on Automatically Send Messages.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "166f28a28ff8f663a84b3db3107e83c2979cdc3c7247c92a978a19ea133c87e6",
+   "position_in_page_text": [
+    2490,
+    2592
+   ],
+   "locator": "Tap Messaging with Siri, then turn on Automatically Send Messages",
+   "paraphrase_claude": "User guide text for guide.auto_send_messages.",
+   "claude_note": ""
+  },
+  "E76": {
+   "page": "ios26-guide-change-siri-settings",
+   "quote": "Tap Search, then scroll down and select an app.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "53b0c02f3cb63e7034ea6021aa7298c936f8ec9ac7ccda6db342107603a54c1d",
+   "position_in_page_text": [
+    2834,
+    2881
+   ],
+   "locator": "Tap Search, then scroll down and select an app",
+   "paraphrase_claude": "User guide text for guide.search_per_app.",
+   "claude_note": ""
+  },
+  "E77": {
+   "page": "ios26-guide-siri-suggestions",
+   "quote": "Tap Siri (or Apple Intelligence & Siri), then tap Apps.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "bb8293be9ee65d05710db609ac4beb7f81a3f606b758262647ba6bf5d5b6786a",
+   "position_in_page_text": [
+    552,
+    607
+   ],
+   "locator": "Tap Siri (or Apple Intelligence & Siri), then tap Apps",
+   "paraphrase_claude": "User guide text for guide.apps_per_app.",
+   "claude_note": ""
+  },
+  "E78": {
+   "page": "ios26-guide-siri-suggestions",
+   "quote": "Show in App",
+   "quote_is_excerpt": false,
+   "quote_sha256": "648f297b3b79f136813aad88def6578abb9c1481537b9dfb5c8be97bd663430a",
+   "position_in_page_text": [
+    805,
+    816
+   ],
+   "locator": "Show in App",
+   "paraphrase_claude": "User guide text for guide.show_in_app.",
+   "claude_note": ""
+  },
+  "E79": {
+   "page": "ios26-guide-siri-suggestions",
+   "quote": "Show on Home Screen",
+   "quote_is_excerpt": false,
+   "quote_sha256": "dc7a97e3a421382437afc9a66cc9c6107051ae20e8678b80b9d5d85009a7d328",
+   "position_in_page_text": [
+    817,
+    836
+   ],
+   "locator": "Show on Home Screen",
+   "paraphrase_claude": "User guide text for guide.show_on_home_screen.",
+   "claude_note": ""
+  },
+  "E80": {
+   "page": "ios26-guide-siri-suggestions",
+   "quote": "Suggest App",
+   "quote_is_excerpt": false,
+   "quote_sha256": "f4e8b6695fb305e627cfcaa3e9b98a471a7b6b00681ff03743a8698c7e838b53",
+   "position_in_page_text": [
+    837,
+    848
+   ],
+   "locator": "Suggest App",
+   "paraphrase_claude": "User guide text for guide.suggest_app.",
+   "claude_note": ""
+  },
+  "E81": {
+   "page": "ios26-guide-siri-suggestions",
+   "quote": "Suggestion Notifications",
+   "quote_is_excerpt": false,
+   "quote_sha256": "25a484f3c83e6ff8bdaa0dbc0c957634d1bb541311774f09d1a63b515ac5fc3c",
+   "position_in_page_text": [
+    849,
+    873
+   ],
+   "locator": "Suggestion Notifications",
+   "paraphrase_claude": "User guide text for guide.suggestion_notifications.",
+   "claude_note": ""
+  },
+  "E82": {
+   "page": "ios26-guide-tell-siri-about-yourself",
+   "quote": "Tap See All, then turn off Siri.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "3cde95e191041eb618b53ba81d0410539ad6408882f4d56548b61a181f44a442",
+   "position_in_page_text": [
+    1329,
+    1361
+   ],
+   "locator": "Tap See All, then turn off Siri",
+   "paraphrase_claude": "User guide text for guide.icloud_siri.",
+   "claude_note": ""
+  },
+  "E83": {
+   "page": "ios26-guide-tell-siri-about-yourself",
+   "quote": "Tap Siri (or Apple Intelligence & Siri), tap My Information, then tap your name.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "fbbe3ec000b8ccebd59714858cf690f8109f98b1909a2c0f5a1666221b7d5200",
+   "position_in_page_text": [
+    419,
+    499
+   ],
+   "locator": "tap My Information, then tap your name",
+   "paraphrase_claude": "User guide text for guide.my_information.",
+   "claude_note": ""
+  },
+  "E84": {
+   "page": "ios26-guide-siri-accessibility",
+   "quote": "Set how long Siri waits for you to finish speaking: Below Siri Pause Time, choose Default, Longer, or Longest.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "c0d6ac0b5d3566144cc897b267d4fa9bafe7a010c2e5c2779506121b08b184f7",
+   "position_in_page_text": [
+    354,
+    464
+   ],
+   "locator": "Below Siri Pause Time, choose Default, Longer, or Longest",
+   "paraphrase_claude": "User guide text for guide.siri_pause_time.",
+   "claude_note": ""
+  },
+  "E85": {
+   "page": "ios26-guide-siri-accessibility",
+   "quote": "Change how fast Siri speaks: Adjust the slider below Speaking Rate.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "c65ca0f39af6b506832e5863b59ca75a908644cca4f093b5cf499f6a90096626",
+   "position_in_page_text": [
+    465,
+    532
+   ],
+   "locator": "Adjust the slider below Speaking Rate",
+   "paraphrase_claude": "User guide text for guide.speaking_rate.",
+   "claude_note": ""
+  },
+  "E86": {
+   "page": "ios26-guide-siri-accessibility",
+   "quote": "To change this, turn on Always Listen for “Hey Siri.”",
+   "quote_is_excerpt": false,
+   "quote_sha256": "3684af4edfa7a378b76e8a666a799c3ca32bba4fe6185110826878eaaf2f989d",
+   "position_in_page_text": [
+    791,
+    844
+   ],
+   "locator": "To change this, turn on Always Listen for",
+   "paraphrase_claude": "User guide text for guide.always_listen.",
+   "claude_note": ""
+  },
+  "E87": {
+   "page": "ios26-guide-siri-accessibility",
+   "quote": "Require “Siri” or “Hey Siri” in order to interrupt Siri: Turn on Require “Siri” for Interruptions.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "bbac5e7b069e8c6c90114edb13358ceeaedf56297dec14c94293e0cc300ce389",
+   "position_in_page_text": [
+    868,
+    966
+   ],
+   "locator": "Turn on Require “Siri” for Interruptions",
+   "paraphrase_claude": "User guide text for guide.require_siri_interruptions.",
+   "claude_note": ""
+  },
+  "E88": {
+   "page": "ios26-guide-siri-accessibility",
+   "quote": "Go to Settings > Accessibility > Siri, then turn on Type to Siri.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "c0d28954816476e2a36b8a7d46ce89606c36b5ab768b16465d963a1c866b406a",
+   "position_in_page_text": [
+    1212,
+    1277
+   ],
+   "locator": "Go to Settings > Accessibility > Siri, then turn on Type to Siri",
+   "paraphrase_claude": "User guide text for guide.type_to_siri.",
+   "claude_note": ""
+  },
+  "E89": {
+   "page": "ios26-guide-siri-accessibility",
+   "quote": "Go to Settings > Accessibility > Siri, then turn on Listen for Atypical Speech.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "84f3f35386fa6cf4c923ae04f56922a8242f815bc87a92187375ec7b7b6eb17e",
+   "position_in_page_text": [
+    1790,
+    1869
+   ],
+   "locator": "then turn on Listen for Atypical Speech",
+   "paraphrase_claude": "User guide text for guide.atypical_speech.",
+   "claude_note": ""
+  },
+  "E90": {
+   "page": "ios26-guide-siri-accessibility",
+   "quote": "Go to Settings > Accessibility > Siri, then turn on Announce Notifications on Speaker.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "417929feb29ec3c4b0b23af5b7a8f97bdbcf15742cf58d4e6e7243832dfa2689",
+   "position_in_page_text": [
+    2218,
+    2304
+   ],
+   "locator": "then turn on Announce Notifications on Speaker",
+   "paraphrase_claude": "User guide text for guide.announce_on_speaker.",
+   "claude_note": ""
+  },
+  "E91": {
+   "page": "ios26-guide-siri-accessibility",
+   "quote": "Go to Settings > Accessibility > Siri, tap Call Hangup, then turn on Call Hangup.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "b458f8ea47147c931d3a58e7909b3eaa17737d458d863bfda0754e004b272839",
+   "position_in_page_text": [
+    2503,
+    2584
+   ],
+   "locator": "tap Call Hangup, then turn on Call Hangup",
+   "paraphrase_claude": "User guide text for guide.call_hangup_accessibility.",
+   "claude_note": ""
+  },
+  "E92": {
+   "page": "ios26-guide-announce",
+   "quote": "Tap Announce Calls, then choose an option.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "836c7563dd38fa688572c34b286ea711dae710f85cc678f4d6deb7f42dcf73a8",
+   "position_in_page_text": [
+    563,
+    605
+   ],
+   "locator": "Tap Announce Calls, then choose an option",
+   "paraphrase_claude": "User guide text for guide.announce_calls.",
+   "claude_note": ""
+  },
+  "E93": {
+   "page": "ios26-guide-announce",
+   "quote": "Tap Announce Notifications, then turn on Announce Notifications.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "4ce33005a2372f0e55d8ec483d6ea7244a5cab1eeedf2f595388a9458906991a",
+   "position_in_page_text": [
+    1164,
+    1228
+   ],
+   "locator": "Tap Announce Notifications, then turn on Announce Notifications",
+   "paraphrase_claude": "User guide text for guide.announce_notifications.",
+   "claude_note": ""
+  },
+  "E94": {
+   "page": "ios26-guide-announce",
+   "quote": "To send replies without waiting for confirmation, turn on Reply Without Confirmation.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "4316117f50bf59eb6ca2a17369e6149f823101565cf877df3cc7c83e2bb2a963",
+   "position_in_page_text": [
+    1568,
+    1653
+   ],
+   "locator": "turn on Reply Without Confirmation",
+   "paraphrase_claude": "User guide text for guide.reply_without_confirmation.",
+   "claude_note": ""
+  },
+  "E95": {
+   "page": "ios26-guide-change-siri-settings",
+   "quote": "Prevent Siri from responding to the voice request “Siri” or “Hey Siri”: Tap Talk to Siri (or Talk & Type to Siri), then tap Off.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "41bc086d13aaac4b02c5f3b4a8b160a007da6bf1c322a0172084e00044bfd328",
+   "position_in_page_text": [
+    1491,
+    1619
+   ],
+   "locator": "Tap Talk to Siri (or Talk & Type to Siri), then tap Off",
+   "paraphrase_claude": "User guide text for siri.talk_to_siri: tapping Off under Talk to Siri.",
+   "claude_note": ""
+  },
+  "E96": {
+   "page": "ios26-guide-activate-siri",
+   "quote": "To activate Siri with the side button, turn on Press Side Button for Siri.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "5af46d9cd49cdcb9c38c9b2448b22114b220bf96138c85c7c0ffca1bc0532e8f",
+   "position_in_page_text": [
+    1026,
+    1100
+   ],
+   "locator": "To activate Siri with the side button, turn on Press Side Button for Siri",
+   "paraphrase_claude": "User guide text for guide.press_side_button.",
+   "claude_note": ""
+  },
+  "E97": {
+   "page": "ios26-guide-activate-siri",
+   "quote": "Tap Off, then turn off Press Side Button for Siri.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "8c18b577cda8399ece101c8240e3d2ebf46ca68dc29c7ea4fbbcb8e1305d751d",
+   "position_in_page_text": [
+    4437,
+    4487
+   ],
+   "locator": "Tap Off, then turn off Press Side Button for Siri",
+   "paraphrase_claude": "User guide text for guide.turn_off_siri.",
+   "claude_note": ""
+  },
+  "E98": {
+   "page": "ios26-guide-dictate-text",
+   "quote": "Turn on Enable Dictation. If a prompt appears, tap Enable Dictation.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "bb467360f78f9ef3ba205ad5ae39291db158f8c63fc01758e8a099014392743e",
+   "position_in_page_text": [
+    812,
+    880
+   ],
+   "locator": "Turn on Enable Dictation. If a prompt appears",
+   "paraphrase_claude": "User guide text for guide.enable_dictation.",
+   "claude_note": ""
+  },
+  "E99": {
+   "page": "ios26-guide-dictate-text",
+   "quote": "To turn off automatic punctuation, go to Settings > General > Keyboard, then turn off Auto-Punctuation.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "b21f0d74733fbac26e8c697173e5d39f25f7a8ef38dd125e74def16e4b689482",
+   "position_in_page_text": [
+    1683,
+    1786
+   ],
+   "locator": "then turn off Auto-Punctuation",
+   "paraphrase_claude": "User guide text for guide.auto_punctuation.",
+   "claude_note": ""
+  },
+  "E100": {
+   "page": "ios26-guide-dictate-text",
+   "quote": "Dictation requests are processed on your device in many languages—no internet connection is required.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "4891ea595636126d5c40d84f8e4b65feb55fa18223aef2361ae104afefd07396",
+   "position_in_page_text": [
+    248,
+    349
+   ],
+   "locator": "Dictation requests are processed on your device in many languages",
+   "paraphrase_claude": "User guide text for guide.dictation_on_device.",
+   "claude_note": ""
+  },
+  "E101": {
+   "page": "ios26-guide-dictate-text",
+   "quote": "When dictating in a search box, dictated text may be sent to the search provider in order to process the search.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "26759dff5f373daa4d49fde632ab8cb93d179fd7517cfde9db7cb629131f61d9",
+   "position_in_page_text": [
+    350,
+    462
+   ],
+   "locator": "dictated text may be sent to the search provider",
+   "paraphrase_claude": "User guide text for guide.dictation_search_box.",
+   "claude_note": ""
+  },
+  "E102": {
+   "page": "ios26-guide-announce",
+   "quote": "Announce Calls and Announce Notifications also work with supported third-party apps.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "a8a970dbc1cf3071969fb85934fedd26608a774e1d515ec7d038b3462d760593",
+   "position_in_page_text": [
+    245,
+    329
+   ],
+   "locator": "Announce Calls and Announce Notifications also work with supported third-party apps",
+   "paraphrase_claude": "User guide text for guide.announce_intro.",
+   "claude_note": ""
+  },
+  "E103": {
+   "page": "ask-siri-dictation",
+   "quote": "You can see and control the full list of features that Siri personalizes and apps that Siri suggests shortcuts for by going to Settings > Siri.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "1a03c11d3147a3ab0948e514cf6d4b2658615df6632207c80cb38235e24c8fa7",
+   "position_in_page_text": [
+    7512,
+    7655
+   ],
+   "locator": "You can see and control the full list of features that Siri personalizes",
+   "paraphrase_claude": "User guide text for gap.siri_full_list.",
+   "claude_note": ""
+  },
+  "E104": {
+   "page": "ask-siri-dictation",
+   "quote": "Siri may also send information like your audio, Siri setup, contacts, and location to Apple to process your request.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "3bae912e5d8f399bc8dde656b291093943b78843951da1982f95df89de26ebfc",
+   "position_in_page_text": [
+    167,
+    283
+   ],
+   "locator": "Siri may also send information like your audio, Siri setup, contacts,",
+   "paraphrase_claude": "Apple lists 'Siri setup' as information sent to process a request but never defines it. It may overlap voice_profile (voice-setup audio) or Siri settings; kept separate because Apple names it separately and gives no definition.",
+   "claude_note": ""
+  },
+  "E105": {
+   "page": "ask-siri-dictation",
+   "quote": "Your Siri settings and Siri Suggestions personalization will sync across your Apple devices using end-to-end encryption if you use iCloud.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "2e0974ec813db20e43c07050008a61f04a56afab7cfa49ea9d64868aeb91fdb6",
+   "position_in_page_text": [
+    5360,
+    5498
+   ],
+   "locator": "Your Siri settings and Siri Suggestions personalization will sync across your Apple devices",
+   "paraphrase_claude": "Gives icloud.siri something to act on in the grid. Apple: 'If you do not want Siri personalization to sync across your devices ... turn off Siri' (E13), so icloud.siri x siri_settings_sync = stops is supported for the sync. Apple says the sync uses end-to-end encryption 'if you use iCloud'.",
+   "claude_note": ""
+  },
+  "E106": {
+   "page": "improve-siri-dictation",
+   "quote": "… Audio data, transcripts including your request and Siri’s response, and related request data, …",
+   "quote_is_excerpt": true,
+   "full_sentence_chars": 404,
+   "full_sentence_nospace_chars": 345,
+   "full_sentence_nospace_sha256": "b1306c6c58cf47e438195b2bc5a6d916163d4e729d84ac49c72fe24968e4cc25",
+   "quote_sha256": "7551534e63f1413325204e19f315d9e7b8574fe19345ff7cdc953ced1c097f3b",
+   "position_in_page_text": [
+    734,
+    1138
+   ],
+   "locator": "Audio data, transcripts including your request and Siri’s response, and related request data,",
+   "paraphrase_claude": "Both locators come from the Improve Siri and Dictation page, in the opt-in context. The default page (ask-siri-dictation) mentions stored 'transcripts' but never says they include Siri's response. So only the opt-in use is Apple-stated; whether responses are stored by default is not stated.",
+   "claude_note": ""
+  },
+  "E107": {
+   "page": "improve-siri-dictation",
+   "quote": "If one of your Siri or Dictation interactions is selected for review, the request, as well as the response Siri provided, will be analyzed to determine accuracy and to generally improve Siri, Dictation, Search, and limited other language processing functionality in Apple products and services.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "24a0333a8ede5a827145893f16d404fbfc9715521b63a08bc73fce37239ac987",
+   "position_in_page_text": [
+    2092,
+    2386
+   ],
+   "locator": "the request, as well as the response Siri provided, will be analyzed",
+   "paraphrase_claude": "Both locators come from the Improve Siri and Dictation page, in the opt-in context. The default page (ask-siri-dictation) mentions stored 'transcripts' but never says they include Siri's response. So only the opt-in use is Apple-stated; whether responses are stored by default is not stated.",
+   "claude_note": ""
+  },
+  "E108": {
+   "page": "icloud-analytics",
+   "quote": "Help Apple to improve its products and services, including Siri and other intelligent features, by allowing analytics of usage and data from your Apple Account.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "71949fe03fac502a6bde53be82ea56e1b9d12603f05bf201f46950a6cdec6429",
+   "position_in_page_text": [
+    157,
+    317
+   ],
+   "locator": "including Siri and other intelligent features, by allowing analytics of usage",
+   "paraphrase_claude": "Apple says this data is used to improve Siri, not used when Siri handles a request. 'siri_requests' is the nearest existing feature; if the grid distinguishes improvement use from request processing, mark it as improvement use. Apple does not say Dictation, Siri Suggestions or Search are improved this way ('other intelligent features' is unspecific). Switch: analytics.share_icloud_analytics x apple_account_data x siri_requests = stops is directly supported by E45/E46.",
+   "claude_note": ""
+  },
+  "E109": {
+   "page": "icloud-analytics",
+   "quote": "All analysis of data from your Apple Account including text snippets from email messages or other similar data in your account is undertaken only after the data has undergone privacy preserving techniques such as differential privacy so that it is not associated with you or your account.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "1e8c40cbaa12adfcc3594415de9de3f0b4f960d23e993d7d511951781305f3dc",
+   "position_in_page_text": [
+    318,
+    606
+   ],
+   "locator": "including text snippets from email messages or other similar data in your account",
+   "paraphrase_claude": "Apple says this data is used to improve Siri, not used when Siri handles a request. 'siri_requests' is the nearest existing feature; if the grid distinguishes improvement use from request processing, mark it as improvement use. Apple does not say Dictation, Siri Suggestions or Search are improved this way ('other intelligent features' is unspecific). Switch: analytics.share_icloud_analytics x apple_account_data x siri_requests = stops is directly supported by E45/E46.",
+   "claude_note": ""
+  },
+  "E110": {
+   "page": "improve-assistive-voice-features",
+   "quote": "If you opt in to Improve Assistive Voice Features, Apple will collect the audio and transcripts of your interactions with assistive voice features such as Vocal Shortcuts and Voice Control.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "3a4f38fba9abf5166b1125ad2cd3b5e2847d301275e4a99584f6f87a78b997fb",
+   "position_in_page_text": [
+    342,
+    531
+   ],
+   "locator": "Apple will collect the audio and transcripts of your interactions with assistive voice features",
+   "paraphrase_claude": "Apple's link to Siri is narrow: the data improves 'accessibility across other Apple features, such as Siri', not Siri generally. Improvement use only, as with apple_account_data. Collected only if you opt in, so analytics.improve_assistive_voice x assistive_voice_audio x siri_requests = stops is supported.",
+   "claude_note": ""
+  },
+  "E111": {
+   "page": "improve-assistive-voice-features",
+   "quote": "Apple will use the information collected to develop and improve Vocal Shortcuts, Voice Control, and similar accessibility features, as well as to improve accessibility across other Apple features, such as Siri.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "fcfdb978d12697cae9b6b468d31ce87e0810a4a45d84e73bbe755e3e379a2bef",
+   "position_in_page_text": [
+    1088,
+    1298
+   ],
+   "locator": "as well as to improve accessibility across other Apple features, such as Siri.",
+   "paraphrase_claude": "Apple's link to Siri is narrow: the data improves 'accessibility across other Apple features, such as Siri', not Siri generally. Improvement use only, as with apple_account_data. Collected only if you opt in, so analytics.improve_assistive_voice x assistive_voice_audio x siri_requests = stops is supported.",
+   "claude_note": ""
+  },
+  "E112": {
+   "page": "health-app",
+   "quote": "If Siri does not recognize your request as a Health app data request, any health information you include in the request will be sent to Apple.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "d4cf6273cd530c2c016947d71343a1fbf793007c6c70601f05671a66d005c637",
+   "position_in_page_text": [
+    14213,
+    14355
+   ],
+   "locator": "If Siri does not recognize your request as a Health app data request,",
+   "paraphrase_claude": "Split out of 'health' (see used_by_changes: health x siri_requests keeps only E43). health.siri_access does not stop this flow (Apple ties no switch to it; see N02), so merging it into 'health' made that switch look as though it covers it.",
+   "claude_note": ""
+  },
+  "E113": {
+   "page": "health-app",
+   "quote": "If Siri does not recognize your request as a Health app data request, any health information you include in the request will be sent to Apple.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "d4cf6273cd530c2c016947d71343a1fbf793007c6c70601f05671a66d005c637",
+   "position_in_page_text": [
+    14213,
+    14355
+   ],
+   "locator": "any health information you include in the request will be sent to Apple.",
+   "paraphrase_claude": "Split out of 'health' (see used_by_changes: health x siri_requests keeps only E43). health.siri_access does not stop this flow (Apple ties no switch to it; see N02), so merging it into 'health' made that switch look as though it covers it.",
+   "claude_note": ""
+  },
+  "E114": {
+   "page": "siri-suggestions-search",
+   "quote": "When Search Engine Suggestions are enabled, Safari will ask your selected search engine for suggestions based on what you’ve typed.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "da71b4b788b40c0efa14f2ee8c6581801605e28db2bc1857fab2eea9068befa8",
+   "position_in_page_text": [
+    2719,
+    2850
+   ],
+   "locator": "Safari will ask your selected search engine for suggestions based on what you’ve typed.",
+   "paraphrase_claude": "Recipient is the selected search engine, not Apple. Apple describes only the enabled state of Search Engine Suggestions, so safari.search_engine_suggestions x safari_typed_text x search stays not_stated for the off state.",
+   "claude_note": ""
+  },
+  "E115": {
+   "page": "siri-suggestions-search",
+   "quote": "With Preload Top Hit enabled, as soon as Safari determines a Top Hit based on your bookmarks and browsing history, Safari will begin loading the webpage in the background.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "ce90df0b36c0e34d744512df16c73f772ac267840aeee891ec8017b55827ed58",
+   "position_in_page_text": [
+    2877,
+    3048
+   ],
+   "locator": "Safari determines a Top Hit based on your bookmarks and browsing history,",
+   "paraphrase_claude": "Used by Preload Top Hit, which this audit models as Safari search (feature 'search'). Apple does not say bookmarks leave the device. The off state is stated ('If you disable this option, the page will load normally.'), but that sentence says only that loading changes, not that bookmark use stops, so safari.preload_top_hit x safari_bookmarks should stay not_stated unless the grid reads 'load normally' as stopping Top Hit use.",
+   "claude_note": ""
+  },
+  "E116": {
+   "page": "location-services",
+   "quote": "Suggestions & Search: The location of your iPhone will be sent to Apple to provide more relevant recommendations.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "447f968659c3755ab5c1d744f8d65c9fd2ce5cd888cc5a8815ee1b5b16704cf7",
+   "position_in_page_text": [
+    3199,
+    3312
+   ],
+   "locator": "Suggestions & Search: The location of your iPhone will be sent to Apple",
+   "paraphrase_claude": "Suggestions & Search sends the iPhone's location to Apple for more relevant recommendations.",
+   "claude_note": "Added to support location_device used_by siri_suggestions (checker error 6). Links to ask-siri-dictation's 'Location Services for Siri Suggestions' by the shared switch path."
+  },
+  "E117": {
+   "page": "ask-siri-dictation",
+   "quote": "If you have enabled Location Services, you can turn off Location Services for Siri Suggestions by going to Settings > Privacy & Security > Location Services > System Services and tapping to turn off Suggestions & Search.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "222dcfdec53da93b1a18724f7ecb457e2b458412cb92c2a4bb06238b2d4195c2",
+   "position_in_page_text": [
+    8121,
+    8341
+   ],
+   "locator": "you can turn off Location Services for Siri Suggestions by going to",
+   "paraphrase_claude": "Resolves the checker's error 6: location.system.suggestions_search x location_device x siri_suggestions = stops existed without the used_by entry. The location-services page describes the service as sending location 'to provide more relevant recommendations', and ask-siri-dictation calls the same switch 'Location Services for Siri Suggestions'. Linking the two is supported by the shared switch path (System Services > Suggestions & Search) in both pages.",
+   "claude_note": ""
+  },
+  "E118": {
+   "page": "ask-siri-dictation",
+   "quote": "Otherwise, the things you dictate are sent to and processed on the server, but will not be stored unless you opt in to Improve Siri and Dictation.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "43d058f6cb10336f0504aa85c6ee9353a2a70c0f52989731a335e4a5822cdb62",
+   "position_in_page_text": [
+    1166,
+    1312
+   ],
+   "locator": "the things you dictate are sent to and processed on the server,",
+   "paraphrase_claude": "Dictation not processed on the device is sent to Apple's server; it is not stored unless the user opts in to Improve Siri and Dictation.",
+   "claude_note": "Same sentence as E23, registered again by the Apple-layer helper for the transcripts_apple_servers cell. Apple says 'the things you dictate', not 'transcripts'."
+  },
+  "E119": {
+   "page": "ask-siri-dictation",
+   "quote": "Otherwise, the things you dictate are sent to and processed on the server, but will not be stored unless you opt in to Improve Siri and Dictation.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "43d058f6cb10336f0504aa85c6ee9353a2a70c0f52989731a335e4a5822cdb62",
+   "position_in_page_text": [
+    1166,
+    1312
+   ],
+   "locator": "but will not be stored unless you opt in to Improve Siri and Dictation.",
+   "paraphrase_claude": "Conditional use: Apple stores dictation only with Improve Siri and Dictation on. Record analytics.improve_siri_dictation x transcripts_apple_servers x dictation = stops (the checker's item-4 correction). The existing touchpoint note already says this; the used_by entry was missing, so no status could be recorded. Caveat: the ISD locator is in the opt-in 'Siri and Dictation' section and does not by itself say 'Dictation transcripts'; the ASD sentence is the direct evidence.",
+   "claude_note": ""
+  },
+  "E120": {
+   "page": "improve-siri-dictation",
+   "quote": "Your request history, which includes your audio data, transcripts, and related request data, is associated with a random, device-generated identifier that rotates multiple times per hour and is not tied to your Apple Account or email address.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "242dfcb01b8ca8fd6e85405ab338c3f97e7917348eb994fc74de64963db09d52",
+   "position_in_page_text": [
+    1379,
+    1621
+   ],
+   "locator": "Your request history, which includes your audio data, transcripts, and related request data,",
+   "paraphrase_claude": "Conditional use: Apple stores dictation only with Improve Siri and Dictation on. Record analytics.improve_siri_dictation x transcripts_apple_servers x dictation = stops (the checker's item-4 correction). The existing touchpoint note already says this; the used_by entry was missing, so no status could be recorded. Caveat: the ISD locator is in the opt-in 'Siri and Dictation' section and does not by itself say 'Dictation transcripts'; the ASD sentence is the direct evidence.",
+   "claude_note": ""
+  },
+  "E121": {
+   "page": "siri-suggestions-search",
+   "quote": "This information may include location, topics of interest (for example, cooking or basketball), your search queries, including visual search queries, contextual information related to your search queries, suggestions you have selected, apps you use, and related device usage data.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "24e570e739d89e0d7b84f39e53352d33e1f574abfefc83102cad014809650a23",
+   "position_in_page_text": [
+    852,
+    1132
+   ],
+   "locator": "suggestions you have selected, apps you use, and related device usage data.",
+   "paraphrase_claude": "E37 says 'apps you use', not names of installed apps or Siri shortcuts, and 'apps used' is already in search_context. No snapshot text says Search sends installed app names or shortcuts. Remove this entry; the matching grid cells for search should be dropped or moved to search_context.",
+   "claude_note": ""
+  },
+  "E122": {
+   "page": "health-app",
+   "quote": "You can turn off Siri’s access to your Health app data at any time by going to Settings > Apps > Health > Data Access & Devices > Siri, then tapping to turn off Access Health Data.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "b8e1147b67d5ddf6232de67135d9b3b6422d80de6220f3399fd9b4dcd04437b1",
+   "position_in_page_text": [
+    14356,
+    14536
+   ],
+   "locator": "You can turn off Siri’s access to your Health app data at any time",
+   "paraphrase_claude": "Keep only E43-type evidence (Siri reading or writing Health app data); move E44 to the new touchpoint health_in_request.",
+   "claude_note": ""
+  },
+  "E123": {
+   "page": "health-app",
+   "quote": "If Siri recognizes your request as a request to read or write Health app data, your Health app data is not stored or made accessible to Apple.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "6812a7632a6356ca61ef3365a865e83c9094d6af8a70969b115e141c7a430adc",
+   "position_in_page_text": [
+    14070,
+    14212
+   ],
+   "locator": "Siri recognizes your request as a request to read or write Health app data,",
+   "paraphrase_claude": "Keep only E43-type evidence (Siri reading or writing Health app data); move E44 to the new touchpoint health_in_request.",
+   "claude_note": ""
+  },
+  "E124": {
+   "page": "siri-suggestions-search",
+   "quote": "When you use Look Up or Visual Look Up, when you type in Search, Safari search, #images search in Messages, or when you invoke Spotlight, limited information will be sent to Apple to provide up-to-date suggestions.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "fe43cd0b442732d613bb58126649fdcef7a9555845653701cf5e7eac9077f169",
+   "position_in_page_text": [
+    503,
+    717
+   ],
+   "locator": "limited information will be sent to Apple to provide up-to-date suggestions.",
+   "paraphrase_claude": "Using Look Up, Visual Look Up, typing in Search, Safari search, #images in Messages or Spotlight sends limited information to Apple for suggestions.",
+   "claude_note": "Registered with the touchpoint relabel to include visual search queries; the sentence names Look Up and Visual Look Up, not 'visual search queries'."
+  },
+  "E125": {
+   "page": "siri-suggestions-search",
+   "quote": "This information may include location, topics of interest (for example, cooking or basketball), your search queries, including visual search queries, contextual information related to your search queries, suggestions you have selected, apps you use, and related device usage data.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "24e570e739d89e0d7b84f39e53352d33e1f574abfefc83102cad014809650a23",
+   "position_in_page_text": [
+    852,
+    1132
+   ],
+   "locator": "your search queries, including visual search queries, contextual information related to your search queries,",
+   "paraphrase_claude": "Same evidence as E36/E37 but the locator now carries 'including visual search queries'. Also relabel the touchpoint to 'Search queries (including visual search queries)'. The used_by_changes shape has no relabel action, so the label change is recorded here.",
+   "claude_note": ""
+  },
+  "E126": {
+   "page": "siri-suggestions-search",
+   "quote": "When you open Safari, Apple also collects information about whether or not you use Safari search, and your device specifications, in order to improve Safari.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "1738d07d7940d24ad3cdb5e302b62b9b8dc96246ee0b8afffbbce575f54319d7",
+   "position_in_page_text": [
+    1724,
+    1881
+   ],
+   "locator": "When you open Safari, Apple also collects information about whether",
+   "paraphrase_claude": "Opening Safari sends Apple whether you use Safari search and your device specifications, tied to longer-lived identifiers. No switch is named.",
+   "claude_note": ""
+  },
+  "E127": {
+   "page": "siri-suggestions-search",
+   "quote": "This information is associated with longer-lived identifiers that are not attached to your Apple Account or other information that might identify you, and does not include what you search for.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "c9d53dfab5a97b98a566857b8a80b68027e780e3bdc68ec23560fb845ff7d4a5",
+   "position_in_page_text": [
+    1882,
+    2074
+   ],
+   "locator": "This information is associated with longer-lived identifiers that are not attached",
+   "paraphrase_claude": "Opening Safari sends Apple whether you use Safari search and your device specifications, tied to longer-lived identifiers. No switch is named.",
+   "claude_note": ""
+  },
+  "E128": {
+   "page": "siri-suggestions-search",
+   "quote": "Apple may also send a limited, randomly sampled set of search queries to search tools for the purpose of evaluating and improving the performance and quality of Search.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "52741b563db738450cf6831587772ed5cb909fe3a14b1f02712d7b335b384b3b",
+   "position_in_page_text": [
+    2404,
+    2572
+   ],
+   "locator": "randomly sampled set of search queries to search tools for the purpose",
+   "paraphrase_claude": "Apple may send a random sample of search queries to 'search tools' to evaluate Search. The sentence names no switch. Whether Help Apple Improve Search (E31: queries 'stored by Apple and used to improve Search') also stops it is not stated.",
+   "claude_note": ""
+  },
+  "E129": {
+   "page": "siri-suggestions-search",
+   "quote": "Information sent to Apple related to your searches is used to process your request and to develop and improve search results, such as by using your search queries to fine-tune Search models.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "fc8556320d0019f64281647626458aa691c1472f2686f8bfb6de446bbec33312",
+   "position_in_page_text": [
+    2075,
+    2265
+   ],
+   "locator": "such as by using your search queries to fine-tune Search models.",
+   "paraphrase_claude": "Search information is used to process the request and to improve search results, including fine-tuning Search models with your queries. The sentence names no switch. It overlaps Help Apple Improve Search (E31), and Apple does not say whether that switch covers it; treat as unresolved rather than as a clear no-switch flow.",
+   "claude_note": ""
+  },
+  "E130": {
+   "page": "siri-suggestions-search",
+   "quote": "Aggregated information may be used to improve other Apple products and services.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "9814e2e47ab71651098dfb077dca827fbaa3e35d839fa6877aed0a9cdb894cac",
+   "position_in_page_text": [
+    2323,
+    2403
+   ],
+   "locator": "Aggregated information may be used to improve other Apple products and services.",
+   "paraphrase_claude": "Search information is used to process the request and to improve search results, including fine-tuning Search models with your queries. The sentence names no switch. It overlaps Help Apple Improve Search (E31), and Apple does not say whether that switch covers it; treat as unresolved rather than as a clear no-switch flow.",
+   "claude_note": ""
+  },
+  "E131": {
+   "page": "ask-siri-dictation",
+   "quote": "Suggestions may be used to personalize Apple services but are not stored on Apple servers or shared with other third-party apps.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "16b04753a82b37d5aca6b110909cb4418cbfa1b0d8b4cb20f42cf60c1d3cb523",
+   "position_in_page_text": [
+    4703,
+    4831
+   ],
+   "locator": "Suggestions may be used to personalize Apple services but are not stored",
+   "paraphrase_claude": "Siri Suggestions may be used to personalize Apple services (Apple says they are not stored on Apple servers). No switch is named for this use.",
+   "claude_note": ""
+  },
+  "E132": {
+   "page": "ask-siri-dictation",
+   "quote": "Additionally, the audio from when you set up Siri to recognize your voice syncs using end-to-end encryption to improve personalized Siri recognition on your devices.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "2bbdb733f0cbd76bb62ad2297c7987c60394b14e751ba55b2e4ce4f2950e187e",
+   "position_in_page_text": [
+    5499,
+    5664
+   ],
+   "locator": "the audio from when you set up Siri to recognize your voice syncs",
+   "paraphrase_claude": "Audio recorded when you set up Siri to recognize your voice syncs across your devices with end-to-end encryption (for example, to HomePod for Recognize My Voice). Apple does not say whether the iCloud Siri switch (icloud.siri) stops it.",
+   "claude_note": ""
+  },
+  "E133": {
+   "page": "ask-siri-dictation",
+   "quote": "For example, this is how audio from your phone can enable Recognize My Voice on your HomePod.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "cf3e344ab79b6007ea91d4a5fe5272c8831dd06c24f1c42604fc4dc74e434cb0",
+   "position_in_page_text": [
+    5665,
+    5758
+   ],
+   "locator": "this is how audio from your phone can enable Recognize My Voice",
+   "paraphrase_claude": "Audio recorded when you set up Siri to recognize your voice syncs across your devices with end-to-end encryption (for example, to HomePod for Recognize My Voice). Apple does not say whether the iCloud Siri switch (icloud.siri) stops it.",
+   "claude_note": ""
+  },
+  "E134": {
+   "page": "improve-siri-dictation",
+   "quote": "The opt-in preference you selected when you set up an iPhone or iPad will apply to any new Apple connected device or supported HomeKit accessory set up with that iPhone or iPad that has Siri turned on.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "6ec9fa8016adff105295095fcc6615af6ac82e39855b56fd7cdb368484144633",
+   "position_in_page_text": [
+    4744,
+    4945
+   ],
+   "locator": "The opt-in preference you selected when you set up an iPhone or iPad",
+   "paraphrase_claude": "The Improve Siri and Dictation choice made when setting up the iPhone is applied to new Apple devices and HomeKit accessories set up with it that have Siri on. Nothing stops the carry-over; Apple says only that each device can be changed later.",
+   "claude_note": ""
+  },
+  "E135": {
+   "page": "improve-siri-dictation",
+   "quote": "The opt-in preference you selected when you set up an iPhone or iPad will apply to any new Apple connected device or supported HomeKit accessory set up with that iPhone or iPad that has Siri turned on.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "6ec9fa8016adff105295095fcc6615af6ac82e39855b56fd7cdb368484144633",
+   "position_in_page_text": [
+    4744,
+    4945
+   ],
+   "locator": "will apply to any new Apple connected device or supported HomeKit accessory",
+   "paraphrase_claude": "The Improve Siri and Dictation choice made when setting up the iPhone is applied to new Apple devices and HomeKit accessories set up with it that have Siri on. Nothing stops the carry-over; Apple says only that each device can be changed later.",
+   "claude_note": ""
+  },
+  "E136": {
+   "page": "improve-siri-dictation",
+   "quote": "You can change this later in the settings for each device.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "d983cbeaf5cd0e844f28fc7cf3f9315b6382cbf20a86a722c265e0169bb52440",
+   "position_in_page_text": [
+    4946,
+    5004
+   ],
+   "locator": "You can change this later in the settings for each device.",
+   "paraphrase_claude": "The Improve Siri and Dictation choice made when setting up the iPhone is applied to new Apple devices and HomeKit accessories set up with it that have Siri on. Nothing stops the carry-over; Apple says only that each device can be changed later.",
+   "claude_note": ""
+  },
+  "E137": {
+   "page": "ask-siri-dictation",
+   "quote": "… and, if you have turned on Location Services for Siri, the approximate location …",
+   "quote_is_excerpt": true,
+   "full_sentence_chars": 325,
+   "full_sentence_nospace_chars": 276,
+   "full_sentence_nospace_sha256": "d34f3f157c6613972d4452b2ffbf47767a378e219ce1a9770d19724f79422b0b",
+   "quote_sha256": "0c8f7434c8b651b43104cc1cb6b4334d3c30d4da407b5b7dd62680d684e4d2b9",
+   "position_in_page_text": [
+    1313,
+    1638
+   ],
+   "locator": "and, if you have turned on Location Services for Siri, the approximate location",
+   "paraphrase_claude": "Apple also stores related request data, including approximate location at request time if Location Services for Siri is on.",
+   "claude_note": "Used for location.siri x request_metadata. The Improve Siri page lists approximate location in related request data without the Location Services condition."
+  },
+  "E138": {
+   "page": "ask-siri-dictation",
+   "quote": "… the category of request you made and whether it was completed successfully, …",
+   "quote_is_excerpt": true,
+   "full_sentence_chars": 325,
+   "full_sentence_nospace_chars": 276,
+   "full_sentence_nospace_sha256": "d34f3f157c6613972d4452b2ffbf47767a378e219ce1a9770d19724f79422b0b",
+   "quote_sha256": "0c8f7434c8b651b43104cc1cb6b4334d3c30d4da407b5b7dd62680d684e4d2b9",
+   "position_in_page_text": [
+    1313,
+    1638
+   ],
+   "locator": "the category of request you made and whether it was completed successfully,",
+   "paraphrase_claude": "Also set location.siri x request_metadata x siri_requests = stops (location part), per the checker's item 4. Inconsistency to record: the Improve Siri page lists 'the approximate location of your device' in related request data with no Location Services condition (in the opt-in context).",
+   "claude_note": ""
+  },
+  "E139": {
+   "page": "ask-siri-dictation",
+   "quote": "… to control them from your nearby devices with Siri enabled. …",
+   "quote_is_excerpt": true,
+   "full_sentence_chars": 313,
+   "full_sentence_nospace_chars": 259,
+   "full_sentence_nospace_sha256": "f4277fab5d3713c532aea19cdf8b7b3145c16bb67a7cb71f126095696dd97736",
+   "quote_sha256": "098bcf79b0bc229b1ff09105484c335bb08447876405e741e5b593cf6c31eec7",
+   "position_in_page_text": [
+    6046,
+    6359
+   ],
+   "locator": "to control them from your nearby devices with Siri enabled.",
+   "paraphrase_claude": "'with Siri enabled' describes the nearby devices, not this iPhone. That is why the combo.siri_off / siri_and_dictation_off / screen_time 'stops' cells for nearby_device_status are unsupported (checker error 5); they should become not_stated.",
+   "claude_note": ""
+  },
+  "E140": {
+   "page": "siri-suggestions-search",
+   "quote": "You can disable Location Services for Search by going to Settings > Privacy & Security > Location Services > System Services and tapping to turn off Suggestions & Search.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "61f7390ab72b52e70ae8906b9792c178e4113f38de34e097a36f52bcd4a8913b",
+   "position_in_page_text": [
+    3811,
+    3981
+   ],
+   "locator": "You can disable Location Services for Search by going to Settings",
+   "paraphrase_claude": "Apple's instruction for disabling Location Services for Search: turn off Suggestions & Search under System Services.",
+   "claude_note": "Apple's wording conflicts: E35 says with Location Services off 'your location will not be sent to Apple', while E41/E42 describe location approximated from the IP address. Not recorded as a claim."
+  },
+  "E141": {
+   "page": "location-services",
+   "quote": "If you turn off Location Services for location-based suggestions, your precise location will not be sent to Apple.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "e5902c3050e27b330b7aff70caa431650a50639fa35ae0cd76a992ed8fb4f6e3",
+   "position_in_page_text": [
+    3313,
+    3427
+   ],
+   "locator": "your precise location will not be sent to Apple.",
+   "paraphrase_claude": "With Location Services for location-based suggestions off, precise location is not sent to Apple.",
+   "claude_note": ""
+  },
+  "E142": {
+   "page": "siri-suggestions-search",
+   "quote": "If you subscribe to music or video subscription services, the names of these services and the type of subscription may be sent to Apple.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "a0be7801b3342f85658cbe2373f867acc0fd69c99b3ff1dd8e7b8ef6a397b312",
+   "position_in_page_text": [
+    1225,
+    1361
+   ],
+   "locator": "the names of these services and the type of subscription may be sent",
+   "paraphrase_claude": "If the user subscribes to music or video services, the service names and subscription type may be sent to Apple.",
+   "claude_note": ""
+  },
+  "E143": {
+   "page": "improve-siri-dictation",
+   "quote": "The transcripts of your Siri and Dictation requests that are stored on your device and used to personalize your experience will be deleted if you disable Siri and Dictation.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "aeb8a8c226218511e0c32bcdb5ca4dcfbaca2506d8712917abcafb2d8b6bf531",
+   "position_in_page_text": [
+    3385,
+    3558
+   ],
+   "locator": "personalize your experience will be deleted if you disable Siri and Dictation",
+   "paraphrase_claude": "Turning off Siri and Dictation deletes the transcripts stored on the device that are used to personalise the experience.",
+   "claude_note": "Covers existing on-device transcripts only. Nothing about server copies or about new data after switch-off."
+  },
+  "E144": {
+   "page": "improve-siri-dictation",
+   "quote": "You can delete the transcripts of your Siri and Dictation requests that are stored on your device by going to Settings > Siri > Siri & Dictation History and tapping Delete Siri & Dictation History.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "c2ba8daea7a535a6d49012697bee128912a9b9b4bb6280ff29acdcf92edcb12b",
+   "position_in_page_text": [
+    2912,
+    3109
+   ],
+   "locator": "You can delete the transcripts of your Siri and Dictation requests",
+   "paraphrase_claude": "Apple states that the Delete Siri & Dictation History action deletes 'the transcripts of your Siri and Dictation requests that are stored on your device'. Existing on-device transcripts only. Server-side transcripts and request data (E24/E26, up to two years) are not addressed. The sentence is phrased as how-to, but it names the data affected by the action, so it is recorded; flagged as borderline under rule 2.",
+   "claude_note": ""
+  },
+  "E145": {
+   "page": "ios26-guide-siri-suggestions",
+   "quote": "If you don’t want Siri personalization to update across your devices, you can disable Siri in iCloud settings.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "320399e02cd15299c3b05224e3874ab1530f9771a4d3858c9c73d5c8b1e64da1",
+   "position_in_page_text": [
+    1131,
+    1241
+   ],
+   "locator": "If you don’t want Siri personalization to update across your devices",
+   "paraphrase_claude": "Turning off Siri in iCloud settings stops Siri personalisation updating across devices.",
+   "claude_note": "Apple's wording: 'update across your devices'. It says 'Siri personalization', not Siri settings."
+  },
+  "E146": {
+   "page": "ios26-guide-tell-siri-about-yourself",
+   "quote": "If you don’t want Siri personalization to stay up to date across iPhone and your other devices, you can turn off Siri in iCloud settings.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "6978beee31b0d64190a8122d10b089b970b6c70e709163219f8d9f231f349b72",
+   "position_in_page_text": [
+    1120,
+    1257
+   ],
+   "locator": "If you don’t want Siri personalization to stay up to date across iPhone",
+   "paraphrase_claude": "Turning off Siri in iCloud settings stops Siri personalisation staying current across devices.",
+   "claude_note": "Apple's wording: 'stay up to date across iPhone and your other devices'. It says 'Siri personalization', not Siri settings."
+  },
+  "E147": {
+   "page": "ask-siri-dictation",
+   "quote": "Siri, Dictation & Privacy outlines the default behavior for Siri and Dictation.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "21fa1ac03fd70ea6f8755c65407a2577cef7a6a822851e6dd506ef214a4ff55c",
+   "position_in_page_text": [
+    418,
+    497
+   ],
+   "locator": "outlines the default behavior for Siri and Dictation",
+   "paraphrase_claude": "Apple says the Siri, Dictation & Privacy page describes the default behaviour of Siri and Dictation.",
+   "claude_note": "Used to tie sentences on that page (e.g. E55, E24, E30) to the state without the Improve Siri opt-in."
+  },
+  "E148": {
+   "page": "ask-siri-dictation",
+   "quote": "Apple may also review a subset of the transcripts of your interactions with Siri, and this small subset of interactions that has been reviewed may be kept beyond two years for the ongoing improvement of these products and services.",
+   "quote_is_excerpt": false,
+   "quote_sha256": "f7a01e4140652070a7e3051489f557e33d63b8243da7876c754e2dc388752b47",
+   "position_in_page_text": [
+    2186,
+    2417
+   ],
+   "locator": "Apple may also review a subset of the transcripts of your interactions with Siri",
+   "paraphrase_claude": "Default page: Apple 'may review a subset of these transcripts'. 'Review' is not literally 'by people' in these sentences, but the improve-siri-dictation page calls reviewers 'graders'; recorded as continues with that caveat.",
+   "claude_note": ""
+  }
+ }
+}

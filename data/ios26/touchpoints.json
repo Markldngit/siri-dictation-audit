@@ -1,0 +1,728 @@
+{
+ "features": [
+  {
+   "id": "siri_requests",
+   "description": "Asking Siri to do something (voice or other activation)."
+  },
+  {
+   "id": "dictation",
+   "description": "Keyboard Dictation: speech turned into typed text."
+  },
+  {
+   "id": "siri_suggestions",
+   "description": "On-device learning that produces suggestions across the system."
+  },
+  {
+   "id": "search",
+   "description": "Search, Spotlight, Look Up, Visual Look Up, Safari search."
+  },
+  {
+   "id": "app_speech_recognition",
+   "description": "Third-party apps using Speech Recognition for transcription.",
+   "evidence": [
+    "E57",
+    "E58",
+    "E59"
+   ]
+  }
+ ],
+ "touchpoints": [
+  {
+   "id": "contacts",
+   "label": "Contact names, nicknames, relationships",
+   "used_by": [
+    {
+     "feature": "siri_requests",
+     "evidence": [
+      "E05",
+      "E06"
+     ]
+    },
+    {
+     "feature": "dictation",
+     "evidence": [
+      "E05",
+      "E06"
+     ]
+    },
+    {
+     "feature": "siri_suggestions",
+     "evidence": [
+      "E12"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "contacts_company",
+   "label": "Company names stored in Contacts",
+   "used_by": [],
+   "note": "Not in Apple's contextual-data list; observed used by Dictation (finding F2)."
+  },
+  {
+   "id": "form_of_address",
+   "label": "Form of address from language & region",
+   "used_by": [
+    {
+     "feature": "siri_requests",
+     "evidence": [
+      "E06"
+     ]
+    },
+    {
+     "feature": "dictation",
+     "evidence": [
+      "E06"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "music_podcasts",
+   "label": "Music and podcasts you enjoy",
+   "used_by": [
+    {
+     "feature": "siri_requests",
+     "evidence": [
+      "E06"
+     ]
+    },
+    {
+     "feature": "dictation",
+     "evidence": [
+      "E06"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "device_names",
+   "label": "Your and Family Sharing members' device names",
+   "used_by": [
+    {
+     "feature": "siri_requests",
+     "evidence": [
+      "E06"
+     ]
+    },
+    {
+     "feature": "dictation",
+     "evidence": [
+      "E06"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "home_data",
+   "label": "Home accessories, homes, scenes, members, Apple TV profiles",
+   "used_by": [
+    {
+     "feature": "siri_requests",
+     "evidence": [
+      "E06"
+     ]
+    },
+    {
+     "feature": "dictation",
+     "evidence": [
+      "E06"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "item_labels",
+   "label": "Labels: Photos people names, alarm names, Reminders list names",
+   "used_by": [
+    {
+     "feature": "siri_requests",
+     "evidence": [
+      "E06"
+     ]
+    },
+    {
+     "feature": "dictation",
+     "evidence": [
+      "E06"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "installed_apps_shortcuts",
+   "label": "Installed app names and Siri shortcuts",
+   "used_by": [
+    {
+     "feature": "siri_requests",
+     "evidence": [
+      "E06"
+     ]
+    },
+    {
+     "feature": "dictation",
+     "evidence": [
+      "E06"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "third_party_app_context",
+   "label": "Context from third-party apps allowed to integrate with Siri",
+   "used_by": [
+    {
+     "feature": "siri_requests",
+     "evidence": [
+      "E05"
+     ]
+    },
+    {
+     "feature": "dictation",
+     "evidence": [
+      "E05"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "safari_history",
+   "label": "Safari browsing history",
+   "used_by": [
+    {
+     "feature": "siri_suggestions",
+     "evidence": [
+      "E12"
+     ]
+    },
+    {
+     "feature": "search",
+     "evidence": [
+      "E115"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "email",
+   "label": "Emails",
+   "used_by": [
+    {
+     "feature": "siri_suggestions",
+     "evidence": [
+      "E12"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "messages",
+   "label": "Messages",
+   "used_by": [
+    {
+     "feature": "siri_suggestions",
+     "evidence": [
+      "E12"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "images",
+   "label": "Images",
+   "used_by": [
+    {
+     "feature": "siri_suggestions",
+     "evidence": [
+      "E12"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "notifications",
+   "label": "Notifications",
+   "used_by": [
+    {
+     "feature": "siri_suggestions",
+     "evidence": [
+      "E12"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "app_donated_data",
+   "label": "Information donated or contributed by installed apps",
+   "used_by": [
+    {
+     "feature": "siri_suggestions",
+     "evidence": [
+      "E12"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "health",
+   "label": "Health app data",
+   "used_by": [
+    {
+     "feature": "siri_requests",
+     "evidence": [
+      "E122",
+      "E123"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "location_device",
+   "label": "Device location (Location Services)",
+   "used_by": [
+    {
+     "feature": "siri_requests",
+     "evidence": [
+      "E17"
+     ]
+    },
+    {
+     "feature": "dictation",
+     "evidence": [
+      "E17"
+     ]
+    },
+    {
+     "feature": "search",
+     "evidence": [
+      "E37"
+     ]
+    },
+    {
+     "feature": "siri_suggestions",
+     "evidence": [
+      "E116",
+      "E117"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "location_ip",
+   "label": "Location approximated from IP address",
+   "used_by": [
+    {
+     "feature": "siri_requests",
+     "evidence": [
+      "E18"
+     ]
+    },
+    {
+     "feature": "search",
+     "evidence": [
+      "E41"
+     ]
+    },
+    {
+     "feature": "siri_suggestions",
+     "evidence": [
+      "E18"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "audio",
+   "label": "Audio of what you say",
+   "used_by": [
+    {
+     "feature": "siri_requests",
+     "evidence": [
+      "E55"
+     ]
+    },
+    {
+     "feature": "dictation",
+     "evidence": [
+      "E23"
+     ]
+    },
+    {
+     "feature": "app_speech_recognition",
+     "evidence": [
+      "E58"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "transcripts_on_device",
+   "label": "Siri & Dictation history stored on the iPhone",
+   "used_by": [
+    {
+     "feature": "siri_requests",
+     "evidence": [
+      "E27"
+     ]
+    },
+    {
+     "feature": "dictation",
+     "evidence": [
+      "E27"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "transcripts_apple_servers",
+   "label": "Transcripts and request history held by Apple",
+   "used_by": [
+    {
+     "feature": "siri_requests",
+     "evidence": [
+      "E24",
+      "E25",
+      "E26"
+     ]
+    },
+    {
+     "feature": "dictation",
+     "evidence": [
+      "E118",
+      "E119",
+      "E120"
+     ]
+    }
+   ],
+   "note": "Dictation transcripts are stored by Apple only with Improve Siri and Dictation on (E23)."
+  },
+  {
+   "id": "request_metadata",
+   "label": "Request category, success, device specs/config, performance",
+   "used_by": [
+    {
+     "feature": "siri_requests",
+     "evidence": [
+      "E30"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "search_queries",
+   "label": "Search queries (including visual search queries)",
+   "used_by": [
+    {
+     "feature": "search",
+     "evidence": [
+      "E124",
+      "E125"
+     ]
+    },
+    {
+     "feature": "siri_requests",
+     "evidence": [
+      "E32"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "search_context",
+   "label": "Topics of interest, selected suggestions, apps used, device usage, subscriptions",
+   "used_by": [
+    {
+     "feature": "search",
+     "evidence": [
+      "E37"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "voice_profile",
+   "label": "Voice setup audio used to recognise your voice",
+   "used_by": [
+    {
+     "feature": "siri_requests",
+     "evidence": [
+      "E15"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "nearby_device_status",
+   "label": "Timer, alarm, media, call status and proximity shared with nearby devices",
+   "used_by": [
+    {
+     "feature": "siri_requests",
+     "evidence": [
+      "E29"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "siri_setup",
+   "label": "Siri setup",
+   "used_by": [
+    {
+     "feature": "siri_requests",
+     "evidence": [
+      "E104"
+     ]
+    }
+   ],
+   "note": "Apple lists 'Siri setup' as information sent to process a request but never defines it. It may overlap voice_profile (voice-setup audio) or Siri settings; kept separate because Apple names it separately and gives no definition."
+  },
+  {
+   "id": "siri_settings_sync",
+   "label": "Siri settings and Siri Suggestions personalization synced via iCloud",
+   "used_by": [
+    {
+     "feature": "siri_requests",
+     "evidence": [
+      "E105"
+     ]
+    },
+    {
+     "feature": "siri_suggestions",
+     "evidence": [
+      "E105"
+     ]
+    }
+   ],
+   "note": "Gives icloud.siri something to act on in the grid. Apple: 'If you do not want Siri personalization to sync across your devices ... turn off Siri' (E13), so icloud.siri x siri_settings_sync = stops is supported for the sync. Apple says the sync uses end-to-end encryption 'if you use iCloud'."
+  },
+  {
+   "id": "siri_responses",
+   "label": "Siri's responses to your requests",
+   "used_by": [
+    {
+     "feature": "siri_requests",
+     "evidence": [
+      "E106",
+      "E107"
+     ]
+    }
+   ],
+   "note": "Both locators come from the Improve Siri and Dictation page, in the opt-in context. The default page (ask-siri-dictation) mentions stored 'transcripts' but never says they include Siri's response. So only the opt-in use is Apple-stated; whether responses are stored by default is not stated."
+  },
+  {
+   "id": "apple_account_data",
+   "label": "Apple Account usage and data, including text snippets from email",
+   "used_by": [
+    {
+     "feature": "siri_requests",
+     "evidence": [
+      "E108",
+      "E109"
+     ]
+    }
+   ],
+   "note": "Apple says this data is used to improve Siri, not used when Siri handles a request. 'siri_requests' is the nearest existing feature; if the grid distinguishes improvement use from request processing, mark it as improvement use. Apple does not say Dictation, Siri Suggestions or Search are improved this way ('other intelligent features' is unspecific). Switch: analytics.share_icloud_analytics x apple_account_data x siri_requests = stops is directly supported by E45/E46."
+  },
+  {
+   "id": "assistive_voice_audio",
+   "label": "Audio and transcripts from Vocal Shortcuts and Voice Control",
+   "used_by": [
+    {
+     "feature": "siri_requests",
+     "evidence": [
+      "E110",
+      "E111"
+     ]
+    }
+   ],
+   "note": "Apple's link to Siri is narrow: the data improves 'accessibility across other Apple features, such as Siri', not Siri generally. Improvement use only, as with apple_account_data. Collected only if you opt in, so analytics.improve_assistive_voice x assistive_voice_audio x siri_requests = stops is supported."
+  },
+  {
+   "id": "health_in_request",
+   "label": "Health information spoken in a Siri request not recognised as a Health request",
+   "used_by": [
+    {
+     "feature": "siri_requests",
+     "evidence": [
+      "E112",
+      "E113"
+     ]
+    }
+   ],
+   "note": "Split out of 'health' (see used_by_changes: health x siri_requests keeps only E43). health.siri_access does not stop this flow (Apple ties no switch to it; see N02), so merging it into 'health' made that switch look as though it covers it."
+  },
+  {
+   "id": "safari_typed_text",
+   "label": "Text typed in Safari's search field, sent to your chosen search engine",
+   "used_by": [
+    {
+     "feature": "search",
+     "evidence": [
+      "E114"
+     ]
+    }
+   ],
+   "note": "Recipient is the selected search engine, not Apple. Apple describes only the enabled state of Search Engine Suggestions, so safari.search_engine_suggestions x safari_typed_text x search stays not_stated for the off state."
+  },
+  {
+   "id": "safari_bookmarks",
+   "label": "Safari bookmarks",
+   "used_by": [
+    {
+     "feature": "search",
+     "evidence": [
+      "E115"
+     ]
+    }
+   ],
+   "note": "Used by Preload Top Hit, which this audit models as Safari search (feature 'search'). Apple does not say bookmarks leave the device. The off state is stated ('If you disable this option, the page will load normally.'), but that sentence says only that loading changes, not that bookmark use stops, so safari.preload_top_hit x safari_bookmarks should stay not_stated unless the grid reads 'load normally' as stopping Top Hit use."
+  },
+  {
+   "id": "dictated_text",
+   "label": "Text you dictate",
+   "used_by": [
+    {
+     "feature": "dictation",
+     "evidence": [
+      "E101"
+     ]
+    }
+   ],
+   "note": "User guide: dictated text in a search box may be sent to the search provider."
+  }
+ ],
+ "flows_without_switch": [
+  {
+   "id": "N01",
+   "description": "IP-based location approximation for Siri responses and suggestions.",
+   "evidence": [
+    "E18"
+   ]
+  },
+  {
+   "id": "N02",
+   "description": "Health information in a Siri request not recognised as a Health request is sent to Apple.",
+   "evidence": [
+    "E44"
+   ]
+  },
+  {
+   "id": "N03",
+   "description": "Request metadata stored by Apple. [Corrected: Split: request category, success, device specifications, device configuration and performance statistics stay a no-switch flow; the approximate-location part moves under location.siri (stops).]",
+   "evidence": [
+    "E137",
+    "E138",
+    "E30"
+   ]
+  },
+  {
+   "id": "N04",
+   "description": "Personalised speech recognition uses on-device information.",
+   "evidence": [
+    "E28"
+   ]
+  },
+  {
+   "id": "N05",
+   "description": "Timer, alarm, media, call status and proximity shared locally with nearby devices. [Corrected: Remove phone call status from the no-switch flow; it is gated by Personal Requests on HomePod (new switch homepod.personal_requests). Timers, alarms, shared media and device proximity stay no-switch.]",
+   "evidence": [
+    "E139",
+    "E29",
+    "E60"
+   ]
+  },
+  {
+   "id": "N06",
+   "description": "Search sends location, topics, queries, context, apps used and subscription names on a 15-minute identifier. [Corrected: Remove location from the no-switch description: location sent for Search is governed by location.system.suggestions_search (precise location) and location.global. Keep topics, queries (including visual queries), query context, selected suggestions, apps used, device usage data and subscription names. Add evidence for subscriptions, which E36/E37 do not cover.]",
+   "evidence": [
+    "E140",
+    "E141",
+    "E142",
+    "E36",
+    "E37"
+   ]
+  },
+  {
+   "id": "N07",
+   "description": "Contextual data from Apple's own apps (contacts, labels, device and Home names) has no per-item switch; only turning Siri or Dictation off entirely is documented.",
+   "evidence": [
+    "E05",
+    "E06",
+    "E07"
+   ]
+  },
+  {
+   "id": "N08",
+   "description": "Siri transcripts stored by Apple by default for up to two years; no switch stops default storage.",
+   "evidence": [
+    "E24",
+    "E26"
+   ]
+  },
+  {
+   "id": "N09",
+   "description": "On-device Siri & Dictation history keeps accumulating; only deletion is documented.",
+   "evidence": [
+    "E27",
+    "E04"
+   ]
+  },
+  {
+   "id": "N10",
+   "description": "Opening Safari sends Apple whether you use Safari search and your device specifications, tied to longer-lived identifiers. No switch is named.",
+   "evidence": [
+    "E126",
+    "E127"
+   ]
+  },
+  {
+   "id": "N11",
+   "description": "Apple may send a random sample of search queries to 'search tools' to evaluate Search. The sentence names no switch. Whether Help Apple Improve Search (E31: queries 'stored by Apple and used to improve Search') also stops it is not stated.",
+   "evidence": [
+    "E128"
+   ],
+   "status": "unresolved"
+  },
+  {
+   "id": "N12",
+   "description": "Search information is used to process the request and to improve search results, including fine-tuning Search models with your queries. The sentence names no switch. It overlaps Help Apple Improve Search (E31), and Apple does not say whether that switch covers it; treat as unresolved rather than as a clear no-switch flow.",
+   "evidence": [
+    "E129",
+    "E130"
+   ],
+   "status": "unresolved"
+  },
+  {
+   "id": "N13",
+   "description": "Siri Suggestions may be used to personalize Apple services (Apple says they are not stored on Apple servers). No switch is named for this use.",
+   "evidence": [
+    "E131"
+   ]
+  },
+  {
+   "id": "N14",
+   "description": "Audio recorded when you set up Siri to recognize your voice syncs across your devices with end-to-end encryption (for example, to HomePod for Recognize My Voice). Apple does not say whether the iCloud Siri switch (icloud.siri) stops it.",
+   "evidence": [
+    "E132",
+    "E133"
+   ]
+  },
+  {
+   "id": "N15",
+   "description": "The Improve Siri and Dictation choice made when setting up the iPhone is applied to new Apple devices and HomeKit accessories set up with it that have Siri on. Nothing stops the carry-over; Apple says only that each device can be changed later.",
+   "evidence": [
+    "E134",
+    "E135",
+    "E136"
+   ]
+  },
+  {
+   "id": "N16",
+   "description": "User guide: Dictation requests are processed on the device in many languages; dictated text in a search box may be sent to the search provider. No switch named for either.",
+   "evidence": [
+    "E100",
+    "E101"
+   ]
+  }
+ ]
+}

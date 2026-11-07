@@ -1,0 +1,180 @@
+{
+ "what": "Screens seen on the user's iPhone. Observations, NOT Apple's published text. Text below is transcribed by Claude from the screenshots; the screenshot is the evidence.",
+ "privacy": "Published copies are redacted: the user's name, the phone's serial and model numbers, the former employer's name in dictated text, and the names of other installed apps (Contacts and Kimi left visible where shown). A screenshot showing other people's contact cards is not published. original_sha256 is the fingerprint of the unredacted original, kept privately.",
+ "items": [
+  {
+   "id": "O002",
+   "file": "screenshots/O002.png",
+   "by": {
+    "kind": "person",
+    "id": "the user",
+    "date": "2026-11-01"
+   },
+   "device": "iPhone 14 Plus",
+   "ios": "26.7.1 (About screen, O005, captured 4 minutes later)",
+   "time_on_screen": "08:23",
+   "screen": "Settings > Siri (top)",
+   "shown_claude_transcription": [
+    "Siri Requests: Language; Talk to Siri — Off; Allow Siri When Locked — off; Voice; Siri Responses; Announce Calls; Announce Notifications; Messaging with Siri; Siri & Dictation History"
+   ],
+   "original_sha256": "58094aed89b1b8b635f0bc2f22f5cc88793ce25fd01dde45d90d954526e06e23",
+   "published_sha256": "32802eda67159ebb315b6b6c90b449a1a5f0a20088eee91d5d87d2cf68ecfaeb",
+   "redacted_areas": 0
+  },
+  {
+   "id": "O003",
+   "file": "screenshots/O003.png",
+   "by": {
+    "kind": "person",
+    "id": "the user",
+    "date": "2026-11-01"
+   },
+   "device": "iPhone 14 Plus",
+   "ios": "26.7.1 (About screen, O005, captured 4 minutes later)",
+   "time_on_screen": "08:23",
+   "screen": "Settings > Siri (middle)",
+   "shown_claude_transcription": [
+    "Siri & Dictation History; My Information (user's name)",
+    "Footer: 'Voice input is processed on iPhone, but transcripts of your requests are sent to Apple. About Siri & Privacy…'",
+    "Suggestions: Suggest Apps Before Searching — off; Reset Hidden Suggestions; Allow Notifications — off; Show in App Library — off; Show When Sharing — off; Show Listening Suggestions — off"
+   ],
+   "original_sha256": "6c3e0a93c0454689d8d920644f8fa3e61ee9b4885c13449e9902d4c37a5494f3",
+   "published_sha256": "caac5a028fea753b86938810442ebc4c594922f02afd485f748b5c0e74999b26",
+   "redacted_areas": 1
+  },
+  {
+   "id": "O004",
+   "file": "screenshots/O004.png",
+   "by": {
+    "kind": "person",
+    "id": "the user",
+    "date": "2026-11-01"
+   },
+   "device": "iPhone 14 Plus",
+   "ios": "26.7.1 (About screen, O005, captured 4 minutes later)",
+   "time_on_screen": "08:23",
+   "screen": "Settings > Siri (bottom)",
+   "shown_claude_transcription": [
+    "Footer: 'Apple can make suggestions in Search, on Home Screen and on Lock Screen, when sharing or when you may want to listen to media.'",
+    "Siri App Access: App Clips; Apps"
+   ],
+   "original_sha256": "d898c90d3729dc50e4d262f93df272d8394e1729fa5a69a0ac6174eb39cc8cdc",
+   "published_sha256": "159892049d59f2ad260dda156db6385aa87d8fe5620d980c6a10293d3d0deecc",
+   "redacted_areas": 0
+  },
+  {
+   "id": "O005",
+   "file": "screenshots/O005.png",
+   "by": {
+    "kind": "person",
+    "id": "the user",
+    "date": "2026-11-01"
+   },
+   "device": "iPhone 14 Plus",
+   "ios": "26.7.1",
+   "time_on_screen": "08:27",
+   "screen": "Settings > General > About",
+   "shown_claude_transcription": [
+    "iOS Version 26.7.1; Model Name iPhone 14 Plus"
+   ],
+   "original_sha256": "cedd998b1bf1ec1c79e2fcff51a6404362ca261d8a481aeb3b37cb1d553684b5",
+   "published_sha256": "e3d24bc5147173b223a30903cdd61a3d475f6fec34ac01e8923742cd2699dc0c",
+   "redacted_areas": 1
+  },
+  {
+   "id": "O006",
+   "file": "screenshots/O006.png",
+   "by": {
+    "kind": "person",
+    "id": "the user",
+    "date": "2026-11-01"
+   },
+   "device": "iPhone 14 Plus",
+   "ios": "26.7.1",
+   "time_on_screen": "08:27",
+   "screen": "Settings > General > Keyboard (Dictation section)",
+   "shown_claude_transcription": [
+    "Enable Dictation — on; Auto-Punctuation — on",
+    "Footer: 'Dictation processes many voice inputs on iPhone. Information will be sent to Apple in some cases. About Dictation & Privacy…'"
+   ],
+   "original_sha256": "4a4bd31a2afa3f004fa78b8467d4f99394b17e787448422779dd0ec8a3f81e8e",
+   "published_sha256": "e9419256714c02f494800e88d4145b7444c4afcd1dfb7af6a2da14900ee844f5",
+   "redacted_areas": 0
+  },
+  {
+   "id": "O007",
+   "file": "screenshots/O007.png",
+   "by": {
+    "kind": "person",
+    "id": "the user",
+    "date": "2026-11-01"
+   },
+   "device": "iPhone 14 Plus",
+   "ios": "26.7.1",
+   "time_on_screen": "08:30",
+   "screen": "Settings > Siri > Talk to Siri",
+   "shown_claude_transcription": [
+    "Options: “Siri” or “Hey Siri”; “Hey Siri”; Off — selected",
+    "Footer: 'iPhone will not listen for “Siri” or “Hey Siri” at the beginning of requests.'",
+    "Press Side Button for Siri — off",
+    "Footer: 'Press and hold the side button to talk to Siri.'"
+   ],
+   "claude_note": "Both switches in Apple's September definition of turning Siri off (E01) are off: Siri is off by that definition. Enable Dictation is on (O006).",
+   "original_sha256": "01f613ecdf83f6d9dd8ceb814ed186b1a4cf6c24065278bcb70ef12a93bcc5e3",
+   "published_sha256": "35afa5ce0e4c53175028500a8d148315c7b317ebdecdf7638018cd6ef1c88641",
+   "redacted_areas": 0
+  },
+  {
+   "id": "O008",
+   "file": "screenshots/O008.png",
+   "by": {
+    "kind": "person",
+    "id": "the user",
+    "date": "2026-11-01"
+   },
+   "device": "iPhone 14 Plus",
+   "ios": "26.7.1",
+   "time_on_screen": "08:34",
+   "screen": "Settings > Siri > (Siri App Access) Apps > Contacts",
+   "shown_claude_transcription": [
+    "Learn from this App — off",
+    "Footer: 'Allow Siri to learn from how you use “Contacts” to make suggestions across apps.'",
+    "Suggestions: Show Contact Suggestions — off; Show on Home Screen — ON; Suggest App — off",
+    "Footer: 'Allow suggestions and content from “Contacts” and Shortcuts for the app to appear when sharing, in the app, in Search and in widgets. These suggestions and Shortcuts are based on how you use the app.'"
+   ],
+   "claude_note": "Confirms the state behind F1/F2 (Learn from this App off for Contacts) on 2026-11-01; F1/F2 were recorded on 2026-09-26 from the user's statement. Show Contact Suggestions (found in the guide pass) is here and off. The phone's own description of Learn from this App mentions suggestions across apps, not dictation.",
+   "original_sha256": "60afebb5a92bd8a8db38d567c5254204cf65a1e3ad26d26b07d38a6f21003f53",
+   "published_sha256": "0c0ed0b08cb837f8f8c165a40f3cbe94c53bb3f5e7b661c5c3f07f155f17fb38",
+   "redacted_areas": 0
+  },
+  {
+   "id": "O009",
+   "file": "screenshots/O009.png",
+   "by": {
+    "kind": "person",
+    "id": "the user",
+    "date": "2026-11-01"
+   },
+   "device": "iPhone 14 Plus",
+   "ios": "26.7.1",
+   "time_on_screen": "08:38",
+   "screen": "Notes, dictation in progress",
+   "shown_claude_transcription": [
+    "Title line: 'Siri and [a word]'",
+    "Body line: 'Siri and [former employer]' with the dictation microphone active at the cursor"
+   ],
+   "finding": "F3",
+   "user_statement": "'Siri and Kimi', both times (2026-11-03).",
+   "original_sha256": "daf267f1d5c9e0aa31e01ea0368ce1555eb0fa9ef32e661de10bce82b05b08bc",
+   "published_sha256": "ad1ac88807ad74882bd8f628194e44f1446c2b9347076f1d846ec2987710c511",
+   "redacted_areas": 2
+  }
+ ],
+ "not_seen_on_this_phone": [
+  "'Turn Off Siri' (named on Apple's 2026-10-30 privacy page)",
+  "'Excluded Apps' (2026-10-30 page)",
+  "'Suggestions' as a separate screen under Settings > Siri (2026-10-30 page)"
+ ],
+ "label_differences_claude_note": "Phone shows 'Show Listening Suggestions', 'Suggest Apps Before Searching', 'Allow Notifications'; Apple's Sept privacy page says 'Show When Listening', 'Show in Spotlight'; the iOS 26 guide says 'Suggest App', 'Suggestion Notifications', 'Show in App', 'Show on Home Screen'.",
+ "route_note_claude": "On this phone the per-app list sits under the heading 'Siri App Access' > Apps; Apple's text says 'Settings > Siri > Apps'."
+}

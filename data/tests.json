@@ -1,0 +1,184 @@
+{
+ "findings": [
+  {
+   "id": "F1",
+   "date": "2026-09-26",
+   "device": "iPhone 14 Plus, iOS 26.7 (as stated by user)",
+   "context": "Dictating into this conversation",
+   "spoken": "Siri",
+   "output": "[a contact's display name]",
+   "switch_state": {
+    "siri.apps.learn_from_this_app": {
+     "state": "off",
+     "per_app": "Contacts",
+     "source": "user statement in conversation"
+    }
+   },
+   "feature": "dictation",
+   "touchpoint": "contacts",
+   "result": "continues",
+   "note": "Output is an entry from the user's contacts; which contact field it came from is unknown.",
+   "switches_off": [
+    "siri.apps.learn_from_this_app"
+   ],
+   "other_settings_at_time": {
+    "siri.talk_to_siri": "not recorded",
+    "keyboard.enable_dictation": "on (dictation was in use)",
+    "analytics.improve_siri_dictation": "not recorded",
+    "dictation_on_device_processing": "not recorded"
+   },
+   "action": "used_on_device",
+   "action_basis": "Claude judgement: the contact entry appeared in dictated text, so contact data was used in recognition. Whether it was also sent to Apple was not observed."
+  },
+  {
+   "id": "F2",
+   "date": "2026-09-26",
+   "device": "iPhone 14 Plus, iOS 26.7 (as stated by user)",
+   "context": "Dictating into this conversation",
+   "spoken": "Kimi",
+   "output": "[former employer]",
+   "switch_state": {
+    "siri.apps.learn_from_this_app": {
+     "state": "off",
+     "per_app": "Contacts",
+     "source": "user statement in conversation"
+    }
+   },
+   "feature": "dictation",
+   "touchpoint": "contacts_company",
+   "result": "continues",
+   "note": "Former employer saved as a company in Contacts. Company names are not in Apple's contextual-data list.",
+   "switches_off": [
+    "siri.apps.learn_from_this_app"
+   ],
+   "other_settings_at_time": {
+    "siri.talk_to_siri": "not recorded",
+    "keyboard.enable_dictation": "on (dictation was in use)",
+    "analytics.improve_siri_dictation": "not recorded",
+    "dictation_on_device_processing": "not recorded",
+    "Where [former employer] is stored in Contacts (own card, separate card, or company field)": "Company field on three other people's contact cards, one of them blocked (screenshot [private screenshot], 2026-11-03; assumed unchanged since September)"
+   },
+   "action": "used_on_device",
+   "action_basis": "Claude judgement: the contact entry appeared in dictated text, so contact data was used in recognition. Whether it was also sent to Apple was not observed."
+  },
+  {
+   "id": "F3",
+   "date": "2026-11-01",
+   "device": "iPhone 14 Plus, iOS 26.7.1 (About screen, O005)",
+   "context": "Notes app, keyboard dictation",
+   "spoken": "'Siri and Kimi', dictated twice (user statement, 2026-11-03).",
+   "output": "First dictation: 'Siri and [a word]'. Second dictation: 'Siri and [former employer]'.",
+   "switch_state": {
+    "siri.apps.learn_from_this_app": {
+     "state": "off",
+     "per_app": "Contacts",
+     "source": "screenshot O008"
+    },
+    "siri.talk_to_siri": {
+     "state": "off",
+     "source": "screenshots O002, O007"
+    },
+    "siri.press_side_button": {
+     "state": "off",
+     "source": "screenshot O007"
+    }
+   },
+   "other_settings_at_time": {
+    "keyboard.enable_dictation": "on (screenshot O006)",
+    "analytics.improve_siri_dictation": "not recorded",
+    "dictation_on_device_processing": "not recorded",
+    "Show Contact Suggestions (Settings > Siri > Apps > Contacts; not yet in the grid)": "off (screenshot O008)",
+    "Where [former employer] is stored in Contacts (own card, separate card, or company field)": "Company field on three other people's contact cards, one of them blocked (screenshot [private screenshot], 2026-11-03; assumed unchanged since September)"
+   },
+   "feature": "dictation",
+   "touchpoint": "contacts_company",
+   "result": "continues",
+   "switches_off": [
+    "siri.apps.learn_from_this_app",
+    "siri.talk_to_siri",
+    "siri.press_side_button",
+    "combo.siri_off"
+   ],
+   "evidence_files": [
+    "records/observations/O009-ios26-dictation-test.png"
+   ],
+   "note": "Second dictation produced a company name saved in the user's Contacts, with every switch above confirmed off by screenshot. The same words gave a different result the first time ('[a word]'); whether '[a word]' is in Contacts is not recorded. 'Siri' was transcribed as 'Siri' both times (in F1 it produced a contact entry).",
+   "action": "used_on_device",
+   "action_basis": "Claude judgement, as for F1/F2: a contact entry appeared in dictated text, so contact data was used in recognition. Sending to Apple was not observed."
+  },
+  {
+   "id": "F4",
+   "date": "2026-11-03",
+   "device": "iPhone 14 Plus, iOS 27.2 (About screen, O104)",
+   "context": "Notes app, keyboard dictation",
+   "spoken": "The user states the word spoken where '[former employer]' appears was 'Kimi'. The rest of the sentence is as transcribed; not separately confirmed.",
+   "output": "I'd like to see if [former employer] still comes up the right way",
+   "switch_state": {
+    "siri.talk_to_siri": {
+     "state": "off",
+     "source": "screenshot O105 (now under Settings > Siri > Requests)"
+    },
+    "siri.press_side_button": {
+     "state": "off",
+     "source": "screenshot O105"
+    }
+   },
+   "other_settings_at_time": {
+    "Excluded Apps (iOS 27; Settings > Siri > Excluded Apps)": "Contacts excluded (O106); the Kimi app also excluded (O107)",
+    "Siri Suggestions switches": "Allow Notifications, Show in App Library, Show When Sharing, Show Listening Suggestions all off (O108)",
+    "keyboard.enable_dictation": "on (dictation was in use; Keyboard screen not captured on 27.2)",
+    "analytics.improve_siri_dictation": "not recorded",
+    "Where [former employer] is stored in Contacts (own card, separate card, or company field)": "Company field on three other people's contact cards, one of them blocked (screenshot [private screenshot], 2026-11-03; assumed unchanged since September)"
+   },
+   "feature": "dictation",
+   "touchpoint": "contacts_company",
+   "result": "continues",
+   "switches_off": [
+    "siri.talk_to_siri",
+    "siri.press_side_button",
+    "combo.siri_off"
+   ],
+   "evidence_files": [
+    "records/observations/O112-ios27-dictation-test.jpg"
+   ],
+   "note": "After updating to iOS 27.2, with the activation settings off (Requests: Off; Press Side Button for Siri: off), Contacts in Excluded Apps (already there after the update; the user did not add it) and the four Suggestions switches off, dictation produced a company name from the company field of contact cards in place of the spoken word 'Kimi' (also the name of an installed, excluded app). The 'Turn Off Siri' control had not been used.",
+   "action": "used_on_device",
+   "action_basis": "Claude judgement, as for F1-F3: a contact entry appeared in dictated text, so contact data was used in recognition. Sending to Apple was not observed.",
+   "ios27_switches_off": [
+    "s27.siri_or_hey_siri",
+    "s27.press_side_button",
+    "s27.excluded_apps",
+    "s27.contacts.suggestions",
+    "s27.suggestions.allow_notifications",
+    "s27.suggestions.show_in_app_library",
+    "s27.suggestions.show_when_sharing",
+    "s27.suggestions.show_listening"
+   ],
+   "ios27_not_set": {
+    "s27.turn_off_siri": "Not used by the user. Apple's iOS 27 wording makes this the way to turn Siri off."
+   },
+   "ios27_state_notes": {
+    "s27.siri_or_hey_siri": "set to Off",
+    "s27.press_side_button": "off",
+    "s27.excluded_apps": "Contacts on the list (and the Kimi app). User statement 2026-11-03: already there after the update; not added by the user.",
+    "s27.contacts.suggestions": "Contacts excluded",
+    "s27.suggestions.*": "all four switches off"
+   },
+   "switches_off_note": "switches_off uses the iOS 26 grid's ids: by Apple's September definition (Talk to Siri Off + side button off) Siri was off; by Apple's iOS 27 wording it was not turned off."
+  }
+ ],
+ "excluded_observations": [
+  {
+   "spoken": "crux",
+   "output": "crooks",
+   "reason": "Ordinary misrecognition; not a contact entry."
+  },
+  {
+   "spoken": "you know / umm",
+   "output": "as spoken",
+   "reason": "Speech disfluency, not a recognition error."
+  }
+ ],
+ "action_note": "Only what was seen is recorded; observation shows use, not transmission.",
+ "public_note": "Personal details replaced: a contact's display name, the user's former employer. The spoken word 'Kimi' is the name of an app on the phone."
+}

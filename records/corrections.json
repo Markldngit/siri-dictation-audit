@@ -1,0 +1,5208 @@
+{
+ "corrections": [
+  {
+   "id": "C001",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "add_feature",
+   "target": "app_speech_recognition",
+   "change": "added",
+   "evidence": [
+    "E57",
+    "E58",
+    "E59"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   },
+   "note": "Fills the structural gap: privacy.speech_recognition had no feature to act on, so all its cells were forced to not_stated. With this feature, privacy.speech_recognition x audio x app_speech_recognition can be recorded (see used_by_changes). Apple does not say this transcription is Dictation or Siri, so it gets its own feature id rather than being folded into dictation."
+  },
+  {
+   "id": "C002",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "add_switch",
+   "target": "homepod.personal_requests",
+   "change": "added",
+   "evidence": [
+    "E60",
+    "E61"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   },
+   "note": "Scope decision: in_scope. The opt-in concerns HomePod, but Apple's sentence says what is shared is phone call status 'from your device', i.e. this iPhone's data, and it is the only condition Apple attaches to that part of the nearby-device flow (E29/N05). Excluding it would leave the phone-call-status part of nearby_device_status wrongly recorded as having no switch. Apple gives no Settings path and does not say whether the opt-in is made on the iPhone (for example in the Home app) or on HomePod; settings_path is null for that reason. Grid effect: stops = the phone-call-status part of nearby_device_status (on opt-out); timers, alarms, shared media and proximity are not tied to it."
+  },
+  {
+   "id": "C003",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "add_switch",
+   "target": "apple_store.siri_and_search",
+   "change": "added",
+   "evidence": [
+    "E62",
+    "E63",
+    "E64"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   },
+   "note": "Apple names a settings location, not a switch, so kind is 'settings_pane' (new kind; no existing kind fits). It concerns Siri Suggestions (Today at Apple session suggestions), so in_scope. 'Settings > Siri & Search' is probably the older name of the pane that ask-siri-dictation calls 'Settings > Siri', but Apple does not say so; record it as a wording issue (fifth way of naming the Siri settings root) and do not grid it, since no switch or effect is named. The ask-siri-dictation page has a parallel pane-level control ('see and control the full list of features that Siri personalizes ... by going to Settings > Siri') that is also not in switches.json; not on the checker's list, noted here only."
+  },
+  {
+   "id": "C004",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "add_switch",
+   "target": "location.system.alerts_shortcuts_automations",
+   "change": "added",
+   "evidence": [
+    "E65",
+    "E66",
+    "E67"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   },
+   "note": "Scope decision: adjacent. Apple describes 'an app or shortcut recommendation based on where you currently are', which resembles Siri Suggestions ('Siri can suggest shortcuts', E12), but this page never names Siri or Siri Suggestions, and says the iPhone 'will use' your location, not that it is sent to Apple. Tying it to siri_suggestions would be my inference, so it is not gridded as in_scope. settings_path is null because Apple gives only the generic instruction (System Services, then each service), not a path naming this service; the implied path is Settings > Privacy & Security > Location Services > System Services > Alerts & Shortcuts Automations, and the on-device name should be checked."
+  },
+  {
+   "id": "C005",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "add_evidence",
+   "target": "guide.allow_siri_when_locked",
+   "change": "evidence E68 added from ios26-guide-change-siri-settings",
+   "evidence": [
+    "E68"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C006",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "add_evidence",
+   "target": "guide.siri_responses",
+   "change": "evidence E69 added from ios26-guide-change-siri-settings",
+   "evidence": [
+    "E69"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C007",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "add_switch",
+   "target": "guide.voice",
+   "change": "added from the iOS 26 user guide",
+   "evidence": [
+    "E70"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C008",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "add_switch",
+   "target": "guide.language",
+   "change": "added from the iOS 26 user guide",
+   "evidence": [
+    "E71"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C009",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "add_switch",
+   "target": "guide.always_show_captions",
+   "change": "added from the iOS 26 user guide",
+   "evidence": [
+    "E72"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C010",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "add_switch",
+   "target": "guide.always_show_request",
+   "change": "added from the iOS 26 user guide",
+   "evidence": [
+    "E73"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C011",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "add_evidence",
+   "target": "guide.call_hang_up",
+   "change": "evidence E74 added from ios26-guide-change-siri-settings",
+   "evidence": [
+    "E74"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C012",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "add_evidence",
+   "target": "guide.auto_send_messages",
+   "change": "evidence E75 added from ios26-guide-change-siri-settings",
+   "evidence": [
+    "E75"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C013",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "add_evidence",
+   "target": "guide.search_per_app",
+   "change": "evidence E76 added from ios26-guide-change-siri-settings",
+   "evidence": [
+    "E76"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C014",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "add_switch",
+   "target": "guide.apps_per_app",
+   "change": "added from the iOS 26 user guide",
+   "evidence": [
+    "E77"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C015",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "add_evidence",
+   "target": "guide.show_in_app",
+   "change": "evidence E78 added from ios26-guide-siri-suggestions",
+   "evidence": [
+    "E78"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C016",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "add_evidence",
+   "target": "guide.show_on_home_screen",
+   "change": "evidence E79 added from ios26-guide-siri-suggestions",
+   "evidence": [
+    "E79"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C017",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "add_evidence",
+   "target": "guide.suggest_app",
+   "change": "evidence E80 added from ios26-guide-siri-suggestions",
+   "evidence": [
+    "E80"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C018",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "add_evidence",
+   "target": "guide.suggestion_notifications",
+   "change": "evidence E81 added from ios26-guide-siri-suggestions",
+   "evidence": [
+    "E81"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C019",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "add_evidence",
+   "target": "icloud.siri",
+   "change": "evidence E82 added from ios26-guide-tell-siri-about-yourself",
+   "evidence": [
+    "E82"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C020",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "add_switch",
+   "target": "guide.my_information",
+   "change": "added from the iOS 26 user guide",
+   "evidence": [
+    "E83"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C021",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "add_switch",
+   "target": "guide.siri_pause_time",
+   "change": "added from the iOS 26 user guide",
+   "evidence": [
+    "E84"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C022",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "add_switch",
+   "target": "guide.speaking_rate",
+   "change": "added from the iOS 26 user guide",
+   "evidence": [
+    "E85"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C023",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "add_evidence",
+   "target": "guide.always_listen",
+   "change": "evidence E86 added from ios26-guide-siri-accessibility",
+   "evidence": [
+    "E86"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C024",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "add_switch",
+   "target": "guide.require_siri_interruptions",
+   "change": "added from the iOS 26 user guide",
+   "evidence": [
+    "E87"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C025",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "add_evidence",
+   "target": "guide.type_to_siri",
+   "change": "evidence E88 added from ios26-guide-siri-accessibility",
+   "evidence": [
+    "E88"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C026",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "add_switch",
+   "target": "guide.atypical_speech",
+   "change": "added from the iOS 26 user guide",
+   "evidence": [
+    "E89"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C027",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "add_switch",
+   "target": "guide.announce_on_speaker",
+   "change": "added from the iOS 26 user guide",
+   "evidence": [
+    "E90"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C028",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "add_evidence",
+   "target": "guide.call_hang_up",
+   "change": "evidence E91 added from ios26-guide-siri-accessibility",
+   "evidence": [
+    "E91"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C029",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "add_switch",
+   "target": "guide.announce_calls",
+   "change": "added from the iOS 26 user guide",
+   "evidence": [
+    "E92"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C030",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "add_switch",
+   "target": "guide.announce_notifications",
+   "change": "added from the iOS 26 user guide",
+   "evidence": [
+    "E93"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C031",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "add_switch",
+   "target": "guide.reply_without_confirmation",
+   "change": "added from the iOS 26 user guide",
+   "evidence": [
+    "E94"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C032",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "add_evidence",
+   "target": "siri.talk_to_siri",
+   "change": "evidence E95 added from ios26-guide-activate-siri",
+   "evidence": [
+    "E95"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C033",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "add_evidence",
+   "target": "siri.press_side_button",
+   "change": "evidence E96 added from ios26-guide-activate-siri",
+   "evidence": [
+    "E96"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C034",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "add_evidence",
+   "target": "combo.siri_off",
+   "change": "evidence E97 added from ios26-guide-activate-siri",
+   "evidence": [
+    "E97"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C035",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "add_evidence",
+   "target": "keyboard.enable_dictation",
+   "change": "evidence E98 added from ios26-guide-dictate-text",
+   "evidence": [
+    "E98"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C036",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "add_switch",
+   "target": "guide.auto_punctuation",
+   "change": "added from the iOS 26 user guide",
+   "evidence": [
+    "E99"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C037",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "add_switch",
+   "target": "siri.personalization_list",
+   "change": "added (gap noted by additions helper)",
+   "evidence": [
+    "E103"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C038",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "add_touchpoint",
+   "target": "siri_setup",
+   "change": "added",
+   "evidence": [
+    "E104"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   },
+   "note": "Apple lists 'Siri setup' as information sent to process a request but never defines it. It may overlap voice_profile (voice-setup audio) or Siri settings; kept separate because Apple names it separately and gives no definition."
+  },
+  {
+   "id": "C039",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "add_touchpoint",
+   "target": "siri_settings_sync",
+   "change": "added",
+   "evidence": [
+    "E105",
+    "E105"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   },
+   "note": "Gives icloud.siri something to act on in the grid. Apple: 'If you do not want Siri personalization to sync across your devices ... turn off Siri' (E13), so icloud.siri x siri_settings_sync = stops is supported for the sync. Apple says the sync uses end-to-end encryption 'if you use iCloud'."
+  },
+  {
+   "id": "C040",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "add_touchpoint",
+   "target": "siri_responses",
+   "change": "added",
+   "evidence": [
+    "E106",
+    "E107"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   },
+   "note": "Both locators come from the Improve Siri and Dictation page, in the opt-in context. The default page (ask-siri-dictation) mentions stored 'transcripts' but never says they include Siri's response. So only the opt-in use is Apple-stated; whether responses are stored by default is not stated."
+  },
+  {
+   "id": "C041",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "add_touchpoint",
+   "target": "apple_account_data",
+   "change": "added",
+   "evidence": [
+    "E108",
+    "E109"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   },
+   "note": "Apple says this data is used to improve Siri, not used when Siri handles a request. 'siri_requests' is the nearest existing feature; if the grid distinguishes improvement use from request processing, mark it as improvement use. Apple does not say Dictation, Siri Suggestions or Search are improved this way ('other intelligent features' is unspecific). Switch: analytics.share_icloud_analytics x apple_account_data x siri_requests = stops is directly supported by E45/E46."
+  },
+  {
+   "id": "C042",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "add_touchpoint",
+   "target": "assistive_voice_audio",
+   "change": "added",
+   "evidence": [
+    "E110",
+    "E111"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   },
+   "note": "Apple's link to Siri is narrow: the data improves 'accessibility across other Apple features, such as Siri', not Siri generally. Improvement use only, as with apple_account_data. Collected only if you opt in, so analytics.improve_assistive_voice x assistive_voice_audio x siri_requests = stops is supported."
+  },
+  {
+   "id": "C043",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "add_touchpoint",
+   "target": "health_in_request",
+   "change": "added",
+   "evidence": [
+    "E112",
+    "E113"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   },
+   "note": "Split out of 'health' (see used_by_changes: health x siri_requests keeps only E43). health.siri_access does not stop this flow (Apple ties no switch to it; see N02), so merging it into 'health' made that switch look as though it covers it."
+  },
+  {
+   "id": "C044",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "add_touchpoint",
+   "target": "safari_typed_text",
+   "change": "added",
+   "evidence": [
+    "E114"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   },
+   "note": "Recipient is the selected search engine, not Apple. Apple describes only the enabled state of Search Engine Suggestions, so safari.search_engine_suggestions x safari_typed_text x search stays not_stated for the off state."
+  },
+  {
+   "id": "C045",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "add_touchpoint",
+   "target": "safari_bookmarks",
+   "change": "added",
+   "evidence": [
+    "E115"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   },
+   "note": "Used by Preload Top Hit, which this audit models as Safari search (feature 'search'). Apple does not say bookmarks leave the device. The off state is stated ('If you disable this option, the page will load normally.'), but that sentence says only that loading changes, not that bookmark use stops, so safari.preload_top_hit x safari_bookmarks should stay not_stated unless the grid reads 'load normally' as stopping Top Hit use."
+  },
+  {
+   "id": "C046",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "add_touchpoint",
+   "target": "dictated_text",
+   "change": "added from the iOS 26 user guide",
+   "evidence": [
+    "E101"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C047",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "used_by_add",
+   "target": "location_device x siri_suggestions",
+   "change": "add",
+   "evidence": [
+    "E116",
+    "E117"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   },
+   "note": "Resolves the checker's error 6: location.system.suggestions_search x location_device x siri_suggestions = stops existed without the used_by entry. The location-services page describes the service as sending location 'to provide more relevant recommendations', and ask-siri-dictation calls the same switch 'Location Services for Siri Suggestions'. Linking the two is supported by the shared switch path (System Services > Suggestions & Search) in both pages."
+  },
+  {
+   "id": "C048",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "used_by_add",
+   "target": "transcripts_apple_servers x dictation",
+   "change": "add",
+   "evidence": [
+    "E118",
+    "E119",
+    "E120"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   },
+   "note": "Conditional use: Apple stores dictation only with Improve Siri and Dictation on. Record analytics.improve_siri_dictation x transcripts_apple_servers x dictation = stops (the checker's item-4 correction). The existing touchpoint note already says this; the used_by entry was missing, so no status could be recorded. Caveat: the ISD locator is in the opt-in 'Siri and Dictation' section and does not by itself say 'Dictation transcripts'; the ASD sentence is the direct evidence."
+  },
+  {
+   "id": "C049",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "used_by_remove",
+   "target": "installed_apps_shortcuts x search",
+   "change": "remove",
+   "evidence": [
+    "E121"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   },
+   "note": "E37 says 'apps you use', not names of installed apps or Siri shortcuts, and 'apps used' is already in search_context. No snapshot text says Search sends installed app names or shortcuts. Remove this entry; the matching grid cells for search should be dropped or moved to search_context."
+  },
+  {
+   "id": "C050",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "used_by_replace_evidence",
+   "target": "health x siri_requests",
+   "change": "replace_evidence",
+   "evidence": [
+    "E122",
+    "E123"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   },
+   "note": "Keep only E43-type evidence (Siri reading or writing Health app data); move E44 to the new touchpoint health_in_request."
+  },
+  {
+   "id": "C051",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "used_by_replace_evidence",
+   "target": "search_queries x search",
+   "change": "replace_evidence",
+   "evidence": [
+    "E124",
+    "E125"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   },
+   "note": "Same evidence as E36/E37 but the locator now carries 'including visual search queries'. Also relabel the touchpoint to 'Search queries (including visual search queries)'. The used_by_changes shape has no relabel action, so the label change is recorded here."
+  },
+  {
+   "id": "C052",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "used_by_add",
+   "target": "safari_history x search",
+   "change": "add",
+   "evidence": [
+    "E115"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   },
+   "note": "Browsing history is used by Preload Top Hit (the checker's item-4 note), not only by Siri Suggestions. Same caveat as safari_bookmarks about the off state."
+  },
+  {
+   "id": "C053",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "used_by_add",
+   "target": "audio x app_speech_recognition",
+   "change": "add",
+   "evidence": [
+    "E58"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   },
+   "note": "Needs the new feature app_speech_recognition. Grid: privacy.speech_recognition x audio x app_speech_recognition. Apple says the audio is sent 'if you choose to allow apps', so turning an app off there plausibly stops it for that app. Apple states only the allowed state, so 'stops' is an inference; the cautious status is not_stated, with this sentence as the note."
+  },
+  {
+   "id": "C054",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "used_by_add",
+   "target": "location_ip x siri_suggestions",
+   "change": "add",
+   "evidence": [
+    "E18"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   },
+   "note": "Apple: IP used 'to deliver relevant responses and suggestions'."
+  },
+  {
+   "id": "C055",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "add_flow",
+   "target": "N10",
+   "change": "added",
+   "evidence": [
+    "E126",
+    "E127"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C056",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "add_flow",
+   "target": "N11",
+   "change": "added",
+   "evidence": [
+    "E128"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   },
+   "note": "N11/N12 may be covered by Help Apple Improve Search; unresolved."
+  },
+  {
+   "id": "C057",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "add_flow",
+   "target": "N12",
+   "change": "added",
+   "evidence": [
+    "E129",
+    "E130"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   },
+   "note": "N11/N12 may be covered by Help Apple Improve Search; unresolved."
+  },
+  {
+   "id": "C058",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "add_flow",
+   "target": "N13",
+   "change": "added",
+   "evidence": [
+    "E131"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C059",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "add_flow",
+   "target": "N14",
+   "change": "added",
+   "evidence": [
+    "E132",
+    "E133"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C060",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "add_flow",
+   "target": "N15",
+   "change": "added",
+   "evidence": [
+    "E134",
+    "E135",
+    "E136"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C061",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "add_flow",
+   "target": "N16",
+   "change": "added from the iOS 26 user guide",
+   "evidence": [
+    "E100",
+    "E101"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C062",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "correct_flow",
+   "target": "N03",
+   "change": "Split: request category, success, device specifications, device configuration and performance statistics stay a no-switch flow; the approximate-location part moves under location.siri (stops).",
+   "evidence": [
+    "E137",
+    "E138"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   },
+   "note": "Also set location.siri x request_metadata x siri_requests = stops (location part), per the checker's item 4. Inconsistency to record: the Improve Siri page lists 'the approximate location of your device' in related request data with no Location Services condition (in the opt-in context)."
+  },
+  {
+   "id": "C063",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "correct_flow",
+   "target": "N05",
+   "change": "Remove phone call status from the no-switch flow; it is gated by Personal Requests on HomePod (new switch homepod.personal_requests). Timers, alarms, shared media and device proximity stay no-switch.",
+   "evidence": [
+    "E60",
+    "E139"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   },
+   "note": "'with Siri enabled' describes the nearby devices, not this iPhone. That is why the combo.siri_off / siri_and_dictation_off / screen_time 'stops' cells for nearby_device_status are unsupported (checker error 5); they should become not_stated."
+  },
+  {
+   "id": "C064",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "correct_flow",
+   "target": "N06",
+   "change": "Remove location from the no-switch description: location sent for Search is governed by location.system.suggestions_search (precise location) and location.global. Keep topics, queries (including visual queries), query context, selected suggestions, apps used, device usage data and subscription names. Add evidence for subscriptions, which E36/E37 do not cover.",
+   "evidence": [
+    "E140",
+    "E141",
+    "E142"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   },
+   "note": "IP-based location approximation for search suggestions (E41) continues regardless and is already recorded as the 'continues' of location.system.suggestions_search; it could instead sit with N01 as a no-switch flow. Apple's wording conflicts: E35 says with Location Services off 'your location will not be sent to Apple', while E41/E42 describe IP approximation."
+  },
+  {
+   "id": "C065",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "correct_paraphrase",
+   "target": "E29",
+   "change": "Correct the paraphrase: Apple names one condition, the Personal Requests on HomePod opt-in, which gates the phone-call-status part. It should not say that no switch is named.",
+   "evidence": [
+    "E60"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   },
+   "note": "E29 is an evidence record in sources.json, not a flow; listed here because the task grouped it with the flow corrections."
+  },
+  {
+   "id": "C066",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "decision",
+   "target": "guide.show_in_app + siri.show_in_app_library",
+   "change": "kept both: the iOS 26 guide and the privacy page name different suggestion switches; which exist on the phone can only be checked on the device",
+   "evidence": [
+    "E78",
+    "E10"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C067",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "rejected",
+   "target": "Recognize My Voice on HomePod as a new switch",
+   "change": "not added",
+   "evidence": [],
+   "found_by": {
+    "kind": "claude",
+    "id": "helper acf6053d5f6eb6aeb + integration",
+    "date": "2026-09-26"
+   },
+   "note": "Apple mentions it only as an example of what the synced voice-setup audio enables ('this is how audio from your phone can enable Recognize My Voice on your HomePod'). No switch, path, or effect of turning it off is described, and it runs on HomePod. Kept only as evidence for flow N14."
+  },
+  {
+   "id": "C068",
+   "step": "apply_additions",
+   "date": "2026-09-26",
+   "kind": "replace_evidence_locator",
+   "target": "E95",
+   "change": "locator moved from ios26-guide-activate-siri ('then tap Talk to Siri. Choose one of the following', which spans two list items) to ios26-guide-change-siri-settings ('Tap Talk to Siri (or Talk & Type to Siri), then tap Off')",
+   "evidence": [
+    "E95"
+   ],
+   "found_by": {
+    "kind": "claude",
+    "id": "build_evidence paragraph check",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C069",
+   "step": "findings_v2",
+   "date": "2026-09-26",
+   "kind": "correct_finding",
+   "target": "F1, F2",
+   "change": "switch_state key was 'siri.apps.learn_from_this_app[Contacts]' (not a valid switch id); now keyed by the valid id with per_app 'Contacts'. Added switches_off, action (used_on_device, labelled Claude judgement) and other settings as 'not recorded'.",
+   "evidence": [],
+   "found_by": {
+    "kind": "claude",
+    "id": "independent file checker",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C070",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "combo.siri_off x contacts x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E01 is a how-to instruction ('To turn off Siri, go to ...'); rule 2: it states no data effect. The v1 note 'Apple equates these switches with turning Siri off; new data stops' is an inference, not Apple's text.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C071",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "combo.siri_off x form_of_address x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E01 is a how-to instruction ('To turn off Siri, go to ...'); rule 2: it states no data effect. The v1 note 'Apple equates these switches with turning Siri off; new data stops' is an inference, not Apple's text.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C072",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "combo.siri_off x music_podcasts x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E01 is a how-to instruction ('To turn off Siri, go to ...'); rule 2: it states no data effect. The v1 note 'Apple equates these switches with turning Siri off; new data stops' is an inference, not Apple's text.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C073",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "combo.siri_off x device_names x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E01 is a how-to instruction ('To turn off Siri, go to ...'); rule 2: it states no data effect. The v1 note 'Apple equates these switches with turning Siri off; new data stops' is an inference, not Apple's text.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C074",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "combo.siri_off x home_data x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E01 is a how-to instruction ('To turn off Siri, go to ...'); rule 2: it states no data effect. The v1 note 'Apple equates these switches with turning Siri off; new data stops' is an inference, not Apple's text.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C075",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "combo.siri_off x item_labels x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E01 is a how-to instruction ('To turn off Siri, go to ...'); rule 2: it states no data effect. The v1 note 'Apple equates these switches with turning Siri off; new data stops' is an inference, not Apple's text.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C076",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "combo.siri_off x installed_apps_shortcuts x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E01 is a how-to instruction ('To turn off Siri, go to ...'); rule 2: it states no data effect. The v1 note 'Apple equates these switches with turning Siri off; new data stops' is an inference, not Apple's text.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C077",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "combo.siri_off x third_party_app_context x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E01 is a how-to instruction ('To turn off Siri, go to ...'); rule 2: it states no data effect. The v1 note 'Apple equates these switches with turning Siri off; new data stops' is an inference, not Apple's text.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C078",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "combo.siri_off x health x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E01 is a how-to instruction ('To turn off Siri, go to ...'); rule 2: it states no data effect. The v1 note 'Apple equates these switches with turning Siri off; new data stops' is an inference, not Apple's text.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C079",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "combo.siri_off x location_device x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E01 is a how-to instruction ('To turn off Siri, go to ...'); rule 2: it states no data effect. The v1 note 'Apple equates these switches with turning Siri off; new data stops' is an inference, not Apple's text.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C080",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "combo.siri_off x location_ip x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E01 is a how-to instruction ('To turn off Siri, go to ...'); rule 2: it states no data effect. The v1 note 'Apple equates these switches with turning Siri off; new data stops' is an inference, not Apple's text.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C081",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "combo.siri_off x audio x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E01 is a how-to instruction ('To turn off Siri, go to ...'); rule 2: it states no data effect. The v1 note 'Apple equates these switches with turning Siri off; new data stops' is an inference, not Apple's text.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C082",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "combo.siri_off x transcripts_on_device x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E01 is a how-to instruction ('To turn off Siri, go to ...'); rule 2: it states no data effect. The v1 note 'Apple equates these switches with turning Siri off; new data stops' is an inference, not Apple's text. E03's deletion requires Dictation also off, so it does not apply to this combo.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C083",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "combo.siri_off x transcripts_apple_servers x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E01 is a how-to instruction ('To turn off Siri, go to ...'); rule 2: it states no data effect. The v1 note 'Apple equates these switches with turning Siri off; new data stops' is an inference, not Apple's text.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C084",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "combo.siri_off x request_metadata x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E01 is a how-to instruction ('To turn off Siri, go to ...'); rule 2: it states no data effect. The v1 note 'Apple equates these switches with turning Siri off; new data stops' is an inference, not Apple's text.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C085",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "combo.siri_off x search_queries x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E01 is a how-to instruction ('To turn off Siri, go to ...'); rule 2: it states no data effect. The v1 note 'Apple equates these switches with turning Siri off; new data stops' is an inference, not Apple's text.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C086",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "combo.siri_off x voice_profile x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E01 is a how-to instruction ('To turn off Siri, go to ...'); rule 2: it states no data effect. The v1 note 'Apple equates these switches with turning Siri off; new data stops' is an inference, not Apple's text. The voice-setup audio sync (E15) is never tied to Siri being on or off.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C087",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "combo.siri_off x nearby_device_status x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E01 is a how-to instruction ('To turn off Siri, go to ...'); rule 2: it states no data effect. The v1 note 'Apple equates these switches with turning Siri off; new data stops' is an inference, not Apple's text. E29 concerns others controlling nearby devices 'with Siri enabled', not this iPhone's Siri switch.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C088",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "keyboard.enable_dictation x contacts x dictation",
+   "was": "stops",
+   "now": [],
+   "reason": "E02 is a how-to instruction ('To turn off Dictation, go to ...'); rule 2: says nothing about data. No Apple text states a data effect of Enable Dictation off for this touchpoint.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C089",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "keyboard.enable_dictation x form_of_address x dictation",
+   "was": "stops",
+   "now": [],
+   "reason": "E02 is a how-to instruction ('To turn off Dictation, go to ...'); rule 2: says nothing about data. No Apple text states a data effect of Enable Dictation off for this touchpoint.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C090",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "keyboard.enable_dictation x music_podcasts x dictation",
+   "was": "stops",
+   "now": [],
+   "reason": "E02 is a how-to instruction ('To turn off Dictation, go to ...'); rule 2: says nothing about data. No Apple text states a data effect of Enable Dictation off for this touchpoint.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C091",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "keyboard.enable_dictation x device_names x dictation",
+   "was": "stops",
+   "now": [],
+   "reason": "E02 is a how-to instruction ('To turn off Dictation, go to ...'); rule 2: says nothing about data. No Apple text states a data effect of Enable Dictation off for this touchpoint.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C092",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "keyboard.enable_dictation x home_data x dictation",
+   "was": "stops",
+   "now": [],
+   "reason": "E02 is a how-to instruction ('To turn off Dictation, go to ...'); rule 2: says nothing about data. No Apple text states a data effect of Enable Dictation off for this touchpoint.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C093",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "keyboard.enable_dictation x item_labels x dictation",
+   "was": "stops",
+   "now": [],
+   "reason": "E02 is a how-to instruction ('To turn off Dictation, go to ...'); rule 2: says nothing about data. No Apple text states a data effect of Enable Dictation off for this touchpoint.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C094",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "keyboard.enable_dictation x installed_apps_shortcuts x dictation",
+   "was": "stops",
+   "now": [],
+   "reason": "E02 is a how-to instruction ('To turn off Dictation, go to ...'); rule 2: says nothing about data. No Apple text states a data effect of Enable Dictation off for this touchpoint.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C095",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "keyboard.enable_dictation x third_party_app_context x dictation",
+   "was": "stops",
+   "now": [],
+   "reason": "E02 is a how-to instruction ('To turn off Dictation, go to ...'); rule 2: says nothing about data. No Apple text states a data effect of Enable Dictation off for this touchpoint.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C096",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "keyboard.enable_dictation x location_device x dictation",
+   "was": "stops",
+   "now": [],
+   "reason": "E02 is a how-to instruction ('To turn off Dictation, go to ...'); rule 2: says nothing about data. No Apple text states a data effect of Enable Dictation off for this touchpoint.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C097",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "keyboard.enable_dictation x audio x dictation",
+   "was": "stops",
+   "now": [],
+   "reason": "E02 is a how-to instruction ('To turn off Dictation, go to ...'); rule 2: says nothing about data. No Apple text states a data effect of Enable Dictation off for this touchpoint.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C098",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "keyboard.enable_dictation x transcripts_on_device x dictation",
+   "was": "stops",
+   "now": [],
+   "reason": "E02 is a how-to instruction ('To turn off Dictation, go to ...'); rule 2: says nothing about data. No Apple text states a data effect of Enable Dictation off for this touchpoint.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C099",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "combo.siri_and_dictation_off x contacts x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E01 is a how-to instruction ('To turn off Siri, go to ...'); rule 2: it states no data effect. The v1 note 'Apple equates these switches with turning Siri off; new data stops' is an inference, not Apple's text.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C100",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "combo.siri_and_dictation_off x contacts x dictation",
+   "was": "stops",
+   "now": [],
+   "reason": "E02 is a how-to instruction ('To turn off Dictation, go to ...'); rule 2: says nothing about data. No Apple text states a data effect of Enable Dictation off for this touchpoint.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C101",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "combo.siri_and_dictation_off x form_of_address x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E01 is a how-to instruction ('To turn off Siri, go to ...'); rule 2: it states no data effect. The v1 note 'Apple equates these switches with turning Siri off; new data stops' is an inference, not Apple's text.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C102",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "combo.siri_and_dictation_off x form_of_address x dictation",
+   "was": "stops",
+   "now": [],
+   "reason": "E02 is a how-to instruction ('To turn off Dictation, go to ...'); rule 2: says nothing about data. No Apple text states a data effect of Enable Dictation off for this touchpoint.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C103",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "combo.siri_and_dictation_off x music_podcasts x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E01 is a how-to instruction ('To turn off Siri, go to ...'); rule 2: it states no data effect. The v1 note 'Apple equates these switches with turning Siri off; new data stops' is an inference, not Apple's text.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C104",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "combo.siri_and_dictation_off x music_podcasts x dictation",
+   "was": "stops",
+   "now": [],
+   "reason": "E02 is a how-to instruction ('To turn off Dictation, go to ...'); rule 2: says nothing about data. No Apple text states a data effect of Enable Dictation off for this touchpoint.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C105",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "combo.siri_and_dictation_off x device_names x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E01 is a how-to instruction ('To turn off Siri, go to ...'); rule 2: it states no data effect. The v1 note 'Apple equates these switches with turning Siri off; new data stops' is an inference, not Apple's text.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C106",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "combo.siri_and_dictation_off x device_names x dictation",
+   "was": "stops",
+   "now": [],
+   "reason": "E02 is a how-to instruction ('To turn off Dictation, go to ...'); rule 2: says nothing about data. No Apple text states a data effect of Enable Dictation off for this touchpoint.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C107",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "combo.siri_and_dictation_off x home_data x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E01 is a how-to instruction ('To turn off Siri, go to ...'); rule 2: it states no data effect. The v1 note 'Apple equates these switches with turning Siri off; new data stops' is an inference, not Apple's text.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C108",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "combo.siri_and_dictation_off x home_data x dictation",
+   "was": "stops",
+   "now": [],
+   "reason": "E02 is a how-to instruction ('To turn off Dictation, go to ...'); rule 2: says nothing about data. No Apple text states a data effect of Enable Dictation off for this touchpoint.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C109",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "combo.siri_and_dictation_off x item_labels x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E01 is a how-to instruction ('To turn off Siri, go to ...'); rule 2: it states no data effect. The v1 note 'Apple equates these switches with turning Siri off; new data stops' is an inference, not Apple's text.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C110",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "combo.siri_and_dictation_off x item_labels x dictation",
+   "was": "stops",
+   "now": [],
+   "reason": "E02 is a how-to instruction ('To turn off Dictation, go to ...'); rule 2: says nothing about data. No Apple text states a data effect of Enable Dictation off for this touchpoint.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C111",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "combo.siri_and_dictation_off x installed_apps_shortcuts x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E01 is a how-to instruction ('To turn off Siri, go to ...'); rule 2: it states no data effect. The v1 note 'Apple equates these switches with turning Siri off; new data stops' is an inference, not Apple's text.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C112",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "combo.siri_and_dictation_off x installed_apps_shortcuts x dictation",
+   "was": "stops",
+   "now": [],
+   "reason": "E02 is a how-to instruction ('To turn off Dictation, go to ...'); rule 2: says nothing about data. No Apple text states a data effect of Enable Dictation off for this touchpoint.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C113",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "combo.siri_and_dictation_off x third_party_app_context x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E01 is a how-to instruction ('To turn off Siri, go to ...'); rule 2: it states no data effect. The v1 note 'Apple equates these switches with turning Siri off; new data stops' is an inference, not Apple's text.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C114",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "combo.siri_and_dictation_off x third_party_app_context x dictation",
+   "was": "stops",
+   "now": [],
+   "reason": "E02 is a how-to instruction ('To turn off Dictation, go to ...'); rule 2: says nothing about data. No Apple text states a data effect of Enable Dictation off for this touchpoint.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C115",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "combo.siri_and_dictation_off x health x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E01 is a how-to instruction ('To turn off Siri, go to ...'); rule 2: it states no data effect. The v1 note 'Apple equates these switches with turning Siri off; new data stops' is an inference, not Apple's text.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C116",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "combo.siri_and_dictation_off x location_device x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E01 is a how-to instruction ('To turn off Siri, go to ...'); rule 2: it states no data effect. The v1 note 'Apple equates these switches with turning Siri off; new data stops' is an inference, not Apple's text.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C117",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "combo.siri_and_dictation_off x location_device x dictation",
+   "was": "stops",
+   "now": [],
+   "reason": "E02 is a how-to instruction ('To turn off Dictation, go to ...'); rule 2: says nothing about data. No Apple text states a data effect of Enable Dictation off for this touchpoint.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C118",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "combo.siri_and_dictation_off x location_ip x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E01 is a how-to instruction ('To turn off Siri, go to ...'); rule 2: it states no data effect. The v1 note 'Apple equates these switches with turning Siri off; new data stops' is an inference, not Apple's text.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C119",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "combo.siri_and_dictation_off x audio x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E01 is a how-to instruction ('To turn off Siri, go to ...'); rule 2: it states no data effect. The v1 note 'Apple equates these switches with turning Siri off; new data stops' is an inference, not Apple's text.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C120",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "combo.siri_and_dictation_off x audio x dictation",
+   "was": "stops",
+   "now": [],
+   "reason": "E02 is a how-to instruction ('To turn off Dictation, go to ...'); rule 2: says nothing about data. No Apple text states a data effect of Enable Dictation off for this touchpoint.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C121",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_changed",
+   "target": "combo.siri_and_dictation_off x transcripts_on_device x siri_requests",
+   "was": "stops",
+   "now": [
+    {
+     "action": "used_on_device",
+     "status": "stops"
+    }
+   ],
+   "reason": "E03 supports only deletion of existing on-device transcripts when both Siri and Dictation are off (existing_data: deleted). The v1 blanket 'stops' across all actions is not stated; no action other than the on-device use of the deleted transcripts is addressed.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C122",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_changed",
+   "target": "combo.siri_and_dictation_off x transcripts_on_device x dictation",
+   "was": "stops",
+   "now": [
+    {
+     "action": "used_on_device",
+     "status": "stops"
+    }
+   ],
+   "reason": "E03 supports only deletion of existing on-device transcripts when both Siri and Dictation are off (existing_data: deleted). The v1 blanket 'stops' across all actions is not stated; no action other than the on-device use of the deleted transcripts is addressed.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C123",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "combo.siri_and_dictation_off x transcripts_apple_servers x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E01 is a how-to instruction (rule 2). E03 explicitly limits deletion to transcripts 'stored on your device'; nothing states that sending, storing or review of server transcripts stops, and E26 (retain up to two years) is not conditioned on this switch.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C124",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "combo.siri_and_dictation_off x request_metadata x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E01 is a how-to instruction ('To turn off Siri, go to ...'); rule 2: it states no data effect. The v1 note 'Apple equates these switches with turning Siri off; new data stops' is an inference, not Apple's text.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C125",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "combo.siri_and_dictation_off x search_queries x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E01 is a how-to instruction ('To turn off Siri, go to ...'); rule 2: it states no data effect. The v1 note 'Apple equates these switches with turning Siri off; new data stops' is an inference, not Apple's text.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C126",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "combo.siri_and_dictation_off x voice_profile x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E01 is a how-to instruction ('To turn off Siri, go to ...'); rule 2: it states no data effect. The v1 note 'Apple equates these switches with turning Siri off; new data stops' is an inference, not Apple's text. The voice-setup audio sync (E15) is never tied to Siri being on or off.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C127",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "combo.siri_and_dictation_off x nearby_device_status x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E01 is a how-to instruction ('To turn off Siri, go to ...'); rule 2: it states no data effect. The v1 note 'Apple equates these switches with turning Siri off; new data stops' is an inference, not Apple's text. E29 concerns others controlling nearby devices 'with Siri enabled', not this iPhone's Siri switch.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C128",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "screen_time.siri_dictation x contacts x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E20 only says Screen Time can 'restrict the ability to use Siri and Dictation altogether'. It restricts use; it says nothing about what data is or is not sent, stored, reviewed, used or synced. Data effect is an inference.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C129",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "screen_time.siri_dictation x contacts x dictation",
+   "was": "stops",
+   "now": [],
+   "reason": "E20 only says Screen Time can 'restrict the ability to use Siri and Dictation altogether'. It restricts use; it says nothing about what data is or is not sent, stored, reviewed, used or synced. Data effect is an inference.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C130",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "screen_time.siri_dictation x form_of_address x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E20 only says Screen Time can 'restrict the ability to use Siri and Dictation altogether'. It restricts use; it says nothing about what data is or is not sent, stored, reviewed, used or synced. Data effect is an inference.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C131",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "screen_time.siri_dictation x form_of_address x dictation",
+   "was": "stops",
+   "now": [],
+   "reason": "E20 only says Screen Time can 'restrict the ability to use Siri and Dictation altogether'. It restricts use; it says nothing about what data is or is not sent, stored, reviewed, used or synced. Data effect is an inference.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C132",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "screen_time.siri_dictation x music_podcasts x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E20 only says Screen Time can 'restrict the ability to use Siri and Dictation altogether'. It restricts use; it says nothing about what data is or is not sent, stored, reviewed, used or synced. Data effect is an inference.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C133",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "screen_time.siri_dictation x music_podcasts x dictation",
+   "was": "stops",
+   "now": [],
+   "reason": "E20 only says Screen Time can 'restrict the ability to use Siri and Dictation altogether'. It restricts use; it says nothing about what data is or is not sent, stored, reviewed, used or synced. Data effect is an inference.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C134",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "screen_time.siri_dictation x device_names x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E20 only says Screen Time can 'restrict the ability to use Siri and Dictation altogether'. It restricts use; it says nothing about what data is or is not sent, stored, reviewed, used or synced. Data effect is an inference.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C135",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "screen_time.siri_dictation x device_names x dictation",
+   "was": "stops",
+   "now": [],
+   "reason": "E20 only says Screen Time can 'restrict the ability to use Siri and Dictation altogether'. It restricts use; it says nothing about what data is or is not sent, stored, reviewed, used or synced. Data effect is an inference.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C136",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "screen_time.siri_dictation x home_data x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E20 only says Screen Time can 'restrict the ability to use Siri and Dictation altogether'. It restricts use; it says nothing about what data is or is not sent, stored, reviewed, used or synced. Data effect is an inference.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C137",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "screen_time.siri_dictation x home_data x dictation",
+   "was": "stops",
+   "now": [],
+   "reason": "E20 only says Screen Time can 'restrict the ability to use Siri and Dictation altogether'. It restricts use; it says nothing about what data is or is not sent, stored, reviewed, used or synced. Data effect is an inference.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C138",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "screen_time.siri_dictation x item_labels x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E20 only says Screen Time can 'restrict the ability to use Siri and Dictation altogether'. It restricts use; it says nothing about what data is or is not sent, stored, reviewed, used or synced. Data effect is an inference.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C139",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "screen_time.siri_dictation x item_labels x dictation",
+   "was": "stops",
+   "now": [],
+   "reason": "E20 only says Screen Time can 'restrict the ability to use Siri and Dictation altogether'. It restricts use; it says nothing about what data is or is not sent, stored, reviewed, used or synced. Data effect is an inference.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C140",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "screen_time.siri_dictation x installed_apps_shortcuts x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E20 only says Screen Time can 'restrict the ability to use Siri and Dictation altogether'. It restricts use; it says nothing about what data is or is not sent, stored, reviewed, used or synced. Data effect is an inference.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C141",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "screen_time.siri_dictation x installed_apps_shortcuts x dictation",
+   "was": "stops",
+   "now": [],
+   "reason": "E20 only says Screen Time can 'restrict the ability to use Siri and Dictation altogether'. It restricts use; it says nothing about what data is or is not sent, stored, reviewed, used or synced. Data effect is an inference.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C142",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "screen_time.siri_dictation x third_party_app_context x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E20 only says Screen Time can 'restrict the ability to use Siri and Dictation altogether'. It restricts use; it says nothing about what data is or is not sent, stored, reviewed, used or synced. Data effect is an inference.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C143",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "screen_time.siri_dictation x third_party_app_context x dictation",
+   "was": "stops",
+   "now": [],
+   "reason": "E20 only says Screen Time can 'restrict the ability to use Siri and Dictation altogether'. It restricts use; it says nothing about what data is or is not sent, stored, reviewed, used or synced. Data effect is an inference.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C144",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "screen_time.siri_dictation x health x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E20 only says Screen Time can 'restrict the ability to use Siri and Dictation altogether'. It restricts use; it says nothing about what data is or is not sent, stored, reviewed, used or synced. Data effect is an inference.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C145",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "screen_time.siri_dictation x location_device x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E20 only says Screen Time can 'restrict the ability to use Siri and Dictation altogether'. It restricts use; it says nothing about what data is or is not sent, stored, reviewed, used or synced. Data effect is an inference.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C146",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "screen_time.siri_dictation x location_device x dictation",
+   "was": "stops",
+   "now": [],
+   "reason": "E20 only says Screen Time can 'restrict the ability to use Siri and Dictation altogether'. It restricts use; it says nothing about what data is or is not sent, stored, reviewed, used or synced. Data effect is an inference.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C147",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "screen_time.siri_dictation x location_ip x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E20 only says Screen Time can 'restrict the ability to use Siri and Dictation altogether'. It restricts use; it says nothing about what data is or is not sent, stored, reviewed, used or synced. Data effect is an inference.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C148",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "screen_time.siri_dictation x audio x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E20 only says Screen Time can 'restrict the ability to use Siri and Dictation altogether'. It restricts use; it says nothing about what data is or is not sent, stored, reviewed, used or synced. Data effect is an inference.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C149",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "screen_time.siri_dictation x audio x dictation",
+   "was": "stops",
+   "now": [],
+   "reason": "E20 only says Screen Time can 'restrict the ability to use Siri and Dictation altogether'. It restricts use; it says nothing about what data is or is not sent, stored, reviewed, used or synced. Data effect is an inference.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C150",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "screen_time.siri_dictation x transcripts_on_device x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E20 only says Screen Time can 'restrict the ability to use Siri and Dictation altogether'. It restricts use; it says nothing about what data is or is not sent, stored, reviewed, used or synced. Data effect is an inference.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C151",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "screen_time.siri_dictation x transcripts_on_device x dictation",
+   "was": "stops",
+   "now": [],
+   "reason": "E20 only says Screen Time can 'restrict the ability to use Siri and Dictation altogether'. It restricts use; it says nothing about what data is or is not sent, stored, reviewed, used or synced. Data effect is an inference.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C152",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "screen_time.siri_dictation x transcripts_apple_servers x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E20 only says Screen Time can 'restrict the ability to use Siri and Dictation altogether'. It restricts use; it says nothing about what data is or is not sent, stored, reviewed, used or synced. Data effect is an inference.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C153",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "screen_time.siri_dictation x request_metadata x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E20 only says Screen Time can 'restrict the ability to use Siri and Dictation altogether'. It restricts use; it says nothing about what data is or is not sent, stored, reviewed, used or synced. Data effect is an inference.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C154",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "screen_time.siri_dictation x search_queries x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E20 only says Screen Time can 'restrict the ability to use Siri and Dictation altogether'. It restricts use; it says nothing about what data is or is not sent, stored, reviewed, used or synced. Data effect is an inference.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C155",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "screen_time.siri_dictation x voice_profile x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E20 only says Screen Time can 'restrict the ability to use Siri and Dictation altogether'. It restricts use; it says nothing about what data is or is not sent, stored, reviewed, used or synced. Data effect is an inference.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C156",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "screen_time.siri_dictation x nearby_device_status x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E20 only says Screen Time can 'restrict the ability to use Siri and Dictation altogether'. It restricts use; it says nothing about what data is or is not sent, stored, reviewed, used or synced. Data effect is an inference.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group A",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C157",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "siri.apps.use_with_siri_requests x third_party_app_context x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E07 is an instruction ('You can control which apps can integrate...'). It says nothing about data. E05 says contextual data may be sent 'from third-party apps you allow to integrate'. That describes what is sent when an app is allowed. It never says that data from an app switched off is not sent. So stopping is an inference, not something Apple states.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group B",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C158",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "siri.apps.use_with_siri_requests x third_party_app_context x dictation",
+   "was": "stops",
+   "now": [],
+   "reason": "Same as for siri_requests: E05 and E07 give no explicit off-state statement. E05 also covers Dictation ('When you use Siri and Dictation'), but only for the allowed state.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group B",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C159",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_changed",
+   "target": "siri.apps.learn_from_this_app x app_donated_data x siri_suggestions",
+   "was": "stops",
+   "now": [
+    {
+     "action": "used_on_device",
+     "status": "stops"
+    }
+   ],
+   "reason": "Kept only as used_on_device. E08's purpose clause states the effect ('stop apps from contributing information to personalize Siri'), and Siri Suggestions learns on the device (E11). No other action is stated. The checker suggested extending this to Apple's own apps (email, messages, contacts, safari_history). I did not, because E12 separates 'information stored on your device, such as ... emails' from 'information donated or contributed by other installed apps', and E08 uses the word 'contributing'.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group B",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C160",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_changed",
+   "target": "siri.app_clips.learn x app_donated_data x siri_suggestions",
+   "was": "stops",
+   "now": [
+    {
+     "action": "used_on_device",
+     "status": "stops"
+    }
+   ],
+   "reason": "E09 matches E08 but is about app clips. Kept only as used_on_device, for the same reason.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group B",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C161",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "location.siri x location_device x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E16 is a how-to instruction (rule 2). E17 describes only the on-state ('If you have Location Services turned on for Siri, ... will be sent to Apple'). Apple never says the location is not sent when the switch is set to Never, so there is no explicit stop.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group C",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C162",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "location.siri x location_device x dictation",
+   "was": "stops",
+   "now": [],
+   "reason": "E16 is a how-to instruction (rule 2). E17 describes only the on-state ('If you have Location Services turned on for Siri, ... will be sent to Apple'). Apple never says the location is not sent when the switch is set to Never, so there is no explicit stop.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group C",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C163",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_kept",
+   "target": "location.system.suggestions_search x location_device x siri_suggestions",
+   "was": "stops",
+   "now": [
+    {
+     "action": "sent_to_apple",
+     "status": "stops"
+    }
+   ],
+   "reason": "Supported by E40 (explicit off-state), limited to precise location and to sending. E19 is how-to text, used only to name the switch.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group C",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C164",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_kept",
+   "target": "location.system.suggestions_search x location_device x search",
+   "was": "stops",
+   "now": [
+    {
+     "action": "sent_to_apple",
+     "status": "stops"
+    }
+   ],
+   "reason": "Supported by E40 (explicit off-state), limited to precise location and to sending. E34 is how-to text, used only to name the switch.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group C",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C165",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "location.system.suggestions_search x location_ip x search",
+   "was": "continues",
+   "now": [],
+   "reason": "E41 says Apple may use IP to approximate location for search suggestions, but it does not say this happens regardless of, or despite, this switch. The contrast with E40's 'precise' is an inference. No action id fits Apple-side IP approximation either.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group C",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C166",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "location.global x location_device x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E35 comes from the Search & Privacy page. The Siri & Dictation page says nothing about global Location Services, so applying it to siri_requests would be an extension of scope.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group C",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C167",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "location.global x location_device x dictation",
+   "was": "stops",
+   "now": [],
+   "reason": "E35 comes from the Search & Privacy page. The Siri & Dictation page says nothing about global Location Services, so applying it to dictation would be an extension of scope.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group C",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C168",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_kept",
+   "target": "location.global x location_device x search",
+   "was": "stops",
+   "now": [
+    {
+     "action": "sent_to_apple",
+     "status": "stops"
+    }
+   ],
+   "reason": "E35: 'If you turn off Location Services on your device, your location will not be sent to Apple.' This is on the Search page.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group C",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C169",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "location.global x location_ip x siri_requests",
+   "was": "continues",
+   "now": [],
+   "reason": "E18 names no switch. E42 concerns 'Apps or websites', not Apple or Siri. Neither says Apple's IP approximation continues despite global Location Services off.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group C",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C170",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "location.global x location_ip x search",
+   "was": "continues",
+   "now": [],
+   "reason": "E41 names no switch. E42 concerns 'Apps or websites', not Apple Search. E35 says location will not be sent. No explicit continues.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group C",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C171",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_kept",
+   "target": "search.help_improve_search x search_queries x siri_requests",
+   "was": "continues",
+   "now": [
+    {
+     "action": "stored_by_apple",
+     "status": "continues"
+    }
+   ],
+   "reason": "E32 'will still be stored ... if you have enabled Improve Siri & Dictation'. It is now recorded with condition analytics.improve_siri_dictation=on and is storage only.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group C",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C172",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_changed",
+   "target": "search.help_improve_search x search_queries x search",
+   "was": "stops",
+   "now": [
+    {
+     "action": "stored_by_apple",
+     "status": "stops"
+    }
+   ],
+   "reason": "Narrowed to storage. E31 is about queries being 'stored by Apple and used to improve Search'. Sending continues to be described with no switch condition (E36/E37), so no sent_to_apple stop is claimed (rule 3).",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group C",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C173",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_changed",
+   "target": "analytics.improve_siri_dictation x audio x siri_requests",
+   "was": "stops",
+   "now": [
+    {
+     "action": "stored_by_apple",
+     "status": "stops"
+    },
+    {
+     "action": "sent_to_apple",
+     "status": "continues"
+    }
+   ],
+   "reason": "E22 only says audio is not stored; E55 says it is still sent to Apple servers (unless on-device). v1 merged storing and sending.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group D",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C174",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_changed",
+   "target": "analytics.improve_siri_dictation x audio x dictation",
+   "was": "stops",
+   "now": [
+    {
+     "action": "stored_by_apple",
+     "status": "stops"
+    },
+    {
+     "action": "sent_to_apple",
+     "status": "continues"
+    }
+   ],
+   "reason": "E23 says dictated content is sent to and processed on the server but not stored without the opt-in.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group D",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C175",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_kept",
+   "target": "analytics.improve_siri_dictation x transcripts_apple_servers x siri_requests",
+   "was": "continues",
+   "now": [
+    {
+     "action": "stored_by_apple",
+     "status": "continues"
+    },
+    {
+     "action": "reviewed_by_people",
+     "status": "continues"
+    }
+   ],
+   "reason": "E24 (default page) says Apple stores Siri transcripts and may review a subset; E26 gives up to two years.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group D",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C176",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_kept",
+   "target": "analytics.improve_siri_dictation x request_metadata x siri_requests",
+   "was": "continues",
+   "now": [
+    {
+     "action": "stored_by_apple",
+     "status": "continues"
+    }
+   ],
+   "reason": "E30 (default page) says Apple will also store related request data.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group D",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C177",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "analytics.improve_siri_dictation x search_queries x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E32 only says Siri searches are 'still stored ... if you have enabled Improve Siri & Dictation'. It states nothing about the off state, so 'stops' is not supported. E24 (all Siri transcripts stored by default) suggests storage continues, but Apple does not name search queries there, so no claim is made.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group D",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C178",
+   "step": "apple_layer",
+   "date": "2026-09-26",
+   "kind": "v1_removed",
+   "target": "health.siri_access x health x siri_requests",
+   "was": "stops",
+   "now": [],
+   "reason": "E43 is a how-to instruction ('You can turn off Siri's access ... by going to ...'); it states no data effect. E123/E44 describe what happens to Health data in Siri requests but never mention this switch.",
+   "found_by": {
+    "kind": "claude",
+    "id": "apple-layer helper group D",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C179",
+   "step": "final_check",
+   "date": "2026-09-26",
+   "kind": "evidence_paraphrase",
+   "target": "E116",
+   "was": "Resolves the checker's error 6: location.system.suggestions_search x location_device x siri_suggestions = stops existed without the used_by entry. The location-services page describes the service as sending location 'to provide more relevant recommendations', and ask-siri-dictation calls the same switch 'Location Services for Siri Suggestions'. Linking the two is supported by the shared switch path (System Services > Suggestions & Search) in both pages.",
+   "now": "Suggestions & Search sends the iPhone's location to Apple for more relevant recommendations.",
+   "reason": "Paraphrase held working notes or wrong wording; notes moved to claude_note.",
+   "found_by": {
+    "kind": "claude",
+    "id": "independent final check helper a37a6d1644a5369d0",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C180",
+   "step": "final_check",
+   "date": "2026-09-26",
+   "kind": "evidence_paraphrase",
+   "target": "E118",
+   "was": "Conditional use: Apple stores dictation only with Improve Siri and Dictation on. Record analytics.improve_siri_dictation x transcripts_apple_servers x dictation = stops (the checker's item-4 correction). The existing touchpoint note already says this; the used_by entry was missing, so no status could be recorded. Caveat: the ISD locator is in the opt-in 'Siri and Dictation' section and does not by itself say 'Dictation transcripts'; the ASD sentence is the direct evidence.",
+   "now": "Dictation not processed on the device is sent to Apple's server; it is not stored unless the user opts in to Improve Siri and Dictation.",
+   "reason": "Paraphrase held working notes or wrong wording; notes moved to claude_note.",
+   "found_by": {
+    "kind": "claude",
+    "id": "independent final check helper a37a6d1644a5369d0",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C181",
+   "step": "final_check",
+   "date": "2026-09-26",
+   "kind": "evidence_paraphrase",
+   "target": "E124",
+   "was": "Same evidence as E36/E37 but the locator now carries 'including visual search queries'. Also relabel the touchpoint to 'Search queries (including visual search queries)'. The used_by_changes shape has no relabel action, so the label change is recorded here.",
+   "now": "Using Look Up, Visual Look Up, typing in Search, Safari search, #images in Messages or Spotlight sends limited information to Apple for suggestions.",
+   "reason": "Paraphrase held working notes or wrong wording; notes moved to claude_note.",
+   "found_by": {
+    "kind": "claude",
+    "id": "independent final check helper a37a6d1644a5369d0",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C182",
+   "step": "final_check",
+   "date": "2026-09-26",
+   "kind": "evidence_paraphrase",
+   "target": "E137",
+   "was": "Also set location.siri x request_metadata x siri_requests = stops (location part), per the checker's item 4. Inconsistency to record: the Improve Siri page lists 'the approximate location of your device' in related request data with no Location Services condition (in the opt-in context).",
+   "now": "Apple also stores related request data, including approximate location at request time if Location Services for Siri is on.",
+   "reason": "Paraphrase held working notes or wrong wording; notes moved to claude_note.",
+   "found_by": {
+    "kind": "claude",
+    "id": "independent final check helper a37a6d1644a5369d0",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C183",
+   "step": "final_check",
+   "date": "2026-09-26",
+   "kind": "evidence_paraphrase",
+   "target": "E143",
+   "was": "Apple states that with both Siri and Dictation turned off, the transcripts 'stored on your device and used to personalize your experience will be deleted'. This is a claim about existing on-device transcripts only; 'stops' here means those deleted transcripts are no longer there to personalize. Apple says nothing about server copies (transcripts_apple_servers), nor explicitly about new data after switch-off. The action used_on_device is the closest fit; no 'stored on device' action exists.",
+   "now": "Turning off Siri and Dictation deletes the transcripts stored on the device that are used to personalise the experience.",
+   "reason": "Paraphrase held working notes or wrong wording; notes moved to claude_note.",
+   "found_by": {
+    "kind": "claude",
+    "id": "independent final check helper a37a6d1644a5369d0",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C184",
+   "step": "final_check",
+   "date": "2026-09-26",
+   "kind": "evidence_paraphrase",
+   "target": "E145",
+   "was": "Apple states the purpose of the switch: to stop 'Siri personalization' syncing (or 'updating', or 'staying up to date') across devices. Apple says 'Siri personalization', not 'Siri settings', so the Siri-settings part of this touchpoint (E105) is not covered. What happens to data already in iCloud is not stated.",
+   "now": "Turning off Siri in iCloud settings stops Siri personalisation updating across devices.",
+   "reason": "Paraphrase held working notes or wrong wording; notes moved to claude_note.",
+   "found_by": {
+    "kind": "claude",
+    "id": "independent final check helper a37a6d1644a5369d0",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C185",
+   "step": "final_check",
+   "date": "2026-09-26",
+   "kind": "evidence_paraphrase",
+   "target": "E146",
+   "was": "Apple states the purpose of the switch: to stop 'Siri personalization' syncing (or 'updating', or 'staying up to date') across devices. Apple says 'Siri personalization', not 'Siri settings', so the Siri-settings part of this touchpoint (E105) is not covered. What happens to data already in iCloud is not stated.",
+   "now": "Turning off Siri in iCloud settings stops Siri personalisation staying current across devices.",
+   "reason": "Paraphrase held working notes or wrong wording; notes moved to claude_note.",
+   "found_by": {
+    "kind": "claude",
+    "id": "independent final check helper a37a6d1644a5369d0",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C186",
+   "step": "final_check",
+   "date": "2026-09-26",
+   "kind": "evidence_paraphrase",
+   "target": "E147",
+   "was": "E55 is on the page that Apple says 'outlines the default behavior', i.e. without the Improve Siri opt-in; it says audio is sent to Apple servers. Not stored (E22) is not the same as not sent.",
+   "now": "Apple says the Siri, Dictation & Privacy page describes the default behaviour of Siri and Dictation.",
+   "reason": "Paraphrase held working notes or wrong wording; notes moved to claude_note.",
+   "found_by": {
+    "kind": "claude",
+    "id": "independent final check helper a37a6d1644a5369d0",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C187",
+   "step": "final_check",
+   "date": "2026-09-26",
+   "kind": "wrong_quote",
+   "target": "icloud.siri x siri_settings_sync x siri_suggestions x synced_across_devices apple_states.claude_note",
+   "was": "'staying up to date'",
+   "now": "'stay up to date'",
+   "reason": "Quote marks around wording Apple does not use; replaced with Apple's wording.",
+   "found_by": {
+    "kind": "claude",
+    "id": "independent final check helper a37a6d1644a5369d0",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C188",
+   "step": "final_check",
+   "date": "2026-09-26",
+   "kind": "wrong_quote",
+   "target": "search.show_related_content x search_queries x search x sent_to_apple reasonable_reader.note",
+   "was": "'No web-based content' could be read",
+   "now": "'If you do not want web-based content and search results' could be read",
+   "reason": "Quote marks around wording Apple does not use; replaced with Apple's wording.",
+   "found_by": {
+    "kind": "claude",
+    "id": "independent final check helper a37a6d1644a5369d0",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C189",
+   "step": "final_check",
+   "date": "2026-09-26",
+   "kind": "wrong_quote",
+   "target": "search.show_related_content x search_context x search x sent_to_apple reasonable_reader.note",
+   "was": "'No web-based content' could be read",
+   "now": "'If you do not want web-based content and search results' could be read",
+   "reason": "Quote marks around wording Apple does not use; replaced with Apple's wording.",
+   "found_by": {
+    "kind": "claude",
+    "id": "independent final check helper a37a6d1644a5369d0",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C190",
+   "step": "final_check",
+   "date": "2026-09-26",
+   "kind": "condition_added",
+   "target": "location.system.suggestions_search x location_device x siri_suggestions x sent_to_apple",
+   "was": null,
+   "now": "precise location only (E40); approximate location from IP address is not covered",
+   "reason": "Apple's sentence says 'precise location'; the limit was only in the note.",
+   "found_by": {
+    "kind": "claude",
+    "id": "independent final check helper a37a6d1644a5369d0",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C191",
+   "step": "final_check",
+   "date": "2026-09-26",
+   "kind": "condition_added",
+   "target": "location.system.suggestions_search x location_device x search x sent_to_apple",
+   "was": null,
+   "now": "precise location only (E40); approximate location from IP address is not covered",
+   "reason": "Apple's sentence says 'precise location'; the limit was only in the note.",
+   "found_by": {
+    "kind": "claude",
+    "id": "independent final check helper a37a6d1644a5369d0",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C192",
+   "step": "final_check",
+   "date": "2026-09-26",
+   "kind": "screening_update",
+   "target": "records/screening.json externally_hosted_not_verbatim_checked",
+   "was": "listed as not verbatim checked",
+   "now": "externally_hosted with capture status",
+   "reason": "EXT snapshots exist; stale label.",
+   "found_by": {
+    "kind": "claude",
+    "id": "independent final check helper a37a6d1644a5369d0",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C193",
+   "step": "how_to_rule",
+   "date": "2026-09-26",
+   "kind": "claim_remapped",
+   "target": "combo.siri_and_dictation_off x transcripts_on_device x siri_requests x used_on_device",
+   "was": {
+    "status": "stops",
+    "existing_data": "deleted"
+   },
+   "now": {
+    "status": "not_stated",
+    "existing_data": "deleted"
+   },
+   "reason": "Apple states that existing on-device transcripts are deleted. 'Use on the device stops' was Claude's mapping, and Apple says nothing about new data.",
+   "found_by": {
+    "kind": "person",
+    "id": "the user (decision in chat, advised by Claude)",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C194",
+   "step": "how_to_rule",
+   "date": "2026-09-26",
+   "kind": "stated_as_added",
+   "target": "combo.siri_and_dictation_off x transcripts_on_device x siri_requests x used_on_device",
+   "was": null,
+   "now": "direct_statement",
+   "reason": "Label from the how-to rule: Apple states the effect directly.",
+   "found_by": {
+    "kind": "person",
+    "id": "the user (decision in chat, advised by Claude)",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C195",
+   "step": "how_to_rule",
+   "date": "2026-09-26",
+   "kind": "claim_remapped",
+   "target": "combo.siri_and_dictation_off x transcripts_on_device x dictation x used_on_device",
+   "was": {
+    "status": "stops",
+    "existing_data": "deleted"
+   },
+   "now": {
+    "status": "not_stated",
+    "existing_data": "deleted"
+   },
+   "reason": "Apple states that existing on-device transcripts are deleted. 'Use on the device stops' was Claude's mapping, and Apple says nothing about new data.",
+   "found_by": {
+    "kind": "person",
+    "id": "the user (decision in chat, advised by Claude)",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C196",
+   "step": "how_to_rule",
+   "date": "2026-09-26",
+   "kind": "stated_as_added",
+   "target": "combo.siri_and_dictation_off x transcripts_on_device x dictation x used_on_device",
+   "was": null,
+   "now": "direct_statement",
+   "reason": "Label from the how-to rule: Apple states the effect directly.",
+   "found_by": {
+    "kind": "person",
+    "id": "the user (decision in chat, advised by Claude)",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C197",
+   "step": "how_to_rule",
+   "date": "2026-09-26",
+   "kind": "claim_remapped",
+   "target": "siri.history.delete x transcripts_on_device x siri_requests x used_on_device",
+   "was": {
+    "status": "stops",
+    "existing_data": "deleted"
+   },
+   "now": {
+    "status": "not_stated",
+    "existing_data": "deleted"
+   },
+   "reason": "Apple states that existing on-device transcripts are deleted. 'Use on the device stops' was Claude's mapping, and Apple says nothing about new data.",
+   "found_by": {
+    "kind": "person",
+    "id": "the user (decision in chat, advised by Claude)",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C198",
+   "step": "how_to_rule",
+   "date": "2026-09-26",
+   "kind": "stated_as_added",
+   "target": "siri.history.delete x transcripts_on_device x siri_requests x used_on_device",
+   "was": null,
+   "now": "purpose_of_instruction",
+   "reason": "Label from the how-to rule: Apple states the effect only as the purpose of an instruction.",
+   "found_by": {
+    "kind": "person",
+    "id": "the user (decision in chat, advised by Claude)",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C199",
+   "step": "how_to_rule",
+   "date": "2026-09-26",
+   "kind": "claim_remapped",
+   "target": "siri.history.delete x transcripts_on_device x dictation x used_on_device",
+   "was": {
+    "status": "stops",
+    "existing_data": "deleted"
+   },
+   "now": {
+    "status": "not_stated",
+    "existing_data": "deleted"
+   },
+   "reason": "Apple states that existing on-device transcripts are deleted. 'Use on the device stops' was Claude's mapping, and Apple says nothing about new data.",
+   "found_by": {
+    "kind": "person",
+    "id": "the user (decision in chat, advised by Claude)",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C200",
+   "step": "how_to_rule",
+   "date": "2026-09-26",
+   "kind": "stated_as_added",
+   "target": "siri.history.delete x transcripts_on_device x dictation x used_on_device",
+   "was": null,
+   "now": "purpose_of_instruction",
+   "reason": "Label from the how-to rule: Apple states the effect only as the purpose of an instruction.",
+   "found_by": {
+    "kind": "person",
+    "id": "the user (decision in chat, advised by Claude)",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C201",
+   "step": "how_to_rule",
+   "date": "2026-09-26",
+   "kind": "stated_as_added",
+   "target": "siri.apps.learn_from_this_app x app_donated_data x siri_suggestions x used_on_device",
+   "was": null,
+   "now": "purpose_of_instruction",
+   "reason": "Label from the how-to rule: Apple states the effect only as the purpose of an instruction.",
+   "found_by": {
+    "kind": "person",
+    "id": "the user (decision in chat, advised by Claude)",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C202",
+   "step": "how_to_rule",
+   "date": "2026-09-26",
+   "kind": "stated_as_added",
+   "target": "siri.app_clips.learn x app_donated_data x siri_suggestions x used_on_device",
+   "was": null,
+   "now": "purpose_of_instruction",
+   "reason": "Label from the how-to rule: Apple states the effect only as the purpose of an instruction.",
+   "found_by": {
+    "kind": "person",
+    "id": "the user (decision in chat, advised by Claude)",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C203",
+   "step": "how_to_rule",
+   "date": "2026-09-26",
+   "kind": "claim_removed",
+   "target": "icloud.siri x siri_settings_sync x siri_requests x synced_across_devices",
+   "was": {
+    "status": "stops",
+    "evidence": [
+     "E13",
+     "E145",
+     "E146"
+    ]
+   },
+   "now": {
+    "status": "not_stated"
+   },
+   "reason": "Apple's sentences say 'Siri personalization', not Siri requests.",
+   "found_by": {
+    "kind": "person",
+    "id": "the user (decision in chat, advised by Claude)",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C204",
+   "step": "how_to_rule",
+   "date": "2026-09-26",
+   "kind": "stated_as_added",
+   "target": "icloud.siri x siri_settings_sync x siri_suggestions x synced_across_devices",
+   "was": null,
+   "now": "purpose_of_instruction",
+   "reason": "Label from the how-to rule: Apple states the effect only as the purpose of an instruction.",
+   "found_by": {
+    "kind": "person",
+    "id": "the user (decision in chat, advised by Claude)",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C205",
+   "step": "how_to_rule",
+   "date": "2026-09-26",
+   "kind": "stated_as_added",
+   "target": "location.system.suggestions_search x location_device x siri_suggestions x sent_to_apple",
+   "was": null,
+   "now": "direct_statement",
+   "reason": "Label from the how-to rule: Apple states the effect directly.",
+   "found_by": {
+    "kind": "person",
+    "id": "the user (decision in chat, advised by Claude)",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C206",
+   "step": "how_to_rule",
+   "date": "2026-09-26",
+   "kind": "stated_as_added",
+   "target": "location.system.suggestions_search x location_device x search x sent_to_apple",
+   "was": null,
+   "now": "direct_statement",
+   "reason": "Label from the how-to rule: Apple states the effect directly.",
+   "found_by": {
+    "kind": "person",
+    "id": "the user (decision in chat, advised by Claude)",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C207",
+   "step": "how_to_rule",
+   "date": "2026-09-26",
+   "kind": "stated_as_added",
+   "target": "location.global x location_device x search x sent_to_apple",
+   "was": null,
+   "now": "direct_statement",
+   "reason": "Label from the how-to rule: Apple states the effect directly.",
+   "found_by": {
+    "kind": "person",
+    "id": "the user (decision in chat, advised by Claude)",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C208",
+   "step": "how_to_rule",
+   "date": "2026-09-26",
+   "kind": "stated_as_added",
+   "target": "analytics.improve_siri_dictation x audio x siri_requests x stored_by_apple",
+   "was": null,
+   "now": "direct_statement",
+   "reason": "Label from the how-to rule: Apple states the effect directly.",
+   "found_by": {
+    "kind": "person",
+    "id": "the user (decision in chat, advised by Claude)",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C209",
+   "step": "how_to_rule",
+   "date": "2026-09-26",
+   "kind": "stated_as_added",
+   "target": "analytics.improve_siri_dictation x audio x siri_requests x sent_to_apple",
+   "was": null,
+   "now": "direct_statement",
+   "reason": "Label from the how-to rule: Apple states the effect directly.",
+   "found_by": {
+    "kind": "person",
+    "id": "the user (decision in chat, advised by Claude)",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C210",
+   "step": "how_to_rule",
+   "date": "2026-09-26",
+   "kind": "stated_as_added",
+   "target": "analytics.improve_siri_dictation x audio x dictation x stored_by_apple",
+   "was": null,
+   "now": "direct_statement",
+   "reason": "Label from the how-to rule: Apple states the effect directly.",
+   "found_by": {
+    "kind": "person",
+    "id": "the user (decision in chat, advised by Claude)",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C211",
+   "step": "how_to_rule",
+   "date": "2026-09-26",
+   "kind": "stated_as_added",
+   "target": "analytics.improve_siri_dictation x audio x dictation x sent_to_apple",
+   "was": null,
+   "now": "direct_statement",
+   "reason": "Label from the how-to rule: Apple states the effect directly.",
+   "found_by": {
+    "kind": "person",
+    "id": "the user (decision in chat, advised by Claude)",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C212",
+   "step": "how_to_rule",
+   "date": "2026-09-26",
+   "kind": "stated_as_added",
+   "target": "analytics.improve_siri_dictation x transcripts_apple_servers x siri_requests x stored_by_apple",
+   "was": null,
+   "now": "direct_statement",
+   "reason": "Label from the how-to rule: Apple states the effect directly.",
+   "found_by": {
+    "kind": "person",
+    "id": "the user (decision in chat, advised by Claude)",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C213",
+   "step": "how_to_rule",
+   "date": "2026-09-26",
+   "kind": "stated_as_added",
+   "target": "analytics.improve_siri_dictation x transcripts_apple_servers x siri_requests x reviewed_by_people",
+   "was": null,
+   "now": "direct_statement",
+   "reason": "Label from the how-to rule: Apple states the effect directly.",
+   "found_by": {
+    "kind": "person",
+    "id": "the user (decision in chat, advised by Claude)",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C214",
+   "step": "how_to_rule",
+   "date": "2026-09-26",
+   "kind": "stated_as_added",
+   "target": "analytics.improve_siri_dictation x transcripts_apple_servers x dictation x stored_by_apple",
+   "was": null,
+   "now": "direct_statement",
+   "reason": "Label from the how-to rule: Apple states the effect directly.",
+   "found_by": {
+    "kind": "person",
+    "id": "the user (decision in chat, advised by Claude)",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C215",
+   "step": "how_to_rule",
+   "date": "2026-09-26",
+   "kind": "stated_as_added",
+   "target": "analytics.improve_siri_dictation x request_metadata x siri_requests x stored_by_apple",
+   "was": null,
+   "now": "direct_statement",
+   "reason": "Label from the how-to rule: Apple states the effect directly.",
+   "found_by": {
+    "kind": "person",
+    "id": "the user (decision in chat, advised by Claude)",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C216",
+   "step": "how_to_rule",
+   "date": "2026-09-26",
+   "kind": "stated_as_added",
+   "target": "search.help_improve_search x search_queries x siri_requests x stored_by_apple",
+   "was": null,
+   "now": "direct_statement",
+   "reason": "Label from the how-to rule: Apple states the effect directly.",
+   "found_by": {
+    "kind": "person",
+    "id": "the user (decision in chat, advised by Claude)",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C217",
+   "step": "how_to_rule",
+   "date": "2026-09-26",
+   "kind": "stated_as_added",
+   "target": "search.help_improve_search x search_queries x search x stored_by_apple",
+   "was": null,
+   "now": "purpose_of_instruction",
+   "reason": "Label from the how-to rule: Apple states the effect only as the purpose of an instruction.",
+   "found_by": {
+    "kind": "person",
+    "id": "the user (decision in chat, advised by Claude)",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C218",
+   "step": "how_to_rule",
+   "date": "2026-09-26",
+   "kind": "count_updated",
+   "target": "switches.json icloud.siri apple_explicit_claims",
+   "was": 2,
+   "now": 1,
+   "reason": "Follows the removed claim.",
+   "found_by": {
+    "kind": "claude",
+    "id": "check.py count check",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C219",
+   "step": "second_check",
+   "date": "2026-09-26",
+   "kind": "note_rewritten",
+   "target": "combo.siri_and_dictation_off x transcripts_on_device x siri_requests x used_on_device claude_note",
+   "was": "Apple states that with both Siri and Dictation turned off, the transcripts 'stored on your device and used to personalize your experience will be deleted'. This is a claim about existing on-device transcripts only; 'stops' here means those deleted transcripts are no longer there to personalize. Apple says nothing about server copies (transcripts_apple_servers), nor explicitly about new data after switch-off. The action used_on_device is the closest fit; no 'stored on device' action exists.",
+   "now": "Apple states that existing on-device transcripts are deleted. Nothing about server copies or new data after switch-off.",
+   "reason": "Note said 'stops'; status is not_stated with existing_data deleted.",
+   "found_by": {
+    "kind": "claude",
+    "id": "independent re-check helper a638f1e6b1ef5f682",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C220",
+   "step": "second_check",
+   "date": "2026-09-26",
+   "kind": "note_rewritten",
+   "target": "combo.siri_and_dictation_off x transcripts_on_device x dictation x used_on_device claude_note",
+   "was": "Apple states that with both Siri and Dictation turned off, the transcripts 'stored on your device and used to personalize your experience will be deleted'. This is a claim about existing on-device transcripts only; 'stops' here means those deleted transcripts are no longer there to personalize. Apple says nothing about server copies (transcripts_apple_servers), nor explicitly about new data after switch-off. The action used_on_device is the closest fit; no 'stored on device' action exists.",
+   "now": "Apple states that existing on-device transcripts are deleted. Nothing about server copies or new data after switch-off.",
+   "reason": "Note said 'stops'; status is not_stated with existing_data deleted.",
+   "found_by": {
+    "kind": "claude",
+    "id": "independent re-check helper a638f1e6b1ef5f682",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C221",
+   "step": "second_check",
+   "date": "2026-09-26",
+   "kind": "stated_as_changed",
+   "target": "analytics.improve_siri_dictation x audio x siri_requests x sent_to_apple",
+   "was": "direct_statement",
+   "now": "default_behaviour_page",
+   "reason": "The sentence names no switch; it applies with the switch off only because Apple says the page 'outlines the default behavior' (E147).",
+   "found_by": {
+    "kind": "claude",
+    "id": "independent re-check helper a638f1e6b1ef5f682",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C222",
+   "step": "second_check",
+   "date": "2026-09-26",
+   "kind": "stated_as_changed",
+   "target": "analytics.improve_siri_dictation x transcripts_apple_servers x siri_requests x stored_by_apple",
+   "was": "direct_statement",
+   "now": "default_behaviour_page",
+   "reason": "The sentence names no switch; it applies with the switch off only because Apple says the page 'outlines the default behavior' (E147).",
+   "found_by": {
+    "kind": "claude",
+    "id": "independent re-check helper a638f1e6b1ef5f682",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C223",
+   "step": "second_check",
+   "date": "2026-09-26",
+   "kind": "claim_removed",
+   "target": "analytics.improve_siri_dictation x transcripts_apple_servers x siri_requests x reviewed_by_people",
+   "was": {
+    "status": "continues",
+    "evidence": [
+     "E24",
+     "E148"
+    ],
+    "stated_as": "direct_statement"
+   },
+   "now": {
+    "status": "not_stated"
+   },
+   "reason": "Apple says 'Apple may review a subset of these transcripts' (E24, E148); it does not say by people.",
+   "found_by": {
+    "kind": "claude",
+    "id": "independent re-check helper a638f1e6b1ef5f682",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C224",
+   "step": "second_check",
+   "date": "2026-09-26",
+   "kind": "count_updated",
+   "target": "switches.json analytics.improve_siri_dictation apple_explicit_claims",
+   "was": 8,
+   "now": 7,
+   "reason": "Follows the removed claim.",
+   "found_by": {
+    "kind": "claude",
+    "id": "independent re-check helper a638f1e6b1ef5f682",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C225",
+   "step": "second_check",
+   "date": "2026-09-26",
+   "kind": "stated_as_changed",
+   "target": "analytics.improve_siri_dictation x request_metadata x siri_requests x stored_by_apple",
+   "was": "direct_statement",
+   "now": "default_behaviour_page",
+   "reason": "The sentence names no switch; it applies with the switch off only because Apple says the page 'outlines the default behavior' (E147).",
+   "found_by": {
+    "kind": "claude",
+    "id": "independent re-check helper a638f1e6b1ef5f682",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C226",
+   "step": "second_check",
+   "date": "2026-09-26",
+   "kind": "evidence_paraphrase",
+   "target": "E140",
+   "was": "IP-based location approximation for search suggestions (E41) continues regardless and is already recorded as the 'continues' of location.system.suggestions_search; it could instead sit with N01 as a no-switch flow. Apple's wording conflicts: E35 says with Location Services off 'your location will not be sent to Apple', while E41/E42 describe IP approximation.",
+   "now": "Apple's instruction for disabling Location Services for Search: turn off Suggestions & Search under System Services.",
+   "reason": "E140-E142 shared one note that did not describe E141 or E142.",
+   "found_by": {
+    "kind": "claude",
+    "id": "independent re-check helper a638f1e6b1ef5f682",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C227",
+   "step": "second_check",
+   "date": "2026-09-26",
+   "kind": "evidence_paraphrase",
+   "target": "E141",
+   "was": "IP-based location approximation for search suggestions (E41) continues regardless and is already recorded as the 'continues' of location.system.suggestions_search; it could instead sit with N01 as a no-switch flow. Apple's wording conflicts: E35 says with Location Services off 'your location will not be sent to Apple', while E41/E42 describe IP approximation.",
+   "now": "With Location Services for location-based suggestions off, precise location is not sent to Apple.",
+   "reason": "E140-E142 shared one note that did not describe E141 or E142.",
+   "found_by": {
+    "kind": "claude",
+    "id": "independent re-check helper a638f1e6b1ef5f682",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C228",
+   "step": "second_check",
+   "date": "2026-09-26",
+   "kind": "evidence_paraphrase",
+   "target": "E142",
+   "was": "IP-based location approximation for search suggestions (E41) continues regardless and is already recorded as the 'continues' of location.system.suggestions_search; it could instead sit with N01 as a no-switch flow. Apple's wording conflicts: E35 says with Location Services off 'your location will not be sent to Apple', while E41/E42 describe IP approximation.",
+   "now": "If the user subscribes to music or video services, the service names and subscription type may be sent to Apple.",
+   "reason": "E140-E142 shared one note that did not describe E141 or E142.",
+   "found_by": {
+    "kind": "claude",
+    "id": "independent re-check helper a638f1e6b1ef5f682",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C229",
+   "step": "second_check",
+   "date": "2026-09-26",
+   "kind": "touchpoint_relabel",
+   "target": "touchpoints.json search_queries label",
+   "was": "Search queries",
+   "now": "Search queries (including visual search queries)",
+   "reason": "Recorded in E125 but not applied.",
+   "found_by": {
+    "kind": "claude",
+    "id": "independent re-check helper a638f1e6b1ef5f682",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C230",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json siri.talk_to_siri",
+   "was": {
+    "name": "Talk to Siri",
+    "settings_path": "Settings > Siri > Talk to Siri > Off"
+   },
+   "now": {
+    "name": "Talk to Siri",
+    "settings_path": "go to Settings > Siri > Talk to Siri and tap Off",
+    "routes": 2
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C231",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json siri.press_side_button",
+   "was": {
+    "name": "Press Side Button for Siri",
+    "settings_path": "Settings > Siri (Talk to Siri) > Press Side Button for Siri"
+   },
+   "now": {
+    "name": "Press Side Button for Siri",
+    "settings_path": "go to Settings > Siri > Talk to Siri and tap to turn off “Press Home for Siri” or “Press Side Button for Siri”",
+    "routes": 2
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C232",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json combo.siri_off",
+   "was": {
+    "name": "Siri off (Apple's definition)",
+    "settings_path": "Talk to Siri Off + Press Side Button for Siri off"
+   },
+   "now": {
+    "name": "Siri off (Apple's definition)",
+    "settings_path": "go to Settings > Siri > Talk to Siri and tap Off / go to Settings > Siri > Talk to Siri and tap to turn off “Press Home for Siri” or “Press Side Button for Siri”",
+    "routes": 2
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C233",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json keyboard.enable_dictation",
+   "was": {
+    "name": "Enable Dictation",
+    "settings_path": "Settings > General > Keyboard > Enable Dictation"
+   },
+   "now": {
+    "name": "Enable Dictation",
+    "settings_path": "go to Settings > General > Keyboard, then tap to turn off Enable Dictation",
+    "routes": 2
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C234",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json combo.siri_and_dictation_off",
+   "was": {
+    "name": "Siri and Dictation both off",
+    "settings_path": "combo.siri_off + Enable Dictation off"
+   },
+   "now": {
+    "name": "Siri and Dictation both off",
+    "settings_path": null,
+    "routes": 0
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C235",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json siri.history.delete",
+   "was": {
+    "name": "Delete Siri & Dictation History",
+    "settings_path": "Settings > Siri > Siri & Dictation History > Delete"
+   },
+   "now": {
+    "name": "Delete Siri & Dictation History",
+    "settings_path": "going to Settings > Siri > Siri & Dictation History and tapping Delete Siri & Dictation History",
+    "routes": 1
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C236",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json siri.apps.use_with_siri_requests",
+   "was": {
+    "name": "Use with Siri Requests (per app)",
+    "settings_path": "Settings > Siri > Apps > [app] > Use with Siri Requests"
+   },
+   "now": {
+    "name": "Use with Siri Requests (per app)",
+    "settings_path": "going to Settings > Siri > Apps > [app name] > Use with Siri Requests",
+    "routes": 1
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C237",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json siri.apps.learn_from_this_app",
+   "was": {
+    "name": "Learn from this App (per app)",
+    "settings_path": "Settings > Siri > Apps > [app] > Learn from this App"
+   },
+   "now": {
+    "name": "Learn from this App (per app)",
+    "settings_path": "go to Settings > Siri > Apps > [app name], then tap to turn off Learn from this App",
+    "routes": 2
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C238",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json siri.app_clips.learn",
+   "was": {
+    "name": "Learn from App Clips",
+    "settings_path": "Settings > Siri > App Clips > Learn from App Clips"
+   },
+   "now": {
+    "name": "Learn from App Clips",
+    "settings_path": "go to Settings > Siri > App Clips and tap to turn off Learn from App Clips",
+    "routes": 1
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C239",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json siri.show_in_app_library",
+   "was": {
+    "name": "Show in App Library",
+    "settings_path": "Settings > Siri > Show in App Library"
+   },
+   "now": {
+    "name": "Show in App Library",
+    "settings_path": "going to Settings > Siri and tapping to turn off / “Show in App Library”",
+    "routes": 1
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C240",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json siri.show_in_spotlight",
+   "was": {
+    "name": "Show in Spotlight",
+    "settings_path": "Settings > Siri > Show in Spotlight"
+   },
+   "now": {
+    "name": "Show in Spotlight",
+    "settings_path": "going to Settings > Siri and tapping to turn off / “Show in Spotlight”",
+    "routes": 1
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C241",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json siri.show_when_sharing",
+   "was": {
+    "name": "Show When Sharing",
+    "settings_path": "Settings > Siri > Show When Sharing"
+   },
+   "now": {
+    "name": "Show When Sharing",
+    "settings_path": "going to Settings > Siri and tapping to turn off / “Show When Sharing”",
+    "routes": 1
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C242",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json siri.show_when_listening",
+   "was": {
+    "name": "Show When Listening",
+    "settings_path": "Settings > Siri > Show When Listening"
+   },
+   "now": {
+    "name": "Show When Listening",
+    "settings_path": "going to Settings > Siri and tapping to turn off / “Show When Listening”",
+    "routes": 1
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C243",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json icloud.siri",
+   "was": {
+    "name": "Siri in iCloud",
+    "settings_path": "Settings > [your name] > iCloud > Saved to iCloud > See All > Siri"
+   },
+   "now": {
+    "name": "Siri in iCloud",
+    "settings_path": "going to Settings > [your name] > iCloud > Saved to iCloud > See All and tapping to turn off Siri",
+    "routes": 2
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C244",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json location.siri",
+   "was": {
+    "name": "Location Services for Siri",
+    "settings_path": "Settings > Privacy & Security > Location Services > Siri > Never"
+   },
+   "now": {
+    "name": "Location Services for Siri",
+    "settings_path": "going to Settings > Privacy & Security > Location Services > Siri and tapping Never",
+    "routes": 1
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C245",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json location.system.suggestions_search",
+   "was": {
+    "name": "Suggestions & Search (System Services)",
+    "settings_path": "Settings > Privacy & Security > Location Services > System Services > Suggestions & Search"
+   },
+   "now": {
+    "name": "Suggestions & Search (System Services)",
+    "settings_path": "going to Settings > Privacy & Security > Location Services > System Services and tapping to turn off Suggestions & Search",
+    "routes": 1
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C246",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json location.global",
+   "was": {
+    "name": "Location Services (global)",
+    "settings_path": "Settings > Privacy & Security > Location Services"
+   },
+   "now": {
+    "name": "Location Services (global)",
+    "settings_path": "go to Settings > Privacy & Security > Location Services, and either tap to turn off global Location Services",
+    "routes": 1
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C247",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json analytics.improve_siri_dictation",
+   "was": {
+    "name": "Improve Siri and Dictation",
+    "settings_path": "Settings > Privacy & Security > Analytics & Improvements > Improve Siri & Dictation"
+   },
+   "now": {
+    "name": "Improve Siri and Dictation",
+    "settings_path": "You can change your setting for Improve Siri and Dictation at any time. / To do so, go to Settings > Privacy & Security > Analytics & Improvements.",
+    "routes": 1
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C248",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json search.help_improve_search",
+   "was": {
+    "name": "Help Apple Improve Search",
+    "settings_path": "Settings > Search > Help Apple Improve Search"
+   },
+   "now": {
+    "name": "Help Apple Improve Search",
+    "settings_path": "going to Settings > Search and tapping to turn off Help Apple Improve Search",
+    "routes": 1
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C249",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json search.show_recent_searches",
+   "was": {
+    "name": "Show Recent Searches",
+    "settings_path": "Settings > Search > Show Recent Searches"
+   },
+   "now": {
+    "name": "Show Recent Searches",
+    "settings_path": "going to Settings > Search and tapping to turn off those features",
+    "routes": 1
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C250",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json search.show_related_content",
+   "was": {
+    "name": "Show Related Content",
+    "settings_path": "Settings > Search > Show Related Content"
+   },
+   "now": {
+    "name": "Show Related Content",
+    "settings_path": "going to Settings > Search and tapping to turn off those features",
+    "routes": 1
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C251",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json safari.search_engine_suggestions",
+   "was": {
+    "name": "Search Engine Suggestions",
+    "settings_path": null
+   },
+   "now": {
+    "name": "Search Engine Suggestions",
+    "settings_path": null,
+    "routes": 0
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C252",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json safari.preload_top_hit",
+   "was": {
+    "name": "Preload Top Hit",
+    "settings_path": null
+   },
+   "now": {
+    "name": "Preload Top Hit",
+    "settings_path": null,
+    "routes": 0
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C253",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json screen_time.siri_dictation",
+   "was": {
+    "name": "Screen Time: Siri & Dictation",
+    "settings_path": "Settings > Screen Time > Content & Privacy Restrictions > Allowed Apps & Features > Siri & Dictation"
+   },
+   "now": {
+    "name": "Screen Time: Siri & Dictation",
+    "settings_path": "going to Settings > Screen Time > Content & Privacy Restrictions > Allowed Apps & Features and tapping Siri & Dictation",
+    "routes": 1
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C254",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json privacy.speech_recognition",
+   "was": {
+    "name": "Speech Recognition (per app)",
+    "settings_path": "Settings > Privacy & Security > Speech Recognition"
+   },
+   "now": {
+    "name": "Speech Recognition (per app)",
+    "settings_path": "going to Settings > Privacy & Security > Speech Recognition",
+    "routes": 1
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C255",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json health.siri_access",
+   "was": {
+    "name": "Siri access to Health data",
+    "settings_path": "Settings > Apps > Health > Data Access & Devices > Siri > Access Health Data"
+   },
+   "now": {
+    "name": "Siri access to Health data",
+    "settings_path": "going to Settings > Apps > Health > Data Access & Devices > Siri, then tapping to turn off Access Health Data",
+    "routes": 1
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C256",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json analytics.share_icloud_analytics",
+   "was": {
+    "name": "Share iCloud Analytics",
+    "settings_path": "Settings > Privacy & Security > Analytics & Improvements > Share iCloud Analytics"
+   },
+   "now": {
+    "name": "Share iCloud Analytics",
+    "settings_path": "go to Settings > Privacy & Security > Analytics & Improvements and tap to turn off Share iCloud Analytics",
+    "routes": 1
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C257",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json analytics.improve_assistive_voice",
+   "was": {
+    "name": "Improve Assistive Voice Features",
+    "settings_path": "Settings > Privacy & Security > Analytics & Improvements > Improve Assistive Voice Features"
+   },
+   "now": {
+    "name": "Improve Assistive Voice Features",
+    "settings_path": "go to Settings > Privacy & Security > Analytics & Improvements, and tap to turn off Improve Assistive Voice Features",
+    "routes": 1
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C258",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json analytics.improve_health_activity",
+   "was": {
+    "name": "Improve Health & Activity",
+    "settings_path": null
+   },
+   "now": {
+    "name": "Improve Health & Activity",
+    "settings_path": null,
+    "routes": 0
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C259",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json books.siri.show_in_app",
+   "was": {
+    "name": "Books: Show in App",
+    "settings_path": "Settings > Apps > Books > Siri > Show in App"
+   },
+   "now": {
+    "name": "Books: Show in App",
+    "settings_path": "going to Settings > Apps > Books > Siri, and tapping to turn off Show in App",
+    "routes": 1
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C260",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json news.siri.show_in_app",
+   "was": {
+    "name": "News: Show in App",
+    "settings_path": "Settings > Apps > News > Siri & Search > Show in App"
+   },
+   "now": {
+    "name": "News: Show in App",
+    "settings_path": "going to Settings > Apps > News > Siri & Search, and tapping to turn off Show in App",
+    "routes": 1
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C261",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json guide.allow_siri_when_locked",
+   "was": {
+    "name": "Allow Siri When Locked",
+    "settings_path": "Settings > Siri > Allow Siri When Locked"
+   },
+   "now": {
+    "name": "Allow Siri When Locked",
+    "settings_path": "Go to the Settings app on your iPhone. / Tap Siri (or Apple Intelligence & Siri), then do any of the following: / Turn off Allow Siri When Locked.",
+    "routes": 1
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C262",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json guide.siri_responses",
+   "was": {
+    "name": "Siri Responses",
+    "settings_path": "Settings > Siri > Siri Responses"
+   },
+   "now": {
+    "name": "Siri Responses",
+    "settings_path": "Go to the Settings app on your iPhone. / Tap Siri (or Apple Intelligence & Siri), then do any of the following: / Tap Siri Responses, then choose an option below Spoken Responses.",
+    "routes": 1
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C263",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json guide.call_hang_up",
+   "was": {
+    "name": "Call Hang Up",
+    "settings_path": "Settings > Siri > Call Hang Up"
+   },
+   "now": {
+    "name": "Call Hang Up",
+    "settings_path": "Go to the Settings app on your iPhone. / Tap Siri (or Apple Intelligence & Siri), then do any of the following: / Tap Call Hang Up, then turn on Call Hang Up.",
+    "routes": 2
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C264",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json guide.auto_send_messages",
+   "was": {
+    "name": "Automatically Send Messages",
+    "settings_path": "Settings > Siri > Messaging with Siri > Automatically Send Messages"
+   },
+   "now": {
+    "name": "Automatically Send Messages",
+    "settings_path": "Go to the Settings app on your iPhone. / Tap Siri (or Apple Intelligence & Siri), then do any of the following: / Tap Messaging with Siri, then turn on Automatically Send Messages.",
+    "routes": 1
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C265",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json guide.show_in_app",
+   "was": {
+    "name": "Show in App",
+    "settings_path": "Settings > Siri > Show in App"
+   },
+   "now": {
+    "name": "Show in App",
+    "settings_path": "Go to the Settings app on your iPhone. / Tap Siri (or Apple Intelligence & Siri), then turn on or off any of the following: / Show in App",
+    "routes": 1
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C266",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json guide.show_on_home_screen",
+   "was": {
+    "name": "Show on Home Screen",
+    "settings_path": "Settings > Siri > Show on Home Screen"
+   },
+   "now": {
+    "name": "Show on Home Screen",
+    "settings_path": "Go to the Settings app on your iPhone. / Tap Siri (or Apple Intelligence & Siri), then turn on or off any of the following: / Show on Home Screen",
+    "routes": 1
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C267",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json guide.suggest_app",
+   "was": {
+    "name": "Suggest App",
+    "settings_path": "Settings > Siri > Suggest App"
+   },
+   "now": {
+    "name": "Suggest App",
+    "settings_path": "Go to the Settings app on your iPhone. / Tap Siri (or Apple Intelligence & Siri), then turn on or off any of the following: / Suggest App",
+    "routes": 1
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C268",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json guide.suggestion_notifications",
+   "was": {
+    "name": "Suggestion Notifications",
+    "settings_path": "Settings > Siri > Suggestion Notifications"
+   },
+   "now": {
+    "name": "Suggestion Notifications",
+    "settings_path": "Go to the Settings app on your iPhone. / Tap Siri (or Apple Intelligence & Siri), then turn on or off any of the following: / Suggestion Notifications",
+    "routes": 1
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C269",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json guide.search_per_app",
+   "was": {
+    "name": "Search: per-app settings",
+    "settings_path": "Settings > Search > [app]"
+   },
+   "now": {
+    "name": "Search: per-app settings",
+    "settings_path": "Go to the Settings app on your iPhone. / Tap Search, then scroll down and select an app. / Turn settings on or off.",
+    "routes": 1
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C270",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json guide.type_to_siri",
+   "was": {
+    "name": "Type to Siri",
+    "settings_path": "Settings > Accessibility > Siri > Type to Siri"
+   },
+   "now": {
+    "name": "Type to Siri",
+    "settings_path": "Go to Settings > Accessibility > Siri, then turn on Type to Siri.",
+    "routes": 2
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C271",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json guide.always_listen",
+   "was": {
+    "name": "Always Listen for 'Hey Siri'",
+    "settings_path": "Settings > Accessibility > Siri > Always Listen for \"Hey Siri\""
+   },
+   "now": {
+    "name": "Always Listen for “Hey Siri”",
+    "settings_path": "Go to Settings > Accessibility > Siri. / To change this, turn on Always Listen for “Hey Siri.”",
+    "routes": 1
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C272",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json homepod.personal_requests",
+   "was": {
+    "name": "Personal Requests on HomePod",
+    "settings_path": null
+   },
+   "now": {
+    "name": "Personal Requests on HomePod",
+    "settings_path": null,
+    "routes": 0
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C273",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json apple_store.siri_and_search",
+   "was": {
+    "name": "Siri & Search (named on the Apple Store app page)",
+    "settings_path": "Settings > Siri & Search"
+   },
+   "now": {
+    "name": "Siri & Search (named on the Apple Store app page)",
+    "settings_path": "go to Settings > Siri & Search",
+    "routes": 1
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C274",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json guide.voice",
+   "was": {
+    "name": "voice",
+    "settings_path": null
+   },
+   "now": {
+    "name": "Voice",
+    "settings_path": "Go to the Settings app on your iPhone. / Tap Siri (or Apple Intelligence & Siri), then do any of the following: / Tap Voice, then choose a different variety or voice (not available for all languages).",
+    "routes": 1
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C275",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json guide.language",
+   "was": {
+    "name": "language",
+    "settings_path": null
+   },
+   "now": {
+    "name": "Language",
+    "settings_path": "Go to the Settings app on your iPhone. / Tap Siri (or Apple Intelligence & Siri), then do any of the following: / Tap Language, then select a new language.",
+    "routes": 1
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C276",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json guide.always_show_captions",
+   "was": {
+    "name": "always show captions",
+    "settings_path": null
+   },
+   "now": {
+    "name": "Always Show Siri Captions",
+    "settings_path": "Go to the Settings app on your iPhone. / Tap Siri (or Apple Intelligence & Siri), then do any of the following: / Tap Siri Responses, then turn on Always Show Siri Captions.",
+    "routes": 1
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C277",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json guide.always_show_request",
+   "was": {
+    "name": "always show request",
+    "settings_path": null
+   },
+   "now": {
+    "name": "Always Show Request",
+    "settings_path": "Go to the Settings app on your iPhone. / Tap Siri (or Apple Intelligence & Siri), then do any of the following: / Tap Siri Responses, then turn on Always Show Request.",
+    "routes": 1
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C278",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json guide.apps_per_app",
+   "was": {
+    "name": "apps per app",
+    "settings_path": null
+   },
+   "now": {
+    "name": "Apps",
+    "settings_path": "Go to the Settings app on your iPhone. / Tap Siri (or Apple Intelligence & Siri), then tap Apps.",
+    "routes": 1
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C279",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json guide.my_information",
+   "was": {
+    "name": "my information",
+    "settings_path": null
+   },
+   "now": {
+    "name": "My Information",
+    "settings_path": "Go to the Settings app . / Tap Siri (or Apple Intelligence & Siri), tap My Information, then tap your name.",
+    "routes": 1
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C280",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json guide.siri_pause_time",
+   "was": {
+    "name": "siri pause time",
+    "settings_path": null
+   },
+   "now": {
+    "name": "Siri Pause Time",
+    "settings_path": "Go to Settings > Accessibility > Siri. / Below Siri Pause Time, choose Default, Longer, or Longest.",
+    "routes": 2
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C281",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json guide.speaking_rate",
+   "was": {
+    "name": "speaking rate",
+    "settings_path": null
+   },
+   "now": {
+    "name": "Speaking Rate",
+    "settings_path": "Go to Settings > Accessibility > Siri. / Change how fast Siri speaks: Adjust the slider below Speaking Rate.",
+    "routes": 1
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C282",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json guide.require_siri_interruptions",
+   "was": {
+    "name": "require siri interruptions",
+    "settings_path": null
+   },
+   "now": {
+    "name": "Require “Siri” for Interruptions",
+    "settings_path": "Go to Settings > Accessibility > Siri. / Turn on Require “Siri” for Interruptions.",
+    "routes": 1
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C283",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json guide.atypical_speech",
+   "was": {
+    "name": "atypical speech",
+    "settings_path": null
+   },
+   "now": {
+    "name": "Listen for Atypical Speech",
+    "settings_path": "Go to Settings > Accessibility > Siri, then turn on Listen for Atypical Speech.",
+    "routes": 1
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C284",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json guide.announce_on_speaker",
+   "was": {
+    "name": "announce on speaker",
+    "settings_path": null
+   },
+   "now": {
+    "name": "Announce Notifications on Speaker",
+    "settings_path": "Go to Settings > Accessibility > Siri, then turn on Announce Notifications on Speaker.",
+    "routes": 1
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C285",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json guide.announce_calls",
+   "was": {
+    "name": "announce calls",
+    "settings_path": null
+   },
+   "now": {
+    "name": "Announce Calls",
+    "settings_path": "Go to the Settings app on your iPhone. / Tap Siri (or Apple Intelligence & Siri). / Tap Announce Calls, then choose an option.",
+    "routes": 1
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C286",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json guide.announce_notifications",
+   "was": {
+    "name": "announce notifications",
+    "settings_path": null
+   },
+   "now": {
+    "name": "Announce Notifications",
+    "settings_path": "Go to the Settings app on your iPhone. / Tap Siri (or Apple Intelligence & Siri). / Tap Announce Notifications, then turn on Announce Notifications.",
+    "routes": 1
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C287",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json guide.reply_without_confirmation",
+   "was": {
+    "name": "reply without confirmation",
+    "settings_path": null
+   },
+   "now": {
+    "name": "Reply Without Confirmation",
+    "settings_path": "Go to the Settings app on your iPhone. / Tap Siri (or Apple Intelligence & Siri). / Tap Announce Notifications, then turn on Announce Notifications. / To send replies without waiting for confirmation, turn on Reply Without Confirmation.",
+    "routes": 1
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C288",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json guide.auto_punctuation",
+   "was": {
+    "name": "auto punctuation",
+    "settings_path": null
+   },
+   "now": {
+    "name": "Auto-Punctuation",
+    "settings_path": "go to Settings > General > Keyboard, then turn off Auto-Punctuation",
+    "routes": 1
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C289",
+   "step": "names_paths",
+   "date": "2026-11-01",
+   "kind": "name_path",
+   "target": "switches.json siri.personalization_list",
+   "was": {
+    "name": "Siri personalisation list (Settings > Siri)",
+    "settings_path": "Settings > Siri"
+   },
+   "now": {
+    "name": "Siri personalisation list (Settings > Siri)",
+    "settings_path": "going to Settings > Siri",
+    "routes": 1
+   },
+   "reason": "Name and route(s) taken verbatim from Apple's saved text, located by character offsets; settings_path is now Apple's first route, fragments joined by ' / '.",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator (scripts/apply_names_paths.py)",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C290",
+   "step": "observations",
+   "date": "2026-11-01",
+   "kind": "added",
+   "target": "switches.json safari.search_engine_suggestions observed_routes",
+   "was": null,
+   "now": "O001 Apps → Safari",
+   "reason": "User's Settings search screenshot (sent 2026-09-26, fingerprint unchanged) shows the route; Apple's saved privacy pages give none.",
+   "found_by": {
+    "kind": "person",
+    "id": "the user",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C291",
+   "step": "per_app",
+   "date": "2026-11-01",
+   "kind": "added",
+   "target": "per_app.json",
+   "was": null,
+   "now": "3 places, 9 entries",
+   "reason": "User asked (2026-09-26) for per-app sections in the data and schema.",
+   "found_by": {
+    "kind": "person",
+    "id": "the user",
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "C292",
+   "step": "observations",
+   "date": "2026-11-01",
+   "kind": "finding_added",
+   "target": "findings.json F3; pairings_v2.json observed layer",
+   "was": null,
+   "now": "F3 continues (4 cells)",
+   "reason": "User's dictation test on iOS 26.7.1 with switch states confirmed by screenshots.",
+   "found_by": {
+    "kind": "person",
+    "id": "the user",
+    "date": "2026-11-01"
+   }
+  },
+  {
+   "id": "C293",
+   "step": "observations",
+   "date": "2026-11-03",
+   "kind": "finding_added",
+   "target": "findings.json F4; pairings_v2.json observed layer",
+   "was": null,
+   "now": "F4 continues (3 cells)",
+   "reason": "User's dictation test on iOS 27.2, settings confirmed by screenshots O104-O108.",
+   "found_by": {
+    "kind": "person",
+    "id": "the user",
+    "date": "2026-11-03"
+   }
+  },
+  {
+   "id": "C294",
+   "step": "ios27_independent_check",
+   "date": "2026-11-03",
+   "kind": "fix",
+   "target": "ios27 review_decisions R27-002..005",
+   "was": null,
+   "now": "4 Apple claims removed",
+   "reason": "Not explicit statements (no switch named, or inferred reverse of on-state wording).",
+   "found_by": {
+    "kind": "claude",
+    "id": "independent iOS 27 check helper",
+    "date": "2026-11-03"
+   }
+  },
+  {
+   "id": "C295",
+   "step": "ios27_independent_check",
+   "date": "2026-11-03",
+   "kind": "fix",
+   "target": "ios27 build: deletion-only claim notes",
+   "was": null,
+   "now": "notes rewritten",
+   "reason": "Notes said 'stops' where status is not_stated.",
+   "found_by": {
+    "kind": "claude",
+    "id": "independent iOS 27 check helper",
+    "date": "2026-11-03"
+   }
+  },
+  {
+   "id": "C296",
+   "step": "ios27_independent_check",
+   "date": "2026-11-03",
+   "kind": "fix",
+   "target": "ios27 reader notes",
+   "was": null,
+   "now": "4 quotes corrected",
+   "reason": "Quote marks around wording not exactly Apple's.",
+   "found_by": {
+    "kind": "claude",
+    "id": "independent iOS 27 check helper",
+    "date": "2026-11-03"
+   }
+  },
+  {
+   "id": "C297",
+   "step": "ios27_independent_check",
+   "date": "2026-11-03",
+   "kind": "fix",
+   "target": "records/observations/ios27_screens.json X1",
+   "was": null,
+   "now": "rewritten; earlier wording kept under 'revised'",
+   "reason": "Stated as fact that the label shows Siri on; Apple does not say so.",
+   "found_by": {
+    "kind": "claude",
+    "id": "independent iOS 27 check helper",
+    "date": "2026-11-03"
+   }
+  },
+  {
+   "id": "C298",
+   "step": "ios27_independent_check",
+   "date": "2026-11-03",
+   "kind": "fix",
+   "target": "findings.json F4 note and state fields",
+   "was": null,
+   "now": "rewritten",
+   "reason": "'with Siri off' contradicted ios27_not_set; exclusion recorded as 'off'.",
+   "found_by": {
+    "kind": "claude",
+    "id": "independent iOS 27 check helper",
+    "date": "2026-11-03"
+   }
+  },
+  {
+   "id": "C299",
+   "step": "article",
+   "date": "2026-11-03",
+   "kind": "article_fixes",
+   "target": "Claude Doc 'I turned it off. My iPhone kept listening to my contacts.'",
+   "was": "draft rev 11",
+   "now": "12 fact-check items addressed (10 edits; 2 after user statements: Contacts already excluded after update; 'Siri and Kimi' on 1 Nov)",
+   "reason": "Independent fact-check",
+   "found_by": {
+    "kind": "claude",
+    "id": "article fact-check helper",
+    "date": "2026-11-03"
+   }
+  },
+  {
+   "id": "C300",
+   "step": "public_package",
+   "date": "2026-11-04",
+   "kind": "checker_fix",
+   "target": "verify_live.py (public live-site checker)",
+   "was": "compared quotes with single spaces kept; 7 of 244 iOS 27 quotes reported not found (X053, X116, X117, X118, X119, X127, X140), all on user-guide pages, when run by the user on 2026-11-04",
+   "now": "compares with all spaces removed on both sides",
+   "reason": "Turning HTML tags into spaces puts a space before punctuation that follows a link or bold text (for example 'settings .'), so exact quotes failed to match. All 7 quotes end in or contain text that is likely link or bold text on the page. Confirmed on 2026-11-04 against all 67 live Apple pages fetched through the browser on the user's Mac: the old comparison reproduced the same 7 misses; the new one finds all 244.",
+   "found_by": {
+    "kind": "user",
+    "id": "user run of verify_live.py ios27",
+    "date": "2026-11-04"
+   }
+  },
+  {
+   "id": "C301",
+   "step": "public_package",
+   "date": "2026-11-04",
+   "kind": "checker_fix",
+   "target": "verify_live.py and data/*/apple_quotes.json (public)",
+   "was": "for the 25 long sentences published as excerpts, verify_live.py checked only the excerpt phrase; tested against all 67 live Apple pages on 2026-11-04, ios26 reported 28 not found where the change record lists 34: E29, E60, E61, E137, E138, E139 were reported as present although Apple changed another part of the sentence",
+   "now": "each excerpted quote also carries full_sentence_nospace_sha256 and full_sentence_nospace_chars; verify_live.py requires a stretch of the live page containing the excerpt to match that fingerprint",
+   "reason": "The checker must not report a changed sentence as unchanged. Found by Claude when stress-testing C300 against today's live pages, fetched through the browser on the user's Mac.",
+   "found_by": {
+    "kind": "claude",
+    "id": "stress test of public package",
+    "date": "2026-11-04"
+   }
+  },
+  {
+   "id": "C302",
+   "step": "public_package",
+   "date": "2026-11-04",
+   "kind": "checker_fix",
+   "target": "public check.py; new MANIFEST.json and .gitattributes",
+   "was": "check.py did not detect an Apple statement changed in data/ios27/grid.json (one 'stops' edited to 'continues'): the headline numbers are unchanged by such an edit",
+   "now": "MANIFEST.json holds the SHA-256 of every file; check.py reports any changed, added or missing file and prints the manifest's fingerprint, to be compared with the fingerprint published with the article. .gitattributes stops git changing line endings.",
+   "reason": "Found by Claude in the stress test of the public package on 2026-11-04.",
+   "found_by": {
+    "kind": "claude",
+    "id": "stress test of public package",
+    "date": "2026-11-04"
+   }
+  },
+  {
+   "id": "C303",
+   "step": "publication",
+   "date": "2026-11-03",
+   "kind": "public_copy",
+   "target": "this public folder",
+   "was": "private audit",
+   "now": "public copy built by scripts/build_public.py (private)",
+   "reason": "Personal details replaced; screenshots redacted; Apple's full pages left out; quotes over 300 characters shown as excerpts; files renamed (see README, 'Internal names').",
+   "found_by": {
+    "kind": "claude",
+    "id": "coordinator",
+    "date": "2026-11-03"
+   }
+  }
+ ]
+}
